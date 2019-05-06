@@ -4,7 +4,7 @@ export default class MainPage extends Component {
   render() {
     return (
       <div>
-        <h1>I am Main Page!</h1>
+        <h1>Dimas Zdarova</h1>
       </div>
     )
   }
