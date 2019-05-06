@@ -1,15 +1,27 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import MainPage from './components/Main_page/MainPage';
-import Login from './components/Login/Login';
+import HomePage from './components/Pages/HomePage';
+import LoginPage from './components/Pages/LoginPage';
+import AboutPage from './components/Pages/AboutPage';
+import ContactPage from './components/Pages/ContactPage';
+import ProductsPage from './components/Pages/ProductsPage';
+import DefaultPage from './components/Pages/DefaultPage';
+import SingleProductPage from './components/Pages/SingleProductPage';
+import CartPage from './components/Pages/CartPage';
 
 export default class Routes extends Component {
   render() {
     return (
     <Switch>
-        <Route exact path = '/' component={MainPage} />
-        <Route path = '/login' component={Login} />
+        <Route exact path = '/' component={HomePage} />
+        <Route path = '/login' component={LoginPage} />
+        <Route path = '/about' component={AboutPage} />
+        <Route path = '/contact' component={ContactPage} />
+        <Route path = '/products' exact component={ProductsPage} />     
+        <Route path = '/products/:id' component={SingleProductPage} />
+        <Route path = '/my_cart' component={CartPage} />
+        <Route component={DefaultPage} />
       </Switch>
     )
   }
