@@ -1,10 +1,15 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import {ProductConsumer} from '../../context';
 
 export default class MainPage extends Component {
   render() {
     return (
       <div>
-        <h1>Hello from homepage</h1>
+      <ProductConsumer>
+        {value => {
+          return <h1>Hello from homepage context</h1>
+          }}
+      </ProductConsumer>
       </div>
     )
   }
