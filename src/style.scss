@@ -1,4 +1,9 @@
 
+
+$mainpink: rgba(241, 106, 123, .9);
+$mainwhite: rgba(246, 246, 246, .6);
+$fontmain: 'Thasadith', sans-serif;
+
 @mixin flexbox {
     display: flex;
     justify-content: center;
@@ -10,35 +15,116 @@ body {
     padding: 0;
 }
 
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
 // ----------------------------- Navbar
 .navbar-container {
     @include flexbox;
+    position: sticky;
+    z-index: 2;
     width: 100%;
-    height: 4rem;
-    background-color: rgba(50, 50, 50, .5);
+    min-height: 4rem;
+    background-color: $mainwhite;
+    transition: .3s;
+    border-bottom: 1px solid rgba(241, 106, 123, 0);
     .navbar-logo{
         @include flexbox;
-        width: 15%;
+        width: 100px;
         height: 100%;
-        cursor: pointer;
+        img {
+            width: 1.3rem;
+            cursor: pointer;
+        }
     }
     .navbar-menu {
         @include flexbox;
         width: 70%;
         height: 100%;
+        flex-wrap: wrap;
         list-style-type: none;
         margin: 0;
+        padding: 0;
         .menu-element {
-            margin-left: 1rem;
-            margin-right: 1rem;
+            margin-left: 1.3rem;
+            margin-right: 1.3rem;
             font-size: 1.2rem;
             cursor: pointer;
+            font-family: $fontmain;
+            font-weight: 200;
+            text-transform: uppercase;
+            transition: .3s;
+        }
+        .menu-element:hover {
+            color: $mainpink;
         }
     }
     .navbar-cart {
         @include flexbox;
-        width: 15%;
+        width: 100px;
         height: 100%;
-        cursor: pointer;
+        position: relative;
+        .cart-logo {
+            @include flexbox;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        .cart-items {
+            padding: 2px 6px;
+            background-color: rgba(241, 106, 123, 1);
+            color: rgba(255, 255, 255, 1);
+            font-size: 0.85rem;
+            position: absolute;
+            top: 1rem;
+            right: 1.6rem;
+            border-radius: 50%;
+            font-family: $fontmain;
+        }
+    }
+}
+
+.navbar-container:hover {
+    border-bottom: 1px solid rgba(241, 106, 123, .2);
+}
+
+
+// ----------------------------- Slidebar menu
+.slide-bar {
+    @include flexbox;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: rgba(246, 246, 246, .6);
+    box-shadow: 0px 40px 30px rgba(0, 0, 0, .1);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+    transform: translateY(-200%);
+    .slidebar-item {
+        @include flexbox;
+        flex-direction: column;
+        margin: 0 2rem;
+        .slidebar-link {
+            font-size: 1.1rem;
+            font-family: $fontmain;
+            color: rgba(0, 0, 0, .9);
+            padding: .5rem;
+            text-transform: capitalize;
+            transition: .3s;
+        }
+        .slidebar-link:hover {
+            color: rgba(241, 106, 123, .9);
+        }
+        img {
+            cursor: pointer;
+            transition: .3s;
+        }
+        img:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+        }
     }
 }

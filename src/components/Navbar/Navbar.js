@@ -15,7 +15,7 @@ export default class Navbar extends Component {
               <Link to="/"> <img src="./images/logo.png" alt="" /> </Link>
               </div>
               <ul className="navbar-menu">
-                <li className="menu-element">Bras</li>
+                <li className="menu-element" onClick={handleSidebar}>Bras</li>
                 <li className="menu-element">Panties</li>
                 <li className="menu-element">Sleepwear</li>
                 <li className="menu-element">Accessories</li>
@@ -24,7 +24,8 @@ export default class Navbar extends Component {
                 <Link to="/login"><li className="menu-element">Login</li></Link>
               </ul>
               <div className="navbar-cart">
-                <p> <FaCartPlus/> </p>
+                <p className="cart-logo" onClick={handleCart} > <FaCartPlus/> </p>
+                <div className="cart-items"> {cartItems} </div>
               </div>
             </div>
             )          
