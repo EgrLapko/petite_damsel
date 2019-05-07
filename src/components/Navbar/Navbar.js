@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom';
-import {FaShoppingBag, FaSignInAlt} from 'react-icons/fa';
+import {FaShoppingBag} from 'react-icons/fa';
 import {ProductConsumer} from '../../context';
 
 export default class Navbar extends Component {
@@ -20,7 +20,7 @@ export default class Navbar extends Component {
                 <li className="menu-element">Sleepwear</li>
                 <li className="menu-element">Accessories</li>
                 <li className="menu-element">Collections</li>
-                <Link to="/login"><li className="menu-element">{FaSignInAlt}Log in</li></Link>
+                <Link to="/login"><li className="menu-element">Log in</li></Link>
               </ul>
               <div className="navbar-cart">
                 <p className="cart-logo" onClick={handleCart} > <FaShoppingBag/> </p>

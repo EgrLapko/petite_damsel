@@ -13,6 +13,7 @@ $fontmain: 'Thasadith', sans-serif;
 body {
     margin: 0;
     padding: 0;
+    background-color: rgba(246, 246, 246, 1);
 }
 
 
@@ -26,7 +27,7 @@ a {
     @include flexbox;
     justify-content: space-between;
     position: sticky;
-    z-index: 2;
+    z-index: 4;
     width: 100%;
     min-height: 4rem;
     background-color: $mainwhite;
@@ -133,4 +134,24 @@ a {
 
 .bar-visible {
     transform: translateY(0%);
+}
+
+// ----------------------------- Slidecart menu
+.sidecart {
+    @include flexbox;
+    position: fixed;
+    z-index: 2;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 300px;
+    background-color: aqua;
+    transform: translateX(100%);
+    background-color: rgba(251, 251, 251, 1);
+    // box-shadow: -15px 0px 10px rgba(106, 105, 105, .1);
+    transition: all .5s ease-in-out;
+}
+
+.sidecart_visible {
+    transform: translateX(0%);
 }
