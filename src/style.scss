@@ -22,11 +22,40 @@ a {
     color: unset;
 }
 
+button {
+    background-color: unset;
+    border: none;
+}
+
+button:active {
+    border: none;
+}
+
+.btn {
+    font-size: 1.2rem;
+    border: 1px solid rgba(241, 106, 123, .5);
+    border-radius: .7rem;
+    padding: .8rem;
+    cursor: pointer;
+    font-family: $fontmain;
+    transition: .2s;
+  }
+.btn:hover {
+    color: #fff;
+    background-color: rgba(241, 106, 123, .7);
+    border: 1px solid rgba(241, 106, 123, 0); 
+}
+
+.invisible {
+    display: none;
+}
+
 // ----------------------------- Navbar
 .navbar-container {
     @include flexbox;
     justify-content: space-between;
     position: sticky;
+    top: 0;
     z-index: 4;
     width: 100%;
     min-height: 4rem;
@@ -93,6 +122,29 @@ a {
     box-shadow: 0px 0px 20px rgba(106, 105, 105, .1);
 }
 
+@media (max-width: 750px) {
+    .navbar-container {
+        .navbar-menu {
+            .menu-element {
+                font-size: 1.3rem;
+            }
+        }
+    }}
+
+@media (max-width: 500px) {
+    .navbar-container {
+        flex-direction: column;
+        li {
+            line-height: 2.5rem;
+        }
+        .navbar-menu {
+            flex-direction: column;
+            .menu-element {
+                font-size: 1.5rem;
+            }
+        }
+    }}
+
 
 // ----------------------------- Slidebar menu
 .slide-bar {
@@ -136,6 +188,25 @@ a {
     transform: translateY(0%);
 }
 
+@media (max-width: 750px) {
+    .slide-bar {
+        flex-direction: column;
+        .slidebar-item {
+            margin: 0 1rem;
+    }
+}}
+
+
+@media (max-width: 500px) {
+    .slide-bar {
+        flex-wrap: wrap;
+        flex-direction: column;
+        img {
+            display: none;
+        }
+    }
+}
+
 // ----------------------------- Slidecart menu
 .sidecart {
     @include flexbox;
@@ -154,4 +225,248 @@ a {
 
 .sidecart_visible {
     transform: translateX(0%);
+}
+
+
+// ----------------------------- Product Page
+.product-list {
+    @include flexbox;
+    background-color: antiquewhite;
+    min-height: 50vh;
+}
+
+
+
+
+// ----------------------------- Footer
+.footer-container {
+    @include flexbox;
+    justify-content: space-around;
+    min-height: 12rem;
+    flex-wrap: wrap;
+    background-color: rgba(242, 242, 242, .1);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, .05);
+    .account-container {
+        @include flexbox;
+        flex-direction: column;
+        padding: 1rem;
+        .maintag {
+            font-size: 1.2rem;
+            font-family: $fontmain;
+            text-transform: uppercase;
+            color: rgba(105, 105, 105, 1);
+        }
+        .account-item {
+            font-family: $fontmain;
+            margin-top: .8rem;
+            line-height: 1.3rem;
+            font-size: 1.1rem;
+            color: rgba(106, 105, 105, 1);
+            cursor: pointer;
+            transition: .4s;
+            font-weight: 300;
+        }
+        .account-item:hover {
+            transform: translateX(5px);
+        }
+    }
+    .subscribe-container {
+        @include flexbox;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .sub-text {
+            text-transform: uppercase;
+            font-family: $fontmain;
+            font-size: 1.2rem;
+            color: rgba(106, 105, 105, 1);
+            width: 80%;
+            text-align: center;
+        }
+        .form-container {
+            @include flexbox;
+            .form-inline {
+                @include flexbox;
+                input {
+                    padding: 11px;
+                    background-color: #fff;
+                    color: rgba(0, 0, 0, 1);
+                    border: 1px solid #ddd;
+                    font-family: $fontmain;
+                    font-size: 1.1rem;
+                }
+                .submit-btn {
+                    text-decoration: none;
+                    border: 1px solid rgba(255, 255, 255, 0);
+                    padding: .7rem;
+                    border-radius: 5px;
+                    font-family: 'Thasadith', sans-serif;
+                    margin-left: 1rem;
+                    font-size: 1.1rem;
+                    color: rgba(255, 255, 255, 1);
+                    background-color: rgba(241, 106, 123, .7);
+                    transition: .3s;
+                }
+                .submit-btn:hover {
+                    background-color: rgba(255, 255, 255, 1);
+                    color: rgba(0, 0, 0, .9);
+                    border: 1px solid rgba(0, 0, 0, .3);
+                }
+            }
+        }
+    }
+        .about-container {
+            @include flexbox;
+            flex-direction: column;
+            padding: 1rem;
+            .maintag {
+                font-size: 1.2rem;
+                font-family: $fontmain;
+                text-transform: uppercase;
+                color: rgba(105, 105, 105, 1);
+            }
+            .about-item {
+                font-family: $fontmain;
+                margin-top: .8rem;
+                line-height: 1.3rem;
+                font-size: 1.1rem;
+                color: rgba(106, 105, 105, 1);
+                cursor: pointer;
+                transition: .4s;
+                font-weight: 300;
+            }
+            .about-item:hover {
+                transform: translateX(5px);
+            }
+        } 
+}
+
+.under-part {
+    @include flexbox;
+    justify-content: flex-start;
+    width: 100%;
+    border-top: 1px solid rgba(241, 106, 123, .2);
+    background-color: rgba(242, 242, 242, 0.5);
+    .under-text {
+        font-family: $fontmain;
+        margin-left: 1rem;
+        color: rgba(106, 105, 105, 1);
+        font-size: .9rem;
+      }
+}
+
+// ----------------------------- Login
+.login-page {
+    @include flexbox;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    min-height: 80vh;
+    background-image: url('./components/images/login.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    input[type="text"], input[type="password"]  {
+        border: none;
+        border-bottom: 1px solid rgba(241, 106, 123, .5);
+        background: transparent;
+        font-family: 'Thasadith', sans-serif;
+        outline: none;
+        height: 35px;
+        font-weight: 600;
+        color: black;
+        font-size: 1.1rem;
+    }
+    ::placeholder {
+        color: rgba(106, 105, 105, .5);
+        font-size: 1.1rem;
+        font-weight: 200;
+      }
+    form {
+        @include flexbox;
+        flex-direction: column;
+        input {
+            width: 60%;
+            margin-bottom: .7rem;
+        }
+    }
+    p {
+        font-family: $fontmain;
+        font-size: 1.1rem;
+        margin: 0;
+        padding: 0;
+        margin-top: .7rem;
+        color: #000;
+        text-align: center;
+    }
+    h2 {
+        width: 100%; 
+        font-family: $fontmain;
+        font-weight: 300;
+        margin-top: .7rem;
+        text-align: center;
+    }
+    .have-account {
+        @include flexbox;
+        flex-direction: column;
+        width: 30rem;
+        height: 35rem;
+        padding: 1rem;
+        background-color: rgba(250, 250, 250, .9);
+        transition: .4s ease-in-out;
+        span a {
+            font-family: $fontmain;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: .3rem;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 1);
+        }
+        
+    }
+    .have-account:hover {
+        background-color: rgba(250, 250, 250, 1);
+    }
+    .register-part{
+        @include flexbox;
+        flex-direction: column;
+        width: 30rem;
+        height: 35rem;
+        padding: 1rem;
+        background-color: rgba(250, 250, 250, .95);
+        transition: .4s ease-in-out;
+        .register-part-inner {
+            display: none;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            .terms {
+                span {
+                    a {
+                        font-weight: 600;
+                        text-decoration: none;
+                        color: rgba(0, 0, 0, 1);
+                    }
+                } 
+            }
+        }
+        @keyframes appearing {
+            0% {
+              display: visible;
+              opacity: 0;
+              transform: scale(0.99);
+            }
+            100% {
+              opacity: 1;
+              transform: scale(1);
+            }
+          }
+        .register-visible {
+            display: flex;
+            animation: appearing .5s;
+        }
+
+      }
+    .register-part:hover {
+        background-color: rgba(250, 250, 250, 1);
+    }
 }

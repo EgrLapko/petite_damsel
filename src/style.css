@@ -7,6 +7,32 @@ a {
   text-decoration: none;
   color: unset; }
 
+button {
+  background-color: unset;
+  border: none; }
+
+button:active {
+  border: none; }
+
+.btn {
+  font-size: 1.2rem;
+  border: 1px solid rgba(241, 106, 123, 0.5);
+  border-radius: .7rem;
+  padding: .8rem;
+  cursor: pointer;
+  font-family: "Thasadith", sans-serif;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+
+.btn:hover {
+  color: #fff;
+  background-color: rgba(241, 106, 123, 0.7);
+  border: 1px solid rgba(241, 106, 123, 0); }
+
+.invisible {
+  display: none; }
+
 .navbar-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,6 +48,7 @@ a {
   justify-content: space-between;
   position: -webkit-sticky;
   position: sticky;
+  top: 0;
   z-index: 4;
   width: 100%;
   min-height: 4rem;
@@ -116,6 +143,26 @@ a {
   -webkit-box-shadow: 0px 0px 20px rgba(106, 105, 105, 0.1);
   box-shadow: 0px 0px 20px rgba(106, 105, 105, 0.1); }
 
+@media (max-width: 750px) {
+  .navbar-container .navbar-menu .menu-element {
+    font-size: 1.3rem; } }
+
+@media (max-width: 500px) {
+  .navbar-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .navbar-container li {
+      line-height: 2.5rem; }
+    .navbar-container .navbar-menu {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .navbar-container .navbar-menu .menu-element {
+        font-size: 1.5rem; } }
+
 .slide-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,6 +228,26 @@ a {
   -ms-transform: translateY(0%);
   transform: translateY(0%); }
 
+@media (max-width: 750px) {
+  .slide-bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .slide-bar .slidebar-item {
+      margin: 0 1rem; } }
+
+@media (max-width: 500px) {
+  .slide-bar {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .slide-bar img {
+      display: none; } }
+
 .sidecart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,3 +277,366 @@ a {
   -webkit-transform: translateX(0%);
   -ms-transform: translateX(0%);
   transform: translateX(0%); }
+
+.product-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: antiquewhite;
+  min-height: 50vh; }
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  min-height: 12rem;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: rgba(242, 242, 242, 0.1);
+  -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.05); }
+  .footer-container .account-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 1rem; }
+    .footer-container .account-container .maintag {
+      font-size: 1.2rem;
+      font-family: "Thasadith", sans-serif;
+      text-transform: uppercase;
+      color: dimgray; }
+    .footer-container .account-container .account-item {
+      font-family: "Thasadith", sans-serif;
+      margin-top: .8rem;
+      line-height: 1.3rem;
+      font-size: 1.1rem;
+      color: #6a6969;
+      cursor: pointer;
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+      font-weight: 300; }
+    .footer-container .account-container .account-item:hover {
+      -webkit-transform: translateX(5px);
+      -ms-transform: translateX(5px);
+      transform: translateX(5px); }
+  .footer-container .subscribe-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .footer-container .subscribe-container .sub-text {
+      text-transform: uppercase;
+      font-family: "Thasadith", sans-serif;
+      font-size: 1.2rem;
+      color: #6a6969;
+      width: 80%;
+      text-align: center; }
+    .footer-container .subscribe-container .form-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .footer-container .subscribe-container .form-container .form-inline {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .footer-container .subscribe-container .form-container .form-inline input {
+          padding: 11px;
+          background-color: #fff;
+          color: black;
+          border: 1px solid #ddd;
+          font-family: "Thasadith", sans-serif;
+          font-size: 1.1rem; }
+        .footer-container .subscribe-container .form-container .form-inline .submit-btn {
+          text-decoration: none;
+          border: 1px solid rgba(255, 255, 255, 0);
+          padding: .7rem;
+          border-radius: 5px;
+          font-family: 'Thasadith', sans-serif;
+          margin-left: 1rem;
+          font-size: 1.1rem;
+          color: white;
+          background-color: rgba(241, 106, 123, 0.7);
+          -webkit-transition: .3s;
+          -o-transition: .3s;
+          transition: .3s; }
+        .footer-container .subscribe-container .form-container .form-inline .submit-btn:hover {
+          background-color: white;
+          color: rgba(0, 0, 0, 0.9);
+          border: 1px solid rgba(0, 0, 0, 0.3); }
+  .footer-container .about-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 1rem; }
+    .footer-container .about-container .maintag {
+      font-size: 1.2rem;
+      font-family: "Thasadith", sans-serif;
+      text-transform: uppercase;
+      color: dimgray; }
+    .footer-container .about-container .about-item {
+      font-family: "Thasadith", sans-serif;
+      margin-top: .8rem;
+      line-height: 1.3rem;
+      font-size: 1.1rem;
+      color: #6a6969;
+      cursor: pointer;
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+      font-weight: 300; }
+    .footer-container .about-container .about-item:hover {
+      -webkit-transform: translateX(5px);
+      -ms-transform: translateX(5px);
+      transform: translateX(5px); }
+
+.under-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 100%;
+  border-top: 1px solid rgba(241, 106, 123, 0.2);
+  background-color: rgba(242, 242, 242, 0.5); }
+  .under-part .under-text {
+    font-family: "Thasadith", sans-serif;
+    margin-left: 1rem;
+    color: #6a6969;
+    font-size: .9rem; }
+
+.login-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  min-height: 80vh;
+  background-image: url("./components/images/login.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  .login-page input[type="text"], .login-page input[type="password"] {
+    border: none;
+    border-bottom: 1px solid rgba(241, 106, 123, 0.5);
+    background: transparent;
+    font-family: 'Thasadith', sans-serif;
+    outline: none;
+    height: 35px;
+    font-weight: 600;
+    color: black;
+    font-size: 1.1rem; }
+  .login-page ::-webkit-input-placeholder {
+    color: rgba(106, 105, 105, 0.5);
+    font-size: 1.1rem;
+    font-weight: 200; }
+  .login-page :-ms-input-placeholder {
+    color: rgba(106, 105, 105, 0.5);
+    font-size: 1.1rem;
+    font-weight: 200; }
+  .login-page ::-ms-input-placeholder {
+    color: rgba(106, 105, 105, 0.5);
+    font-size: 1.1rem;
+    font-weight: 200; }
+  .login-page ::placeholder {
+    color: rgba(106, 105, 105, 0.5);
+    font-size: 1.1rem;
+    font-weight: 200; }
+  .login-page form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .login-page form input {
+      width: 60%;
+      margin-bottom: .7rem; }
+  .login-page p {
+    font-family: "Thasadith", sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    margin-top: .7rem;
+    color: #000;
+    text-align: center; }
+  .login-page h2 {
+    width: 100%;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 300;
+    margin-top: .7rem;
+    text-align: center; }
+  .login-page .have-account {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 30rem;
+    height: 35rem;
+    padding: 1rem;
+    background-color: rgba(250, 250, 250, 0.9);
+    -webkit-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    transition: .4s ease-in-out; }
+    .login-page .have-account span a {
+      font-family: "Thasadith", sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-top: .3rem;
+      text-decoration: none;
+      color: black; }
+  .login-page .have-account:hover {
+    background-color: #fafafa; }
+  .login-page .register-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 30rem;
+    height: 35rem;
+    padding: 1rem;
+    background-color: rgba(250, 250, 250, 0.95);
+    -webkit-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    transition: .4s ease-in-out; }
+    .login-page .register-part .register-part-inner {
+      display: none;
+      text-align: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .login-page .register-part .register-part-inner .terms span a {
+        font-weight: 600;
+        text-decoration: none;
+        color: black; }
+
+@-webkit-keyframes appearing {
+  0% {
+    display: visible;
+    opacity: 0;
+    -webkit-transform: scale(0.99);
+    transform: scale(0.99); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes appearing {
+  0% {
+    display: visible;
+    opacity: 0;
+    -webkit-transform: scale(0.99);
+    transform: scale(0.99); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+    .login-page .register-part .register-visible {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-animation: appearing .5s;
+      animation: appearing .5s; }
+  .login-page .register-part:hover {
+    background-color: #fafafa; }

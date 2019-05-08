@@ -18,7 +18,9 @@ export default class Routes extends Component {
         <Route path = '/login' component={LoginPage} />
         <Route path = '/about' component={AboutPage} />
         <Route path = '/contact' component={ContactPage} />
-        <Route path = '/products/:category/:type' exact component={ProductsPage} />     
+        <Route path = '/products/:category/:type' exact component={ProductsPage} />
+        
+
         <Route path = '/products/:category/:type/:id' component={SingleProductPage} />
         <Route path = '/my_cart' component={CartPage} />
         <Route component={DefaultPage} />
