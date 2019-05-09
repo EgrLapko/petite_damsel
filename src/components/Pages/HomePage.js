@@ -14,8 +14,8 @@ export default class MainPage extends Component {
         <div className="trends-container">
           <Trends 
             url = './images/homepage_ads/trends1.jpg'
-            title = 'new intimate'
-            description = 'our new special collection'
+            title = 'segreto'
+            description = 'take a look at our new special collection'
             btnName = 'discover'
             link = 'products/collections/segreto'
           />
@@ -27,7 +27,6 @@ export default class MainPage extends Component {
             btnName = 'discover'
             link = 'products/collections/swimwear'
           />
-
         </div>
       </React.Fragment>
     )

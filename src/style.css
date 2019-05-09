@@ -667,3 +667,90 @@ button:focus {
         color: #373737; }
   .login-page .register-part:hover {
     background-color: #fafafa; }
+
+.trends-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem; }
+  .trends-container .trends-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 40rem;
+    height: 40rem;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 2%;
+    margin: 0 1.5rem;
+    -webkit-box-shadow: 0px 0px 50px rgba(105, 105, 105, 0.3);
+    box-shadow: 0px 0px 50px rgba(105, 105, 105, 0.3); }
+    .trends-container .trends-card .trends-text-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out; }
+      .trends-container .trends-card .trends-text-wrapper .trends-title, .trends-container .trends-card .trends-text-wrapper .trends-description {
+        text-align: center;
+        font-family: "Thasadith", sans-serif;
+        font-size: 5rem;
+        font-weight: 200;
+        margin: 0;
+        color: rgba(250, 250, 250, 0.9);
+        cursor: default; }
+      .trends-container .trends-card .trends-text-wrapper .trends-description {
+        font-size: 2rem;
+        cursor: default; }
+      .trends-container .trends-card .trends-text-wrapper .pink-btn {
+        margin-top: 3rem;
+        background-color: #f16a7b;
+        color: rgba(246, 246, 246, 0.8); }
+      .trends-container .trends-card .trends-text-wrapper .pink-btn:hover {
+        -webkit-box-shadow: 0px 0px 20px rgba(105, 105, 105, 0.6);
+        box-shadow: 0px 0px 20px rgba(105, 105, 105, 0.6); }
+    .trends-container .trends-card .trends-text-wrapper:hover {
+      background-color: rgba(55, 55, 55, 0.3); }
+
+@media (max-width: 900px) {
+  .trends-container .trends-card {
+    width: 30rem;
+    height: 30rem; } }
+
+@media (max-width: 750px) {
+  .trends-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .trends-container .trends-card {
+      width: 100%;
+      height: 30rem;
+      border-radius: 0%; } }
