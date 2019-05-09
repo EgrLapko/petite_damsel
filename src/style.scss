@@ -27,8 +27,8 @@ button {
     border: none;
 }
 
-button:active {
-    border: none;
+button:focus{
+    outline: none;
 }
 
 .btn {
@@ -61,6 +61,7 @@ button:active {
     min-height: 4rem;
     background-color: $mainwhite;
     transition: .3s;
+    box-shadow: 0px 0px 20px rgba(106, 105, 105, .1);
     .navbar-logo{
         @include flexbox;
         width: 100px;
@@ -118,10 +119,6 @@ button:active {
     }
 }
 
-.navbar-container:hover {
-    box-shadow: 0px 0px 20px rgba(106, 105, 105, .1);
-}
-
 @media (max-width: 750px) {
     .navbar-container {
         .navbar-menu {
@@ -149,6 +146,7 @@ button:active {
 // ----------------------------- Slidebar menu
 .slide-bar {
     @include flexbox;
+    visibility: hidden;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -158,7 +156,7 @@ button:active {
     width: 100%;
     z-index: 1;
     transition: all .5s ease-in-out;
-    transform: translateY(-200%);
+    transform: translateY(-120%);
     .slidebar-item {
         @include flexbox;
         flex-direction: column;
@@ -186,6 +184,7 @@ button:active {
 
 .bar-visible {
     transform: translateY(0%);
+    visibility: visible;
 }
 
 @media (max-width: 750px) {
@@ -294,22 +293,9 @@ button:active {
                     font-family: $fontmain;
                     font-size: 1.1rem;
                 }
-                .submit-btn {
-                    text-decoration: none;
-                    border: 1px solid rgba(255, 255, 255, 0);
+                .submit {
                     padding: .7rem;
-                    border-radius: 5px;
-                    font-family: 'Thasadith', sans-serif;
                     margin-left: 1rem;
-                    font-size: 1.1rem;
-                    color: rgba(255, 255, 255, 1);
-                    background-color: rgba(241, 106, 123, .7);
-                    transition: .3s;
-                }
-                .submit-btn:hover {
-                    background-color: rgba(255, 255, 255, 1);
-                    color: rgba(0, 0, 0, .9);
-                    border: 1px solid rgba(0, 0, 0, .3);
                 }
             }
         }
@@ -372,7 +358,7 @@ button:active {
         font-family: 'Thasadith', sans-serif;
         outline: none;
         height: 35px;
-        font-weight: 600;
+        font-weight: 300;
         color: black;
         font-size: 1.1rem;
     }
@@ -384,6 +370,7 @@ button:active {
     form {
         @include flexbox;
         flex-direction: column;
+        width: 100%;
         input {
             width: 60%;
             margin-bottom: .7rem;
@@ -421,6 +408,11 @@ button:active {
             text-decoration: none;
             color: rgba(0, 0, 0, 1);
         }
+        .login {
+            margin-top: 1rem;
+            width: 6rem;
+            margin-top: 3rem;
+        }
         
     }
     .have-account:hover {
@@ -435,11 +427,13 @@ button:active {
         background-color: rgba(250, 250, 250, .95);
         transition: .4s ease-in-out;
         .register-part-inner {
+            width: 100%;
             display: none;
             text-align: center;
             flex-direction: column;
             justify-content: center;
             .terms {
+                font-family: $fontmain;
                 span {
                     a {
                         font-weight: 600;
@@ -461,8 +455,28 @@ button:active {
             }
           }
         .register-visible {
-            display: flex;
+            @include flexbox;
             animation: appearing .5s;
+        }
+        .register {
+            margin-top: 1rem;
+        }
+        .register-medias {
+            @include flexbox;
+            width: 70%;
+            padding: 0;
+            margin-top: 1.3rem;
+            justify-content: space-around;
+            list-style-type: none;
+            .register-icon {
+                color: rgba(105, 105, 105, 1);
+                font-size: 2rem;
+                cursor: pointer;
+                transition: .2s;
+            }
+            .register-icon:hover {
+                color: rgba(55, 55, 55, 1);
+            }
         }
 
       }

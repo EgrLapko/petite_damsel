@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="form-container">
                 <form className="form-inline" action="">
                   <input type="email" id="email" placeholder="Enter email" name="email"/>
-                  <a className="submit-btn" href='/'>Submit</a>
+                  <a className="btn submit" href='/'>Submit</a>
                 </form>
             </div>       
           </div>

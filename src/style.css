@@ -11,8 +11,8 @@ button {
   background-color: unset;
   border: none; }
 
-button:active {
-  border: none; }
+button:focus {
+  outline: none; }
 
 .btn {
   font-size: 1.2rem;
@@ -55,7 +55,9 @@ button:active {
   background-color: #f6f6f6;
   -webkit-transition: .3s;
   -o-transition: .3s;
-  transition: .3s; }
+  transition: .3s;
+  -webkit-box-shadow: 0px 0px 20px rgba(106, 105, 105, 0.1);
+  box-shadow: 0px 0px 20px rgba(106, 105, 105, 0.1); }
   .navbar-container .navbar-logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -139,10 +141,6 @@ button:active {
       border-radius: 50%;
       font-family: "Thasadith", sans-serif; }
 
-.navbar-container:hover {
-  -webkit-box-shadow: 0px 0px 20px rgba(106, 105, 105, 0.1);
-  box-shadow: 0px 0px 20px rgba(106, 105, 105, 0.1); }
-
 @media (max-width: 750px) {
   .navbar-container .navbar-menu .menu-element {
     font-size: 1.3rem; } }
@@ -173,6 +171,7 @@ button:active {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  visibility: hidden;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -185,9 +184,9 @@ button:active {
   -webkit-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  -webkit-transform: translateY(-200%);
-  -ms-transform: translateY(-200%);
-  transform: translateY(-200%); }
+  -webkit-transform: translateY(-120%);
+  -ms-transform: translateY(-120%);
+  transform: translateY(-120%); }
   .slide-bar .slidebar-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -226,7 +225,8 @@ button:active {
 .bar-visible {
   -webkit-transform: translateY(0%);
   -ms-transform: translateY(0%);
-  transform: translateY(0%); }
+  transform: translateY(0%);
+  visibility: visible; }
 
 @media (max-width: 750px) {
   .slide-bar {
@@ -394,23 +394,9 @@ button:active {
           border: 1px solid #ddd;
           font-family: "Thasadith", sans-serif;
           font-size: 1.1rem; }
-        .footer-container .subscribe-container .form-container .form-inline .submit-btn {
-          text-decoration: none;
-          border: 1px solid rgba(255, 255, 255, 0);
+        .footer-container .subscribe-container .form-container .form-inline .submit {
           padding: .7rem;
-          border-radius: 5px;
-          font-family: 'Thasadith', sans-serif;
-          margin-left: 1rem;
-          font-size: 1.1rem;
-          color: white;
-          background-color: rgba(241, 106, 123, 0.7);
-          -webkit-transition: .3s;
-          -o-transition: .3s;
-          transition: .3s; }
-        .footer-container .subscribe-container .form-container .form-inline .submit-btn:hover {
-          background-color: white;
-          color: rgba(0, 0, 0, 0.9);
-          border: 1px solid rgba(0, 0, 0, 0.3); }
+          margin-left: 1rem; }
   .footer-container .about-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -495,7 +481,7 @@ button:active {
     font-family: 'Thasadith', sans-serif;
     outline: none;
     height: 35px;
-    font-weight: 600;
+    font-weight: 300;
     color: black;
     font-size: 1.1rem; }
   .login-page ::-webkit-input-placeholder {
@@ -527,7 +513,8 @@ button:active {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 100%; }
     .login-page form input {
       width: 60%;
       margin-bottom: .7rem; }
@@ -573,6 +560,10 @@ button:active {
       margin-top: .3rem;
       text-decoration: none;
       color: black; }
+    .login-page .have-account .login {
+      margin-top: 1rem;
+      width: 6rem;
+      margin-top: 3rem; }
   .login-page .have-account:hover {
     background-color: #fafafa; }
   .login-page .register-part {
@@ -597,6 +588,7 @@ button:active {
     -o-transition: .4s ease-in-out;
     transition: .4s ease-in-out; }
     .login-page .register-part .register-part-inner {
+      width: 100%;
       display: none;
       text-align: center;
       -webkit-box-orient: vertical;
@@ -606,10 +598,12 @@ button:active {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; }
-      .login-page .register-part .register-part-inner .terms span a {
-        font-weight: 600;
-        text-decoration: none;
-        color: black; }
+      .login-page .register-part .register-part-inner .terms {
+        font-family: "Thasadith", sans-serif; }
+        .login-page .register-part .register-part-inner .terms span a {
+          font-weight: 600;
+          text-decoration: none;
+          color: black; }
 
 @-webkit-keyframes appearing {
   0% {
@@ -636,7 +630,40 @@ button:active {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
       -webkit-animation: appearing .5s;
       animation: appearing .5s; }
+    .login-page .register-part .register {
+      margin-top: 1rem; }
+    .login-page .register-part .register-medias {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 70%;
+      padding: 0;
+      margin-top: 1.3rem;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      list-style-type: none; }
+      .login-page .register-part .register-medias .register-icon {
+        color: dimgray;
+        font-size: 2rem;
+        cursor: pointer;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s; }
+      .login-page .register-part .register-medias .register-icon:hover {
+        color: #373737; }
   .login-page .register-part:hover {
     background-color: #fafafa; }

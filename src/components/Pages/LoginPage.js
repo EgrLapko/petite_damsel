@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {ProductConsumer} from '../../context';
-
 export default class Login extends Component {
   render() {
     return (
@@ -18,7 +17,7 @@ export default class Login extends Component {
                           <input type="password" name="" placeholder="Enter your password" />
                       </form>
                       <span><a href="/">Forgot Password?</a></span> 
-                      <a className="reglog-btn" href="/">Log In</a>
+                      <button className="btn login" href="/">Log In</button>
                 </div>    
                 <div className="register-part">
                   <button className={"btn " + (registerOpen ? "invisible" : null )} onClick={handleRegister}>New User?</button>
@@ -32,15 +31,15 @@ export default class Login extends Component {
                         <label htmlFor="psw-repeat"><p>Repeat Password:</p></label>
                         <input type="password" placeholder="Repeat Password" name="psw-repeat" required/>
                       </form>  
-                      <button className="terms">By creating an account you agree to our <span><a href="/">Terms & Privacy</a></span></button>
-                      <a className="btn" href="/">Register</a>    
-                      <h2 id="social-medias-register">Or enter using your social medias:</h2>
-                      <div className="register-medias">
-                        <i id="face-reg" className="fab fa-facebook-square"></i>
-                        <i id="google-reg" className="fab fa-google"></i>
-                        <i id="telegram-reg" className="fab fa-telegram-plane"></i>
-                        <i id="weixin-reg" className="fab fa-weixin"></i>
-                      </div>  
+                      <p className="terms">By creating an account you agree to our <span><a href="/">Terms & Privacy</a></span></p>
+                      <button className="btn register" href="/">Register</button>    
+                      <p id="social-medias-register">Or enter using your social medias:</p>
+                      <ul className="register-medias">
+                        <li className="register-icon"><i className="fab fa-facebook-square"></i></li>
+                        <li className="register-icon"><i className="fab fa-twitter"></i></li>
+                        <li className="register-icon"><i className="fab fa-google"></i></li>
+                        <li className="register-icon"><i className="fas fa-envelope-square"></i></li>
+                      </ul>  
                     </div>                                                   
                 </div>
             </div>
