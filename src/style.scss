@@ -46,6 +46,21 @@ button:focus{
     border: 1px solid rgba(241, 106, 123, 0); 
 }
 
+.pink-btn {
+    margin-top: 3rem;
+    background-color: rgba(241, 106, 123, .7);
+    color: rgba(246, 246, 246, .8);
+}
+.pink-btn:hover {
+    background-color: rgba(241, 106, 123, 1);
+}
+
+.white-btn {
+    border: 1px solid rgba(242, 242, 242, 1);
+    color: rgba(246, 246, 246, 1);
+    margin-top: 1rem;
+}
+
 .invisible {
     display: none;
 }
@@ -490,7 +505,7 @@ button:focus{
 .trends-container {
     @include flexbox;
     width: 100%;
-    margin-top: 2rem;
+    margin: 3rem 0;
     .trends-card {
         @include flexbox;
         width: 40rem;
@@ -520,14 +535,6 @@ button:focus{
                 font-size: 2rem;
                 cursor: default;
             }
-            .pink-btn {
-                margin-top: 3rem;
-                background-color: rgba(241, 106, 123, 1);
-                color: rgba(246, 246, 246, .8);
-            }
-            .pink-btn:hover {
-                box-shadow: 0px 0px 20px rgba(105, 105, 105, .6);
-            }
         }
         .trends-text-wrapper:hover {
             background-color: rgba(55, 55, 55, .3);
@@ -544,7 +551,7 @@ button:focus{
     }  
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
     .trends-container {
         flex-direction: column;
         .trends-card {
@@ -554,3 +561,192 @@ button:focus{
         }
     }  
 }
+
+
+// ----------------------------- Parallax Banner
+
+.parallax-content-section {
+    @include flexbox;
+    flex-direction: column;
+    height: 20rem;
+    transition: .4s ease-in-out;
+    .parallax-title {
+        margin: 0;
+        font-size: 4rem;
+        font-family: $fontmain;
+        color: rgba(246, 246, 246, 1);
+        font-weight: 200;
+        cursor: default;
+    }
+    .parallax-description {
+        font-size: 1.5rem;
+        font-family: $fontmain;
+        margin: 0;
+        opacity: 1;
+        margin-top: 1rem;
+        color: rgba(246, 246, 246, 1);
+        cursor: default;
+        transition: .3s;
+    }
+    .btn-parallax {
+        margin-top: 2rem;
+    }
+}
+.parallax-content-section:hover {
+    background-color: rgba(105, 105, 105, .4);
+}
+
+@media (max-width: 800px) {
+    .parallax-content-section {
+        .parallax-title {
+            padding: 1rem;
+            text-align: center; 
+            font-size: 3rem;      
+        }  
+        .parallax-description {
+            margin: 0;
+        }
+        .btn-parallax {
+            margin-top: 1rem;
+        }
+    }  
+}
+
+// ----------------------------- Main title
+.main-title {
+    @include flexbox;
+    flex-direction: column;
+    margin: 2rem 0;
+    text-align: center;
+    .title-main-text, .title-main-desc {
+        font-size: 4rem;
+        font-family: $fontmain;
+        color: rgba(105, 105, 105, 1);
+        font-weight: 200;
+        margin: 0;
+        cursor: default;
+    }
+    .title-main-desc {
+        font-size: 2rem;
+        text-transform: lowercase;
+        letter-spacing: 3px;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-title {
+        padding: 1rem;
+    }
+}
+
+// ----------------------------- Selections
+.selections-container {
+    @include flexbox;
+    .sel-card {
+        overflow: hidden;
+        width: 25rem;
+        height: 35rem; 
+        border-radius: 3%;
+        margin: 0 1.5rem;
+        .sel-image {
+            @include flexbox;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            .sel-text-wrapper {
+                @include flexbox;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                transition: .3s ease-in-out;
+                .sel-description, .sel-title {
+                    font-size: 1.5rem;
+                    font-family: $fontmain;
+                    color: rgba(246, 246, 246, 1);
+                    font-weight: 200;
+                    margin: 0;
+                    opacity: 0;
+                    cursor: default;
+                    transition: .3s ease-in-out;
+                }
+                .sel-title {
+                    font-size: 2.5rem;
+                    opacity: 1;
+                }
+                .btn {
+                    opacity: 0;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+    .sel-card:hover {
+        .sel-image {
+            transform: scale(1.08);
+            .sel-text-wrapper {
+                background-color: rgba(105, 105, 105, .5);
+                .sel-description {
+                    opacity: 1;
+                }
+                .btn {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .selections-container {
+        flex-direction: row;
+        .sel-card {
+            overflow: hidden;
+            width: 20rem;
+            height: 30rem; 
+            border-radius: 0%;
+            margin: 0;
+        }       
+    }
+}
+
+@media (max-width: 800px) {
+    .selections-container {
+        flex-direction: column;
+        .sel-card {
+            overflow: hidden;
+            width: 100%;
+            height: 25rem; 
+            border-radius: 0%;
+            margin: 0;
+            .sel-image {
+                .sel-text-wrapper {
+                    background-color: rgba(105, 105, 105, .3);
+                    .sel-description, .sel-title {
+                        opacity: 1;
+                        cursor: default;
+                    }
+                    .btn {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .sel-card:hover {
+            .sel-image {
+                transform: scale(1);
+                .sel-text-wrapper {
+                    background-color: rgba(105, 105, 105, .3);
+                    .sel-description {
+                        opacity: 1;
+                    }
+                    .btn {
+                        opacity: 1;
+                    }
+                }
+            }
+        } 
+}  }
+
+

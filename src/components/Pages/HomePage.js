@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 import Trends from '../HomepageComp/Trends';
-
+import { Parallax } from 'react-parallax';
+import Title from '../Title/Title';
+import Selection from '../HomepageComp/Selection';
 export default class MainPage extends Component {
 
   componentDidMount() {
@@ -22,12 +25,55 @@ export default class MainPage extends Component {
 
           <Trends 
             url = './images/homepage_ads/trends2.jpg'
-            title = 'feel the summer!'
-            description = 'discover our new swimwear collection'
+            title = 'summer sale!'
+            description = 'up to 60% discount on featured items'
             btnName = 'discover'
             link = 'products/collections/swimwear'
           />
         </div>
+
+        <Parallax
+          blur={0}
+          bgImage={require('../images/parallax/parallax-banner1.jpg')}
+          bgImageAlt="parallax-1"
+          strength={850}
+          contentClassName="parallax-background"
+        >   
+          <div className="parallax-content-section">
+            <h2 className="parallax-title">swim season 2019</h2>
+            <p className="parallax-description">Check out our brand new swimwear collection</p>
+            <Link to="/gallery/images_compart"><button className="btn pink-btn btn-parallax">Browse Gallery</button></Link>
+          </div>             
+        </Parallax>
+
+        <Title 
+          title = "meet Segreto"
+          description= "Our brand new, highly intimate lingerie collection"
+        />
+
+        <div className = "selections-container">
+          <Selection 
+            url = "./images/selections/sel1.jpg"
+            title = "segreto bridal"
+            description = "for something special"
+            btnName = "browse"
+          />
+          <Selection 
+            url = "./images/selections/sel2.jpg"
+            title = "segreto lingerie"
+            description = "for something personal"
+            btnName = "browse"
+          />
+          <Selection 
+            url = "./images/selections/sel3.jpg"
+            title = "segreto hosiery"
+            description = "for something tender"
+            btnName = "browse"
+          />
+        </div>
+
+        
+
       </React.Fragment>
     )
   }
