@@ -9,7 +9,10 @@ const ProductContext = React.createContext();
 class ProductProvider extends Component {
 
     state = {
-        sidebarOpen: false,
+        sidebarOpenBra: false,
+        sidebarOpenPanty: false,
+        sidebarOpenSleepwear: false,
+        sidebarOpenAccs: false,
         cartOpen: false,
         cartItems: 0,
         links: linkData,
@@ -18,8 +21,51 @@ class ProductProvider extends Component {
     }
 
 // ---------- Open Sidebar menu
-    handleSidebar = () => {
-        this.setState({sidebarOpen: ! this.state.sidebarOpen })
+    handleSidebarBra = () => {
+        this.setState({
+            sidebarOpenBra: ! this.state.sidebarOpenBra,
+            sidebarOpenPanty: false,
+            sidebarOpenSleepwear: false,
+            sidebarOpenAccs: false
+        })
+
+    }
+
+    handleSidebarPanty = () => {
+        this.setState({
+            sidebarOpenPanty: ! this.state.sidebarOpenPanty,
+            sidebarOpenBra: false,
+            sidebarOpenSleepwear: false,
+            sidebarOpenAccs: false,
+         })
+    }
+
+    closeMenu = () => {
+        this.setState({
+            sidebarOpenBra: false,
+            sidebarOpenPanty: false,
+            sidebarOpenSleepwear: false,
+            sidebarOpenAccs: false,
+            sidebarOpenCol: false
+        })
+    }
+
+    handleSidebarSleepwear = () => {
+        this.setState({
+            sidebarOpenSleepwear: ! this.state.sidebarOpenSleepwear,
+            sidebarOpenPanty: false,
+            sidebarOpenBra: false, 
+            sidebarOpenAccs: false,
+         })
+    }
+
+    handleSidebarAccs = () => {
+        this.setState({
+            sidebarOpenAccs: ! this.state.sidebarOpenAccs,
+            sidebarOpenPanty: false,
+            asidebarOpenBra: false, 
+            sidebarOpenSleepwear: false
+         })
     }
 
 // ---------- Open sidecart menu
@@ -50,7 +96,10 @@ class ProductProvider extends Component {
             <ProductContext.Provider value={{
                 // Passing all states with spread operator
                 ...this.state,
-                handleSidebar: this.handleSidebar,
+                handleSidebarBra: this.handleSidebarBra,
+                handleSidebarPanty: this.handleSidebarPanty,
+                handleSidebarSleepwear: this.handleSidebarSleepwear,
+                handleSidebarAccs: this.handleSidebarAccs,
                 handleCart: this.handleCart,
                 closeCart: this.closeCart,
                 openCart: this.openCart,

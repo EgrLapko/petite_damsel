@@ -8,17 +8,17 @@ export default class Navbar extends Component {
     return (
       <ProductConsumer>
         {value => {
-          const {cartItems, handleSidebar, handleCart} = value;
+          const {cartItems, handleSidebarBra, handleSidebarPanty, handleSidebarSleepwear, handleSidebarAccs, handleCart} = value;
           return (
             <div className="navbar-container">
               <div className="navbar-logo">
               <Link to="/"> <img src="./images/logo.png" alt="" /> </Link>
               </div>
               <ul className="navbar-menu">
-                <li className="menu-element" onClick={handleSidebar}>Bras</li>
-                <li className="menu-element">Panties</li>
-                <li className="menu-element">Sleepwear</li>
-                <li className="menu-element">Accessories</li>
+                <li className="menu-element" onClick={handleSidebarBra}>Bras</li>
+                <li className="menu-element" onClick={handleSidebarPanty}>Panties</li>
+                <li className="menu-element" onClick={handleSidebarSleepwear} >Sleepwear</li>
+                <li className="menu-element" onClick={handleSidebarAccs} >Accessories</li>
                 <li className="menu-element">Collections</li>
                 <Link to="/login"><li className="menu-element">Log in</li></Link>
               </ul>
