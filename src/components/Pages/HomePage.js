@@ -5,6 +5,7 @@ import Trends from '../HomepageComp/Trends';
 import { Parallax } from 'react-parallax';
 import Title from '../Title/Title';
 import Selection from '../HomepageComp/Selection';
+import InstagramSection from '../InstagramSection/InstagramSection';
 export default class MainPage extends Component {
 
   componentDidMount() {
@@ -36,7 +37,7 @@ export default class MainPage extends Component {
           blur={0}
           bgImage={require('../images/parallax/parallax-banner1.jpg')}
           bgImageAlt="parallax-1"
-          strength={850}
+          strength={700}
           contentClassName="parallax-background"
         >   
           <div className="parallax-content-section">
@@ -72,7 +73,26 @@ export default class MainPage extends Component {
           />
         </div>
 
-        
+        <Parallax
+          blur={0}
+          bgImage={require('../images/parallax/parallax-banner2.png')}
+          bgImageAlt="parallax-1"
+          strength={650}
+          contentClassName="parallax-background"
+        >   
+          <div className="parallax-content-section">
+            <h2 className="parallax-title">we`re in instagram!</h2>
+            <p className="parallax-description">come find us and become 
+            a part of our cozy community</p>
+            <button className="btn pink-btn btn-parallax-2"><i className="fab fa-instagram"></i></button>
+          </div>             
+        </Parallax>
+
+        <Title 
+          title = "show us your #pd look"
+          description= "share your look with us, add #iampd to your image"
+        />
+        <InstagramSection />
 
       </React.Fragment>
     )

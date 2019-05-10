@@ -17,7 +17,8 @@ class ProductProvider extends Component {
         cartItems: 0,
         links: linkData,
         cart: [],
-        registerOpen: false
+        registerOpen: false,
+        hamburgerOpen: false
     }
 
 // ---------- Open Sidebar menu
@@ -68,6 +69,11 @@ class ProductProvider extends Component {
          })
     }
 
+// ---------- Open hamburger menu
+    handleHamburger = () => {
+        this.setState({hamburgerOpen: ! this.state.hamburgerOpen })
+    }
+
 // ---------- Open sidecart menu
     handleCart = () => {
         this.setState({cartOpen: ! this.state.cartOpen })
@@ -103,7 +109,8 @@ class ProductProvider extends Component {
                 handleCart: this.handleCart,
                 closeCart: this.closeCart,
                 openCart: this.openCart,
-                handleRegister: this.handleRegister                
+                handleRegister: this.handleRegister,
+                handleHamburger: this.handleHamburger                
             }}>
                 {/* Super important stuff */}
                 {this.props.children}

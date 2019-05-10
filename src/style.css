@@ -46,7 +46,7 @@ button:focus {
 .invisible {
   display: none; }
 
-.navbar-container {
+.navbar-container, .navbar-container-small {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,6 +56,7 @@ button:focus {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  opacity: 1;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -71,7 +72,7 @@ button:focus {
   transition: .3s;
   -webkit-box-shadow: 0px 0px 20px rgba(106, 105, 105, 0.1);
   box-shadow: 0px 0px 20px rgba(106, 105, 105, 0.1); }
-  .navbar-container .navbar-logo {
+  .navbar-container .navbar-logo, .navbar-container-small .navbar-logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -84,10 +85,26 @@ button:focus {
     width: 100px;
     height: 100%;
     margin-left: 1rem; }
-    .navbar-container .navbar-logo img {
+    .navbar-container .navbar-logo img, .navbar-container-small .navbar-logo img {
       width: 1.3rem;
       cursor: pointer; }
-  .navbar-container .navbar-menu {
+  .navbar-container .hamburger-container, .navbar-container-small .hamburger-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem; }
+    .navbar-container .hamburger-container .hamburger-menu, .navbar-container-small .hamburger-container .hamburger-menu {
+      font-size: 1.3rem;
+      cursor: pointer;
+      color: dimgray; }
+  .navbar-container .navbar-menu, .navbar-container .navbar-menu-small, .navbar-container-small .navbar-menu, .navbar-container-small .navbar-menu-small {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -104,7 +121,7 @@ button:focus {
     list-style-type: none;
     margin: 0;
     padding: 0; }
-    .navbar-container .navbar-menu .menu-element {
+    .navbar-container .navbar-menu .menu-element, .navbar-container .navbar-menu .menu-element-small, .navbar-container .navbar-menu-small .menu-element, .navbar-container .navbar-menu-small .menu-element-small, .navbar-container-small .navbar-menu .menu-element, .navbar-container-small .navbar-menu .menu-element-small, .navbar-container-small .navbar-menu-small .menu-element, .navbar-container-small .navbar-menu-small .menu-element-small {
       margin-left: 1.5rem;
       margin-right: 1.5rem;
       font-size: 1.2rem;
@@ -115,9 +132,9 @@ button:focus {
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s; }
-    .navbar-container .navbar-menu .menu-element:hover {
+    .navbar-container .navbar-menu .menu-element:hover, .navbar-container .navbar-menu-small .menu-element:hover, .navbar-container-small .navbar-menu .menu-element:hover, .navbar-container-small .navbar-menu-small .menu-element:hover {
       color: rgba(241, 106, 123, 0.9); }
-  .navbar-container .navbar-cart {
+  .navbar-container .navbar-cart, .navbar-container-small .navbar-cart {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -131,7 +148,7 @@ button:focus {
     height: 100%;
     position: relative;
     margin-right: 1rem; }
-    .navbar-container .navbar-cart .cart-logo {
+    .navbar-container .navbar-cart .cart-logo, .navbar-container-small .navbar-cart .cart-logo {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -143,7 +160,7 @@ button:focus {
       align-items: center;
       cursor: pointer;
       font-size: 1.3rem; }
-    .navbar-container .navbar-cart .cart-items {
+    .navbar-container .navbar-cart .cart-items, .navbar-container-small .navbar-cart .cart-items {
       padding: 2px 6px;
       background-color: #f16a7b;
       color: white;
@@ -154,9 +171,92 @@ button:focus {
       border-radius: 50%;
       font-family: "Thasadith", sans-serif; }
 
-@media (max-width: 750px) {
-  .navbar-container .navbar-menu .menu-element {
-    font-size: 1.3rem; } }
+.navbar-small {
+  display: none; }
+
+@media (max-width: 800px) {
+  .navbar-container {
+    display: none; }
+  .navbar-small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 4;
+    top: 0; }
+    .navbar-small .navbar-container-small {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .navbar-small .navbar-menu-small {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+      display: none;
+      list-style-type: none;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #f6f6f6;
+      -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      transform: translateY(-100%);
+      -webkit-transition: .4s ease-in-out;
+      -o-transition: .4s ease-in-out;
+      transition: .4s ease-in-out; }
+      .navbar-small .navbar-menu-small .menu-element {
+        font-size: 1.3rem;
+        font-family: "Thasadith", sans-serif;
+        padding: .5rem;
+        cursor: pointer; }
+    .navbar-small .visible {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      transform: translateY(0%);
+      -webkit-transition: .4s ease-in-out;
+      -o-transition: .4s ease-in-out;
+      transition: .4s ease-in-out; } }
 
 @media (max-width: 500px) {
   .navbar-container {
@@ -778,7 +878,8 @@ button:focus {
   height: 20rem;
   -webkit-transition: .4s ease-in-out;
   -o-transition: .4s ease-in-out;
-  transition: .4s ease-in-out; }
+  transition: .4s ease-in-out;
+  text-align: center; }
   .parallax-content-section .parallax-title {
     margin: 0;
     font-size: 4rem;
@@ -799,6 +900,20 @@ button:focus {
     transition: .3s; }
   .parallax-content-section .btn-parallax {
     margin-top: 2rem; }
+  .parallax-content-section .btn-parallax-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 1.3rem;
+    width: 4rem;
+    height: 4rem; }
 
 .parallax-content-section:hover {
   background-color: rgba(105, 105, 105, 0.4); }
@@ -823,29 +938,32 @@ button:focus {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 50%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 2rem 0;
-  text-align: center; }
+  margin: 3rem auto;
+  text-align: center;
+  padding: 1rem; }
   .main-title .title-main-text, .main-title .title-main-desc {
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: "Thasadith", sans-serif;
     color: dimgray;
     font-weight: 200;
     margin: 0;
     cursor: default; }
   .main-title .title-main-desc {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: lowercase;
-    letter-spacing: 3px; }
+    letter-spacing: 2px; }
 
 @media (max-width: 800px) {
   .main-title {
     padding: 1rem; } }
 
 .selections-container {
+  margin-bottom: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -860,7 +978,9 @@ button:focus {
     width: 25rem;
     height: 35rem;
     border-radius: 3%;
-    margin: 0 1.5rem; }
+    margin: 0 1.5rem;
+    -webkit-box-shadow: 0px 0px 50px rgba(105, 105, 105, 0.3);
+    box-shadow: 0px 0px 50px rgba(105, 105, 105, 0.3); }
     .selections-container .sel-card .sel-image {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -969,3 +1089,67 @@ button:focus {
           opacity: 1; }
         .selections-container .sel-card:hover .sel-image .sel-text-wrapper .btn {
           opacity: 1; } }
+
+.insta-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 2rem 0; }
+  .insta-container .insta-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-size: cover;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 5%;
+    -webkit-box-shadow: 0px 0px 30px rgba(105, 105, 105, 0.3);
+    box-shadow: 0px 0px 30px rgba(105, 105, 105, 0.3);
+    cursor: pointer; }
+    .insta-container .insta-card .middle {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 80%;
+      height: 80%;
+      background-color: rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .insta-container .insta-card .middle .insta-link {
+        font-size: 1.2rem;
+        opacity: 1;
+        color: #f2f2f2;
+        font-family: "Thasadith", sans-serif;
+        border-bottom: 1px solid rgba(242, 242, 242, 0); }
+      .insta-container .insta-card .middle .insta-link:hover {
+        border-bottom: 1px solid rgba(242, 242, 242, 0.6); }
+  .insta-container .insta-card:hover .middle {
+    opacity: 1; }
+
+@media (max-width: 800px) {
+  .insta-card {
+    margin-top: 1rem; } }

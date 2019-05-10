@@ -66,8 +66,9 @@ button:focus{
 }
 
 // ----------------------------- Navbar
-.navbar-container {
+.navbar-container, .navbar-container-small {
     @include flexbox;
+    opacity: 1;
     justify-content: space-between;
     position: sticky;
     top: 0;
@@ -87,7 +88,17 @@ button:focus{
             cursor: pointer;
         }
     }
-    .navbar-menu {
+    .hamburger-container {
+        @include flexbox;
+        width: 2rem;
+        height: 2rem;
+        .hamburger-menu {
+            font-size: 1.3rem;
+            cursor: pointer;
+            color: rgba(105, 105, 105, 1);
+        }
+    }
+    .navbar-menu, .navbar-menu-small {
         @include flexbox;
         width: 70%;
         height: 100%;
@@ -95,7 +106,7 @@ button:focus{
         list-style-type: none;
         margin: 0;
         padding: 0;
-        .menu-element {
+        .menu-element, .menu-element-small {
             margin-left: 1.5rem;
             margin-right: 1.5rem;
             font-size: 1.2rem;
@@ -134,14 +145,53 @@ button:focus{
     }
 }
 
-@media (max-width: 750px) {
+.navbar-small {
+    display: none;
+}
+
+@media (max-width: 800px) {
     .navbar-container {
-        .navbar-menu {
+        display: none;
+    }
+    .navbar-small {
+        @include flexbox;
+        flex-direction: column;
+        position: sticky;
+        z-index: 4;
+        top: 0;
+        .navbar-container-small {
+            @include flexbox;
+            justify-content: space-around;
+            box-shadow: none;
+        }
+
+        .navbar-menu-small {
+            @include flexbox;
+            width: 100%;
+            display: none;
+            list-style-type: none;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: $mainwhite;
+            transform: translateY(-100%);
+            transition: .4s ease-in-out;
             .menu-element {
                 font-size: 1.3rem;
+                font-family: $fontmain;
+                padding: .5rem;
+                cursor: pointer;
             }
         }
-    }}
+        .visible {
+            @include flexbox;
+            transform: translateY(0%);
+            transition: .4s ease-in-out;
+        }
+    }
+    
+} 
 
 @media (max-width: 500px) {
     .navbar-container {
@@ -570,6 +620,7 @@ button:focus{
     flex-direction: column;
     height: 20rem;
     transition: .4s ease-in-out;
+    text-align: center;
     .parallax-title {
         margin: 0;
         font-size: 4rem;
@@ -590,6 +641,13 @@ button:focus{
     }
     .btn-parallax {
         margin-top: 2rem;
+    }
+    .btn-parallax-2 {
+        @include flexbox;
+        font-size: 2rem;
+        margin-top: 1.3rem;
+        width: 4rem;
+        height: 4rem;   
     }
 }
 .parallax-content-section:hover {
@@ -615,11 +673,14 @@ button:focus{
 // ----------------------------- Main title
 .main-title {
     @include flexbox;
+    width: 50%;
     flex-direction: column;
-    margin: 2rem 0;
+    margin: 3rem auto;
     text-align: center;
+    padding: 1rem;
+    // box-shadow: inset 0px 0px 40px rgba(0, 0, 0, .05);
     .title-main-text, .title-main-desc {
-        font-size: 4rem;
+        font-size: 3rem;
         font-family: $fontmain;
         color: rgba(105, 105, 105, 1);
         font-weight: 200;
@@ -627,9 +688,9 @@ button:focus{
         cursor: default;
     }
     .title-main-desc {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-transform: lowercase;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
     }
 }
 
@@ -641,6 +702,7 @@ button:focus{
 
 // ----------------------------- Selections
 .selections-container {
+    margin-bottom: 4rem;
     @include flexbox;
     .sel-card {
         overflow: hidden;
@@ -648,6 +710,7 @@ button:focus{
         height: 35rem; 
         border-radius: 3%;
         margin: 0 1.5rem;
+        box-shadow: 0px 0px 50px rgba(105, 105, 105, .3);
         .sel-image {
             @include flexbox;
             height: 100%;
@@ -748,5 +811,53 @@ button:focus{
             }
         } 
 }  }
+
+
+// ----------------------------- Instagram section
+
+.insta-container {
+    @include flexbox;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    .insta-card {
+        @include flexbox;
+        background-size: cover;
+        width: 18rem;
+        height: 18rem;
+        border-radius: 5%;
+        box-shadow: 0px 0px 30px rgba(105, 105, 105, .3);
+        cursor: pointer;
+        .middle {
+            @include flexbox;
+            width: 80%;
+            height: 80%;
+            background-color: rgba(0, 0, 0, .3);
+            opacity: 0;
+            transition: .3s;
+            .insta-link {
+                font-size: 1.2rem;
+                opacity: 1;
+                color: rgba(242, 242, 242, 1);
+                font-family: $fontmain;
+                border-bottom: 1px solid rgba(242, 242, 242, 0);
+            }
+            .insta-link:hover {
+                border-bottom: 1px solid rgba(242, 242, 242, .6);
+            }
+        }
+    }
+    .insta-card:hover {
+        .middle {
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .insta-card {
+        margin-top: 1rem;
+    }
+}
 
 
