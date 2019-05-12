@@ -14,7 +14,7 @@ export default class ProductCard extends Component {
           return (
             <div className={"product-card " + (cardSize === "small" ? "card-small" : "card-normal")}>
               <div className="image-container">
-                <Link to={`/products/:category/:type/${product.id}`} onClick={() => setSingleProduct(product.id)}>
+                <Link to={`/products/:category/${product.id}`} onClick={() => setSingleProduct(product.id)}>
                   <img src={product.imageSmall} 
                     alt="product"
                     onMouseOver = {e => {e.currentTarget.src = product.imageSmall2}}
@@ -24,7 +24,7 @@ export default class ProductCard extends Component {
               </div>
               <div className="product-details">
                 <p className="product-category"> {product.category} </p>
-                <Link to={`/products/:category/:type/${product.id}`}><p className="product-title"> {product.title}</p></Link>
+                <Link to={`/products/:category/${product.id}`}><p className="product-title"> {product.title}</p></Link>
               </div>
               <div className="product-bottom-details">
                 <p className="product-price"> ${product.price} </p>

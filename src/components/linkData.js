@@ -3,112 +3,119 @@ export const linkData = [
     {
         id: 1,
         text: 'classic',
-        path: '/products/bras/classic',
+        path: '/products/bras_classic',
         image: 'https://i.imgur.com/ZdQ9d3e.jpg',
         type: 'bra'
     },
     {
         id: 2,
         text: 'pushup',
-        path: '/products/bras/pushup',
+        path: '/products/bras_pushup',
         image: 'https://i.imgur.com/sOzBKUa.jpg',
         type: 'bra'
     },
     {
         id: 3,
-        text: 'strapless',
-        path: '/products/bras/strapless',
-        image: 'https://i.imgur.com/QkE8ojV.jpg',
+        text: 'browse all',
+        path: '/products/bras',
+        image: '',
         type: 'bra'
     },
     {
         id: 4,
-        text: 'wireless',
-        path: '/products/bras/wireless',
-        image: 'https://i.imgur.com/E9Nas6w.jpg',
+        text: 'strapless',
+        path: '/products/bras_strapless',
+        image: 'https://i.imgur.com/QkE8ojV.jpg',
         type: 'bra'
     },
     {
         id: 5,
+        text: 'wireless',
+        path: '/products/bras_wireless',
+        image: 'https://i.imgur.com/E9Nas6w.jpg',
+        type: 'bra'
+    },
+    {
+        id: 6,
         text: 'classic',
-        path: '/products/panties/classic',
+        path: '/products/panties_classic',
         image: 'https://i.imgur.com/zb0ZmvU.jpg',
         type: 'panty'
     },
     {
-        id: 6,
+        id: 7,
         text: 'thongs',
-        path: '/products/panties/thongs',
+        path: '/products/panties_thongs',
         image: 'https://i.imgur.com/VrXOaVs.jpg',
         type: 'panty'
     },
     {
-        id: 7,
+        id: 8,
         text: 'slimming',
-        path: '/products/panties/slimming',
+        path: '/products/panties_slimming',
         image: 'https://i.imgur.com/X8s4XAj.jpg',
         type: 'panty'
     },
     {
-        id: 8,
+        id: 9,
         text: 'brazilian',
-        path: '/products/panties/brazilian',
+        path: '/products/panties_brazilian',
         image: 'https://i.imgur.com/QQ5US7R.jpg',
         type: 'panty'
     },
     {
-        id: 9,
+        id: 10,
         text: 'bottoms',
-        path: '/products/sleepwear/bottoms',
+        path: '/products/sleepwear_bottoms',
         image: 'https://i.imgur.com/kDPRCey.jpg',
         type: 'sleepwear'
     },
     {
-        id: 10,
+        id: 11,
         text: 'long',
-        path: '/products/sleepwear/long',
+        path: '/products/sleepwear_long',
         image: 'https://i.imgur.com/Hn7O5YM.jpg',
         type: 'sleepwear'
     },
     {
-        id: 11,
+        id: 12,
         text: 'short',
-        path: '/products/sleepwear/short',
+        path: '/products/sleepwear_short',
         image: 'https://i.imgur.com/FLYqLCb.jpg',
         type: 'sleepwear'
     },
     {
-        id: 12,
+        id: 13,
         text: 'tops',
-        path: '/products/sleepwear/tops',
+        path: '/products/sleepwear_tops',
         image: 'https://i.imgur.com/MpLBtNt.jpg',
         type: 'sleepwear'
     },
     {
-        id: 13,
+        id: 14,
         text: 'body',
-        path: '/products/accessories/bodysuits',
+        path: '/products/accessories_bodysuits',
         image: 'https://i.imgur.com/OPJjUfJ.jpg',
         type: 'accs'
     },
     {
-        id: 14,
+        id: 15,
         text: 'tights',
-        path: '/products/accessories/tights',
+        path: '/products/accessories_tights',
         image: 'https://i.imgur.com/pdmDWb2.jpg',
         type: 'accs'
     },
     {
-        id: 15,
+        id: 16,
         text: 'slippers',
-        path: '/products/accessories/slippers',
+        path: '/products/accessories_slippers',
         image: 'https://i.imgur.com/8IaHFZW.jpg',
         type: 'accs'
     },
     {
-        id: 16,
+        id: 17,
         text: 'other',
-        path: '/products/accessories/other',
+        path: '/products/accessories_other',
         image: 'https://i.imgur.com/SMqE1p6.jpg',
         type: 'accs'
     },

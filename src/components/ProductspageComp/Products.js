@@ -10,7 +10,7 @@ export default class Products extends Component {
     return (
       <React.Fragment>
 
-        <Route path="/products/bras/classic" render={() =>   
+        <Route path="/products/bras_classic" render={() =>   
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
@@ -31,7 +31,7 @@ export default class Products extends Component {
           </ProductConsumer>  
         }/>
 
-      <Route path="/products/bras/pushup" render={() =>     
+      <Route path="/products/bras_pushup" render={() =>     
         <ProductConsumer>
           {value => {
                 const {filteredProducts} = value;
@@ -52,7 +52,7 @@ export default class Products extends Component {
         </ProductConsumer>   
         }/>
 
-        <Route path="/products/bras/strapless" render={() =>     
+        <Route path="/products/bras_strapless" render={() =>     
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
@@ -73,7 +73,7 @@ export default class Products extends Component {
           </ProductConsumer>   
         }/>
 
-        <Route path="/products/bras/wireless" render={() =>     
+        <Route path="/products/bras_wireless" render={() =>     
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
