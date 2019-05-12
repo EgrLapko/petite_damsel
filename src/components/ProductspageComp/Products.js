@@ -52,6 +52,48 @@ export default class Products extends Component {
         </ProductConsumer>   
         }/>
 
+        <Route path="/products/bras/strapless" render={() =>     
+          <ProductConsumer>
+            {value => {
+                  const {filteredProducts} = value;
+                  return (
+                      <div className="products-list">
+                        <Title title="strapless bras" />
+                        <div className="products-container">
+                        {filteredProducts.map(product => product.category === "Bras, strapless" && 
+                          <ProductCard 
+                            key={product.id}
+                            product = {product}
+                          />
+                        )}
+                        </div>
+                      </div>
+                  )  
+              }}
+          </ProductConsumer>   
+        }/>
+
+        <Route path="/products/bras/wireless" render={() =>     
+          <ProductConsumer>
+            {value => {
+                  const {filteredProducts} = value;
+                  return (
+                      <div className="products-list">
+                        <Title title="wireless bras" />
+                        <div className="products-container">
+                        {filteredProducts.map(product => product.category === "Bras, wireless" && 
+                          <ProductCard 
+                            key={product.id}
+                            product = {product}
+                          />
+                        )}
+                        </div>
+                      </div>
+                  )  
+              }}
+          </ProductConsumer>   
+        }/>
+
       
 
       </React.Fragment>

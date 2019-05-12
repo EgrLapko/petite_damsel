@@ -599,6 +599,366 @@ export const items = [
       imageSmall2: { fields: { file: { url: "/images/products/bras/bras_pushup/20_lace_and_plumetti_super_push-up_bra/small/2.jpg" } } }
     }
   },
+  {
+    sys: { id: 40 },
+    fields: {
+      title: "Bandeau wireless bra",
+      price: 28,
+      category: "Bras, strapless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_strapless/1_bandeau_wireless_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_strapless/1_bandeau_wireless_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_strapless/1_bandeau_wireless_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_strapless/1_bandeau_wireless_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 41 },
+    fields: {
+      title: "Strapless bra",
+      price: 32,
+      category: "Bras, strapless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_strapless/2_strapless_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_strapless/2_strapless_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_strapless/2_strapless_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_strapless/2_strapless_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 42 },
+    fields: {
+      title: "Maxi push-up strapless bra",
+      price: 36,
+      category: "Bras, strapless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_strapless/3_maxi_push-up_strapless_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_strapless/3_maxi_push-up_strapless_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_strapless/3_maxi_push-up_strapless_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_strapless/3_maxi_push-up_strapless_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 43 },
+    fields: {
+      title: "Wireless maxi push-up strapless bra",
+      price: 36,
+      category: "Bras, strapless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_strapless/4_wireless_maxi_push-up_strapless_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_strapless/4_wireless_maxi_push-up_strapless_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_strapless/4_wireless_maxi_push-up_strapless_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_strapless/4_wireless_maxi_push-up_strapless_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 44 },
+    fields: {
+      title: "Triangular lace bra",
+      price: 28,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/1_triangular_lace_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/1_triangular_lace_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/1_triangular_lace_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/1_triangular_lace_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 45 },
+    fields: {
+      title: "Triangular lace bra",
+      price: 28,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/2_triangular_lace_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/2_triangular_lace_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/2_triangular_lace_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/2_triangular_lace_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 46 },
+    fields: {
+      title: "Lace bralette",
+      price: 24,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/3_lace_bralette/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/3_lace_bralette/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/3_lace_bralette/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/3_lace_bralette/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 47 },
+    fields: {
+      title: "Animal print triangle bra",
+      price: 24,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/4_animal_print_triangle_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/4_animal_print_triangle_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/4_animal_print_triangle_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/4_animal_print_triangle_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 48 },
+    fields: {
+      title: "Triangular plumetti and lace bra",
+      price: 29,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/5_triangular_plumetti_and_lace_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/5_triangular_plumetti_and_lace_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/5_triangular_plumetti_and_lace_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/5_triangular_plumetti_and_lace_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 49 },
+    fields: {
+      title: "Triangular lace bra",
+      price: 28,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/6_triangular_lace_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/6_triangular_lace_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/6_triangular_lace_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/6_triangular_lace_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 50 },
+    fields: {
+      title: "Triangular lace bra",
+      price: 28,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/7_triangular_lace_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/7_triangular_lace_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/7_triangular_lace_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/7_triangular_lace_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 51 },
+    fields: {
+      title: "Triangular lace bra",
+      price: 28,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/8_triangular_lace_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/8_triangular_lace_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/8_triangular_lace_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/8_triangular_lace_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 52 },
+    fields: {
+      title: "Lace and mesh halter bra",
+      price: 28,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/9_lace_and_mesh_halter_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/9_lace_and_mesh_halter_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/9_lace_and_mesh_halter_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/9_lace_and_mesh_halter_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 53 },
+    fields: {
+      title: "Lace bralette",
+      price: 26,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/10_lace_bralette/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/10_lace_bralette/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/10_lace_bralette/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/10_lace_bralette/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 54 },
+    fields: {
+      title: "Lace triangular bra with straps",
+      price: 23,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/11_lace_triangular_bra_with_straps/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/11_lace_triangular_bra_with_straps/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/11_lace_triangular_bra_with_straps/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/11_lace_triangular_bra_with_straps/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 55 },
+    fields: {
+      title: "Push-up mesh bra",
+      price: 32,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/12_push_up_mesh_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/12_push_up_mesh_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/12_push_up_mesh_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/12_push_up_mesh_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 56 },
+    fields: {
+      title: "Lace triangle bra",
+      price: 24,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/13_lace_triangle_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/13_lace_triangle_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/13_lace_triangle_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/13_lace_triangle_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 57 },
+    fields: {
+      title: "Wireless triangular bra",
+      price: 32,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/14_wireless_triangular_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/14_wireless_triangular_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/14_wireless_triangular_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/14_wireless_triangular_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 58 },
+    fields: {
+      title: "Triangular push-up bra",
+      price: 28,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/15_triangular_push_up_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/15_triangular_push_up_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/15_triangular_push_up_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/15_triangular_push_up_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 59 },
+    fields: {
+      title: "Triangular push-up bra",
+      price: 28,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/16_triangular_push_up_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/16_triangular_push_up_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/16_triangular_push_up_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/16_triangular_push_up_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 60 },
+    fields: {
+      title: "Wireless strapless bra",
+      price: 23,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/17_wireless_strapless_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/17_wireless_strapless_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/17_wireless_strapless_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/17_wireless_strapless_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 61 },
+    fields: {
+      title: "Cotton triangle bra",
+      price: 26,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/18_cotton_triangle_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/18_cotton_triangle_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/18_cotton_triangle_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/18_cotton_triangle_bra/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 62 },
+    fields: {
+      title: "Lace triangle bra with rings",
+      price: 30,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/19_lace_triangle_bra_with_rings/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/19_lace_triangle_bra_with_rings/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/19_lace_triangle_bra_with_rings/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/19_lace_triangle_bra_with_rings/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 63 },
+    fields: {
+      title: "Triangular lace and tulle bra",
+      price: 30,
+      category: "Bras, wireless",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/bras/bras_wireless/20_triangular_lace_and_tulle_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_wireless/20_triangular_lace_and_tulle_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/20_triangular_lace_and_tulle_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/20_triangular_lace_and_tulle_bra/small/2.jpg" } } }
+    }
+  }
 ]
 
 
