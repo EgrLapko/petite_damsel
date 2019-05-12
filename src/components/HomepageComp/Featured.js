@@ -6,6 +6,7 @@ import {ProductConsumer} from '../../context';
 
 export default class Featured extends Component {
   render() {
+
     return (
       <div className="featured-section">
         <Title title="our featured items" />
@@ -16,6 +17,7 @@ export default class Featured extends Component {
                     return featuredProducts.map(product =>(<Product 
                         key = {product.id}
                         product = {product}
+                        cardSize = 'small'
                     />))
                 }}
             </ProductConsumer>

@@ -43,7 +43,9 @@ setProducts = (products) => {
         const {id} = item.sys;
         const image = item.fields.image.fields.file.url;
         const image2 = item.fields.image2.fields.file.url;
-        const product = {id, ...item.fields, image, image2};
+        const imageSmall = item.fields.imageSmall.fields.file.url;
+        const imageSmall2 = item.fields.imageSmall2.fields.file.url;
+        const product = {id, ...item.fields, image, image2, imageSmall, imageSmall2};   
         return product;
     });
     // grabbing featured items

@@ -9,7 +9,9 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: true,
       image: { fields: { file: { url: "images/products/bras/bras_classic/1_classic_lace_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/1_classic_lace_bra/2.jpg" } } }
+      image2: { fields: { file: { url: "images/products/bras/bras_classic/1_classic_lace_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "images/products/bras/bras_classic/1_classic_lace_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "images/products/bras/bras_classic/1_classic_lace_bra/small/2.jpg" } } }
     }
   },
   {
@@ -22,7 +24,9 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       image: { fields: { file: { url: "images/products/bras/bras_classic/2_classic_lace_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "images/products/bras/bras_classic/2_classic_lace_bra/1.jpg" } } }
+      image2: { fields: { file: { url: "images/products/bras/bras_classic/2_classic_lace_bra/1.jpg" } } },
+      imageSmall: { fields: { file: { url: "images/products/bras/bras_classic/2_classic_lace_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "images/products/bras/bras_classic/2_classic_lace_bra/small/2.jpg" } } }
     }
   },
   {
@@ -35,7 +39,9 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: true,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/3_classic_lace_and_plumetti_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/3_classic_lace_and_plumetti_bra/2.jpg" } } }
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/3_classic_lace_and_plumetti_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/3_classic_lace_and_plumetti_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/3_classic_lace_and_plumetti_bra/small/2.jpg" } } }
     }
   },
   {
@@ -48,7 +54,9 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/4_classic_lace_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/4_classic_lace_bra/2.jpg" } } }
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/4_classic_lace_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/4_classic_lace_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/4_classic_lace_bra/small/2.jpg" } } }
     }
   },
   {
@@ -61,7 +69,9 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: true,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/5_lace_bra_with_rings/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/5_lace_bra_with_rings/2.jpg" } } }
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/5_lace_bra_with_rings/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/5_lace_bra_with_rings/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/5_lace_bra_with_rings/small/2.jpg" } } }
     }
   },
   {
@@ -74,7 +84,9 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/6_lace_and_textured_weave_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/6_lace_and_textured_weave_bra/2.jpg" } } }
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/6_lace_and_textured_weave_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/6_lace_and_textured_weave_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/6_lace_and_textured_weave_bra/small/2.jpg" } } }
     }
   },
   {
@@ -87,7 +99,9 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/7_lace_and_textured_weave_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/7_lace_and_textured_weave_bra/2.jpg" } } }
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/7_lace_and_textured_weave_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/7_lace_and_textured_weave_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/7_lace_and_textured_weave_bra/small/2.jpg" } } }
     }
   },
   {
@@ -98,9 +112,11 @@ export const items = [
       category: "Bras, classic",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
-      featured: false,
+      featured: true,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/8_classic_floral_bra_flocked_tulle/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/8_classic_floral_bra_flocked_tulle/2.jpg" } } }
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/8_classic_floral_bra_flocked_tulle/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/8_classic_floral_bra_flocked_tulle/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/8_classic_floral_bra_flocked_tulle/small/2.jpg" } } }
     }
   },
   {
@@ -113,7 +129,9 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/9_classic_lace_and_plumetti_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/9_classic_lace_and_plumetti_bra/2.jpg" } } }
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/9_classic_lace_and_plumetti_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/9_classic_lace_and_plumetti_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/9_classic_lace_and_plumetti_bra/small/2.jpg" } } }
     }
   },
   {
@@ -124,9 +142,11 @@ export const items = [
       category: "Bras, classic",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
-      featured: false,
+      featured: true,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/10_classic_lace_and_plumetti_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/10_classic_lace_and_plumetti_bra/2.jpg" } } }
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/10_classic_lace_and_plumetti_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/10_classic_lace_and_plumetti_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/10_classic_lace_and_plumetti_bra/small/2.jpg" } } }
     }
   },
   {
@@ -139,7 +159,9 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/11_classic_cotton_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/11_classic_cotton_bra/2.jpg" } } }
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/11_classic_cotton_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/11_classic_cotton_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/11_classic_cotton_bra/small/2.jpg" } } }
     }
   },
   {
@@ -152,7 +174,9 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/12_adjustable_cotton_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/12_adjustable_cotton_bra/2.jpg" } } }
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/12_adjustable_cotton_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/12_adjustable_cotton_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/12_adjustable_cotton_bra/small/2.jpg" } } }
     }
   },
   {
@@ -165,7 +189,9 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/13_strappy_lace_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/13_strappy_lace_bra/2.jpg" } } }
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/13_strappy_lace_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/13_strappy_lace_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/13_strappy_lace_bra/small/2.jpg" } } }
     }
   },
   {
@@ -178,7 +204,9 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/14_classic_cotton_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/14_classic_cotton_bra/2.jpg" } } }
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/14_classic_cotton_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/14_classic_cotton_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/14_classic_cotton_bra/small/2.jpg" } } }
     }
   },
   {
@@ -191,7 +219,9 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/15_classic_cotton_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/15_classic_cotton_bra/2.jpg" } } }
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/15_classic_cotton_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/15_classic_cotton_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/15_classic_cotton_bra/small/2.jpg" } } }
     }
   },
   {
@@ -204,7 +234,9 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/16_classic_cotton_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/16_classic_cotton_bra/2.jpg" } } }
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/16_classic_cotton_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/16_classic_cotton_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/16_classic_cotton_bra/small/2.jpg" } } }
     }
   },
   {
@@ -217,7 +249,9 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/17_mini-flower_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/17_mini-flower_bra/2.jpg" } } }
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/17_mini-flower_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/17_mini-flower_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/17_mini-flower_bra/small/2.jpg" } } }
     }
   },
   {
@@ -230,7 +264,9 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/18_mesh_neckline_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/18_mesh_neckline_bra/2.jpg" } } }
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/18_mesh_neckline_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/18_mesh_neckline_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/18_mesh_neckline_bra/small/2.jpg" } } }
     }
   },
   {
@@ -243,7 +279,9 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/19_classic_lace_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/19_classic_lace_bra/2.jpg" } } }
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/19_classic_lace_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/19_classic_lace_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/19_classic_lace_bra/small/2.jpg" } } }
     }
   },
   {
@@ -256,7 +294,9 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/20_classic_lace_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "/images/products/bras/bras_classic/20_classic_lace_bra/2.jpg" } } }
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/20_classic_lace_bra/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/20_classic_lace_bra/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/20_classic_lace_bra/small/2.jpg" } } }
     }
   },
 ]
