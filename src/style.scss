@@ -592,17 +592,30 @@ button:focus{
     }
 }
 
+@media (max-width: 1024px) {
+    .trends-container {
+        .trends-card {
+            width: 30rem;
+            height: 30rem;
+            background-position: right;
+        }
+    }  
+}
+
+
 @media (max-width: 900px) {
     .trends-container {
         .trends-card {
             width: 30rem;
             height: 30rem;
+            background-position: right;
         }
     }  
 }
 
 @media (max-width: 800px) {
     .trends-container {
+        margin: 0;
         flex-direction: column;
         .trends-card {
             width: 100%;

@@ -81,7 +81,7 @@ export default class MainPage extends Component {
           contentClassName="parallax-background"
         >   
           <div className="parallax-content-section">
-            <h2 className="parallax-title">we`re in instagram!</h2>
+            <h2 className="parallax-title">we`re on instagram!</h2>
             <p className="parallax-description">come find us and become 
             a part of our cozy community</p>
             <button className="btn pink-btn btn-parallax-2"><i className="fab fa-instagram"></i></button>

@@ -845,13 +845,21 @@ button:focus {
     .trends-container .trends-card .trends-text-wrapper:hover {
       background-color: rgba(55, 55, 55, 0.3); }
 
+@media (max-width: 1024px) {
+  .trends-container .trends-card {
+    width: 30rem;
+    height: 30rem;
+    background-position: right; } }
+
 @media (max-width: 900px) {
   .trends-container .trends-card {
     width: 30rem;
-    height: 30rem; } }
+    height: 30rem;
+    background-position: right; } }
 
 @media (max-width: 800px) {
   .trends-container {
+    margin: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;

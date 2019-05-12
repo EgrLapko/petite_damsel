@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {linkData} from './linkData';
-
+import {items} from './productsData';
 // Creating React Context
 const ProductContext = React.createContext();
 // Provider
@@ -13,13 +13,77 @@ class ProductProvider extends Component {
         sidebarOpenPanty: false,
         sidebarOpenSleepwear: false,
         sidebarOpenAccs: false,
-        cartOpen: false,
-        cartItems: 0,
+        cartOpen: false, 
         links: linkData,
-        cart: [],
         registerOpen: false,
-        hamburgerOpen: false
-    }
+        hamburgerOpen: false,
+        cart: [],
+        cartItems: 0,
+        cartSubtotal: 0,
+        cartTax: 0,
+        cartTotal: 0,
+        storeProducts: [],
+        filteredProducts: [],
+        featuredProducts: [],
+        singleProduct: {},
+        loading: false     
+    };
+
+componentDidMount() {
+// --- from contentful items
+
+    this.setProducts(items);
+}
+
+// ---------- set products
+setProducts = (products) => {
+    // Destructuring and grabbing items from
+    // data base 
+    let storeProducts = products.map(item => {
+        const {id} = item.sys;
+        const product = {id, ...item.fields};
+        return product;
+    });
+    // grabbing featured items
+let featuredProducts = storeProducts.filter(item => 
+    item.featured === true);
+    // assigning values to a state
+this.setState({
+    storeProducts: storeProducts,
+    filteredProducts: storeProducts,
+    featuredProducts: featuredProducts,
+    cart: this.getStorageCart(),
+    singleProduct: this.getStorageProduct(),
+    loading: false
+})
+};
+
+// Get cart from local storage
+getStorageCart = () => {
+    return []; 
+}
+// Get product from local storage
+getStorageProduct = () => {
+    return [];
+}
+// get totals
+getTotals = () => {};
+// add totals
+addTotals = () => {};
+// sync storage
+syncStorage = () => {
+
+};
+// add to cart
+addToCart = (id) => {
+    console.log(`add to cart ${id}`);
+}
+//  set single product
+setSingleProduct = (id) => {
+    console.log(`set single product ${id}`);
+}
+
+
 
 // ---------- Open Sidebar menu
     handleSidebarBra = () => {
@@ -110,7 +174,9 @@ class ProductProvider extends Component {
                 closeCart: this.closeCart,
                 openCart: this.openCart,
                 handleRegister: this.handleRegister,
-                handleHamburger: this.handleHamburger                
+                handleHamburger: this.handleHamburger,
+                addToCart: this.addToCart,
+                setSingleProduct: this.setSingleProduct                
             }}>
                 {/* Super important stuff */}
                 {this.props.children}
