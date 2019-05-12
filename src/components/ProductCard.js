@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import {ProductConsumer} from '../context';
+import {ProductConsumer} from '../context/context';
 
-export default class Product extends Component {
+export default class ProductCard extends Component {
   render() {
 
     const {product, cardSize} = this.props;
@@ -12,7 +12,7 @@ export default class Product extends Component {
         {value => {
           const {addToCart, setSingleProduct} = value;
           return (
-            <div className={"product-card " + (cardSize === "small" ? "card-small" : null)}>
+            <div className={"product-card " + (cardSize === "small" ? "card-small" : "card-normal")}>
               <div className="image-container">
                 <Link to={`/products/:category/:type/${product.id}`} onClick={() => setSingleProduct(product.id)}>
                   <img src={product.imageSmall} 

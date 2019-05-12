@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Product from '../Product';
 import {Link} from 'react-router-dom';
 import Title from '../Title/Title';
 import {ProductConsumer} from '../../context';
+import ProductCard from '../ProductCard';
 
 export default class Featured extends Component {
   render() {
@@ -14,7 +14,7 @@ export default class Featured extends Component {
             <ProductConsumer>
                 {value  => {
                     const {featuredProducts} = value;
-                    return featuredProducts.map(product =>(<Product 
+                    return featuredProducts.map(product =>(<ProductCard 
                         key = {product.id}
                         product = {product}
                         cardSize = 'small'

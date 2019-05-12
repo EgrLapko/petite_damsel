@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom';
 import {FaShoppingBag} from 'react-icons/fa';
 import {ProductConsumer} from '../../context';
+import logoPD from './logo.png'
 
 export default class Navbar extends Component {
   render() {
@@ -13,8 +14,8 @@ export default class Navbar extends Component {
           return (
             <React.Fragment>
               <div className="navbar-container">
-                <div className="navbar-logo">
-                <Link to="/"> <img src="./images/logo.png" alt="" /> </Link>
+                <div className="navbar-logo">     
+                <Link to="/"> <img src={logoPD} alt="" /> </Link>               
                 </div>
                 <ul className="navbar-menu">
                   <li className="menu-element" onClick={handleSidebarBra}>Bras</li>
