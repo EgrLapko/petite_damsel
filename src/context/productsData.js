@@ -33,7 +33,7 @@ export const items = [
       category: "Bras, classic",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
-      featured: false,
+      featured: true,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/3_classic_lace_and_plumetti_bra/1.jpg" } } },
       image2: { fields: { file: { url: "/images/products/bras/bras_classic/3_classic_lace_and_plumetti_bra/2.jpg" } } }
     }
@@ -59,7 +59,7 @@ export const items = [
       category: "Bras, classic",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
-      featured: false,
+      featured: true,
       image: { fields: { file: { url: "/images/products/bras/bras_classic/5_lace_bra_with_rings/1.jpg" } } },
       image2: { fields: { file: { url: "/images/products/bras/bras_classic/5_lace_bra_with_rings/2.jpg" } } }
     }

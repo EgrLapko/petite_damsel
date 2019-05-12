@@ -41,7 +41,9 @@ setProducts = (products) => {
     // data base 
     let storeProducts = products.map(item => {
         const {id} = item.sys;
-        const product = {id, ...item.fields};
+        const image = item.fields.image.fields.file.url;
+        const image2 = item.fields.image2.fields.file.url;
+        const product = {id, ...item.fields, image, image2};
         return product;
     });
     // grabbing featured items

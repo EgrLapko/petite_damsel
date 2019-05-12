@@ -6,6 +6,7 @@ import { Parallax } from 'react-parallax';
 import Title from '../Title/Title';
 import Selection from '../HomepageComp/Selection';
 import InstagramSection from '../InstagramSection/InstagramSection';
+import Featured from '../HomepageComp/Featured';
 export default class MainPage extends Component {
 
   componentDidMount() {
@@ -87,6 +88,8 @@ export default class MainPage extends Component {
             <button className="btn pink-btn btn-parallax-2"><i className="fab fa-instagram"></i></button>
           </div>             
         </Parallax>
+
+        <Featured />
 
         <Title 
           title = "show us your #pd look"
