@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom';
 import {FaShoppingBag} from 'react-icons/fa';
 import {ProductConsumer} from '../../context';
-import logoPD from './logo.png'
 
 export default class Navbar extends Component {
   render() {
@@ -15,7 +14,7 @@ export default class Navbar extends Component {
             <React.Fragment>
               <div className="navbar-container">
                 <div className="navbar-logo">     
-                <Link to="/"> <img src={logoPD} alt="" /> </Link>               
+                <Link to="/"> <p className="pd-logo"><span>p</span>etite<span>.d</span>amsel</p> </Link>               
                 </div>
                 <ul className="navbar-menu">
                   <li className="menu-element" onClick={handleSidebarBra}>Bras</li>
@@ -34,7 +33,7 @@ export default class Navbar extends Component {
               <div className="navbar-small">
                 <div className="navbar-container-small">
                   <div className="navbar-logo">
-                  <Link to="/"> <img src="./images/logo.png" alt="" /> </Link>
+                  <Link to="/"> <p className="pd-logo"><span>p</span>etite<span>.d</span>amsel</p> </Link>
                   </div>
                   <div className = "hamburger-container">
                     <p className="hamburger-menu " onClick={handleHamburger}><i className ="fas fa-bars"></i></p>

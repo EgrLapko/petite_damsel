@@ -12,6 +12,9 @@ import CartPage from './components/Pages/CartPage';
 
 export default class Routes extends Component {
   render() {
+
+    const {match} = this.props;
+
     return (
     <Switch>
         <Route exact path = '/' component={HomePage} />
@@ -21,7 +24,7 @@ export default class Routes extends Component {
         <Route path = '/products/:category/:type' exact component={ProductsPage} />
         
 
-        <Route path = '/products/:category/:type/:id' component={SingleProductPage} />
+        <Route path = {`/products/:category/:type/:id`} component={SingleProductPage} />
         <Route path = '/my_cart' component={CartPage} />
         <Route component={DefaultPage} />
       </Switch>
