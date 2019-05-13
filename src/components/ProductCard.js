@@ -10,7 +10,7 @@ export default class ProductCard extends Component {
     return (
       <ProductConsumer>
         {value => {
-          const {addToCart, setSingleProduct} = value;
+          const {addToCart, setSingleProduct } = value;
           return (
             <div className={"product-card " + (cardSize === "small" ? "card-small" : "card-normal")}>
               <div className="image-container">

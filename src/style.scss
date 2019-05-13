@@ -295,17 +295,106 @@ button:focus{
 // ----------------------------- Slidecart menu
 .sidecart {
     @include flexbox;
+    flex-direction: column;
+    justify-content: flex-start;
     position: fixed;
+    overflow: scroll;
     z-index: 2;
-    right: 0px;
-    top: 0px;
-    height: 100%;
-    width: 300px;
-    background-color: aqua;
+    right: 0;
+    top: 4rem;
+    height: 95%;
+    width: 25rem;
+    padding: 0rem;
     transform: translateX(100%);
     background-color: rgba(251, 251, 251, 1);
-    // box-shadow: -15px 0px 10px rgba(106, 105, 105, .1);
+    box-shadow: 0px 0px 30px rgba(106, 105, 105, .1);
     transition: all .5s ease-in-out;
+    .sidecart-top {
+        @include flexbox;
+        justify-content: space-between;
+        align-items: center;
+        width: 20rem;
+        margin-top: .5rem;
+        border-bottom: 1px solid rgba(105, 105, 105, .2);
+        .sidecart-title {
+            font-family: $fontmain;
+            font-size: 1.3rem;
+            padding: 1rem;
+            margin: 0;
+            padding: .5rem;
+        }
+        .close-sidecart-btn {
+            font-family: $fontmain;
+            font-size: 1.5rem;
+            padding: 1rem;
+            margin: 0;
+            color: rgba(105, 105, 105, .7);
+            cursor: pointer;
+            padding: .5rem;
+        }
+    }
+    .cart-menu-content {
+        @include flexbox;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        list-style-type: none;
+        width: 25rem;
+        margin: 0;
+        padding: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem; 
+        .cart-menu-item {
+            @include flexbox;
+            width: 100%;
+            justify-content: flex-start;
+            position: relative;
+            margin: .1rem 2rem;
+            img {
+                width: 5rem;
+                margin-right: 0rem;
+            }
+            .cart-item-info {
+                @include flexbox;
+                width: 10rem;
+                padding: .5rem;
+                align-self: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                .menu-item-title {
+                    align-self: flex-start;
+                    font-size: 1rem;
+                    font-family: $fontmain;
+                    margin: 0;
+                }
+                .menu-item-count {
+                    align-self: flex-start;
+                    font-size: 1rem;
+                    font-family: $fontmain;
+                    margin: 0;
+                }
+                .menu-item-price {
+                    align-self: flex-start;
+                    font-size: 1.3rem;
+                    font-family: $fontmain;
+                    margin-top: .5rem;
+                }
+            }
+        }
+    }
+    .order-total {
+        @include flexbox;
+        width: 20rem;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(105, 105, 105, .2);
+        border-top: 1px solid rgba(105, 105, 105, .2);
+        p {
+            font-family: $fontmain;
+            font-size: 1.3rem;
+            padding: .5rem;
+            margin: 0;
+        }
+    }
 }
 
 .sidecart_visible {

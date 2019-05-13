@@ -20,7 +20,7 @@ export default class Routes extends Component {
         <Route path = '/contact' component={ContactPage} />
         <Route path = '/products/:category' exact component={ProductsPage} />
         <Route path = {`/products/single/:id`} component={SingleProductPage} />
-        <Route path = '/my_cart' component={CartPage} />
+        <Route path = '/cart' component={CartPage} />
         <Route component={DefaultPage} />
       </Switch>
     )

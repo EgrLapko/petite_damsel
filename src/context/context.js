@@ -26,7 +26,7 @@ class ProductProvider extends Component {
         filteredProducts: [],
         featuredProducts: [],
         singleProduct: {},
-        loading: true     
+        loading: true,   
     };
 
 componentDidMount() {
