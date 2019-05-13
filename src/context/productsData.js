@@ -8,8 +8,8 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: true,
-      image: { fields: { file: { url: "images/products/bras/bras_classic/1_classic_lace_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "images/products/bras/bras_classic/1_classic_lace_bra/2.jpg" } } },
+      image: { fields: { file: { url: "/images/products/bras/bras_classic/1_classic_lace_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/1_classic_lace_bra/2.jpg" } } },
       imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/1_classic_lace_bra/small/1.jpg" } } },
       imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/1_classic_lace_bra/small/2.jpg" } } }
     }
@@ -23,8 +23,8 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      image: { fields: { file: { url: "images/products/bras/bras_classic/2_classic_lace_bra/1.jpg" } } },
-      image2: { fields: { file: { url: "images/products/bras/bras_classic/2_classic_lace_bra/1.jpg" } } },
+      image: { fields: { file: { url: "/images/products/bras/bras_classic/2_classic_lace_bra/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/bras/bras_classic/2_classic_lace_bra/1.jpg" } } },
       imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/2_classic_lace_bra/small/1.jpg" } } },
       imageSmall2: { fields: { file: { url: "/images/products/bras/bras_classic/2_classic_lace_bra/small/2.jpg" } } }
     }
@@ -958,7 +958,22 @@ export const items = [
       imageSmall: { fields: { file: { url: "/images/products/bras/bras_wireless/20_triangular_lace_and_tulle_bra/small/1.jpg" } } },
       imageSmall2: { fields: { file: { url: "/images/products/bras/bras_wireless/20_triangular_lace_and_tulle_bra/small/2.jpg" } } }
     }
-  }
+  },
+  {
+    sys: { id: 64 },
+    fields: {
+      title: "",
+      price: 30,
+      category: "Panties, classic",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      image: { fields: { file: { url: "/images/products/panties/panties_classic//1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/panties/panties_classic//2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/panties/panties_classic//small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/panties/panties_classic//small/2.jpg" } } }
+    }
+  },
 ]
 
 

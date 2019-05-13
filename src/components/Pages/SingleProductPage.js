@@ -55,7 +55,7 @@ export default class SingleProductPage extends Component {
                         <div className="details-btn">
                           <Link to="/products/bras_classic"><button className="btn"> <span className="details-back"><i className="fas fa-angle-left"/></span> Back to bras</button></Link> 
                           <button className="cart-btn">
-                            <span className="details-cart"><i className="fas fa-cart-plus" /></span>
+                            <span className="details-cart" onClick={() => addToCart(id)}><i className="fas fa-cart-plus" /></span>
                           </button>
                         </div>
                       </div>

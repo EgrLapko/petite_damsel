@@ -223,6 +223,24 @@ setSingleProduct = (id) => {
         this.setState({cartOpen: true })
     }
 
+// ---------- Cart functionality
+increment = (id) =>{
+    console.log(id);
+}
+
+decrement = (id) =>{
+    console.log(id);
+}
+
+removeItem = (id) =>{
+    console.log(id);
+}
+
+clearCart = () => {
+    console.log("cart is clear");
+}
+
+
     render() {
         return(
             // Creating product provider
@@ -240,7 +258,11 @@ setSingleProduct = (id) => {
                 handleRegister: this.handleRegister,
                 handleHamburger: this.handleHamburger,
                 addToCart: this.addToCart,
-                setSingleProduct: this.setSingleProduct                
+                setSingleProduct: this.setSingleProduct,
+                increment: this.increment,
+                decrement: this.decrement,
+                removeItem: this.removeItem,
+                clearCart: this.clearCart                
             }}>
                 {/* Super important stuff */}
                 {this.props.children}
