@@ -33,6 +33,7 @@ button:focus {
 .pink-btn {
   margin-top: 3rem;
   background-color: rgba(241, 106, 123, 0.7);
+  border: none;
   color: rgba(246, 246, 246, 0.8); }
 
 .pink-btn:hover {
@@ -1615,3 +1616,143 @@ button:focus {
       .single-product-page .details-content .details-menu-container .details-menu:hover {
         -webkit-box-shadow: 0px 0px 150px rgba(0, 0, 0, 0.05);
         box-shadow: 0px 0px 150px rgba(0, 0, 0, 0.05); }
+
+.cart-items-titles, .cart-items-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.cart-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 15rem;
+  font-family: "Thasadith", sans-serif;
+  font-size: 1.2rem;
+  min-height: 4rem; }
+  .cart-item img {
+    width: 7rem; }
+
+.totals-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .totals-container .totals-inner-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 5rem;
+    background-color: #fafafa;
+    padding: 20px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+    .totals-container .totals-inner-container .subtotal, .totals-container .totals-inner-container .tax, .totals-container .totals-inner-container .total {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      height: 1rem;
+      width: 20rem;
+      padding: .5rem;
+      margin: .5rem 0rem;
+      border-bottom: 0.5px solid rgba(106, 105, 105, 0.15);
+      font-size: 1.2rem;
+      font-family: "Thasadith", sans-serif; }
+    .totals-container .totals-inner-container .totals-btns {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+      .totals-container .totals-inner-container .totals-btns .totals-btn {
+        margin: 0;
+        margin-top: 1rem; }
+  .totals-container .totals-inner-container:hover {
+    -webkit-box-shadow: 0px 0px 80px rgba(106, 105, 105, 0.05);
+    box-shadow: 0px 0px 80px rgba(106, 105, 105, 0.05); }
+
+.cart-items-list {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  border-top: 1px solid rgba(220, 220, 220, 0.7);
+  padding: .5rem; }
+
+#trash-icon {
+  cursor: pointer;
+  color: rgba(106, 105, 105, 0.7); }
+
+.quantity-btn {
+  background-color: unset;
+  border: 1px solid rgba(241, 106, 123, 0.7);
+  color: rgba(241, 106, 123, 0.7);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  margin: 0 1rem; }
+
+.quantity-btn:hover {
+  background-color: rgba(241, 106, 123, 0.7);
+  color: #fff;
+  border: 1px solid rgba(241, 106, 123, 0); }
