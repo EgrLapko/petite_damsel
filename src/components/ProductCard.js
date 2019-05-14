@@ -28,7 +28,7 @@ export default class ProductCard extends Component {
               </div>
               <div className="product-bottom-details">
                 <p className="product-price"> ${product.price} </p>
-                <p className="cart-btn"><i className="fas fa-cart-plus" onClick={() => addToCart(product.id)}></i></p>
+                <p className={"cart-btn " + (product.inCart ? "cart-active" : null)}><i className="fas fa-cart-plus" onClick={() => addToCart(product.id)}></i></p>
               </div>
             </div>
           )

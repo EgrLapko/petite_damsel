@@ -118,6 +118,8 @@ addToCart = (id) => {
     let tempCart = [...this.state.cart];
     let tempProducts = [...this.state.storeProducts];
     let tempItem = tempCart.find(item => item.id === id);
+    let product = tempProducts[id];
+    product.inCart = true;
     if(!tempItem) {
         tempItem = tempProducts.find(item => item.id === id);
         let total = tempItem.price;
