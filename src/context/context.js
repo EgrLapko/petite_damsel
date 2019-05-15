@@ -296,11 +296,43 @@ clearCart = () => {
 
 // handle filtering
 handleChange = (event) => {
-    console.log(event);
-}
+    const name = event.target.name;
+    const value = event.target.type === "checkbox" 
+        ? event.target.checked 
+        : event.target.value;
+    this.setState({
+        [name]: value
+    },
+    this.sortData
+    );
+};
 
 sortData = () => {
-
+    const {storeProducts, price, color, shipping, search} = this.state;
+    let tempProducts = [...storeProducts];
+    let tempPrice = parseInt(price);
+    // ---------- Filter by price
+    tempProducts = tempProducts.filter(item => item.price <= tempPrice);
+    // ---------- Filter by colors
+    if (color !== "all") {
+        tempProducts = tempProducts.filter(item => item.color === color)
+    }
+    // ---------- Filter by checkbox
+    if(shipping) {
+        tempProducts = tempProducts.filter(item => item.freeShipping === true)
+    }
+    if(search.length > 0) {
+        tempProducts = tempProducts.filter(item => {
+            let tempSearch = search.toLowerCase();
+            let tempTitle = item.title.toLowerCase().slice(0, search.length);
+            if (tempSearch === tempTitle) {
+                 return item;
+            }
+        });
+    }
+    this.setState ({
+        filteredProducts: tempProducts
+    })
 }
 
 

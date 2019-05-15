@@ -23,7 +23,8 @@ button:focus {
   font-family: "Thasadith", sans-serif;
   -webkit-transition: .2s;
   -o-transition: .2s;
-  transition: .2s; }
+  transition: .2s;
+  margin-top: .4rem; }
 
 .btn:hover {
   color: #fff;
@@ -1027,7 +1028,7 @@ button:focus {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 20rem;
+  height: 35rem;
   -webkit-transition: .4s ease-in-out;
   -o-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
@@ -1771,7 +1772,10 @@ button:focus {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 6rem;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 4rem;
   margin: 0 1rem; }
 
 .filter-wrapper {
@@ -1786,9 +1790,45 @@ button:focus {
   -ms-flex-align: center;
   align-items: center;
   margin: auto; }
-  .filter-wrapper p {
-    font-size: 1.1rem;
+  .filter-wrapper .search-bar input[type="text"] {
+    border: none;
+    border-bottom: 1px solid rgba(241, 106, 123, 0.5);
+    background: transparent;
+    font-family: 'Thasadith', sans-serif;
+    outline: none;
+    height: 35px;
+    font-weight: 300;
+    color: black;
+    font-size: 1.1rem; }
+  .filter-wrapper .select {
+    width: 100%;
+    padding: .3rem;
+    height: 2rem;
+    border: none;
+    border: 1px solid rgba(105, 105, 105, 0.2);
+    border-radius: 4px;
+    background-color: #f1f1f1;
     font-family: "Thasadith", sans-serif;
-    margin: 0; }
-  .filter-wrapper input {
-    height: 2rem; }
+    font-size: 1rem; }
+  .filter-wrapper .range-price {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 2rem;
+    background: #f1f1f1;
+    border: 1px solid rgba(105, 105, 105, 0.2);
+    outline: none; }
+  .filter-wrapper .range-price::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: rgba(241, 106, 123, 0.7);
+    cursor: pointer; }
+
+p {
+  font-size: 1.1rem;
+  font-family: "Thasadith", sans-serif;
+  margin: 0; }

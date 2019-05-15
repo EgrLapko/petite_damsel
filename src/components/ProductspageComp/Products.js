@@ -28,7 +28,7 @@ export default class Products extends Component {
                         <div className="products-container">
                           {brasClassic.length === 0 ? (
                             <div>
-                              <p>No items matched</p>
+                              <Title title="No items matched" />
                             </div>
                           ) : (
                             brasClassic.map(product => (

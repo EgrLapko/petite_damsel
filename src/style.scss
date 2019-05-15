@@ -39,6 +39,7 @@ button:focus{
     cursor: pointer;
     font-family: $fontmain;
     transition: .2s;
+    margin-top: .4rem;
   }
 .btn:hover {
     color: #fff;
@@ -732,7 +733,7 @@ button:focus{
 .parallax-content-section {
     @include flexbox;
     flex-direction: column;
-    height: 20rem;
+    height: 35rem;
     transition: .4s ease-in-out;
     text-align: center;
     .parallax-title {
@@ -1276,7 +1277,8 @@ button:focus{
 .filter {
     @include flexbox;
     flex-direction: column;
-    min-height: 6rem;
+    justify-content: space-between;
+    min-height: 4rem;
     margin: 0 1rem;
 }
 
@@ -1285,14 +1287,50 @@ button:focus{
     @include flexbox;
     margin: auto;
     .search-bar {
+        input[type="text"] {
+            border: none;
+            border-bottom: 1px solid rgba(241, 106, 123, .5);
+            background: transparent;
+            font-family: 'Thasadith', sans-serif;
+            outline: none;
+            height: 35px;
+            font-weight: 300;
+            color: black;
+            font-size: 1.1rem;
+        }    
+    }
+    .select {
+        width: 100%;
+        padding: .3rem;
+        height: 2rem;
+        border: none;
+        border: 1px solid rgba(105, 105, 105, .2);
+        border-radius: 4px;
+        background-color: #f1f1f1;
+        font-family: $fontmain;
+        font-size: 1rem;
+    }
+    .range-price {
+        appearance: none;
+        width: 100%;
+        height: 2rem;
+        background: #f1f1f1;
+        border: 1px solid rgba(105, 105, 105, .2);
+        outline: none; 
+    }
+    .range-price::-webkit-slider-thumb {
+        appearance: none;
+        width: 1.5rem;
+        height: 1.5rem; 
+        border-radius: 50%;
+        background: rgba(241, 106, 123, .7);
+        cursor: pointer; 
+      }
     }
     p {
         font-size: 1.1rem;
         font-family: $fontmain;
         margin: 0;
     }
-    input {
-        height: 2rem;
-    }
-}
+    
 

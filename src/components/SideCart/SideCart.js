@@ -32,7 +32,7 @@ export default class SideCart extends Component {
                 <p>Order Total:</p>
                 <p>${cartTotal}</p>
               </div>
-              <Link to="/cart"><p className="btn">View cart</p></Link>
+              <Link to="/cart"><p className="btn btn-sidecart">View cart</p></Link>
             </div>
           )
         }}
