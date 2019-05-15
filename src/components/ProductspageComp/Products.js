@@ -3,10 +3,12 @@ import {ProductConsumer} from '../../context';
 import {Route} from 'react-router-dom';
 import Title from '../Title/Title';
 import ProductCard from '../ProductCard';
+import ProductFilter from '../ProductspageComp/ProductFilter';
 
 
 export default class Products extends Component {
   render() {
+
     return (
       <React.Fragment>
 
@@ -14,16 +16,27 @@ export default class Products extends Component {
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
+                  const brasClassic = filteredProducts.filter(product => product.category === "Bras, classic");
+                  
                   return (
                       <div className="products-list">
                         <Title title="classic bras" />
+                        <ProductFilter />
                         <div className="products-container">
-                        {filteredProducts.map(product => product.category === "Bras, classic" && 
-                          <ProductCard 
-                            key={product.id}
-                            product = {product}
-                          />
-                        )}
+                          <p> {brasClassic.length}Items </p>
+                        </div>
+                        <div className="products-container">
+                          {brasClassic.length === 0 ? (
+                            <div>
+                              <p>No items matched</p>
+                            </div>
+                          ) : (
+                            brasClassic.map(product => (
+                              <ProductCard 
+                                key={product.id}
+                                product = {product}
+                              />
+                          )))}
                         </div>
                       </div>
                   )  
@@ -35,16 +48,17 @@ export default class Products extends Component {
         <ProductConsumer>
           {value => {
                 const {filteredProducts} = value;
+                const brasPushup = filteredProducts.filter(product => product.category === "Bras, push-up");
                 return (
                     <div className="products-list">
                       <Title title="push-up bras" />
                       <div className="products-container">
-                      {filteredProducts.map(product => product.category === "Bras, push-up" && 
-                        <ProductCard 
-                          key={product.id}
-                          product = {product}
-                        />
-                      )}
+                        {brasPushup.map(product => (
+                            <ProductCard 
+                              key={product.id}
+                              product = {product}
+                            />
+                        ))}
                       </div>
                     </div>
                 )  
@@ -56,16 +70,17 @@ export default class Products extends Component {
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
+                  const brasStrapless= filteredProducts.filter(product => product.category === "Bras, strapless");
                   return (
                       <div className="products-list">
                         <Title title="strapless bras" />
                         <div className="products-container">
-                        {filteredProducts.map(product => product.category === "Bras, strapless" && 
-                          <ProductCard 
-                            key={product.id}
-                            product = {product}
-                          />
-                        )}
+                        {brasStrapless.map(product => (
+                            <ProductCard 
+                              key={product.id}
+                              product = {product}
+                            />
+                        ))}
                         </div>
                       </div>
                   )  
@@ -77,16 +92,17 @@ export default class Products extends Component {
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
+                  const brasWireless= filteredProducts.filter(product => product.category === "Bras, wireless");
                   return (
                       <div className="products-list">
                         <Title title="wireless bras" />
                         <div className="products-container">
-                        {filteredProducts.map(product => product.category === "Bras, wireless" && 
-                          <ProductCard 
-                            key={product.id}
-                            product = {product}
-                          />
-                        )}
+                        {brasWireless.map(product => (
+                            <ProductCard 
+                              key={product.id}
+                              product = {product}
+                            />
+                        ))}
                         </div>
                       </div>
                   )  
@@ -98,16 +114,17 @@ export default class Products extends Component {
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
+                  const pantiesClassic= filteredProducts.filter(product => product.category === "Panties, classic");
                   return (
                       <div className="products-list">
                         <Title title="Classic panties" />
                         <div className="products-container">
-                        {filteredProducts.map(product => product.category === "Panties, classic" && 
-                          <ProductCard 
-                            key={product.id}
-                            product = {product}
-                          />
-                        )}
+                        {pantiesClassic.map(product => (
+                            <ProductCard 
+                              key={product.id}
+                              product = {product}
+                            />
+                        ))}
                         </div>
                       </div>
                   )  
@@ -120,16 +137,17 @@ export default class Products extends Component {
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
+                  const pantiesThongs= filteredProducts.filter(product => product.category === "Panties, thongs");
                   return (
                       <div className="products-list">
                         <Title title="Thongs" />
                         <div className="products-container">
-                        {filteredProducts.map(product => product.category === "Panties, thongs" && 
-                          <ProductCard 
-                            key={product.id}
-                            product = {product}
-                          />
-                        )}
+                        {pantiesThongs.map(product => (
+                            <ProductCard 
+                              key={product.id}
+                              product = {product}
+                            />
+                        ))}
                         </div>
                       </div>
                   )  
@@ -141,16 +159,17 @@ export default class Products extends Component {
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
+                  const pantiesSlimming= filteredProducts.filter(product => product.category === "Panties, slimming");
                   return (
                       <div className="products-list">
                         <Title title="Slimming panties" />
                         <div className="products-container">
-                        {filteredProducts.map(product => product.category === "Panties, slimming" && 
-                          <ProductCard 
-                            key={product.id}
-                            product = {product}
-                          />
-                        )}
+                        {pantiesSlimming.map(product => (
+                            <ProductCard 
+                              key={product.id}
+                              product = {product}
+                            />
+                        ))}
                         </div>
                       </div>
                   )  
@@ -162,16 +181,17 @@ export default class Products extends Component {
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
+                  const pantiesBrazilian= filteredProducts.filter(product => product.category === "Panties, brazilian");
                   return (
                       <div className="products-list">
                         <Title title="Brazilian panties" />
                         <div className="products-container">
-                        {filteredProducts.map(product => product.category === "Panties, brazilian" && 
-                          <ProductCard 
-                            key={product.id}
-                            product = {product}
-                          />
-                        )}
+                        {pantiesBrazilian.map(product => (
+                            <ProductCard 
+                              key={product.id}
+                              product = {product}
+                            />
+                        ))}
                         </div>
                       </div>
                   )  
@@ -183,16 +203,17 @@ export default class Products extends Component {
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
+                  const sleepBottoms= filteredProducts.filter(product => product.category === "Sleepwear, bottoms");
                   return (
                       <div className="products-list">
                         <Title title="Sleepwear, bottoms" />
                         <div className="products-container">
-                        {filteredProducts.map(product => product.category === "Sleepwear, bottoms" && 
-                          <ProductCard 
-                            key={product.id}
-                            product = {product}
-                          />
-                        )}
+                        {sleepBottoms.map(product => (
+                            <ProductCard 
+                              key={product.id}
+                              product = {product}
+                            />
+                        ))}
                         </div>
                       </div>
                   )  
@@ -204,16 +225,17 @@ export default class Products extends Component {
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
+                  const sleepLong= filteredProducts.filter(product => product.category === "Sleepwear, long");
                   return (
                       <div className="products-list">
                         <Title title="Sleepwear, long" />
                         <div className="products-container">
-                        {filteredProducts.map(product => product.category === "Sleepwear, long" && 
-                          <ProductCard 
-                            key={product.id}
-                            product = {product}
-                          />
-                        )}
+                        {sleepLong.map(product => (
+                            <ProductCard 
+                              key={product.id}
+                              product = {product}
+                            />
+                        ))}
                         </div>
                       </div>
                   )  
@@ -225,16 +247,17 @@ export default class Products extends Component {
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
+                  const sleepShort= filteredProducts.filter(product => product.category === "Sleepwear, short");
                   return (
                       <div className="products-list">
                         <Title title="Sleepwear, short" />
                         <div className="products-container">
-                        {filteredProducts.map(product => product.category === "Sleepwear, short" && 
-                          <ProductCard 
-                            key={product.id}
-                            product = {product}
-                          />
-                        )}
+                        {sleepShort.map(product => (
+                            <ProductCard 
+                              key={product.id}
+                              product = {product}
+                            />
+                        ))}
                         </div>
                       </div>
                   )  
@@ -246,16 +269,17 @@ export default class Products extends Component {
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
+                  const sleepTops= filteredProducts.filter(product => product.category === "Sleepwear, tops");
                   return (
                       <div className="products-list">
                         <Title title="Sleepwear, tops" />
                         <div className="products-container">
-                        {filteredProducts.map(product => product.category === "Sleepwear, tops" && 
-                          <ProductCard 
-                            key={product.id}
-                            product = {product}
-                          />
-                        )}
+                        {sleepTops.map(product => (
+                            <ProductCard 
+                              key={product.id}
+                              product = {product}
+                            />
+                        ))}
                         </div>
                       </div>
                   )  
@@ -267,16 +291,17 @@ export default class Products extends Component {
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
+                  const accsBody= filteredProducts.filter(product => product.category === "Accessories, bodysuits");
                   return (
                       <div className="products-list">
                         <Title title="Accessories, bodysuits" />
                         <div className="products-container">
-                        {filteredProducts.map(product => product.category === "Accessories, bodysuits" && 
-                          <ProductCard 
-                            key={product.id}
-                            product = {product}
-                          />
-                        )}
+                        {accsBody.map(product => (
+                            <ProductCard 
+                              key={product.id}
+                              product = {product}
+                            />
+                        ))}
                         </div>
                       </div>
                   )  
@@ -288,16 +313,17 @@ export default class Products extends Component {
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
+                  const accsTights= filteredProducts.filter(product => product.category === "Accessories, tights");
                   return (
                       <div className="products-list">
                         <Title title="Accessories, tights" />
                         <div className="products-container">
-                        {filteredProducts.map(product => product.category === "Accessories, tights" && 
-                          <ProductCard 
-                            key={product.id}
-                            product = {product}
-                          />
-                        )}
+                        {accsTights.map(product => (
+                            <ProductCard 
+                              key={product.id}
+                              product = {product}
+                            />
+                        ))}
                         </div>
                       </div>
                   )  
@@ -309,16 +335,17 @@ export default class Products extends Component {
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
+                  const accsSlippers= filteredProducts.filter(product => product.category === "Accessories, slippers");
                   return (
                       <div className="products-list">
                         <Title title="Accessories, slippers" />
                         <div className="products-container">
-                        {filteredProducts.map(product => product.category === "Accessories, slippers" && 
-                          <ProductCard 
-                            key={product.id}
-                            product = {product}
-                          />
-                        )}
+                        {accsSlippers.map(product => (
+                            <ProductCard 
+                              key={product.id}
+                              product = {product}
+                            />
+                        ))}
                         </div>
                       </div>
                   )  
@@ -330,16 +357,17 @@ export default class Products extends Component {
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
+                  const accsOther= filteredProducts.filter(product => product.category === "Accessories, other");
                   return (
                       <div className="products-list">
                         <Title title="Accessories, other" />
                         <div className="products-container">
-                        {filteredProducts.map(product => product.category === "Accessories, other" &&
-                          <ProductCard 
-                            key={product.id}
-                            product = {product}
-                          />
-                        )}
+                        {accsOther.map(product => (
+                            <ProductCard 
+                              key={product.id}
+                              product = {product}
+                            />
+                        ))}
                         </div>
                       </div>
                   )  

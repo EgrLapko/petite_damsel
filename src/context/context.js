@@ -26,7 +26,13 @@ class ProductProvider extends Component {
         filteredProducts: [],
         featuredProducts: [],
         singleProduct: {},
-        loading: true,   
+        loading: true,  
+        search: '',
+        price: 0,
+        min: 0,
+        max: 0,
+        color: 'all', 
+        shipping: false,
     };
 
 componentDidMount() {
@@ -51,6 +57,8 @@ setProducts = (products) => {
     // grabbing featured items
 let featuredProducts = storeProducts.filter(item => 
     item.featured === true);
+    // get max price
+let maxPrice = Math.max(...storeProducts.map(item => item.price));
     // assigning values to a state
 this.setState({
     storeProducts: storeProducts,
@@ -58,7 +66,10 @@ this.setState({
     featuredProducts: featuredProducts,
     cart: this.getStorageCart(),
     singleProduct: this.getStorageProduct(),
-    loading: false
+    loading: false,
+    price: maxPrice,
+    max: maxPrice
+
 }, () => {this.addTotals();
 })
 };
@@ -271,8 +282,8 @@ removeItem = (id) =>{
     }, () => {
         this.addTotals();
         this.syncStorage();
-    }, )
-}
+    }, );
+};
 
 clearCart = () => {
    this.setState({
@@ -280,12 +291,21 @@ clearCart = () => {
    }, () => {
     this.addTotals();
     this.syncStorage();
-})
+});
+};
+
+// handle filtering
+handleChange = (event) => {
+    console.log(event);
+}
+
+sortData = () => {
+
 }
 
 
     render() {
-        return(
+        return (
             // Creating product provider
             // Here insert everything that wanted to be passed
             <ProductContext.Provider value={{
@@ -305,7 +325,8 @@ clearCart = () => {
                 increment: this.increment,
                 decrement: this.decrement,
                 removeItem: this.removeItem,
-                clearCart: this.clearCart                
+                clearCart: this.clearCart,
+                handleChange: this.handleChange                
             }}>
                 {/* Super important stuff */}
                 {this.props.children}

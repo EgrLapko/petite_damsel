@@ -1270,3 +1270,29 @@ button:focus{
     border: 1px solid rgba(241, 106, 123, 0);
 }
 
+
+// ----------------------------- Filters
+
+.filter {
+    @include flexbox;
+    flex-direction: column;
+    min-height: 6rem;
+    margin: 0 1rem;
+}
+
+.filter-wrapper {
+    width: 100%;
+    @include flexbox;
+    margin: auto;
+    .search-bar {
+    }
+    p {
+        font-size: 1.1rem;
+        font-family: $fontmain;
+        margin: 0;
+    }
+    input {
+        height: 2rem;
+    }
+}
+

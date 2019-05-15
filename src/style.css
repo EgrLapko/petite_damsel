@@ -1756,3 +1756,39 @@ button:focus {
   background-color: rgba(241, 106, 123, 0.7);
   color: #fff;
   border: 1px solid rgba(241, 106, 123, 0); }
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 6rem;
+  margin: 0 1rem; }
+
+.filter-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto; }
+  .filter-wrapper p {
+    font-size: 1.1rem;
+    font-family: "Thasadith", sans-serif;
+    margin: 0; }
+  .filter-wrapper input {
+    height: 2rem; }
