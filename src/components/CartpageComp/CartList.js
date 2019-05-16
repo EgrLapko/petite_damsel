@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CartItem from './CartItem';
 import {ProductConsumer} from '../../context';
+import Title from '../Title/Title';
 
 export default class CartList extends Component {
   render() {
@@ -11,7 +12,7 @@ export default class CartList extends Component {
           const {cart, increment, decrement, removeItem} = value;
           if (cart.length === 0) {
             return (
-              <h1>Your cart is empty</h1>
+              <Title title="No panties here yet :(" />
             );
           }
           return (

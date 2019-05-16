@@ -89,13 +89,13 @@ export default class MainPage extends Component {
           </div>             
         </Parallax>
 
-        <Featured />
-
         <Title 
           title = "show us your #pd look"
           description= "share your look with us, add #iampd to your image"
         />
         <InstagramSection />
+
+        <Featured />
 
       </React.Fragment>
     )
