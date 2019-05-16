@@ -20,7 +20,7 @@ export default class Products extends Component {
                   
                   return (
                       <div className="products-list">
-                        <Title title="classic bras hello from surface" />
+                        <Title title="classic bras" />
                         <ProductFilter />
                         <div className="products-container">
                           <p> {brasClassic.length}Items </p>
