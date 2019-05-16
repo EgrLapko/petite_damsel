@@ -33,6 +33,7 @@ class ProductProvider extends Component {
         max: 0,
         color: 'all', 
         shipping: false,
+        priceFilter: false
     };
 
 componentDidMount() {
@@ -236,6 +237,11 @@ setSingleProduct = (id) => {
         this.setState({cartOpen: true })
     }
 
+// ---------- Open price filter
+    handlePriceFilter = () => {
+        this.setState({priceFilter: ! this.state.priceFilter})
+    }
+
 // ---------- Cart functionality
 increment = (id) =>{
     let tempCart = [...this.state.cart];
@@ -358,7 +364,8 @@ sortData = () => {
                 decrement: this.decrement,
                 removeItem: this.removeItem,
                 clearCart: this.clearCart,
-                handleChange: this.handleChange                
+                handleChange: this.handleChange,
+                handlePriceFilter: this.handlePriceFilter             
             }}>
                 {/* Super important stuff */}
                 {this.props.children}

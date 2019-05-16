@@ -1,5 +1,3 @@
-import { genericTypeAnnotation } from "@babel/types";
-
 export const items = [
   {
     sys: { id: 0 },

@@ -6,7 +6,7 @@ export default class ProductFilter extends Component {
     return (
       <ProductConsumer>
         {value => {
-          const {search, min, max, color, shipping, price, handleChange, storeProducts} = value;
+          const {search, min, max, color, shipping, price, handleChange, storeProducts, handlePriceFilter, priceFilter} = value;
           
           let colors = new Set()
           colors.add('all');
@@ -19,7 +19,6 @@ export default class ProductFilter extends Component {
             <div className="filter-wrapper">
               {/* Text search */}
               <div className="search-bar filter">
-                <label htmlFor="search"><p>Search here</p></label>
                 <input type="text"
                        name="search" 
                        id='search' 
@@ -31,9 +30,9 @@ export default class ProductFilter extends Component {
               {/* End of text search */}
               {/* Category search */}
               <div className="category-search filter">
-                <label htmlFor="color"> <p>Color</p></label>
                 <select name="color" 
-                        id="color"onChange={handleChange} 
+                        id="color"
+                        onChange={handleChange} 
                         value={color} 
                         className="filter-item select">
                     {
@@ -47,26 +46,29 @@ export default class ProductFilter extends Component {
               </div>
               {/* Category search ended */}
               {/* Price Range */}
-              <div className="price-search filter">
-                <label htmlFor="price"><p>Price: ${price}</p></label>
-                <input 
-                    type="range" 
-                    name="price" 
-                    id="price" 
-                    min={min} 
-                    max={max} 
-                    value={price} 
-                    className="range-price"
-                    onChange = {handleChange}
-                />
-                
+
+              <div className="price-filter filter"><p className="filter-title" onClick={handlePriceFilter}>Price <i className="fas fa-sort-down"></i></p>
+                <div className={"price-container " + (priceFilter ? "price-visible" : null)}>
+                  <label htmlFor="price"><p className="price-screen">${price}</p></label>
+                  <input 
+                      type="range" 
+                      name="price" 
+                      id="price" 
+                      min={min} 
+                      max={max} 
+                      value={price} 
+                      className="range-price"
+                      onChange = {handleChange}
+                  />
+                </div>
               </div>
+
               {/* End of price range */}
               {/* Free shipping */}
-              <div className="shipping-search filter">
+              {/* <div className="shipping-search filter">
                 <label htmlFor="shipping"><p> shipping</p></label>
                 <input className="checkmark" type="checkbox" name="shipping" id="shipping" onChange={handleChange} checked={shipping && true} ></input>
-              </div>
+              </div> */}
               {/* End of Free shipping */}
             </div>
           )

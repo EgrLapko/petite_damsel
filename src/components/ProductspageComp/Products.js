@@ -23,7 +23,7 @@ export default class Products extends Component {
                         <Title title="classic bras" />
                         <ProductFilter />
                         <div className="products-container">
-                          <p> {brasClassic.length}Items </p>
+                          <p> {brasClassic.length} items </p>
                         </div>
                         <div className="products-container">
                           {brasClassic.length === 0 ? (

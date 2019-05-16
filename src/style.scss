@@ -993,11 +993,11 @@ button:focus{
     @include flexbox;
     flex-direction: column;
     width: 22rem;
-    background-color: rgba(250, 250, 250, .7);
     box-shadow: 0px 0px 50px rgba(105, 105, 105, .1);
+    border: 1px solid rgba(105, 105, 105, .1);
     overflow: hidden;
     margin: 1rem 1rem;
-    border-radius: 10px;
+    border-radius: 1rem;
     transition: .3s;
     .image-container {
         width: 100%;
@@ -1059,6 +1059,7 @@ button:focus{
 .product-card:hover {
     box-shadow: 0px 0px 50px rgba(105, 105, 105, .3);
     background-color: rgba(250, 250, 250, 1);
+    border: 1px solid rgba(105, 105, 105, .2);
 }
 
 .card-small {
@@ -1293,15 +1294,16 @@ button:focus{
 
 .filter {
     @include flexbox;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 4rem;
-    margin: 0 1rem;
+    position: relative;
+    margin: 0 2em;
+    width: 5rem;
+    min-height: 3rem;
 }
 
 .filter-wrapper {
     width: 100%;
     @include flexbox;
+    min-height: 5rem;
     margin: auto;
     .search-bar {
         input[type="text"] {
@@ -1309,6 +1311,7 @@ button:focus{
             border-bottom: 1px solid rgba(241, 106, 123, .5);
             background: transparent;
             font-family: 'Thasadith', sans-serif;
+            text-align: center;
             outline: none;
             height: 35px;
             font-weight: 300;
@@ -1327,27 +1330,79 @@ button:focus{
         font-family: $fontmain;
         font-size: 1rem;
     }
-    .range-price {
-        appearance: none;
-        width: 100%;
-        height: 2rem;
-        background: #f1f1f1;
-        border: 1px solid rgba(105, 105, 105, .2);
-        outline: none; 
-    }
-    .range-price::-webkit-slider-thumb {
-        appearance: none;
-        width: 1.5rem;
-        height: 1.5rem; 
-        border-radius: 50%;
-        background: rgba(241, 106, 123, .7);
-        cursor: pointer; 
-      }
-    }
+    
+}
     p {
         font-size: 1.1rem;
         font-family: $fontmain;
         margin: 0;
     }
+    .price-filter {
+        .filter-title {
+            cursor: pointer;
+        }
+        .price-container{
+            @include flexbox;
+            flex-direction: column;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1;
+            font-family: $fontmain;
+            font-size: 1rem;
+            width: 12rem;
+            padding: 1rem;
+            cursor: default;
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, .15);
+            background-color: rgba(242, 242, 242, .9);
+            transform: translateX(0rem);
+            border-radius: 1rem;
+            margin-top: 8rem;
+            transition: .4s;
+            .colors-item {
+                width: 6rem;
+                .check-container {
+                    @include flexbox;
+                    justify-content: flex-start;
+                    height: 2.3rem;
+                    user-select: none;
+                    margin: 0;
+                  }
+            }
+            input {
+                background-color: $mainwhite;
+            }
+            input[type=range] {
+                height: 2rem;
+                -webkit-appearance: none;
+                width: 100%;
+              }
+              input[type=range]:focus {
+                outline: none;
+              }
+              input[type=range]::-webkit-slider-runnable-track {
+                width: 100%;
+                height: 1px;
+                cursor: pointer;
+                background: rgba(241, 106, 123, .7);
+              }
+              input[type=range]::-webkit-slider-thumb {
+                height: 1.3rem;
+                width: 1.3rem;
+                border-radius: 21px;
+                background: rgba(220, 220, 220, 1);
+                cursor: pointer;
+                -webkit-appearance: none;
+                margin-top: -10px;
+              }
+        }
+        .price-visible {
+            margin-top: 5rem;
+            opacity: 1;
+            visibility: visible;
+        }
+        
+    }
+    
     
 
