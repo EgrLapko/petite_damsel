@@ -657,7 +657,7 @@ button:focus{
 .trends-container {
     @include flexbox;
     width: 100%;
-    margin: 3rem 0;
+    margin: 5rem 0;
     .trends-card {
         @include flexbox;
         width: 40rem;
@@ -733,7 +733,7 @@ button:focus{
 .parallax-content-section {
     @include flexbox;
     flex-direction: column;
-    height: 35rem;
+    height: 45rem;
     transition: .4s ease-in-out;
     text-align: center;
     .parallax-title {
@@ -1128,65 +1128,92 @@ button:focus{
             width: 30rem;
             .details-menu {
                 width: 30rem;
-                padding: 2rem;
+                padding: 4rem;
                 transition: .3s;
                 position: fixed;
+                background-color: rgba(250, 250, 250, 1);
                 top: 15%;
                 right: 7%;
+                border-radius: 5%;
+                border: 1px solid rgba(105, 105, 105, .1);
+                .text-title {
+                    font-family: $fontmain;
+                    text-align: center;
+                }
                 .details-title {
-                    margin-top: 2rem;
-                    margin-bottom: 1rem;
+                    font-size: 3rem;
+                    color: rgba(241, 106, 123, .7);
+                }
+                .details-category {
+                    font-size: 1.5rem;
+                    text-transform: uppercase;
                 }
                 .details-price {
-                    font-size: 2rem;
-                    margin: 0;
+                    width: 80%;
+                    text-align: center;
+                    font-size: 1.8rem;
+                    margin: auto;
+                    margin-top: .5rem;
+                    padding: .5rem;
+                    border-bottom: 1px solid rgba(105, 105, 105, .2);
                 }
                 .details-item-info {
-                    text-align: start;
+                    @include flexbox;
+                    flex-direction: column;
                     width: 80%;
-                    margin-left: 10%;
-                    margin-right: 10%;
+                    margin: auto;
+                    padding: 1.5rem;
                     .details-note {
-                        font-weight: 600;
-                        font-size: 1.3rem;
+                        align-self: flex-start;
+                        font-size: 1.5rem;
+                        margin-bottom: 1rem;
+                        text-transform: capitalize
                     }
                     .details-description {
-                        font-size: 1.1rem;
+                        font-size: 1.2rem;
                         letter-spacing: .1rem;
                     }
                 }
                 .details-filter {
                     @include flexbox;
-                    justify-content: space-around;
-                    .size-filter-box, .cup-filter-box {
+                    .size-filter-box {
                         @include flexbox;
-                        flex-direction: column;
-                        p {
-                            margin: 0;
-                            margin-bottom: .8rem;
-                        }
-                        .size-list, .cup-list {
-                            list-style-type: none;
-                            margin: 0;
-                            padding: 0;
-                            display: flex;
-                            justify-content: space-around;
-                            li {
-                                margin-left: 5px;
-                                margin-right: 5px;
-                                cursor: pointer;
-                                transition: .2s;
+                        width: 100%;
+                        justify-content: space-around;
+                        .size-box {
+                            @include flexbox;
+                            flex-direction: column;
+                            width: 9rem;
+                            p {
+                                font-size: 1.3rem;
+                            }
+                            .size-list {
+                                list-style-type: none;
+                                padding: 0;
+                                @include flexbox;
+                                border: 1px solid rgba(105, 105, 105, .1);
+                                padding: .5rem;
+                                border-radius: .3rem;
+                                box-shadow: 0px 0px 20px rgba(105, 105, 105, .05);
+                                .filter-item {
+                                    margin: 0 .3rem;
+                                    cursor: pointer;
+                                    transition: .2s;
+                                    font-family: $fontmain;
+                                    font-size: 1.5rem;
+                                }
+                                .filter-item:hover {
+                                    color: rgba(241, 106, 123, .7);
+                                }
                             }
                         }
-                        .size-list li:hover, .cup-list li:hover {
-                            color: rgba(241, 106, 123, .7);
-                        }
+                    }
                     }
                 }
                 .details-btn {
                     @include flexbox;
                     justify-content: space-around;
-                    margin-top: 3rem;
+                    margin-top: 1rem;
                 }
             }
             .details-menu:hover {
@@ -1194,7 +1221,7 @@ button:focus{
             }
         }
     }
-}
+
 
 // ----------------------------- Cart
 

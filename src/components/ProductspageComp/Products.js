@@ -7,6 +7,11 @@ import ProductFilter from '../ProductspageComp/ProductFilter';
 
 
 export default class Products extends Component {
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
 
     return (

@@ -93,6 +93,7 @@ export default class MainPage extends Component {
           title = "show us your #pd look"
           description= "share your look with us, add #iampd to your image"
         />
+
         <InstagramSection />
 
         <Featured />
