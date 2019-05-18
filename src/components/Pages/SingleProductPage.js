@@ -14,7 +14,7 @@ export default class SingleProductPage extends Component {
             return (
               <h1>product loading...</h1>
             )}
-              const {title, category, description, id, price, image, image2, inCart} = singleProduct;
+              const {title, category, description, id, price, image, image2, inCart, color} = singleProduct;
               console.log(title, inCart);
 
               let daLink;
@@ -93,7 +93,7 @@ export default class SingleProductPage extends Component {
                         </div>
                         <div className="details-btn">
                           <Link to={daLink}>          
-                          <button className="btn"> <span className="details-back"><i className="fas fa-angle-left"/></span> Back to bras</button></Link> 
+                          <button className="btn btn-details-back">Back to <span>{category}</span></button></Link> 
                           <button className="cart-btn">
                             <span className={"details-cart " + (inCart === true ? "cart-active" : null)} onClick={() => addToCart(id)}><i className="fas fa-cart-plus"/></span>
                           </button>

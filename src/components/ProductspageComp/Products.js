@@ -55,17 +55,26 @@ export default class Products extends Component {
                 const {filteredProducts} = value;
                 const brasPushup = filteredProducts.filter(product => product.category === "Bras, push-up");
                 return (
-                    <div className="products-list">
-                      <Title title="push-up bras" />
-                      <div className="products-container">
-                        {brasPushup.map(product => (
-                            <ProductCard 
-                              key={product.id}
-                              product = {product}
-                            />
-                        ))}
+                  <div className="products-list">
+                        <Title title="push-up bras" />
+                        <ProductFilter />
+                        <div className="products-container">
+                          <p> {brasPushup.length} items </p>
+                        </div>
+                        <div className="products-container">
+                          {brasPushup.length === 0 ? (
+                            <div>
+                              <Title title="No items matched" />
+                            </div>
+                          ) : (
+                            brasPushup.map(product => (
+                              <ProductCard 
+                                key={product.id}
+                                product = {product}
+                              />
+                          )))}
+                        </div>
                       </div>
-                    </div>
                 )  
             }}
         </ProductConsumer>   
@@ -79,13 +88,22 @@ export default class Products extends Component {
                   return (
                       <div className="products-list">
                         <Title title="strapless bras" />
+                        <ProductFilter />
                         <div className="products-container">
-                        {brasStrapless.map(product => (
-                            <ProductCard 
-                              key={product.id}
-                              product = {product}
-                            />
-                        ))}
+                          <p> {brasStrapless.length} items </p>
+                        </div>
+                        <div className="products-container">
+                          {brasStrapless.length === 0 ? (
+                            <div>
+                              <Title title="No items matched" />
+                            </div>
+                          ) : (
+                            brasStrapless.map(product => (
+                              <ProductCard 
+                                key={product.id}
+                                product = {product}
+                              />
+                          )))}
                         </div>
                       </div>
                   )  
@@ -100,14 +118,55 @@ export default class Products extends Component {
                   const brasWireless= filteredProducts.filter(product => product.category === "Bras, wireless");
                   return (
                       <div className="products-list">
-                        <Title title="wireless bras" />
+                        <Title title="classic bras" />
+                        <ProductFilter />
                         <div className="products-container">
-                        {brasWireless.map(product => (
-                            <ProductCard 
-                              key={product.id}
-                              product = {product}
-                            />
-                        ))}
+                          <p> {brasWireless.length} items </p>
+                        </div>
+                        <div className="products-container">
+                          {brasWireless.length === 0 ? (
+                            <div>
+                              <Title title="No items matched" />
+                            </div>
+                          ) : (
+                            brasWireless.map(product => (
+                              <ProductCard 
+                                key={product.id}
+                                product = {product}
+                              />
+                          )))}
+                        </div>
+                      </div>
+                  )  
+              }}
+          </ProductConsumer>   
+        }/>
+
+        <Route path="/products/bras" render={() =>     
+          <ProductConsumer>
+            {value => {
+                  const {filteredProducts} = value;
+                  const brasAll = filteredProducts.filter(product => product.type === "Bras");
+
+                  return (
+                      <div className="products-list">
+                        <Title title="bras. all-in" />
+                        <ProductFilter />
+                        <div className="products-container">
+                          <p> {brasAll.length} items </p>
+                        </div>
+                        <div className="products-container">
+                          {brasAll.length === 0 ? (
+                            <div>
+                              <Title title="No items matched" />
+                            </div>
+                          ) : (
+                            brasAll.map(product => (
+                              <ProductCard 
+                                key={product.id}
+                                product = {product}
+                              />
+                          )))}
                         </div>
                       </div>
                   )  
@@ -122,14 +181,23 @@ export default class Products extends Component {
                   const pantiesClassic= filteredProducts.filter(product => product.category === "Panties, classic");
                   return (
                       <div className="products-list">
-                        <Title title="Classic panties" />
+                        <Title title="classic panties" />
+                        <ProductFilter />
                         <div className="products-container">
-                        {pantiesClassic.map(product => (
-                            <ProductCard 
-                              key={product.id}
-                              product = {product}
-                            />
-                        ))}
+                          <p> {pantiesClassic.length} items </p>
+                        </div>
+                        <div className="products-container">
+                          {pantiesClassic.length === 0 ? (
+                            <div>
+                              <Title title="No items matched" />
+                            </div>
+                          ) : (
+                            pantiesClassic.map(product => (
+                              <ProductCard 
+                                key={product.id}
+                                product = {product}
+                              />
+                          )))}
                         </div>
                       </div>
                   )  
@@ -145,14 +213,23 @@ export default class Products extends Component {
                   const pantiesThongs= filteredProducts.filter(product => product.category === "Panties, thongs");
                   return (
                       <div className="products-list">
-                        <Title title="Thongs" />
+                        <Title title="thongs" />
+                        <ProductFilter />
                         <div className="products-container">
-                        {pantiesThongs.map(product => (
-                            <ProductCard 
-                              key={product.id}
-                              product = {product}
-                            />
-                        ))}
+                          <p> {pantiesThongs.length} items </p>
+                        </div>
+                        <div className="products-container">
+                          {pantiesThongs.length === 0 ? (
+                            <div>
+                              <Title title="No items matched" />
+                            </div>
+                          ) : (
+                            pantiesThongs.map(product => (
+                              <ProductCard 
+                                key={product.id}
+                                product = {product}
+                              />
+                          )))}
                         </div>
                       </div>
                   )  
@@ -167,14 +244,23 @@ export default class Products extends Component {
                   const pantiesSlimming= filteredProducts.filter(product => product.category === "Panties, slimming");
                   return (
                       <div className="products-list">
-                        <Title title="Slimming panties" />
+                        <Title title="slimming panties" />
+                        <ProductFilter />
                         <div className="products-container">
-                        {pantiesSlimming.map(product => (
-                            <ProductCard 
-                              key={product.id}
-                              product = {product}
-                            />
-                        ))}
+                          <p> {pantiesSlimming.length} items </p>
+                        </div>
+                        <div className="products-container">
+                          {pantiesSlimming.length === 0 ? (
+                            <div>
+                              <Title title="No items matched" />
+                            </div>
+                          ) : (
+                            pantiesSlimming.map(product => (
+                              <ProductCard 
+                                key={product.id}
+                                product = {product}
+                              />
+                          )))}
                         </div>
                       </div>
                   )  
@@ -189,14 +275,23 @@ export default class Products extends Component {
                   const pantiesBrazilian= filteredProducts.filter(product => product.category === "Panties, brazilian");
                   return (
                       <div className="products-list">
-                        <Title title="Brazilian panties" />
+                        <Title title="brazilian panties" />
+                        <ProductFilter />
                         <div className="products-container">
-                        {pantiesBrazilian.map(product => (
-                            <ProductCard 
-                              key={product.id}
-                              product = {product}
-                            />
-                        ))}
+                          <p> {pantiesBrazilian.length} items </p>
+                        </div>
+                        <div className="products-container">
+                          {pantiesBrazilian.length === 0 ? (
+                            <div>
+                              <Title title="No items matched" />
+                            </div>
+                          ) : (
+                            pantiesBrazilian.map(product => (
+                              <ProductCard 
+                                key={product.id}
+                                product = {product}
+                              />
+                          )))}
                         </div>
                       </div>
                   )  
@@ -211,14 +306,23 @@ export default class Products extends Component {
                   const sleepBottoms= filteredProducts.filter(product => product.category === "Sleepwear, bottoms");
                   return (
                       <div className="products-list">
-                        <Title title="Sleepwear, bottoms" />
+                        <Title title="sleepwear. bottoms" />
+                        <ProductFilter />
                         <div className="products-container">
-                        {sleepBottoms.map(product => (
-                            <ProductCard 
-                              key={product.id}
-                              product = {product}
-                            />
-                        ))}
+                          <p> {sleepBottoms.length} items </p>
+                        </div>
+                        <div className="products-container">
+                          {sleepBottoms.length === 0 ? (
+                            <div>
+                              <Title title="No items matched" />
+                            </div>
+                          ) : (
+                            sleepBottoms.map(product => (
+                              <ProductCard 
+                                key={product.id}
+                                product = {product}
+                              />
+                          )))}
                         </div>
                       </div>
                   )  
@@ -233,14 +337,23 @@ export default class Products extends Component {
                   const sleepLong= filteredProducts.filter(product => product.category === "Sleepwear, long");
                   return (
                       <div className="products-list">
-                        <Title title="Sleepwear, long" />
+                        <Title title="sleepwear. long" />
+                        <ProductFilter />
                         <div className="products-container">
-                        {sleepLong.map(product => (
-                            <ProductCard 
-                              key={product.id}
-                              product = {product}
-                            />
-                        ))}
+                          <p> {sleepLong.length} items </p>
+                        </div>
+                        <div className="products-container">
+                          {sleepLong.length === 0 ? (
+                            <div>
+                              <Title title="No items matched" />
+                            </div>
+                          ) : (
+                            sleepLong.map(product => (
+                              <ProductCard 
+                                key={product.id}
+                                product = {product}
+                              />
+                          )))}
                         </div>
                       </div>
                   )  
@@ -255,14 +368,23 @@ export default class Products extends Component {
                   const sleepShort= filteredProducts.filter(product => product.category === "Sleepwear, short");
                   return (
                       <div className="products-list">
-                        <Title title="Sleepwear, short" />
+                        <Title title="sleepwear. short" />
+                        <ProductFilter />
                         <div className="products-container">
-                        {sleepShort.map(product => (
-                            <ProductCard 
-                              key={product.id}
-                              product = {product}
-                            />
-                        ))}
+                          <p> {sleepShort.length} items </p>
+                        </div>
+                        <div className="products-container">
+                          {sleepShort.length === 0 ? (
+                            <div>
+                              <Title title="No items matched" />
+                            </div>
+                          ) : (
+                            sleepShort.map(product => (
+                              <ProductCard 
+                                key={product.id}
+                                product = {product}
+                              />
+                          )))}
                         </div>
                       </div>
                   )  
@@ -277,14 +399,23 @@ export default class Products extends Component {
                   const sleepTops= filteredProducts.filter(product => product.category === "Sleepwear, tops");
                   return (
                       <div className="products-list">
-                        <Title title="Sleepwear, tops" />
+                        <Title title="sleepwear. tops" />
+                        <ProductFilter />
                         <div className="products-container">
-                        {sleepTops.map(product => (
-                            <ProductCard 
-                              key={product.id}
-                              product = {product}
-                            />
-                        ))}
+                          <p> {sleepTops.length} items </p>
+                        </div>
+                        <div className="products-container">
+                          {sleepTops.length === 0 ? (
+                            <div>
+                              <Title title="No items matched" />
+                            </div>
+                          ) : (
+                            sleepTops.map(product => (
+                              <ProductCard 
+                                key={product.id}
+                                product = {product}
+                              />
+                          )))}
                         </div>
                       </div>
                   )  
@@ -299,14 +430,23 @@ export default class Products extends Component {
                   const accsBody= filteredProducts.filter(product => product.category === "Accessories, bodysuits");
                   return (
                       <div className="products-list">
-                        <Title title="Accessories, bodysuits" />
+                        <Title title="bodysuits" />
+                        <ProductFilter />
                         <div className="products-container">
-                        {accsBody.map(product => (
-                            <ProductCard 
-                              key={product.id}
-                              product = {product}
-                            />
-                        ))}
+                          <p> {accsBody.length} items </p>
+                        </div>
+                        <div className="products-container">
+                          {accsBody.length === 0 ? (
+                            <div>
+                              <Title title="No items matched" />
+                            </div>
+                          ) : (
+                            accsBody.map(product => (
+                              <ProductCard 
+                                key={product.id}
+                                product = {product}
+                              />
+                          )))}
                         </div>
                       </div>
                   )  
@@ -322,6 +462,9 @@ export default class Products extends Component {
                   return (
                       <div className="products-list">
                         <Title title="Accessories, tights" />
+                        <div className="products-container">
+                          <p> {accsTights.length} items </p>
+                        </div>
                         <div className="products-container">
                         {accsTights.map(product => (
                             <ProductCard 
@@ -345,6 +488,9 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="Accessories, slippers" />
                         <div className="products-container">
+                          <p> {accsSlippers.length} items </p>
+                        </div>
+                        <div className="products-container">
                         {accsSlippers.map(product => (
                             <ProductCard 
                               key={product.id}
@@ -366,6 +512,9 @@ export default class Products extends Component {
                   return (
                       <div className="products-list">
                         <Title title="Accessories, other" />
+                        <div className="products-container">
+                          <p> {accsOther.length} items </p>
+                        </div>
                         <div className="products-container">
                         {accsOther.map(product => (
                             <ProductCard 

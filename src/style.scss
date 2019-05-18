@@ -733,7 +733,7 @@ button:focus{
 .parallax-content-section {
     @include flexbox;
     flex-direction: column;
-    height: 45rem;
+    height: 30rem;
     transition: .4s ease-in-out;
     text-align: center;
     .parallax-title {
@@ -1057,24 +1057,28 @@ button:focus{
 }
 
 .product-card:hover {
-    box-shadow: 0px 0px 50px rgba(105, 105, 105, .3);
+    box-shadow: 0px 0px 50px rgba(105, 105, 105, .2);
     background-color: rgba(250, 250, 250, 1);
-    border: 1px solid rgba(105, 105, 105, .2);
 }
 
 .card-small {
-    width: 15rem;
-    height: 25rem;
+    width: 18rem;
+    height: 30rem;
+    padding: .5rem;
+    background-color: none;
+    box-shadow: none;
+    border: none;
     .image-container {
         img {
-            height: 100%;
-            transform: scale(1.1);
+            width: 100%;
         }
     }
     .product-details {
         .product-title {
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
+    }
+    .product-bottom-details {
     }
 }
 
@@ -1141,7 +1145,7 @@ button:focus{
                     text-align: center;
                 }
                 .details-title {
-                    font-size: 3rem;
+                    font-size: 2.5rem;
                     color: rgba(241, 106, 123, .7);
                 }
                 .details-category {
@@ -1170,7 +1174,7 @@ button:focus{
                         text-transform: capitalize
                     }
                     .details-description {
-                        font-size: 1.2rem;
+                        font-size: 1.1rem;
                         letter-spacing: .1rem;
                     }
                 }
@@ -1194,13 +1198,12 @@ button:focus{
                                 border: 1px solid rgba(105, 105, 105, .1);
                                 padding: .5rem;
                                 border-radius: .3rem;
-                                box-shadow: 0px 0px 20px rgba(105, 105, 105, .05);
                                 .filter-item {
                                     margin: 0 .3rem;
                                     cursor: pointer;
                                     transition: .2s;
                                     font-family: $fontmain;
-                                    font-size: 1.5rem;
+                                    font-size: 1.2rem;
                                 }
                                 .filter-item:hover {
                                     color: rgba(241, 106, 123, .7);
@@ -1214,6 +1217,11 @@ button:focus{
                     @include flexbox;
                     justify-content: space-around;
                     margin-top: 1rem;
+                    .btn-details-back {
+                        span {
+                            font-weight: 600;
+                        }
+                    }
                 }
             }
             .details-menu:hover {
@@ -1322,7 +1330,7 @@ button:focus{
 .filter {
     @include flexbox;
     position: relative;
-    margin: 0 2em;
+    margin: 0 3rem;
     width: 5rem;
     min-height: 3rem;
 }
@@ -1365,6 +1373,7 @@ button:focus{
         margin: 0;
     }
     .price-filter {
+        margin: 0;
         .filter-title {
             cursor: pointer;
         }

@@ -5,9 +5,10 @@ export const items = [
       title: "Classic lace bra",
       price: 16,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
-      featured: true,
+      featured: false,
       inCart: false,
       color: "green",
       image: { fields: { file: { url: "/images/products/bras/bras_classic/1_classic_lace_bra/1.jpg" } } },
@@ -22,6 +23,7 @@ export const items = [
       title: "Classic lace bra",
       price: 22,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -39,11 +41,12 @@ export const items = [
       title: "Classic lace and plumetti bra",
       price: 18,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
-      featured: true,
+      featured: false,
       inCart: false,
-      color: "white",
+      color: "blue",
       image: { fields: { file: { url: "/images/products/bras/bras_classic/3_classic_lace_and_plumetti_bra/1.jpg" } } },
       image2: { fields: { file: { url: "/images/products/bras/bras_classic/3_classic_lace_and_plumetti_bra/2.jpg" } } },
       imageSmall: { fields: { file: { url: "/images/products/bras/bras_classic/3_classic_lace_and_plumetti_bra/small/1.jpg" } } },
@@ -56,6 +59,7 @@ export const items = [
       title: "Classic lace bra",
       price: 18,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -73,9 +77,10 @@ export const items = [
       title: "Lace bra with rings",
       price: 24,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
-      featured: true,
+      featured: false,
       inCart: false,
       color: "green",
       image: { fields: { file: { url: "/images/products/bras/bras_classic/5_lace_bra_with_rings/1.jpg" } } },
@@ -90,6 +95,7 @@ export const items = [
       title: "Lace and textured weave bra",
       price: 28,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -107,6 +113,7 @@ export const items = [
       title: "Lace and textured weave bra",
       price: 22,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -123,9 +130,10 @@ export const items = [
       title: "Classic floral bla flocked with tulle",
       price: 19,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
-      featured: true,
+      featured: false,
       inCart: false,
       color: "white",
       image: { fields: { file: { url: "/images/products/bras/bras_classic/8_classic_floral_bra_flocked_tulle/1.jpg" } } },
@@ -140,6 +148,7 @@ export const items = [
       title: "Classic lace and plumetti bra",
       price: 22,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -157,9 +166,10 @@ export const items = [
       title: "Classic lace and plumetti bra",
       price: 22,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
-      featured: true,
+      featured: false,
       inCart: false,
       color: "black",
       image: { fields: { file: { url: "/images/products/bras/bras_classic/10_classic_lace_and_plumetti_bra/1.jpg" } } },
@@ -174,6 +184,7 @@ export const items = [
       title: "Classic cotton bra",
       price: 23,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -191,6 +202,7 @@ export const items = [
       title: "Adjustable cotton bra",
       price: 24,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -208,6 +220,7 @@ export const items = [
       title: "Strappy lace bra",
       price: 21,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -225,6 +238,7 @@ export const items = [
       title: "Classic cotton bra",
       price: 24,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -242,6 +256,7 @@ export const items = [
       title: "Classic cotton bra",
       price: 24,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -259,6 +274,7 @@ export const items = [
       title: "Classic cotton bra",
       price: 24,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -276,6 +292,7 @@ export const items = [
       title: "Mini flower bra",
       price: 19,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -293,6 +310,7 @@ export const items = [
       title: "Mesh neckline bra",
       price: 28,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -310,6 +328,7 @@ export const items = [
       title: "Classic lace bra",
       price: 23,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -327,6 +346,7 @@ export const items = [
       title: "Classic lace bra",
       price: 24,
       category: "Bras, classic",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -344,6 +364,7 @@ export const items = [
       title: "Lace and tulle strappy push-up bra",
       price: 28,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -361,6 +382,7 @@ export const items = [
       title: "Lace and plumetti push-up bra",
       price: 24,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -378,6 +400,7 @@ export const items = [
       title: "Lace and plumetti push-up bra",
       price: 32,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -395,6 +418,7 @@ export const items = [
       title: "Push-up lace bra",
       price: 27,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -412,6 +436,7 @@ export const items = [
       title: "Lace push-up bra with straps",
       price: 29,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -429,6 +454,7 @@ export const items = [
       title: "Lace and tulle push-up bra",
       price: 29,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -446,6 +472,7 @@ export const items = [
       title: "Lace push-up bra with straps",
       price: 24,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -463,6 +490,7 @@ export const items = [
       title: "Push-up bra with criss-cross back",
       price: 32,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -480,6 +508,7 @@ export const items = [
       title: "Cotton and lace push-up bra",
       price: 26,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -497,11 +526,12 @@ export const items = [
       title: "Adjustable push-up bra",
       price: 24,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       inCart: false,
-      color: "gray",
+      color: "red",
       image: { fields: { file: { url: "/images/products/bras/bras_pushup/10_adjustable_push-up_bra/1.jpg" } } },
       image2: { fields: { file: { url: "/images/products/bras/bras_pushup/10_adjustable_push-up_bra/2.jpg" } } },
       imageSmall: { fields: { file: { url: "/images/products/bras/bras_pushup/10_adjustable_push-up_bra/small/1.jpg" } } },
@@ -514,11 +544,12 @@ export const items = [
       title: "Push-up mesh bra",
       price: 29,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       inCart: false,
-      color: "black",
+      color: "gray",
       image: { fields: { file: { url: "/images/products/bras/bras_pushup/11_push-up_mesh_bra/1.jpg" } } },
       image2: { fields: { file: { url: "/images/products/bras/bras_pushup/11_push-up_mesh_bra/2.jpg" } } },
       imageSmall: { fields: { file: { url: "/images/products/bras/bras_pushup/11_push-up_mesh_bra/small/1.jpg" } } },
@@ -531,11 +562,12 @@ export const items = [
       title: "Push-up mesh bra",
       price: 29,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       inCart: false,
-      color: "white",
+      color: "black",
       image: { fields: { file: { url: "/images/products/bras/bras_pushup/12_push-up_mesh_bra/1.jpg" } } },
       image2: { fields: { file: { url: "/images/products/bras/bras_pushup/12_push-up_mesh_bra/2.jpg" } } },
       imageSmall: { fields: { file: { url: "/images/products/bras/bras_pushup/12_push-up_mesh_bra/small/1.jpg" } } },
@@ -548,11 +580,12 @@ export const items = [
       title: "Cotton push-up bra",
       price: 25,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       inCart: false,
-      color: "black",
+      color: "white",
       image: { fields: { file: { url: "/images/products/bras/bras_pushup/13_cotton_push-up_bra/1.jpg" } } },
       image2: { fields: { file: { url: "/images/products/bras/bras_pushup/13_cotton_push-up_bra/2.jpg" } } },
       imageSmall: { fields: { file: { url: "/images/products/bras/bras_pushup/13_cotton_push-up_bra/small/1.jpg" } } },
@@ -565,11 +598,12 @@ export const items = [
       title: "Wireless push-up bra",
       price: 23,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       inCart: false,
-      color: "white",
+      color: "black",
       image: { fields: { file: { url: "/images/products/bras/bras_pushup/14_wireless_push-up_bra/1.jpg" } } },
       image2: { fields: { file: { url: "/images/products/bras/bras_pushup/14_wireless_push-up_bra/2.jpg" } } },
       imageSmall: { fields: { file: { url: "/images/products/bras/bras_pushup/14_wireless_push-up_bra/small/1.jpg" } } },
@@ -582,6 +616,7 @@ export const items = [
       title: "Push-up lace bra",
       price: 29,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -598,6 +633,7 @@ export const items = [
       title: "Push-up lace bra",
       price: 29,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -615,6 +651,7 @@ export const items = [
       title: "Push-up lace bra",
       price: 29,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -632,6 +669,7 @@ export const items = [
       title: "Lace and plumetti push-up bra",
       price: 27,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -649,6 +687,7 @@ export const items = [
       title: "Lace and plumetti super push-up bra",
       price: 34,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -666,6 +705,7 @@ export const items = [
       title: "Lace and plumetti super push-up bra",
       price: 34,
       category: "Bras, push-up",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -683,6 +723,7 @@ export const items = [
       title: "Bandeau wireless bra",
       price: 28,
       category: "Bras, strapless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -700,6 +741,7 @@ export const items = [
       title: "Strapless bra",
       price: 32,
       category: "Bras, strapless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -717,6 +759,7 @@ export const items = [
       title: "Maxi push-up strapless bra",
       price: 36,
       category: "Bras, strapless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -734,6 +777,7 @@ export const items = [
       title: "Wireless maxi push-up strapless bra",
       price: 36,
       category: "Bras, strapless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -751,6 +795,7 @@ export const items = [
       title: "Triangular lace bra",
       price: 28,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -768,6 +813,7 @@ export const items = [
       title: "Triangular lace bra",
       price: 28,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -785,6 +831,7 @@ export const items = [
       title: "Lace bralette",
       price: 24,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -802,6 +849,7 @@ export const items = [
       title: "Animal print triangle bra",
       price: 24,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -819,6 +867,7 @@ export const items = [
       title: "Triangular plumetti and lace bra",
       price: 29,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -836,6 +885,7 @@ export const items = [
       title: "Triangular lace bra",
       price: 28,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -853,6 +903,7 @@ export const items = [
       title: "Triangular lace bra",
       price: 28,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -870,6 +921,7 @@ export const items = [
       title: "Triangular lace bra",
       price: 28,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -887,9 +939,10 @@ export const items = [
       title: "Lace and mesh halter bra",
       price: 28,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
-      featured: false,
+      featured: true,
       inCart: false,
       color: "pink",
       image: { fields: { file: { url: "/images/products/bras/bras_wireless/9_lace_and_mesh_halter_bra/1.jpg" } } },
@@ -904,6 +957,7 @@ export const items = [
       title: "Lace bralette",
       price: 26,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -921,6 +975,7 @@ export const items = [
       title: "Lace triangular bra with straps",
       price: 23,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -938,6 +993,7 @@ export const items = [
       title: "Push-up mesh bra",
       price: 32,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -955,6 +1011,7 @@ export const items = [
       title: "Lace triangle bra",
       price: 24,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -972,6 +1029,7 @@ export const items = [
       title: "Wireless triangular bra",
       price: 32,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -989,6 +1047,7 @@ export const items = [
       title: "Triangular push-up bra",
       price: 28,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1006,6 +1065,7 @@ export const items = [
       title: "Triangular push-up bra",
       price: 28,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1023,6 +1083,7 @@ export const items = [
       title: "Wireless strapless bra",
       price: 23,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1040,6 +1101,7 @@ export const items = [
       title: "Cotton triangle bra",
       price: 26,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1057,6 +1119,7 @@ export const items = [
       title: "Lace triangle bra with rings",
       price: 30,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1074,6 +1137,7 @@ export const items = [
       title: "Triangular lace and tulle bra",
       price: 30,
       category: "Bras, wireless",
+      type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1091,6 +1155,7 @@ export const items = [
       title: "Lace strappy panty",
       price: 34,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1108,6 +1173,7 @@ export const items = [
       title: "Lace panties",
       price: 32,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1125,6 +1191,7 @@ export const items = [
       title: "Lace panties",
       price: 32,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1142,6 +1209,7 @@ export const items = [
       title: "Lace and mesh high-waisted panties",
       price: 28,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1159,6 +1227,7 @@ export const items = [
       title: "High-waisted lace panties with straps",
       price: 34,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1176,6 +1245,7 @@ export const items = [
       title: "Lace panties",
       price: 29,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1193,6 +1263,7 @@ export const items = [
       title: "Classic lace strappy panties",
       price: 27,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1210,6 +1281,7 @@ export const items = [
       title: "Lace panties",
       price: 33,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1227,6 +1299,7 @@ export const items = [
       title: "Cotton and lace panties",
       price: 33,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1244,6 +1317,7 @@ export const items = [
       title: "Lace strappy panty",
       price: 24,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1261,6 +1335,7 @@ export const items = [
       title: "Lace and mesh high-waisted panties",
       price: 28,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1278,6 +1353,7 @@ export const items = [
       title: "Strappy lace panties",
       price: 23,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1295,6 +1371,7 @@ export const items = [
       title: "Cotton and lace panties",
       price: 26,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1312,6 +1389,7 @@ export const items = [
       title: "Classic cotton panties",
       price: 26,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1329,6 +1407,7 @@ export const items = [
       title: "High-waisted microfirbre and tulle panties",
       price: 36,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1346,6 +1425,7 @@ export const items = [
       title: "High-waisted panties",
       price: 29,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1363,6 +1443,7 @@ export const items = [
       title: "Classic cotton panties",
       price: 22,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1380,6 +1461,7 @@ export const items = [
       title: "Classic lace and cotton panties",
       price: 23,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1397,6 +1479,7 @@ export const items = [
       title: "Lace strappy panty",
       price: 30,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1414,6 +1497,7 @@ export const items = [
       title: "Lace strappy panty",
       price: 30,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1431,6 +1515,7 @@ export const items = [
       title: "Lace panties",
       price: 25,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1448,6 +1533,7 @@ export const items = [
       title: "Classic lace and plumetti panties",
       price: 28,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1465,6 +1551,7 @@ export const items = [
       title: "Strappy lace panties",
       price: 32,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1482,6 +1569,7 @@ export const items = [
       title: "Cotton and lace panties",
       price: 27,
       category: "Panties, classic",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1499,6 +1587,7 @@ export const items = [
       title: "Lace and tulle tanga with wide straps",
       price: 36,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1516,6 +1605,7 @@ export const items = [
       title: "Tulle lace strappy panty",
       price: 34,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1533,6 +1623,7 @@ export const items = [
       title: "Lace and plumetti thongs",
       price: 29,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1550,6 +1641,7 @@ export const items = [
       title: "Lace and plumetti thongs",
       price: 29,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1567,6 +1659,7 @@ export const items = [
       title: "Lace and plumetti thongs",
       price: 29,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1584,6 +1677,7 @@ export const items = [
       title: "Mini flower thongs",
       price: 36,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1601,6 +1695,7 @@ export const items = [
       title: "Lace thongs",
       price: 34,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1618,6 +1713,7 @@ export const items = [
       title: "Lace thongs",
       price: 34,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1635,6 +1731,7 @@ export const items = [
       title: "Classic cotton thongs",
       price: 33,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1652,6 +1749,7 @@ export const items = [
       title: "Classic cotton thongs",
       price: 33,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1669,6 +1767,7 @@ export const items = [
       title: "Lace thongs",
       price: 24,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1686,6 +1785,7 @@ export const items = [
       title: "Cotton thongs",
       price: 28,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1703,6 +1803,7 @@ export const items = [
       title: "Lace strap thongs",
       price: 36,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1720,6 +1821,7 @@ export const items = [
       title: "Lace thongs",
       price: 34,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1737,6 +1839,7 @@ export const items = [
       title: "Lace thongs",
       price: 34,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1754,6 +1857,7 @@ export const items = [
       title: "Lace thongs",
       price: 34,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1771,6 +1875,7 @@ export const items = [
       title: "Lace and plumetti thongs",
       price: 28,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1788,6 +1893,7 @@ export const items = [
       title: "Lace and plumetti thongs",
       price: 28,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1805,6 +1911,7 @@ export const items = [
       title: "Lace thongs",
       price: 23,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1822,6 +1929,7 @@ export const items = [
       title: "Lace thongs",
       price: 23,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1839,6 +1947,7 @@ export const items = [
       title: "Lace thongs",
       price: 23,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1856,6 +1965,7 @@ export const items = [
       title: "Lace thongs",
       price: 23,
       category: "Panties, thongs",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1873,6 +1983,7 @@ export const items = [
       title: "Shapewear shorts",
       price: 46,
       category: "Panties, slimming",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1890,6 +2001,7 @@ export const items = [
       title: "High-waisted maximum support panties",
       price: 51,
       category: "Panties, slimming",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1907,6 +2019,7 @@ export const items = [
       title: "Tulle shape shorts",
       price: 41,
       category: "Panties, slimming",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1924,6 +2037,7 @@ export const items = [
       title: "Shapewear shorts",
       price: 44,
       category: "Panties, slimming",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1941,6 +2055,7 @@ export const items = [
       title: "Tulle shape shorts",
       price: 39,
       category: "Panties, slimming",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1958,6 +2073,7 @@ export const items = [
       title: "Tulle shape panty",
       price: 39,
       category: "Panties, slimming",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1975,6 +2091,7 @@ export const items = [
       title: "Tulle shape shorts",
       price: 39,
       category: "Panties, slimming",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -1992,6 +2109,7 @@ export const items = [
       title: "Tulle shape panties",
       price: 41,
       category: "Panties, slimming",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2009,6 +2127,7 @@ export const items = [
       title: "Tulle shape shorts",
       price: 37,
       category: "Panties, slimming",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2026,6 +2145,7 @@ export const items = [
       title: "High-waisted shape brief",
       price: 49,
       category: "Panties, slimming",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2043,6 +2163,7 @@ export const items = [
       title: "Tulle shape panties",
       price: 38,
       category: "Panties, slimming",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2060,6 +2181,7 @@ export const items = [
       title: "Shapewear shorts",
       price: 41,
       category: "Panties, slimming",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2077,6 +2199,7 @@ export const items = [
       title: "High-waisted maximum support lace and tulle panties",
       price: 46,
       category: "Panties, slimming",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2094,6 +2217,7 @@ export const items = [
       title: "Tulle shape panties",
       price: 39,
       category: "Panties, slimming",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2111,6 +2235,7 @@ export const items = [
       title: "Brazilian lace strappy panties",
       price: 29,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2128,6 +2253,7 @@ export const items = [
       title: "Brazilian lace satin panties",
       price: 37,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2145,6 +2271,7 @@ export const items = [
       title: "Brazilian lace strappy panties",
       price: 29,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2162,6 +2289,7 @@ export const items = [
       title: "Animal print brazilian panties",
       price: 34,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2179,6 +2307,7 @@ export const items = [
       title: "Brazilian lace strappy panties",
       price: 29,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2196,6 +2325,7 @@ export const items = [
       title: "Brazilian lace strappy panties",
       price: 29,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2213,9 +2343,10 @@ export const items = [
       title: "Lace brazilian panties",
       price: 32,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
-      featured: false,
+      featured: true,
       inCart: false,
       color: "red",
       image: { fields: { file: { url: "/images/products/panties/panties_brazilian/7_lace_brazilian_panties/1.jpg" } } },
@@ -2230,6 +2361,7 @@ export const items = [
       title: "Brazilian panties in cotton and lace",
       price: 34,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2247,6 +2379,7 @@ export const items = [
       title: "Lace and mesh brazilian panties",
       price: 28,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2264,6 +2397,7 @@ export const items = [
       title: "Lace brazilian panties",
       price: 34,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2281,6 +2415,7 @@ export const items = [
       title: "Cotton and lace brazilian boyshorts",
       price: 32,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2298,6 +2433,7 @@ export const items = [
       title: "Cotton brazilian panties",
       price: 32,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2315,6 +2451,7 @@ export const items = [
       title: "Lace brazilian culotte",
       price: 36,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2332,6 +2469,7 @@ export const items = [
       title: "Tulle brazilian panties",
       price: 30,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2349,6 +2487,7 @@ export const items = [
       title: "Lace brazilian culotte",
       price: 32,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2366,6 +2505,7 @@ export const items = [
       title: "Printed brazilian culotte",
       price: 34,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2383,6 +2523,7 @@ export const items = [
       title: "Lace and plumetti brazilian culotte",
       price: 32,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2400,6 +2541,7 @@ export const items = [
       title: "Plumetti brazilian panties",
       price: 30,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2417,6 +2559,7 @@ export const items = [
       title: "Flowery tulle brazilian panties",
       price: 34,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2434,6 +2577,7 @@ export const items = [
       title: "Brazilian cotton panties",
       price: 30,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2451,6 +2595,7 @@ export const items = [
       title: "Brazilian cotton panties",
       price: 36,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2468,6 +2613,7 @@ export const items = [
       title: "Wide brazilian lace panties",
       price: 34,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2485,6 +2631,7 @@ export const items = [
       title: "Tulle lace brazilian panty",
       price: 32,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2502,6 +2649,7 @@ export const items = [
       title: "Brazilian cotton panties with lace",
       price: 39,
       category: "Panties, brazilian",
+      type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2519,6 +2667,7 @@ export const items = [
       title: "Long printed trousers",
       price: 36,
       category: "Sleepwear, bottoms",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2536,6 +2685,7 @@ export const items = [
       title: "Long printed trousers",
       price: 36,
       category: "Sleepwear, bottoms",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2553,6 +2703,7 @@ export const items = [
       title: "Long trousers with print",
       price: 36,
       category: "Sleepwear, bottoms",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2570,6 +2721,7 @@ export const items = [
       title: "Long-printed trousers",
       price: 36,
       category: "Sleepwear, bottoms",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2587,6 +2739,7 @@ export const items = [
       title: "Long-printed trousers",
       price: 32,
       category: "Sleepwear, bottoms",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2604,6 +2757,7 @@ export const items = [
       title: "Long heart trousers",
       price: 34,
       category: "Sleepwear, bottoms",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2621,6 +2775,7 @@ export const items = [
       title: "Long checked trousers",
       price: 38,
       category: "Sleepwear, bottoms",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2638,6 +2793,7 @@ export const items = [
       title: "Long checked trousers",
       price: 36,
       category: "Sleepwear, bottoms",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2655,6 +2811,7 @@ export const items = [
       title: "Long plain trousers with pockets",
       price: 36,
       category: "Sleepwear, bottoms",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2672,6 +2829,7 @@ export const items = [
       title: "Long plain trousers with pockets",
       price: 36,
       category: "Sleepwear, bottoms",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2689,6 +2847,7 @@ export const items = [
       title: "Long pajamas with message",
       price: 46,
       category: "Sleepwear, long",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2706,6 +2865,7 @@ export const items = [
       title: "Long fleece pajamas",
       price: 48,
       category: "Sleepwear, long",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2723,6 +2883,7 @@ export const items = [
       title: "Long dual color pajamas",
       price: 51,
       category: "Sleepwear, long",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2740,6 +2901,7 @@ export const items = [
       title: "Long fleece pajamas",
       price: 46,
       category: "Sleepwear, long",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2757,6 +2919,7 @@ export const items = [
       title: "Long fleece pajamas with slogan",
       price: 51,
       category: "Sleepwear, long",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2774,6 +2937,7 @@ export const items = [
       title: "Printed long pajamas",
       price: 46,
       category: "Sleepwear, long",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2791,6 +2955,7 @@ export const items = [
       title: "Long fleece unicorn pajama",
       price: 46,
       category: "Sleepwear, long",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2808,6 +2973,7 @@ export const items = [
       title: "Long fleece penguin pajama",
       price: 49,
       category: "Sleepwear, long",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2825,6 +2991,7 @@ export const items = [
       title: "Long pajama with Garfield",
       price: 48,
       category: "Sleepwear, long",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2842,6 +3009,7 @@ export const items = [
       title: "Long pajama with Mickey",
       price: 48,
       category: "Sleepwear, long",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2859,6 +3027,7 @@ export const items = [
       title: "Short crossover lace pajamas",
       price: 48,
       category: "Sleepwear, short",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2876,6 +3045,7 @@ export const items = [
       title: "Short crossover lace pajamas",
       price: 48,
       category: "Sleepwear, short",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2893,6 +3063,7 @@ export const items = [
       title: "Short silky floral pajama",
       price: 39,
       category: "Sleepwear, short",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2910,6 +3081,7 @@ export const items = [
       title: "Short pajama with lace",
       price: 42,
       category: "Sleepwear, short",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2927,6 +3099,7 @@ export const items = [
       title: "Short floral jacguard pajama",
       price: 45,
       category: "Sleepwear, short",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2944,6 +3117,7 @@ export const items = [
       title: "Short pajama with lace",
       price: 41,
       category: "Sleepwear, short",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2961,6 +3135,7 @@ export const items = [
       title: "Short satin and lace pajama",
       price: 43,
       category: "Sleepwear, short",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2978,6 +3153,7 @@ export const items = [
       title: "Party short miffy pajama",
       price: 40,
       category: "Sleepwear, short",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -2995,6 +3171,7 @@ export const items = [
       title: "Short miffy pajama",
       price: 44,
       category: "Sleepwear, short",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3012,6 +3189,7 @@ export const items = [
       title: "Short satin pajama",
       price: 44,
       category: "Sleepwear, short",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3029,6 +3207,7 @@ export const items = [
       title: "Long-sleeved cotton top",
       price: 31,
       category: "Sleepwear, tops",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3046,6 +3225,7 @@ export const items = [
       title: "Long-sleeved t-shirt",
       price: 33,
       category: "Sleepwear, tops",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3063,6 +3243,7 @@ export const items = [
       title: "Long-sleeved t-shirt",
       price: 30,
       category: "Sleepwear, tops",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3080,6 +3261,7 @@ export const items = [
       title: "Long-sleeved cotton top",
       price: 37,
       category: "Sleepwear, tops",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3097,6 +3279,7 @@ export const items = [
       title: "Long-sleeved t-shirt",
       price: 31,
       category: "Sleepwear, tops",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3114,6 +3297,7 @@ export const items = [
       title: "Long-sleeved t-shirt",
       price: 31,
       category: "Sleepwear, tops",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3131,6 +3315,7 @@ export const items = [
       title: "T-shirt with message",
       price: 31,
       category: "Sleepwear, tops",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3148,6 +3333,7 @@ export const items = [
       title: "Long-sleeved t-shirt",
       price: 33,
       category: "Sleepwear, tops",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3165,6 +3351,7 @@ export const items = [
       title: "Long-sleeved top",
       price: 32,
       category: "Sleepwear, tops",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3182,6 +3369,7 @@ export const items = [
       title: "Jersey knit t-shirt",
       price: 36,
       category: "Sleepwear, tops",
+      type: "Sleepwear",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3199,6 +3387,7 @@ export const items = [
       title: "Floral satin bodysuit",
       price: 41,
       category: "Accessories, bodysuits",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3216,6 +3405,7 @@ export const items = [
       title: "Lace bodysuit with straps",
       price: 39,
       category: "Accessories, bodysuits",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3233,6 +3423,7 @@ export const items = [
       title: "Lace bodysuit with straps",
       price: 44,
       category: "Accessories, bodysuits",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3250,6 +3441,7 @@ export const items = [
       title: "Tulle shape body slip",
       price: 42,
       category: "Accessories, bodysuits",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3267,6 +3459,7 @@ export const items = [
       title: "Tulle shape body slip",
       price: 41,
       category: "Accessories, bodysuits",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3284,6 +3477,7 @@ export const items = [
       title: "Plain satin bodysuit",
       price: 52,
       category: "Accessories, bodysuits",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3301,6 +3495,7 @@ export const items = [
       title: "Jacguard bodysuit with lace",
       price: 49,
       category: "Accessories, bodysuits",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3318,6 +3513,7 @@ export const items = [
       title: "Satin bodysuit with polka dots",
       price: 54,
       category: "Accessories, bodysuits",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3335,6 +3531,7 @@ export const items = [
       title: "Fishnet tights",
       price: 9,
       category: "Accessories, tights",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3351,6 +3548,7 @@ export const items = [
       title: "Lace effect tights",
       price: 11,
       category: "Accessories, tights",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3367,6 +3565,7 @@ export const items = [
       title: "Geometric fishnet tights",
       price: 7,
       category: "Accessories, tights",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3383,6 +3582,7 @@ export const items = [
       title: "Pack of two tights",
       price: 12,
       category: "Accessories, tights",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3399,6 +3599,7 @@ export const items = [
       title: "Stand-up tights",
       price: 19,
       category: "Accessories, tights",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3415,9 +3616,10 @@ export const items = [
       title: "Stand-up tights",
       price: 19,
       category: "Accessories, tights",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
-      featured: false,
+      featured: true,
       inCart: false,
       image: { fields: { file: { url: "/images/products/accessories/tights-accs/12_stand-up_tighs/1.jpg" } } },
       image2: { fields: { file: { url: "/images/products/accessories/tights-accs/12_stand-up_tighs/2.jpg" } } },
@@ -3431,6 +3633,7 @@ export const items = [
       title: "Basic plumetis tights",
       price: 15,
       category: "Accessories, tights",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3447,6 +3650,7 @@ export const items = [
       title: "Shiny plumetis tights",
       price: 14,
       category: "Accessories, tights",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3463,6 +3667,7 @@ export const items = [
       title: "Fishnet tights",
       price: 14,
       category: "Accessories, tights",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3479,6 +3684,7 @@ export const items = [
       title: "Small fishnet tights",
       price: 11,
       category: "Accessories, tights",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3495,6 +3701,7 @@ export const items = [
       title: "Ribbed tights",
       price: 16,
       category: "Accessories, tights",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3511,6 +3718,7 @@ export const items = [
       title: "Compression tights 40 denier",
       price: 13,
       category: "Accessories, tights",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3527,6 +3735,7 @@ export const items = [
       title: "40 den shaping tights",
       price: 17,
       category: "Accessories, tights",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3543,6 +3752,7 @@ export const items = [
       title: "Shaping tights",
       price: 23,
       category: "Accessories, tights",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3559,6 +3769,7 @@ export const items = [
       title: "Basic tights 90 denier",
       price: 20,
       category: "Accessories, tights",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3575,6 +3786,7 @@ export const items = [
       title: "Basic tights 90 denier",
       price: 20,
       category: "Accessories, tights",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3591,6 +3803,7 @@ export const items = [
       title: "Silver fishnet stand-up tights",
       price: 17,
       category: "Accessories, tights",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3607,6 +3820,7 @@ export const items = [
       title: "Chenlie slippers",
       price: 23,
       category: "Accessories, slippers",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3623,6 +3837,7 @@ export const items = [
       title: "Chenlie ankle boot slippers",
       price: 25,
       category: "Accessories, slippers",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3639,6 +3854,7 @@ export const items = [
       title: "Chenlie house boots",
       price: 21,
       category: "Accessories, slippers",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3655,6 +3871,7 @@ export const items = [
       title: "Chenlie slippers",
       price: 23,
       category: "Accessories, slippers",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3671,6 +3888,7 @@ export const items = [
       title: "Chenlie house boots",
       price: 23,
       category: "Accessories, slippers",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3687,6 +3905,7 @@ export const items = [
       title: "Furry house slippers",
       price: 27,
       category: "Accessories, slippers",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3703,6 +3922,7 @@ export const items = [
       title: "Warp knitted slippers",
       price: 23,
       category: "Accessories, slippers",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3719,6 +3939,7 @@ export const items = [
       title: "Snoopy house slippers",
       price: 23,
       category: "Accessories, slippers",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3735,6 +3956,7 @@ export const items = [
       title: "Lined slippers",
       price: 19,
       category: "Accessories, slippers",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3751,6 +3973,7 @@ export const items = [
       title: "Checked fleece blanket",
       price: 17,
       category: "Accessories, other",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3767,6 +3990,7 @@ export const items = [
       title: "Pack of two snoopy cups",
       price: 21,
       category: "Accessories, other",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3783,6 +4007,7 @@ export const items = [
       title: "Pack of two snoopy cups",
       price: 21,
       category: "Accessories, other",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3799,6 +4024,7 @@ export const items = [
       title: "Mickey hot water bottle with cover",
       price: 14,
       category: "Accessories, other",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3815,6 +4041,7 @@ export const items = [
       title: "Pack of two cups",
       price: 19,
       category: "Accessories, other",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3831,6 +4058,7 @@ export const items = [
       title: "Furry blanket",
       price: 31,
       category: "Accessories, other",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3847,6 +4075,7 @@ export const items = [
       title: "Fur blanket with Mickey print",
       price: 23,
       category: "Accessories, other",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3863,6 +4092,7 @@ export const items = [
       title: "Snoopy hot water bottle with cover",
       price: 19,
       category: "Accessories, other",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3879,6 +4109,7 @@ export const items = [
       title: "Snoopy Christmas blanket",
       price: 19,
       category: "Accessories, other",
+      type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
@@ -3887,6 +4118,60 @@ export const items = [
       image2: { fields: { file: { url: "/images/products/accessories/other-accs/10_snoopy_christmas_blanket/2.jpg" } } },
       imageSmall: { fields: { file: { url: "/images/products/accessories/other-accs/10_snoopy_christmas_blanket/small/1.jpg" } } },
       imageSmall2: { fields: { file: { url: "/images/products/accessories/other-accs/10_snoopy_christmas_blanket/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 231 },
+    fields: {
+      title: "Tulle shape bodysuit",
+      price: 53,
+      category: "Accessories, bodysuits",
+      type: "Accessories",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: true,
+      inCart: false,
+      color: "body",
+      image: { fields: { file: { url: "/images/products/accessories/bodysuits-accs/9_tulle_shape_body_slip/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/accessories/bodysuits-accs/9_tulle_shape_body_slip/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/accessories/bodysuits-accs/9_tulle_shape_body_slip/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/accessories/bodysuits-accs/9_tulle_shape_body_slip/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 232 },
+    fields: {
+      title: "Lace strappy bodysuit",
+      price: 56,
+      category: "Accessories, bodysuits",
+      type: "Accessories",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      inCart: false,
+      color: "black",
+      image: { fields: { file: { url: "/images/products/accessories/bodysuits-accs/10_lace_strappy_bodysuit/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/accessories/bodysuits-accs/10_lace_strappy_bodysuit/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/accessories/bodysuits-accs/10_lace_strappy_bodysuit/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/accessories/bodysuits-accs/10_lace_strappy_bodysuit/small/2.jpg" } } }
+    }
+  },
+  {
+    sys: { id: 233 },
+    fields: {
+      title: "Tulle shape bodysuit",
+      price: 53,
+      category: "Accessories, bodysuits",
+      type: "Accessories",
+      description:
+        "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
+      featured: false,
+      inCart: false,
+      color: "black",
+      image: { fields: { file: { url: "/images/products/accessories/bodysuits-accs/11_tulle_shape_body_slip/1.jpg" } } },
+      image2: { fields: { file: { url: "/images/products/accessories/bodysuits-accs/11_tulle_shape_body_slip/2.jpg" } } },
+      imageSmall: { fields: { file: { url: "/images/products/accessories/bodysuits-accs/11_tulle_shape_body_slip/small/1.jpg" } } },
+      imageSmall2: { fields: { file: { url: "/images/products/accessories/bodysuits-accs/11_tulle_shape_body_slip/small/2.jpg" } } }
     }
   },
 ]

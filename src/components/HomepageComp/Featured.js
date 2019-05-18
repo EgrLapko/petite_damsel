@@ -8,7 +8,7 @@ export default class Featured extends Component {
 
     return (
       <div className="featured-section">
-        <Title title="our featured items" />
+        <Title title="todays featured" />
         <div className="featured-items">
             <ProductConsumer>
                 {value  => {
