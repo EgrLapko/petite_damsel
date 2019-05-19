@@ -93,9 +93,19 @@ export default class SingleProductPage extends Component {
                         </div>
                         <div className="details-btn">
                           <Link to={daLink}>          
-                          <button className="btn btn-details-back">Back to <span>{category}</span></button></Link> 
-                          <button className="cart-btn">
-                            <span className={"details-cart " + (inCart === true ? "cart-active" : null)} onClick={() => addToCart(id)}><i className="fas fa-cart-plus"/></span>
+                          <button className="btn btn-details-back">to <span>{category}</span></button></Link> 
+                          <button 
+                            className={"cart-btn " + (inCart ? "cart-active" : null)} 
+                            onClick={() => addToCart(id)}
+                            disabled={inCart ? true : false}
+                            >
+                            {inCart ? (
+                                      <p className="in-cart-sign" disabled>
+                                        In Cart
+                                      </p>
+                                    ) : (
+                                      <i className="fas fa-cart-plus"/>
+                                    )}  
                           </button>
                         </div>
                       </div>

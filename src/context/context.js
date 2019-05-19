@@ -121,10 +121,12 @@ addTotals = () => {
         cartTotal: totals.total
     })
 };
+
 // sync storage
 syncStorage = () => {
     localStorage.setItem('cart', JSON.stringify(this.state.cart));
 };
+
 // add to cart
 addToCart = (id) => {
     let tempCart = [...this.state.cart];
@@ -150,6 +152,7 @@ addToCart = (id) => {
         this.openCart();
     })
 };
+
 //  set single product
 setSingleProduct = (id) => {
     let product = this.state.storeProducts.find(item => item.id

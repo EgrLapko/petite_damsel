@@ -11,7 +11,7 @@ export default class SideCart extends Component {
           return (
             <div className={"sidecart " + (cartOpen ? "sidecart_visible" : null)}>
               <div className="sidecart-top">
-                <p className="sidecart-title">Your cart ({cartItems}) </p>
+                <p className="sidecart-title">Your cart ({cartItems} items) </p>
                 <p className="close-sidecart-btn" onClick={handleCart}><i className="fas fa-times"></i></p>
               </div>
               <ul className="cart-menu-content">
@@ -32,7 +32,7 @@ export default class SideCart extends Component {
                 <p>Order Total:</p>
                 <p>${cartTotal}</p>
               </div>
-              <Link to="/cart"><p className="btn btn-sidecart">View cart</p></Link>
+              <Link to="/cart"><button className="btn btn-sidecart">View cart</button></Link>
             </div>
           )
         }}
