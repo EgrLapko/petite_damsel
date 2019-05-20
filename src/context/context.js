@@ -31,9 +31,11 @@ class ProductProvider extends Component {
         price: 0,
         min: 0,
         max: 0,
-        color: 'all', 
+        color: 'all',
+        size: 'all', 
         shipping: false,
-        priceFilter: false
+        priceFilter: false,
+        sizeFilter: false
     };
 
 componentDidMount() {
@@ -47,7 +49,7 @@ setProducts = (products) => {
     // Destructuring and grabbing items from
     // data base 
     let storeProducts = products.map(item => {
-        const {id} = item.sys;
+        const {id} = item.sys; 
         const image = item.fields.image.fields.file.url;
         const image2 = item.fields.image2.fields.file.url;
         const imageSmall = item.fields.imageSmall.fields.file.url;
@@ -245,6 +247,11 @@ setSingleProduct = (id) => {
         this.setState({priceFilter: ! this.state.priceFilter})
     }
 
+// ---------- Open size filter
+    handleSizeFilter = () => {
+        this.setState({sizeFilter: ! this.state.sizeFilter})
+    }
+
 // ---------- Cart functionality
 increment = (id) =>{
     let tempCart = [...this.state.cart];
@@ -317,7 +324,7 @@ handleChange = (event) => {
 };
 
 sortData = () => {
-    const {storeProducts, price, color, shipping, search} = this.state;
+    const {storeProducts, price, color, size, shipping, search} = this.state;
     let tempProducts = [...storeProducts];
     let tempPrice = parseInt(price);
     // ---------- Filter by price
@@ -325,6 +332,10 @@ sortData = () => {
     // ---------- Filter by colors
     if (color !== "all") {
         tempProducts = tempProducts.filter(item => item.color === color)
+    }
+    // ---------- Filter by colors
+    if (size !== "all") {
+        tempProducts = tempProducts.filter(item => item.size === size)
     }
     // ---------- Filter by checkbox
     if(shipping) {
@@ -368,7 +379,8 @@ sortData = () => {
                 removeItem: this.removeItem,
                 clearCart: this.clearCart,
                 handleChange: this.handleChange,
-                handlePriceFilter: this.handlePriceFilter             
+                handlePriceFilter: this.handlePriceFilter,
+                handleSizeFilter: this.handleSizeFilter               
             }}>
                 {/* Super important stuff */}
                 {this.props.children}

@@ -70,11 +70,12 @@ button:focus{
     font-size: 2rem;
     transition: .3s;
     .in-cart-sign {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: 600;
-        padding: 1rem;
+        padding: .6rem;
         font-family: $fontmain;
-        color: rgba(95, 174, 87, .6);
+        color: rgba(242, 242, 242, .9);
+        background-color: rgba(95, 174, 87, .6);
         border-radius: 10px;
         margin: 0;
         transition: .4s;
@@ -1169,14 +1170,14 @@ button:focus{
                     font-size: 1.2rem;
                     text-transform: uppercase;
                     color: rgba(105, 105, 105, .6);
-                    padding: 1rem;
+                    padding: .3rem;
                 }
                 .details-price {
                     width: 70%;
                     text-align: center;
                     font-size: 1.8rem;
-                    margin: auto;
-                    padding: 1rem;
+                    margin: 0;
+                    padding: .5rem;
                     border-bottom: 1px solid rgba(105, 105, 105, .2);
                 }
                 .details-item-info {
@@ -1398,12 +1399,12 @@ button:focus{
         font-family: $fontmain;
         margin: 0;
     }
-    .price-filter {
+    .price-filter, .size-filter {
         margin: 0;
         .filter-title {
             cursor: pointer;
         }
-        .price-container{
+        .price-container, .size-container{
             @include flexbox;
             flex-direction: column;
             position: absolute;
@@ -1457,9 +1458,28 @@ button:focus{
                 -webkit-appearance: none;
                 margin-top: -10px;
               }
+              .size-filter-list {
+                  @include flexbox;
+                  flex-direction: column;
+                  list-style-type: none;
+                  padding: 0;
+                  margin: 0;
+                  .size-item {
+                      @include flexbox;
+                      padding: .2rem;
+                  }
+              }
         }
         .price-visible {
             margin-top: 5rem;
+            opacity: 1;
+            visibility: visible;
+        }
+        .size-container {
+            width: 5rem;
+        }
+        .size-visible {
+            margin-top: 6rem;
             opacity: 1;
             visibility: visible;
         }

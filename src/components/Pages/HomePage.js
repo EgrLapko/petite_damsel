@@ -8,6 +8,11 @@ import Selection from '../HomepageComp/Selection';
 import InstagramSection from '../InstagramSection/InstagramSection';
 import Featured from '../HomepageComp/Featured';
 export default class MainPage extends Component {
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <React.Fragment>

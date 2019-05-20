@@ -6,14 +6,19 @@ export default class ProductFilter extends Component {
     return (
       <ProductConsumer>
         {value => {
-          const {search, min, max, color, shipping, price, handleChange, storeProducts, handlePriceFilter, priceFilter} = value;
-          
+          const {search, min, max, color, shipping, price, handleChange, storeProducts, handlePriceFilter, priceFilter,
+          handleSizeFilter, sizeFilter} = value;
+
           let colors = new Set()
           colors.add('all');
           for (let product in storeProducts) {
             colors.add(storeProducts[product]["color"])
           }
           colors = [...colors];
+
+          const itemsSizes = storeProducts.filter(item => item.sizes);
+          const allSizes = itemsSizes.map(item => item.sizes);
+          const moreSizes = allSizes.forEach(item => item )
 
           return (
             <div className="filter-wrapper">
@@ -35,6 +40,7 @@ export default class ProductFilter extends Component {
                         onChange={handleChange} 
                         value={color} 
                         className="filter-item select">
+
                     {
                     colors.map((color, index) => {
                       return (
@@ -44,6 +50,32 @@ export default class ProductFilter extends Component {
                   }
                 </select>
               </div>
+              
+              {/* Search by size */}
+
+              <div className="size-filter filter"><p className="filter-title" onClick={handleSizeFilter}>Size <i className="fas fa-sort-down"></i></p>
+                <div className={"size-container " + (sizeFilter ? "size-visible" : null)}>
+                  <ul className="size-filter-list">
+                    <li className="size-item">
+                      <input type="checkbox" name="size" id = "size" className="size-filter-item" checked = {console.log("hello")}/>
+                      <label htmlFor="size"><p>70</p></label>
+                    </li>
+                    <li className="size-item">
+                      <input type="checkbox" name="size" id = "size" className="size-filter-item" checked = {console.log("hello")}/>
+                      <label htmlFor="size"><p>75</p></label>
+                    </li>
+                    <li className="size-item">
+                      <input type="checkbox" name="size" id = "size" className="size-filter-item" checked = {console.log("hello")}/>
+                      <label htmlFor="size"><p>80</p></label>
+                    </li>  
+                    <li className="size-item">
+                      <input type="checkbox" name="size" id = "size" className="size-filter-item" checked = {console.log("hello")}/>
+                      <label htmlFor="size"><p>85</p></label>
+                    </li>        
+                  </ul>        
+                </div>
+              </div>
+
               {/* Category search ended */}
               {/* Price Range */}
 

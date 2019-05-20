@@ -3,6 +3,11 @@ import {ProductConsumer} from '../../context/context';
 import {Link} from 'react-router-dom';
 
 export default class SingleProductPage extends Component {
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <ProductConsumer>
@@ -14,8 +19,9 @@ export default class SingleProductPage extends Component {
             return (
               <h1>product loading...</h1>
             )}
-              const {title, category, description, id, price, image, image2, inCart, color} = singleProduct;
-              console.log(title, inCart);
+              const {title, category, description, id, price, image, image2, inCart, cup, sizes} = singleProduct;
+
+              console.log(sizes);
 
               let daLink;
 
@@ -60,19 +66,23 @@ export default class SingleProductPage extends Component {
                                 <div className="size-box">
                                   <p>Select a cup:</p>
                                   <ul className="size-list">
-                                    <li className="filter-item">A</li>
-                                    <li className="filter-item">B</li>
-                                    <li className="filter-item">C</li>
-                                    <li className="filter-item">D</li>
+                                    {cup.map((cup, index) => {
+                                      return (
+                                        <li key={index} className="filter-item"> {cup}</li>
+                                      )
+                                    }
+                                    )}
                                   </ul>
                                 </div>
                                 <div className="size-box">
                                   <p>Select a size:</p>
                                   <ul className="size-list">
-                                    <li className="filter-item">70</li>
-                                    <li className="filter-item">75</li>
-                                    <li className="filter-item">80</li>
-                                    <li className="filter-item">85</li>
+                                    {sizes.map((size, index) => {
+                                      return (
+                                        <li key={index} className="filter-item"> {size} </li>
+                                      )
+                                    }
+                                    )}
                                   </ul>
                                 </div> 
                               </div>                  

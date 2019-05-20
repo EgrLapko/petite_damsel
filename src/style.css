@@ -54,11 +54,12 @@ button:focus {
   font-size: 2rem;
   transition: .3s; }
   .cart-btn .in-cart-sign {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    padding: 1rem;
+    padding: .6rem;
     font-family: "Thasadith", sans-serif;
-    color: rgba(95, 174, 87, 0.6);
+    color: rgba(242, 242, 242, 0.9);
+    background-color: rgba(95, 174, 87, 0.6);
     border-radius: 10px;
     margin: 0;
     -webkit-transition: .4s;
@@ -1574,13 +1575,13 @@ button:focus {
         font-size: 1.2rem;
         text-transform: uppercase;
         color: rgba(105, 105, 105, 0.6);
-        padding: 1rem; }
+        padding: .3rem; }
       .single-product-page .details-content .details-menu-container .details-menu .details-price {
         width: 70%;
         text-align: center;
         font-size: 1.8rem;
-        margin: auto;
-        padding: 1rem;
+        margin: 0;
+        padding: .5rem;
         border-bottom: 1px solid rgba(105, 105, 105, 0.2); }
       .single-product-page .details-content .details-menu-container .details-menu .details-item-info {
         display: -webkit-box;
@@ -1897,11 +1898,11 @@ p {
   font-family: "Thasadith", sans-serif;
   margin: 0; }
 
-.price-filter {
+.price-filter, .size-filter {
   margin: 0; }
-  .price-filter .filter-title {
+  .price-filter .filter-title, .size-filter .filter-title {
     cursor: pointer; }
-  .price-filter .price-container {
+  .price-filter .price-container, .price-filter .size-container, .size-filter .price-container, .size-filter .size-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1935,9 +1936,9 @@ p {
     -webkit-transition: .4s;
     -o-transition: .4s;
     transition: .4s; }
-    .price-filter .price-container .colors-item {
+    .price-filter .price-container .colors-item, .price-filter .size-container .colors-item, .size-filter .price-container .colors-item, .size-filter .size-container .colors-item {
       width: 6rem; }
-      .price-filter .price-container .colors-item .check-container {
+      .price-filter .price-container .colors-item .check-container, .price-filter .size-container .colors-item .check-container, .size-filter .price-container .colors-item .check-container, .size-filter .size-container .colors-item .check-container {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1956,20 +1957,20 @@ p {
         -ms-user-select: none;
         user-select: none;
         margin: 0; }
-    .price-filter .price-container input {
+    .price-filter .price-container input, .price-filter .size-container input, .size-filter .price-container input, .size-filter .size-container input {
       background-color: #f6f6f6; }
-    .price-filter .price-container input[type=range] {
+    .price-filter .price-container input[type=range], .price-filter .size-container input[type=range], .size-filter .price-container input[type=range], .size-filter .size-container input[type=range] {
       height: 2rem;
       -webkit-appearance: none;
       width: 100%; }
-    .price-filter .price-container input[type=range]:focus {
+    .price-filter .price-container input[type=range]:focus, .price-filter .size-container input[type=range]:focus, .size-filter .price-container input[type=range]:focus, .size-filter .size-container input[type=range]:focus {
       outline: none; }
-    .price-filter .price-container input[type=range]::-webkit-slider-runnable-track {
+    .price-filter .price-container input[type=range]::-webkit-slider-runnable-track, .price-filter .size-container input[type=range]::-webkit-slider-runnable-track, .size-filter .price-container input[type=range]::-webkit-slider-runnable-track, .size-filter .size-container input[type=range]::-webkit-slider-runnable-track {
       width: 100%;
       height: 1px;
       cursor: pointer;
       background: rgba(241, 106, 123, 0.7); }
-    .price-filter .price-container input[type=range]::-webkit-slider-thumb {
+    .price-filter .price-container input[type=range]::-webkit-slider-thumb, .price-filter .size-container input[type=range]::-webkit-slider-thumb, .size-filter .price-container input[type=range]::-webkit-slider-thumb, .size-filter .size-container input[type=range]::-webkit-slider-thumb {
       height: 1.3rem;
       width: 1.3rem;
       border-radius: 21px;
@@ -1977,8 +1978,42 @@ p {
       cursor: pointer;
       -webkit-appearance: none;
       margin-top: -10px; }
-  .price-filter .price-visible {
+    .price-filter .price-container .size-filter-list, .price-filter .size-container .size-filter-list, .size-filter .price-container .size-filter-list, .size-filter .size-container .size-filter-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      list-style-type: none;
+      padding: 0;
+      margin: 0; }
+      .price-filter .price-container .size-filter-list .size-item, .price-filter .size-container .size-filter-list .size-item, .size-filter .price-container .size-filter-list .size-item, .size-filter .size-container .size-filter-list .size-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: .2rem; }
+  .price-filter .price-visible, .size-filter .price-visible {
     margin-top: 5rem;
+    opacity: 1;
+    visibility: visible; }
+  .price-filter .size-container, .size-filter .size-container {
+    width: 5rem; }
+  .price-filter .size-visible, .size-filter .size-visible {
+    margin-top: 6rem;
     opacity: 1;
     visibility: visible; }
 
