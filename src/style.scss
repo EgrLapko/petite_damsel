@@ -1399,12 +1399,12 @@ button:focus{
         font-family: $fontmain;
         margin: 0;
     }
-    .price-filter, .size-filter {
+    .price-filter, .cup-filter {
         margin: 0;
         .filter-title {
             cursor: pointer;
         }
-        .price-container, .size-container{
+        .price-container, .cup-container{
             @include flexbox;
             flex-direction: column;
             position: absolute;
@@ -1458,15 +1458,21 @@ button:focus{
                 -webkit-appearance: none;
                 margin-top: -10px;
               }
-              .size-filter-list {
+              .cup-filter-list {
                   @include flexbox;
                   flex-direction: column;
                   list-style-type: none;
                   padding: 0;
                   margin: 0;
-                  .size-item {
+                  .cup-item {
                       @include flexbox;
                       padding: .2rem;
+                      margin: .1rem 0;
+                      cursor: pointer;
+                      transition: .2s;
+                  }
+                  .cup-item:hover {
+                      color: rgba(241, 106, 123, .9);
                   }
               }
         }
@@ -1475,11 +1481,12 @@ button:focus{
             opacity: 1;
             visibility: visible;
         }
-        .size-container {
+        .cup-container {
             width: 5rem;
+            margin-top: 10rem;
         }
-        .size-visible {
-            margin-top: 6rem;
+        .cup-visible {
+            margin-top: 8rem;
             opacity: 1;
             visibility: visible;
         }

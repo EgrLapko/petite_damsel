@@ -32,10 +32,11 @@ class ProductProvider extends Component {
         min: 0,
         max: 0,
         color: 'all',
-        size: 'all', 
+        size: 'all',
+        cup: 'all', 
         shipping: false,
         priceFilter: false,
-        sizeFilter: false
+        cupFilter: false
     };
 
 componentDidMount() {
@@ -248,8 +249,8 @@ setSingleProduct = (id) => {
     }
 
 // ---------- Open size filter
-    handleSizeFilter = () => {
-        this.setState({sizeFilter: ! this.state.sizeFilter})
+    handleCupFilter = () => {
+        this.setState({cupFilter: ! this.state.cupFilter})
     }
 
 // ---------- Cart functionality
@@ -324,18 +325,25 @@ handleChange = (event) => {
 };
 
 sortData = () => {
-    const {storeProducts, price, color, size, shipping, search} = this.state;
+    const {storeProducts, price, color, cup, shipping, search} = this.state;
     let tempProducts = [...storeProducts];
     let tempPrice = parseInt(price);
+    let brasAll = storeProducts.filter(item => item.type === "Bras");
     // ---------- Filter by price
     tempProducts = tempProducts.filter(item => item.price <= tempPrice);
     // ---------- Filter by colors
     if (color !== "all") {
         tempProducts = tempProducts.filter(item => item.color === color)
     }
-    // ---------- Filter by colors
-    if (size !== "all") {
-        tempProducts = tempProducts.filter(item => item.size === size)
+    // ---------- Filter by Cup
+    if (cup === "A") {
+        tempProducts = brasAll.filter(item => item.cup.includes("A"))
+    } else if (cup === "B") {
+        tempProducts = brasAll.filter(item => item.cup.includes("B"))
+    } else if (cup === "C") {
+        tempProducts = brasAll.filter(item => item.cup.includes("C"))
+    } else if (cup === "D") {
+        tempProducts = brasAll.filter(item => item.cup.includes("D"))
     }
     // ---------- Filter by checkbox
     if(shipping) {
@@ -355,8 +363,8 @@ sortData = () => {
     })
 }
 
-
     render() {
+
         return (
             // Creating product provider
             // Here insert everything that wanted to be passed
@@ -380,7 +388,7 @@ sortData = () => {
                 clearCart: this.clearCart,
                 handleChange: this.handleChange,
                 handlePriceFilter: this.handlePriceFilter,
-                handleSizeFilter: this.handleSizeFilter               
+                handleCupFilter: this.handleCupFilter               
             }}>
                 {/* Super important stuff */}
                 {this.props.children}

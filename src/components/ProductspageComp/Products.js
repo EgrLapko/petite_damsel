@@ -5,6 +5,7 @@ import Title from '../Title/Title';
 import ProductCard from '../ProductCard';
 import ProductFilter from '../ProductspageComp/ProductFilter';
 import LocalNavbar from './LocalNavbar';
+import { items } from '../../context/productsData';
 
 
 export default class Products extends Component {
@@ -22,8 +23,7 @@ export default class Products extends Component {
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
-                  const brasClassic = filteredProducts.filter(product => product.category === "Bras, classic");
-                  
+                  const brasClassic = filteredProducts.filter(product => product.category === "Bras, classic");                  
                   return (
                       <div className="products-list">
                         <Title title="classic bras" />

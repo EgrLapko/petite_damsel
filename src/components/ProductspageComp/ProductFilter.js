@@ -2,12 +2,39 @@ import React, { Component } from 'react';
 import {ProductConsumer} from '../../context';
 
 export default class ProductFilter extends Component {
+
+
+  // checkItemCup = (arr, value) => {
+  //   const filteredItems = arr.filter(item => item.cup.includes(value))
+  //   return (
+  //     filteredItems.map(item => (
+  //       <ProductCard 
+  //         key={item.id}
+  //         product = {item}
+  //       />
+  //     ))
+  //   )
+  // }
+
+  logItems = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    return (
+      console.log(`the name is ${name}, the value is ${value}`)
+    )
+  }
+
   render() {
     return (
       <ProductConsumer>
         {value => {
-          const {search, min, max, color, shipping, price, handleChange, storeProducts, handlePriceFilter, priceFilter,
-          handleSizeFilter, sizeFilter} = value;
+          const {search, min, max, color, shipping,cup, price, handleChange, storeProducts, handlePriceFilter, priceFilter,
+          handleCupFilter, cupFilter} = value;
+
+
+          let brasAll = storeProducts.filter(item => item.category === "Bras, classic");
+          let takeCup = brasAll.map(item => item.cup);
+          console.log(takeCup);
 
           let colors = new Set()
           colors.add('all');
@@ -15,10 +42,6 @@ export default class ProductFilter extends Component {
             colors.add(storeProducts[product]["color"])
           }
           colors = [...colors];
-
-          const itemsSizes = storeProducts.filter(item => item.sizes);
-          const allSizes = itemsSizes.map(item => item.sizes);
-          const moreSizes = allSizes.forEach(item => item )
 
           return (
             <div className="filter-wrapper">
@@ -31,7 +54,7 @@ export default class ProductFilter extends Component {
                        value={search} 
                        placeholder = "Enter a title"
                        className="filter-item"/>
-              </div>        
+              </div>     
               {/* End of text search */}
               {/* Category search */}
               <div className="category-search filter">
@@ -50,31 +73,44 @@ export default class ProductFilter extends Component {
                   }
                 </select>
               </div>
-              
-              {/* Search by size */}
 
-              <div className="size-filter filter"><p className="filter-title" onClick={handleSizeFilter}>Size <i className="fas fa-sort-down"></i></p>
-                <div className={"size-container " + (sizeFilter ? "size-visible" : null)}>
-                  <ul className="size-filter-list">
-                    <li className="size-item">
-                      <input type="checkbox" name="size" id = "size" className="size-filter-item" checked = {console.log("hello")}/>
-                      <label htmlFor="size"><p>70</p></label>
+              <div className="category-search filter">
+                <select name="cup" 
+                        id="cup"
+                        onChange={handleChange} 
+                        className="filter-item select">
+                  <option value="all" >all</option>
+                  <option value="A" >A</option>
+                  <option value="B" >B</option>
+                  <option value="C" >C</option>
+                  <option value="D" >D</option>
+                </select>
+              </div>
+
+              
+              {/* Search by cup */}
+
+              {/* <div className="cup-filter filter"><p className="filter-title" onClick={handleCupFilter}>Cup <i className="fas fa-sort-down"></i></p>
+                <div className={"cup-container " + (cupFilter ? "cup-visible" : null)}>
+                  <ul className="cup-filter-list">
+                    <li className="cup-item">
+                      <p className="cup-filter-item">all</p>
                     </li>
-                    <li className="size-item">
-                      <input type="checkbox" name="size" id = "size" className="size-filter-item" checked = {console.log("hello")}/>
-                      <label htmlFor="size"><p>75</p></label>
+                    <li className="cup-item">
+                      <p className="cup-filter-item" name="A" value="A" onChange={handleChange}>A</p>
                     </li>
-                    <li className="size-item">
-                      <input type="checkbox" name="size" id = "size" className="size-filter-item" checked = {console.log("hello")}/>
-                      <label htmlFor="size"><p>80</p></label>
-                    </li>  
-                    <li className="size-item">
-                      <input type="checkbox" name="size" id = "size" className="size-filter-item" checked = {console.log("hello")}/>
-                      <label htmlFor="size"><p>85</p></label>
-                    </li>        
+                    <li className="cup-item">
+                      <p className="cup-filter-item">B</p>
+                    </li>
+                    <li className="cup-item">
+                      <p className="cup-filter-item">C</p>
+                    </li>     
+                    <li className="cup-item">
+                      <p className="cup-filter-item">D</p>
+                    </li>
                   </ul>        
                 </div>
-              </div>
+              </div> */}
 
               {/* Category search ended */}
               {/* Price Range */}
