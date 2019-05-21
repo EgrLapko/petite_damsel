@@ -1367,6 +1367,12 @@ button:focus{
 .filter-wrapper {
     @include flexbox;
     min-height: 5rem;
+    .cup-search {
+        display: none;
+    }
+    .cup-filter-visible {
+        @include flexbox;
+    }
     .search-bar {
         input[type="text"] {
             border: none;
@@ -1399,12 +1405,12 @@ button:focus{
         font-family: $fontmain;
         margin: 0;
     }
-    .price-filter, .cup-filter {
+    .price-filter, .cup-filter, .color-filter {
         margin: 0;
         .filter-title {
             cursor: pointer;
         }
-        .price-container, .cup-container{
+        .price-container, .cup-container, .color-container{
             @include flexbox;
             flex-direction: column;
             position: absolute;
@@ -1422,7 +1428,7 @@ button:focus{
             border-radius: 1rem;
             margin-top: 8rem;
             transition: .4s;
-            .colors-item {
+            .colors-item, .cup-iten {
                 width: 6rem;
                 .check-container {
                     @include flexbox;
@@ -1458,7 +1464,7 @@ button:focus{
                 -webkit-appearance: none;
                 margin-top: -10px;
               }
-              .cup-filter-list {
+              .cup-filter-list, .color-filter-list {
                   @include flexbox;
                   flex-direction: column;
                   list-style-type: none;

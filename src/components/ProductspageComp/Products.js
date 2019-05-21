@@ -28,7 +28,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="classic bras" />
                         <LocalNavbar menu="bra"/>
-                        <ProductFilter />
+                        <ProductFilter cupSize />
                         <div className="products-container">
                           <p> {brasClassic.length} items </p>
                         </div>
@@ -60,7 +60,7 @@ export default class Products extends Component {
                   <div className="products-list">
                         <Title title="push-up bras" />
                         <LocalNavbar menu="bra"/>
-                        <ProductFilter />
+                        <ProductFilter cupSize />
                         <div className="products-container">
                           <p> {brasPushup.length} items </p>
                         </div>
@@ -92,7 +92,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="strapless bras" />
                         <LocalNavbar menu="bra"/>
-                        <ProductFilter />
+                        <ProductFilter cupSize />
                         <div className="products-container">
                           <p> {brasStrapless.length} items </p>
                         </div>
@@ -124,7 +124,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="wireless bras" />
                         <LocalNavbar menu="bra"/>
-                        <ProductFilter />
+                        <ProductFilter cupSize />
                         <div className="products-container">
                           <p> {brasWireless.length} items </p>
                         </div>
@@ -157,7 +157,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="bras. all-in" />
                         <LocalNavbar menu="bra"/>
-                        <ProductFilter />
+                        <ProductFilter cupSize />
                         <div className="products-container">
                           <p> {brasAll.length} items </p>
                         </div>

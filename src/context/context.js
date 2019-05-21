@@ -36,7 +36,8 @@ class ProductProvider extends Component {
         cup: 'all', 
         shipping: false,
         priceFilter: false,
-        cupFilter: false
+        cupFilter: false,
+        colorFilter: false,
     };
 
 componentDidMount() {
@@ -253,6 +254,11 @@ setSingleProduct = (id) => {
         this.setState({cupFilter: ! this.state.cupFilter})
     }
 
+// ---------- Open color filter
+    handleColorFilter = () => {
+        this.setState({colorFilter: ! this.state.colorFilter})
+    }
+
 // ---------- Cart functionality
 increment = (id) =>{
     let tempCart = [...this.state.cart];
@@ -324,11 +330,17 @@ handleChange = (event) => {
     );
 };
 
+// handle filtering
+handleFilter = (name, value) => {
+    this.setState ({
+        [name]: value
+    }, this.sortData)
+}
+
 sortData = () => {
     const {storeProducts, price, color, cup, shipping, search} = this.state;
     let tempProducts = [...storeProducts];
     let tempPrice = parseInt(price);
-    let brasAll = storeProducts.filter(item => item.type === "Bras");
     // ---------- Filter by price
     tempProducts = tempProducts.filter(item => item.price <= tempPrice);
     // ---------- Filter by colors
@@ -336,15 +348,10 @@ sortData = () => {
         tempProducts = tempProducts.filter(item => item.color === color)
     }
     // ---------- Filter by Cup
-    if (cup === "A") {
-        tempProducts = brasAll.filter(item => item.cup.includes("A"))
-    } else if (cup === "B") {
-        tempProducts = brasAll.filter(item => item.cup.includes("B"))
-    } else if (cup === "C") {
-        tempProducts = brasAll.filter(item => item.cup.includes("C"))
-    } else if (cup === "D") {
-        tempProducts = brasAll.filter(item => item.cup.includes("D"))
+    if (cup) {
+        tempProducts = tempProducts.filter(item => item.cup.includes(cup))
     }
+
     // ---------- Filter by checkbox
     if(shipping) {
         tempProducts = tempProducts.filter(item => item.freeShipping === true)
@@ -387,8 +394,10 @@ sortData = () => {
                 removeItem: this.removeItem,
                 clearCart: this.clearCart,
                 handleChange: this.handleChange,
+                handleFilter: this.handleFilter,
                 handlePriceFilter: this.handlePriceFilter,
-                handleCupFilter: this.handleCupFilter               
+                handleCupFilter: this.handleCupFilter,
+                handleColorFilter: this.handleColorFilter,                
             }}>
                 {/* Super important stuff */}
                 {this.props.children}

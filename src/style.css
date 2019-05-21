@@ -1871,6 +1871,18 @@ button:focus {
   -ms-flex-align: center;
   align-items: center;
   min-height: 5rem; }
+  .filter-wrapper .cup-search {
+    display: none; }
+  .filter-wrapper .cup-filter-visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .filter-wrapper .search-bar input[type="text"] {
     border: none;
     border-bottom: 1px solid rgba(241, 106, 123, 0.5);
@@ -1898,11 +1910,11 @@ p {
   font-family: "Thasadith", sans-serif;
   margin: 0; }
 
-.price-filter, .cup-filter {
+.price-filter, .cup-filter, .color-filter {
   margin: 0; }
-  .price-filter .filter-title, .cup-filter .filter-title {
+  .price-filter .filter-title, .cup-filter .filter-title, .color-filter .filter-title {
     cursor: pointer; }
-  .price-filter .price-container, .price-filter .cup-container, .cup-filter .price-container, .cup-filter .cup-container {
+  .price-filter .price-container, .price-filter .cup-container, .price-filter .color-container, .cup-filter .price-container, .cup-filter .cup-container, .cup-filter .color-container, .color-filter .price-container, .color-filter .cup-container, .color-filter .color-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1936,9 +1948,9 @@ p {
     -webkit-transition: .4s;
     -o-transition: .4s;
     transition: .4s; }
-    .price-filter .price-container .colors-item, .price-filter .cup-container .colors-item, .cup-filter .price-container .colors-item, .cup-filter .cup-container .colors-item {
+    .price-filter .price-container .colors-item, .price-filter .price-container .cup-iten, .price-filter .cup-container .colors-item, .price-filter .cup-container .cup-iten, .price-filter .color-container .colors-item, .price-filter .color-container .cup-iten, .cup-filter .price-container .colors-item, .cup-filter .price-container .cup-iten, .cup-filter .cup-container .colors-item, .cup-filter .cup-container .cup-iten, .cup-filter .color-container .colors-item, .cup-filter .color-container .cup-iten, .color-filter .price-container .colors-item, .color-filter .price-container .cup-iten, .color-filter .cup-container .colors-item, .color-filter .cup-container .cup-iten, .color-filter .color-container .colors-item, .color-filter .color-container .cup-iten {
       width: 6rem; }
-      .price-filter .price-container .colors-item .check-container, .price-filter .cup-container .colors-item .check-container, .cup-filter .price-container .colors-item .check-container, .cup-filter .cup-container .colors-item .check-container {
+      .price-filter .price-container .colors-item .check-container, .price-filter .price-container .cup-iten .check-container, .price-filter .cup-container .colors-item .check-container, .price-filter .cup-container .cup-iten .check-container, .price-filter .color-container .colors-item .check-container, .price-filter .color-container .cup-iten .check-container, .cup-filter .price-container .colors-item .check-container, .cup-filter .price-container .cup-iten .check-container, .cup-filter .cup-container .colors-item .check-container, .cup-filter .cup-container .cup-iten .check-container, .cup-filter .color-container .colors-item .check-container, .cup-filter .color-container .cup-iten .check-container, .color-filter .price-container .colors-item .check-container, .color-filter .price-container .cup-iten .check-container, .color-filter .cup-container .colors-item .check-container, .color-filter .cup-container .cup-iten .check-container, .color-filter .color-container .colors-item .check-container, .color-filter .color-container .cup-iten .check-container {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1957,20 +1969,20 @@ p {
         -ms-user-select: none;
         user-select: none;
         margin: 0; }
-    .price-filter .price-container input, .price-filter .cup-container input, .cup-filter .price-container input, .cup-filter .cup-container input {
+    .price-filter .price-container input, .price-filter .cup-container input, .price-filter .color-container input, .cup-filter .price-container input, .cup-filter .cup-container input, .cup-filter .color-container input, .color-filter .price-container input, .color-filter .cup-container input, .color-filter .color-container input {
       background-color: #f6f6f6; }
-    .price-filter .price-container input[type=range], .price-filter .cup-container input[type=range], .cup-filter .price-container input[type=range], .cup-filter .cup-container input[type=range] {
+    .price-filter .price-container input[type=range], .price-filter .cup-container input[type=range], .price-filter .color-container input[type=range], .cup-filter .price-container input[type=range], .cup-filter .cup-container input[type=range], .cup-filter .color-container input[type=range], .color-filter .price-container input[type=range], .color-filter .cup-container input[type=range], .color-filter .color-container input[type=range] {
       height: 2rem;
       -webkit-appearance: none;
       width: 100%; }
-    .price-filter .price-container input[type=range]:focus, .price-filter .cup-container input[type=range]:focus, .cup-filter .price-container input[type=range]:focus, .cup-filter .cup-container input[type=range]:focus {
+    .price-filter .price-container input[type=range]:focus, .price-filter .cup-container input[type=range]:focus, .price-filter .color-container input[type=range]:focus, .cup-filter .price-container input[type=range]:focus, .cup-filter .cup-container input[type=range]:focus, .cup-filter .color-container input[type=range]:focus, .color-filter .price-container input[type=range]:focus, .color-filter .cup-container input[type=range]:focus, .color-filter .color-container input[type=range]:focus {
       outline: none; }
-    .price-filter .price-container input[type=range]::-webkit-slider-runnable-track, .price-filter .cup-container input[type=range]::-webkit-slider-runnable-track, .cup-filter .price-container input[type=range]::-webkit-slider-runnable-track, .cup-filter .cup-container input[type=range]::-webkit-slider-runnable-track {
+    .price-filter .price-container input[type=range]::-webkit-slider-runnable-track, .price-filter .cup-container input[type=range]::-webkit-slider-runnable-track, .price-filter .color-container input[type=range]::-webkit-slider-runnable-track, .cup-filter .price-container input[type=range]::-webkit-slider-runnable-track, .cup-filter .cup-container input[type=range]::-webkit-slider-runnable-track, .cup-filter .color-container input[type=range]::-webkit-slider-runnable-track, .color-filter .price-container input[type=range]::-webkit-slider-runnable-track, .color-filter .cup-container input[type=range]::-webkit-slider-runnable-track, .color-filter .color-container input[type=range]::-webkit-slider-runnable-track {
       width: 100%;
       height: 1px;
       cursor: pointer;
       background: rgba(241, 106, 123, 0.7); }
-    .price-filter .price-container input[type=range]::-webkit-slider-thumb, .price-filter .cup-container input[type=range]::-webkit-slider-thumb, .cup-filter .price-container input[type=range]::-webkit-slider-thumb, .cup-filter .cup-container input[type=range]::-webkit-slider-thumb {
+    .price-filter .price-container input[type=range]::-webkit-slider-thumb, .price-filter .cup-container input[type=range]::-webkit-slider-thumb, .price-filter .color-container input[type=range]::-webkit-slider-thumb, .cup-filter .price-container input[type=range]::-webkit-slider-thumb, .cup-filter .cup-container input[type=range]::-webkit-slider-thumb, .cup-filter .color-container input[type=range]::-webkit-slider-thumb, .color-filter .price-container input[type=range]::-webkit-slider-thumb, .color-filter .cup-container input[type=range]::-webkit-slider-thumb, .color-filter .color-container input[type=range]::-webkit-slider-thumb {
       height: 1.3rem;
       width: 1.3rem;
       border-radius: 21px;
@@ -1978,7 +1990,7 @@ p {
       cursor: pointer;
       -webkit-appearance: none;
       margin-top: -10px; }
-    .price-filter .price-container .cup-filter-list, .price-filter .cup-container .cup-filter-list, .cup-filter .price-container .cup-filter-list, .cup-filter .cup-container .cup-filter-list {
+    .price-filter .price-container .cup-filter-list, .price-filter .price-container .color-filter-list, .price-filter .cup-container .cup-filter-list, .price-filter .cup-container .color-filter-list, .price-filter .color-container .cup-filter-list, .price-filter .color-container .color-filter-list, .cup-filter .price-container .cup-filter-list, .cup-filter .price-container .color-filter-list, .cup-filter .cup-container .cup-filter-list, .cup-filter .cup-container .color-filter-list, .cup-filter .color-container .cup-filter-list, .cup-filter .color-container .color-filter-list, .color-filter .price-container .cup-filter-list, .color-filter .price-container .color-filter-list, .color-filter .cup-container .cup-filter-list, .color-filter .cup-container .color-filter-list, .color-filter .color-container .cup-filter-list, .color-filter .color-container .color-filter-list {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1995,7 +2007,7 @@ p {
       list-style-type: none;
       padding: 0;
       margin: 0; }
-      .price-filter .price-container .cup-filter-list .cup-item, .price-filter .cup-container .cup-filter-list .cup-item, .cup-filter .price-container .cup-filter-list .cup-item, .cup-filter .cup-container .cup-filter-list .cup-item {
+      .price-filter .price-container .cup-filter-list .cup-item, .price-filter .price-container .color-filter-list .cup-item, .price-filter .cup-container .cup-filter-list .cup-item, .price-filter .cup-container .color-filter-list .cup-item, .price-filter .color-container .cup-filter-list .cup-item, .price-filter .color-container .color-filter-list .cup-item, .cup-filter .price-container .cup-filter-list .cup-item, .cup-filter .price-container .color-filter-list .cup-item, .cup-filter .cup-container .cup-filter-list .cup-item, .cup-filter .cup-container .color-filter-list .cup-item, .cup-filter .color-container .cup-filter-list .cup-item, .cup-filter .color-container .color-filter-list .cup-item, .color-filter .price-container .cup-filter-list .cup-item, .color-filter .price-container .color-filter-list .cup-item, .color-filter .cup-container .cup-filter-list .cup-item, .color-filter .cup-container .color-filter-list .cup-item, .color-filter .color-container .cup-filter-list .cup-item, .color-filter .color-container .color-filter-list .cup-item {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2011,16 +2023,16 @@ p {
         -webkit-transition: .2s;
         -o-transition: .2s;
         transition: .2s; }
-      .price-filter .price-container .cup-filter-list .cup-item:hover, .price-filter .cup-container .cup-filter-list .cup-item:hover, .cup-filter .price-container .cup-filter-list .cup-item:hover, .cup-filter .cup-container .cup-filter-list .cup-item:hover {
+      .price-filter .price-container .cup-filter-list .cup-item:hover, .price-filter .price-container .color-filter-list .cup-item:hover, .price-filter .cup-container .cup-filter-list .cup-item:hover, .price-filter .cup-container .color-filter-list .cup-item:hover, .price-filter .color-container .cup-filter-list .cup-item:hover, .price-filter .color-container .color-filter-list .cup-item:hover, .cup-filter .price-container .cup-filter-list .cup-item:hover, .cup-filter .price-container .color-filter-list .cup-item:hover, .cup-filter .cup-container .cup-filter-list .cup-item:hover, .cup-filter .cup-container .color-filter-list .cup-item:hover, .cup-filter .color-container .cup-filter-list .cup-item:hover, .cup-filter .color-container .color-filter-list .cup-item:hover, .color-filter .price-container .cup-filter-list .cup-item:hover, .color-filter .price-container .color-filter-list .cup-item:hover, .color-filter .cup-container .cup-filter-list .cup-item:hover, .color-filter .cup-container .color-filter-list .cup-item:hover, .color-filter .color-container .cup-filter-list .cup-item:hover, .color-filter .color-container .color-filter-list .cup-item:hover {
         color: rgba(241, 106, 123, 0.9); }
-  .price-filter .price-visible, .cup-filter .price-visible {
+  .price-filter .price-visible, .cup-filter .price-visible, .color-filter .price-visible {
     margin-top: 5rem;
     opacity: 1;
     visibility: visible; }
-  .price-filter .cup-container, .cup-filter .cup-container {
+  .price-filter .cup-container, .cup-filter .cup-container, .color-filter .cup-container {
     width: 5rem;
     margin-top: 10rem; }
-  .price-filter .cup-visible, .cup-filter .cup-visible {
+  .price-filter .cup-visible, .cup-filter .cup-visible, .color-filter .cup-visible {
     margin-top: 8rem;
     opacity: 1;
     visibility: visible; }
