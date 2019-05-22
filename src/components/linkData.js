@@ -51,69 +51,90 @@ export const linkData = [
     },
     {
         id: 8,
+        text: 'browse all',
+        path: '/products/panties_all',
+        image: '',
+        type: 'panty'
+    },
+    {
+        id: 9,
         text: 'slimming',
         path: '/products/panties_slimming',
         image: 'https://i.imgur.com/X8s4XAj.jpg',
         type: 'panty'
     },
     {
-        id: 9,
+        id: 10,
         text: 'brazilian',
         path: '/products/panties_brazilian',
         image: 'https://i.imgur.com/QQ5US7R.jpg',
         type: 'panty'
     },
     {
-        id: 10,
+        id: 11,
         text: 'bottoms',
         path: '/products/sleepwear_bottoms',
         image: 'https://i.imgur.com/kDPRCey.jpg',
         type: 'sleepwear'
     },
     {
-        id: 11,
+        id: 12,
         text: 'long',
         path: '/products/sleepwear_long',
         image: 'https://i.imgur.com/Hn7O5YM.jpg',
         type: 'sleepwear'
     },
     {
-        id: 12,
+        id: 13,
+        text: 'browse all',
+        path: '/products/sleepwear_all',
+        image: '',
+        type: 'sleepwear'
+    },
+    {
+        id: 14,
         text: 'short',
         path: '/products/sleepwear_short',
         image: 'https://i.imgur.com/FLYqLCb.jpg',
         type: 'sleepwear'
     },
     {
-        id: 13,
+        id: 15,
         text: 'tops',
         path: '/products/sleepwear_tops',
         image: 'https://i.imgur.com/MpLBtNt.jpg',
         type: 'sleepwear'
     },
     {
-        id: 14,
+        id: 16,
         text: 'body',
         path: '/products/accessories_bodysuits',
         image: 'https://i.imgur.com/OPJjUfJ.jpg',
         type: 'accs'
     },
     {
-        id: 15,
+        id: 17,
         text: 'tights',
         path: '/products/accessories_tights',
         image: 'https://i.imgur.com/pdmDWb2.jpg',
         type: 'accs'
     },
     {
-        id: 16,
+        id: 18,
+        text: 'browse all',
+        path: '/products/accessories_all',
+        image: '',
+        type: 'accs'
+    },
+    {
+        id: 19,
         text: 'slippers',
         path: '/products/accessories_slippers',
         image: 'https://i.imgur.com/8IaHFZW.jpg',
         type: 'accs'
     },
     {
-        id: 17,
+        id: 20,
         text: 'other',
         path: '/products/accessories_other',
         image: 'https://i.imgur.com/SMqE1p6.jpg',

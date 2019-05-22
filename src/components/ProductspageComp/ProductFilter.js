@@ -5,21 +5,22 @@ export default class ProductFilter extends Component {
 
   render() {
 
-    const {cupSize, brasSize} = this.props;
+    const {cupSize, brasSize, pantiesSize} = this.props;
 
     return (
       <ProductConsumer>
         {value => {
           const {search, min, max, shipping, price, handleChange, storeProducts, handlePriceFilter, priceFilter,
-          handleCupFilter, cupFilter, handleColorFilter, colorFilter, handleSizeFilter, sizeFilter, handleFilter} = value;
+          handleCupFilter, cupFilter, handleColorFilter, colorFilter, handleSizeFilter, sizeFilter, handleFilter,
+          handlePantiesFilter, sizePanties} = value;
 
           let allBras = storeProducts.filter(item => item.type === "Bras");
           let allPanties = storeProducts.filter(item => item.type === "Panties");
           let allSleepwear = storeProducts.filter(item => item.type === "Sleepwear");
 
           
-          let brasCups = allBras.map(item => item.cup);
-          let allCups = [...new Set(brasCups.flat())]
+          let brasAllCups = allBras.map(item => item.cup);
+          let allCups = [...new Set(brasAllCups.flat())]
 
           let allColors = storeProducts.map(item => item.color);
           let colorSet = [...new Set(allColors.flat())];
@@ -50,7 +51,7 @@ export default class ProductFilter extends Component {
 
               {/* Search by color */}
 
-              <div className="color-search color-filter filter ">
+              <div className="color-filter filter ">
                 <p className="filter-title" onClick={handleColorFilter}>Color <i className="fas fa-sort-down"></i></p>
                 <div className={"color-container " + (colorFilter ? "color-window-visible" : null)}>
                   <ul className="color-filter-list">
@@ -66,13 +67,29 @@ export default class ProductFilter extends Component {
 
               {/* color search ended */}
 
-              {/* Search by size for BRAS */}
+              {/* ---------------- Search by size for BRAS */}
 
-              <div className={"size-search size-filter filter " + (brasCups ? "size-filter-visible" : null)}>
+              <div className={"size-filter filter " + (brasSize ? "size-filter-visible" : null)}>
                 <p className="filter-title" onClick={handleSizeFilter}>Size <i className="fas fa-sort-down"></i></p>
                 <div className={"size-container " + (sizeFilter ? "size-window-visible" : null)}>
                   <ul className="size-filter-list">
                     {brasSizesSet.map((sizes, index) => {
+                      return (
+                        <li className="size-item" key={index} onClick={() => handleFilter("sizes", sizes)}> {sizes} </li>
+                      )
+                    }
+                    )}
+                  </ul>        
+                </div>
+              </div>
+
+              {/* ---------------- Search by size for PANTIES */}
+
+              <div className={"size-filter filter " + (pantiesSize ? "size-panties-visible" : null)}>
+                <p className="filter-title" onClick={handlePantiesFilter}>Size <i className="fas fa-sort-down"></i></p>
+                <div className={"size-panties-container " + (sizePanties ? "size-panties-window-visible" : null)}>
+                  <ul className="size-filter-list">
+                    {pantiesSizesSet.map((sizes, index) => {
                       return (
                         <li className="size-item" key={index} onClick={() => handleFilter("sizes", sizes)}> {sizes} </li>
                       )

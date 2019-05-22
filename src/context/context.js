@@ -39,6 +39,7 @@ class ProductProvider extends Component {
         cupFilter: false,
         colorFilter: false,
         sizeFilter: false,
+        sizePanties: false,
     };
 
 componentDidMount() {
@@ -265,6 +266,11 @@ setSingleProduct = (id) => {
         this.setState({sizeFilter: ! this.state.sizeFilter})
     }
 
+// ---------- Open size filter
+    handlePantiesFilter = () => {
+        this.setState({sizePanties: ! this.state.sizePanties})
+    }
+
 // ---------- Cart functionality
 increment = (id) =>{
     let tempCart = [...this.state.cart];
@@ -347,11 +353,13 @@ sortData = () => {
     const {storeProducts, price, color, cup, sizes, shipping, search} = this.state;
     let tempProducts = [...storeProducts];
     let tempPrice = parseInt(price);
+
     // ---------- Filter by price
     tempProducts = tempProducts.filter(item => item.price <= tempPrice);
+    
     // ---------- Filter by colors
-    if (color !== "all") {
-        tempProducts = tempProducts.filter(item => item.color === color)
+    if (color) {
+        tempProducts = tempProducts.filter(item => item.color.includes(color))
     }
     // ---------- Filter by Cup
     if (cup) {
@@ -410,6 +418,7 @@ sortData = () => {
                 handleCupFilter: this.handleCupFilter,
                 handleColorFilter: this.handleColorFilter,                
                 handleSizeFilter: this.handleSizeFilter, 
+                handlePantiesFilter: this.handlePantiesFilter
             }}>
                 {/* Super important stuff */}
                 {this.props.children}

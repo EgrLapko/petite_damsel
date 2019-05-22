@@ -1112,6 +1112,13 @@ button:focus{
         @include flexbox;
         flex-wrap: wrap;
     }
+    .filters-display {
+        @include flexbox;
+        margin: auto;
+        .filters-display-item {
+            margin: 0 1rem;
+        }
+    }
 }
 
 @media (max-width: 1450px) {
@@ -1366,7 +1373,7 @@ button:focus{
     @include flexbox;
     width: 60%;
     margin: auto;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     min-height: 5rem;
     margin-top: 2rem;
@@ -1376,7 +1383,7 @@ button:focus{
     .cup-search {
         display: none;
     }
-    .cup-filter-visible, .size-filter-visible {
+    .cup-filter-visible, .size-filter-visible, .size-panties-visible  {
         @include flexbox;
     }
     .search-bar {
@@ -1411,13 +1418,19 @@ button:focus{
         font-family: $fontmain;
         margin: 0;
     }
-    .price-filter, .cup-filter, .color-filter, .size-filter {
+
+    .size-filter {
+        display: none;
+    }
+
+    .price-filter, .cup-filter, .color-filter, .size-filter,
+    .size-panties-filter {
         margin: 0;
         .filter-title {
             cursor: pointer;
         }
         .price-container, .cup-container, .color-container, 
-        .size-container{
+        .size-container, .size-panties-container{
             @include flexbox;
             flex-direction: column;
             position: absolute;
@@ -1490,18 +1503,19 @@ button:focus{
               }
         }
         .color-container {
-            width: 10rem;
-            height: 10rem;
+            width: 8rem;
+            min-height: 10rem;
             margin-top: 12rem;
+            padding: .5rem;
             .color-filter-list {
                 flex-direction: row;
                 flex-wrap: wrap;
                 align-items: flex-start;
+                justify-content: space-around;
                 .color-item {
                     width: 40%;
                     font-size: 1.1rem;
                     transition: .2s;
-                    text-transform: capitalize;
                 }
                 .color-item:hover {
                     color: rgba(241, 106, 123, .9);
@@ -1519,6 +1533,7 @@ button:focus{
                 .size-item {
                     font-size: 1.1rem;
                     transition: .2s;
+                    text-transform: capitalize;
                 }
                 .size-item:hover {
                     color: rgba(241, 106, 123, .9);
@@ -1542,10 +1557,15 @@ button:focus{
         }
         .color-window-visible {
             opacity: 1;
-            margin-top: 8rem;
+            margin-top: 8.5rem;
             visibility: visible;
         }
         .size-window-visible {
+            opacity: 1;
+            margin-top: 8rem;
+            visibility: visible;
+        }
+        .size-panties-window-visible {
             opacity: 1;
             margin-top: 8rem;
             visibility: visible;
@@ -1565,7 +1585,7 @@ button:focus{
     padding: 0;
     .local-nav-item {
         font-family: $fontmain;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         text-transform: capitalize;
         transition: .3s;
         padding: .5rem;

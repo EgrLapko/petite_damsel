@@ -22,15 +22,15 @@ export default class Products extends Component {
         <Route path="/products/bras_classic" render={() =>   
           <ProductConsumer>
             {value => {
-                  const {filteredProducts} = value;
+                  const {filteredProducts, color, sizes, cup, price} = value;
                   const brasClassic = filteredProducts.filter(product => product.category === "Bras, classic");                  
                   return (
                       <div className="products-list">
                         <Title title="classic bras" />
                         <LocalNavbar menu="bra"/>
-                        <ProductFilter cupSize />
-                        <div className="products-container">
-                          <p> {brasClassic.length} items </p>
+                        <ProductFilter cupSize brasSize />
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {brasClassic.length} items </p>
                         </div>
                         <div className="products-container">
                           {brasClassic.length === 0 ? (
@@ -60,7 +60,7 @@ export default class Products extends Component {
                   <div className="products-list">
                         <Title title="push-up bras" />
                         <LocalNavbar menu="bra"/>
-                        <ProductFilter cupSize />
+                        <ProductFilter cupSize brasSize />
                         <div className="products-container">
                           <p> {brasPushup.length} items </p>
                         </div>
@@ -92,7 +92,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="strapless bras" />
                         <LocalNavbar menu="bra"/>
-                        <ProductFilter cupSize />
+                        <ProductFilter cupSize brasSize />
                         <div className="products-container">
                           <p> {brasStrapless.length} items </p>
                         </div>
@@ -157,7 +157,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="bras. all-in" />
                         <LocalNavbar menu="bra"/>
-                        <ProductFilter cupSize />
+                        <ProductFilter cupSize brasSize />
                         <div className="products-container">
                           <p> {brasAll.length} items </p>
                         </div>
@@ -189,7 +189,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="classic panties" />
                         <LocalNavbar menu="panties"/>
-                        <ProductFilter />
+                        <ProductFilter pantiesSize />
                         <div className="products-container">
                           <p> {pantiesClassic.length} items </p>
                         </div>
@@ -222,7 +222,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="thongs" />
                         <LocalNavbar menu="panties"/>
-                        <ProductFilter />
+                        <ProductFilter pantiesSize />
                         <div className="products-container">
                           <p> {pantiesThongs.length} items </p>
                         </div>
@@ -254,7 +254,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="slimming panties" />
                         <LocalNavbar menu="panties"/>
-                        <ProductFilter />
+                        <ProductFilter pantiesSize />
                         <div className="products-container">
                           <p> {pantiesSlimming.length} items </p>
                         </div>
@@ -286,7 +286,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="brazilian panties" />
                         <LocalNavbar menu="panties"/>
-                        <ProductFilter />
+                        <ProductFilter pantiesSize />
                         <div className="products-container">
                           <p> {pantiesBrazilian.length} items </p>
                         </div>
@@ -297,6 +297,38 @@ export default class Products extends Component {
                             </div>
                           ) : (
                             pantiesBrazilian.map(product => (
+                              <ProductCard 
+                                key={product.id}
+                                product = {product}
+                              />
+                          )))}
+                        </div>
+                      </div>
+                  )  
+              }}
+          </ProductConsumer>   
+        }/>
+
+        <Route path="/products/panties_all" render={() =>     
+          <ProductConsumer>
+            {value => {
+                  const {filteredProducts} = value;
+                  const pantiesAll = filteredProducts.filter(product => product.type === "Panties");
+                  return (
+                      <div className="products-list">
+                        <Title title="panties. all-in" />
+                        <LocalNavbar menu="panties"/>
+                        <ProductFilter pantiesSize />
+                        <div className="products-container">
+                          <p> {pantiesAll.length} items </p>
+                        </div>
+                        <div className="products-container">
+                          {pantiesAll.length === 0 ? (
+                            <div>
+                              <Title title="No items matched" />
+                            </div>
+                          ) : (
+                            pantiesAll.map(product => (
                               <ProductCard 
                                 key={product.id}
                                 product = {product}
