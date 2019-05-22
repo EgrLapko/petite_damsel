@@ -124,7 +124,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="wireless bras" />
                         <LocalNavbar menu="bra"/>
-                        <ProductFilter cupSize />
+                        <ProductFilter cupSize brasSize />
                         <div className="products-container">
                           <p> {brasWireless.length} items </p>
                         </div>

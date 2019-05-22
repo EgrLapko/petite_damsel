@@ -1,33 +1,37 @@
 import React, { Component } from 'react';
 import {ProductConsumer} from '../../context';
-import { Route } from 'react-router-dom';
 
 export default class ProductFilter extends Component {
 
   render() {
 
-    const {cupSize} = this.props;
+    const {cupSize, brasSize} = this.props;
 
     return (
       <ProductConsumer>
         {value => {
-          const {search, min, max, color, shipping, price, handleChange, storeProducts, handlePriceFilter, priceFilter,
-          handleCupFilter, cupFilter, handleColorFilter, colorFilter, handleFilter} = value;
+          const {search, min, max, shipping, price, handleChange, storeProducts, handlePriceFilter, priceFilter,
+          handleCupFilter, cupFilter, handleColorFilter, colorFilter, handleSizeFilter, sizeFilter, handleFilter} = value;
 
           let allBras = storeProducts.filter(item => item.type === "Bras");
+          let allPanties = storeProducts.filter(item => item.type === "Panties");
+          let allSleepwear = storeProducts.filter(item => item.type === "Sleepwear");
+
+          
           let brasCups = allBras.map(item => item.cup);
           let allCups = [...new Set(brasCups.flat())]
 
           let allColors = storeProducts.map(item => item.color);
-          let colorSet = [...new Set(allColors.flat())]
+          let colorSet = [...new Set(allColors.flat())];
 
-          let colors = new Set()
-          colors.add('all');
-          for (let product in storeProducts) {
-            colors.add(storeProducts[product]["color"])
-          }
-          colors = [...colors];
+          let allBrasSizes = allBras.map(item => item.sizes);
+          let brasSizesSet = [...new Set(allBrasSizes.flat())];
 
+          let allPantiesSizes = allPanties.map(item => item.sizes);
+          let pantiesSizesSet = [...new Set(allPantiesSizes.flat())];
+
+          let allSleepwearSizes = allSleepwear.map(item => item.sizes);
+          let sleepwearSizesSet = [...new Set(allSleepwearSizes.flat())];
           
 
           return (
@@ -38,37 +42,21 @@ export default class ProductFilter extends Component {
                        name="search" 
                        id='search' 
                        onChange={handleChange} 
-                       value={search} 
-                       placeholder = "Enter a title"
+                        value={search} 
+                        placeholder = "Enter a title"
                        className="filter-item"/>
               </div>     
               {/* End of text search */}
-              {/* Category search */}
-              <div className="category-search filter">
-                <select name="color" 
-                        id="color"
-                        onChange={handleChange} 
-                        value={color} 
-                        className="filter-item select">
-
-                    {
-                    colors.map((color, index) => {
-                      return (
-                        <option key={index} value={color}> {color} </option>
-                      )
-                    })
-                  }
-                </select>
-              </div>
 
               {/* Search by color */}
 
-              <div className="color-search color-filter filter "><p className="filter-title" onClick={handleColorFilter}> Color <i className="fas fa-sort-down"></i></p>
-                <div className={"color-container " + (colorFilter ? "cup-visible" : null)}>
+              <div className="color-search color-filter filter ">
+                <p className="filter-title" onClick={handleColorFilter}>Color <i className="fas fa-sort-down"></i></p>
+                <div className={"color-container " + (colorFilter ? "color-window-visible" : null)}>
                   <ul className="color-filter-list">
                     {colorSet.map((color, index) => {
                       return (
-                        <li className="cup-item" key={index} onClick={() => handleFilter("color", color)}> {color} </li>
+                        <li className="color-item" key={index} onClick={() => handleFilter("color", color)}> {color} </li>
                       )
                     }
                     )}
@@ -77,11 +65,29 @@ export default class ProductFilter extends Component {
               </div>
 
               {/* color search ended */}
+
+              {/* Search by size for BRAS */}
+
+              <div className={"size-search size-filter filter " + (brasCups ? "size-filter-visible" : null)}>
+                <p className="filter-title" onClick={handleSizeFilter}>Size <i className="fas fa-sort-down"></i></p>
+                <div className={"size-container " + (sizeFilter ? "size-window-visible" : null)}>
+                  <ul className="size-filter-list">
+                    {brasSizesSet.map((sizes, index) => {
+                      return (
+                        <li className="size-item" key={index} onClick={() => handleFilter("sizes", sizes)}> {sizes} </li>
+                      )
+                    }
+                    )}
+                  </ul>        
+                </div>
+              </div>
+
+              {/* size search ended */}
               
               {/* Search by cup */}
 
               <div className={"cup-search cup-filter filter " + (cupSize ? "cup-filter-visible" : null)}><p className="filter-title" onClick={handleCupFilter}>Cup <i className="fas fa-sort-down"></i></p>
-                <div className={"cup-container " + (cupFilter ? "cup-visible" : null)}>
+                <div className={"cup-container " + (cupFilter ? "cup-window-visible" : null)}>
                   <ul className="cup-filter-list">
                     {allCups.map((cup, index) => {
                       return (
@@ -97,7 +103,7 @@ export default class ProductFilter extends Component {
               {/* Price Range */}
 
               <div className="price-filter filter"><p className="filter-title" onClick={handlePriceFilter}>Price <i className="fas fa-sort-down"></i></p>
-                <div className={"price-container " + (priceFilter ? "price-visible" : null)}>
+                <div className={"price-container " + (priceFilter ? "price-window-visible" : null)}>
                   <label htmlFor="price"><p className="price-screen">${price}</p></label>
                   <input 
                       type="range" 

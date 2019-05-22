@@ -32,12 +32,13 @@ class ProductProvider extends Component {
         min: 0,
         max: 0,
         color: 'all',
-        size: 'all',
+        sizes: 'all',
         cup: 'all', 
         shipping: false,
         priceFilter: false,
         cupFilter: false,
         colorFilter: false,
+        sizeFilter: false,
     };
 
 componentDidMount() {
@@ -259,6 +260,11 @@ setSingleProduct = (id) => {
         this.setState({colorFilter: ! this.state.colorFilter})
     }
 
+// ---------- Open size filter
+    handleSizeFilter = () => {
+        this.setState({sizeFilter: ! this.state.sizeFilter})
+    }
+
 // ---------- Cart functionality
 increment = (id) =>{
     let tempCart = [...this.state.cart];
@@ -338,7 +344,7 @@ handleFilter = (name, value) => {
 }
 
 sortData = () => {
-    const {storeProducts, price, color, cup, shipping, search} = this.state;
+    const {storeProducts, price, color, cup, sizes, shipping, search} = this.state;
     let tempProducts = [...storeProducts];
     let tempPrice = parseInt(price);
     // ---------- Filter by price
@@ -350,6 +356,11 @@ sortData = () => {
     // ---------- Filter by Cup
     if (cup) {
         tempProducts = tempProducts.filter(item => item.cup.includes(cup))
+    }
+
+    // ---------- Filter by Size
+    if (sizes) {
+        tempProducts = tempProducts.filter(item => item.sizes.includes(sizes))
     }
 
     // ---------- Filter by checkbox
@@ -398,6 +409,7 @@ sortData = () => {
                 handlePriceFilter: this.handlePriceFilter,
                 handleCupFilter: this.handleCupFilter,
                 handleColorFilter: this.handleColorFilter,                
+                handleSizeFilter: this.handleSizeFilter, 
             }}>
                 {/* Super important stuff */}
                 {this.props.children}

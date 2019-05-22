@@ -38,7 +38,7 @@ export default class MainPage extends Component {
           blur={0}
           bgImage={require('../images/parallax/parallax-banner1.jpg')}
           bgImageAlt="parallax-1"
-          strength={300}
+          strength={800}
           contentClassName="parallax-background"
         >   
           <div className="parallax-content-section">

@@ -1358,19 +1358,25 @@ button:focus{
 
 .filter {
     @include flexbox;
-    position: relative;
-    margin: 0 3rem;
-    width: 5rem;
+    min-width: 7rem;
     min-height: 3rem;
 }
 
 .filter-wrapper {
     @include flexbox;
+    width: 40%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
     min-height: 5rem;
+    margin-top: 2rem;
+    .fa-sort-down{
+        color: rgba(105, 105, 105, .6);
+    }
     .cup-search {
         display: none;
     }
-    .cup-filter-visible {
+    .cup-filter-visible, .size-filter-visible {
         @include flexbox;
     }
     .search-bar {
@@ -1405,12 +1411,13 @@ button:focus{
         font-family: $fontmain;
         margin: 0;
     }
-    .price-filter, .cup-filter, .color-filter {
+    .price-filter, .cup-filter, .color-filter, .size-filter {
         margin: 0;
         .filter-title {
             cursor: pointer;
         }
-        .price-container, .cup-container, .color-container{
+        .price-container, .cup-container, .color-container, 
+        .size-container{
             @include flexbox;
             flex-direction: column;
             position: absolute;
@@ -1464,13 +1471,13 @@ button:focus{
                 -webkit-appearance: none;
                 margin-top: -10px;
               }
-              .cup-filter-list, .color-filter-list {
+              .cup-filter-list, .color-filter-list, .size-filter-list {
                   @include flexbox;
                   flex-direction: column;
                   list-style-type: none;
                   padding: 0;
                   margin: 0;
-                  .cup-item {
+                  .cup-item, .color-item, .size-item {
                       @include flexbox;
                       padding: .2rem;
                       margin: .1rem 0;
@@ -1482,18 +1489,65 @@ button:focus{
                   }
               }
         }
-        .price-visible {
-            margin-top: 5rem;
-            opacity: 1;
-            visibility: visible;
+        .color-container {
+            width: 10rem;
+            height: 10rem;
+            margin-top: 12rem;
+            .color-filter-list {
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                .color-item {
+                    width: 40%;
+                    font-size: 1.1rem;
+                    transition: .2s;
+                    text-transform: capitalize;
+                }
+                .color-item:hover {
+                    color: rgba(241, 106, 123, .9);
+                }
+            }
         }
+
+        .size-container {
+            width: 3rem;
+            min-height: 5rem;
+            margin-top: 12rem;
+            .size-filter-list {
+                @include flexbox;
+                flex-direction: column;
+                .size-item {
+                    font-size: 1.1rem;
+                    transition: .2s;
+                }
+                .size-item:hover {
+                    color: rgba(241, 106, 123, .9);
+                }
+            }
+        }
+
         .cup-container {
             width: 5rem;
             margin-top: 10rem;
         }
-        .cup-visible {
+        .price-window-visible {
+            margin-top: 5rem;
+            opacity: 1;
+            visibility: visible;
+        }   
+        .cup-window-visible {
             margin-top: 8rem;
             opacity: 1;
+            visibility: visible;
+        }
+        .color-window-visible {
+            opacity: 1;
+            margin-top: 8rem;
+            visibility: visible;
+        }
+        .size-window-visible {
+            opacity: 1;
+            margin-top: 8rem;
             visibility: visible;
         }
         
