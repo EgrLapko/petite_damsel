@@ -5,52 +5,46 @@ export default class ProductFilter extends Component {
 
   render() {
 
-    const {cupSize, brasSize, uniSize, tightsSize, shoesSize, colorsBra} = this.props;
+    const {cupSize, brasSize, uniSize, tightsSize, shoesSize, colorsBra, classicBrasColors, pushupBrasColors, straplessBrasColors, wirelessBrasColors ,
+      colorsPanties, colorsClassicPanties, colorsThongsPanties, colorsSlimmingPanties, colorsBrazilianPanties, colorsSleepwear, colorsSleepwearBottoms,
+      colorsSleepwearLong, colorsSleepwearShort, colorsSleepwearTops, colorsBodysuits, colorsTights, colorsSlippers} = this.props;
 
     return (
       <ProductConsumer>
         {value => {
           const {search, min, max, price, color, cup, sizes, handleChange, storeProducts, handlePriceFilter, priceFilter,
-          handleCupFilter, cupFilter, handleColorFilter, colorFilter, handleSizeFilter, sizeFilter, handleFilter} = value;
+          handleCupFilter, cupFilter, handleColorFilter, colorFilter, handleSizeFilter, sizeFilter, handleFilter, displayColors} = value;
 
           // ------------------ Fetching colors by category
-          let allBras = storeProducts.filter(item => item.type === "Bras");
-          let allBrasColors = allBras.map(item => item.color);
-          let brasColorSet = [...new Set(allBrasColors.flat())];
+          let brasColors = [...new Set(storeProducts.filter(item => item.type === "Bras").map(item => item.color).flat())];
+          let brasClassicColors = [...new Set(storeProducts.filter(item => item.category === "Bras, classic").map(item => item.color).flat())];
+          let brasPushupColors = [...new Set(storeProducts.filter(item => item.category === "Bras, push-up").map(item => item.color).flat())];
+          let brasStraplessColors = [...new Set(storeProducts.filter(item => item.category === "Bras, strapless").map(item => item.color).flat())];
+          let brasWirelessColors = [...new Set(storeProducts.filter(item => item.category === "Bras, wireless").map(item => item.color).flat())];
 
-          let allPanties = storeProducts.filter(item => item.type === "Panties");
-          let allPantiesColors = allPanties.map(item => item.color);
-          let pantiesColorSet = [...new Set(allPantiesColors.flat())];
+          let pantiesColors = [...new Set(storeProducts.filter(item => item.type === "Panties").map(item => item.color).flat())];
+          let pantiesClassicColors = [...new Set(storeProducts.filter(item => item.category === "Panties, classic").map(item => item.color).flat())];
+          let pantiesThongsColors = [...new Set(storeProducts.filter(item => item.category === "Panties, thongs").map(item => item.color).flat())];
+          let pantiesSlimmingColors = [...new Set(storeProducts.filter(item => item.category === "Panties, slimming").map(item => item.color).flat())];
+          let pantiesBrazilianColors = [...new Set(storeProducts.filter(item => item.category === "Panties, brazilian").map(item => item.color).flat())];
 
-          let allSleepwear = storeProducts.filter(item => item.type === "Sleepwear");
-          let allSleepwearColors = allSleepwear.map(item => item.color);
-          let sleepwearColorSet = [...new Set(allSleepwearColors.flat())];
+          let sleepwearColors = [...new Set(storeProducts.filter(item => item.type === "Sleepwear").map(item => item.color).flat())];
+          let sleepwearBottomsColors = [...new Set(storeProducts.filter(item => item.category === "Sleepwear, bottoms").map(item => item.color).flat())];
+          let sleepwearLongColors = [...new Set(storeProducts.filter(item => item.category === "Sleepwear, long").map(item => item.color).flat())];
+          let sleepwearShortColors = [...new Set(storeProducts.filter(item => item.category === "Sleepwear, short").map(item => item.color).flat())];
+          let sleepwearTopsColors = [...new Set(storeProducts.filter(item => item.category === "Sleepwear, tops").map(item => item.color).flat())];
 
-          let allAccessories = storeProducts.filter(item => item.type === "Accessories");
-          let allAccessoriesColors = allAccessories.map(item => item.color);
-          let accessoriesColorSet = [...new Set(allAccessoriesColors.flat())];
+          let accsBodysuitsColors = [...new Set(storeProducts.filter(item => item.category === "Accessories, bodysuits").map(item => item.color).flat())];
+          let accsTightsColors = [...new Set(storeProducts.filter(item => item.category === "Accessories, tights").map(item => item.color).flat())];
+          let accsSlippersColors = [...new Set(storeProducts.filter(item => item.category === "Accessories, slippers").map(item => item.color).flat())];
 
-          // ----------------------------------------------
+          // ------------------ Fetching sizes by category
+          let braCups = [...new Set(storeProducts.filter(item => item.type === "Bras").map(item => item.cup).flat())];
+          let braSize = [...new Set(storeProducts.filter(item => item.type === "Bras").map(item => item.sizes).flat())];
+          let uniSize = [...new Set(storeProducts.filter(item => item.type === "Sleepwear").map(item => item.sizes).flat())];
+          let tightsSize = [...new Set(storeProducts.filter(item => item.category === "Accessories, tights").map(item => item.sizes).flat())];
+          let slippersSize = [...new Set(storeProducts.filter(item => item.category === "Accessories, slippers").map(item => item.sizes).flat())];
 
-          let brasAllCups = allBras.map(item => item.cup);
-          let allCups = [...new Set(brasAllCups.flat())]
-
-          let allColors = storeProducts.map(item => item.color);
-          let colorSet = [...new Set(allColors.flat())];
-
-          let allBrasSizes = allBras.map(item => item.sizes);
-          let brasSizesSet = [...new Set(allBrasSizes.flat())];
-
-          let allSleepwearSizes = allSleepwear.map(item => item.sizes);
-          let uniSizesSet = [...new Set(allSleepwearSizes.flat())];
-
-          let allTights = storeProducts.filter(item => item.category === "Accessories, tights");
-          let allTightsSizes = allTights.map(item => item.sizes);
-          let tightsSizeSet = [...new Set(allTightsSizes.flat())];
-
-          let allSlippers = storeProducts.filter(item => item.category === "Accessories, slippers");
-          let slipSizes = allSlippers.map(item => item.sizes);
-          let slippersSizeSet = [...new Set(slipSizes.flat())];
 
           return (
             <div className="filter-wrapper">
@@ -62,18 +56,104 @@ export default class ProductFilter extends Component {
               <div className="filter color-filter">
                 <p className="filter-title" onClick={handleColorFilter}>Color <i className="fas fa-sort-down"></i></p>
                   <ul className = {"filter-list colors-list " + (colorFilter ? "color-container-visible" : null)}>
-                    {colorSet.map((colour, index) => {
+                    {(classicBrasColors ? displayColors(brasClassicColors, color) : null )}
+                    {(pushupBrasColors ? brasPushupColors.map((colour, index) => {
                       return (
                         <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
                       )
-                    })}
+                    }) : null )}
+                    {(straplessBrasColors ? brasStraplessColors.map((colour, index) => {
+                      return (
+                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
+                      )
+                    }) : null )}
+                    {(wirelessBrasColors ? brasWirelessColors.map((colour, index) => {
+                      return (
+                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
+                      )
+                    }) : null )}
+                    {(colorsBra ? brasColors.map((colour, index) => {
+                      return (
+                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
+                      )
+                    }) : null )}
+                    {(colorsClassicPanties ? pantiesClassicColors.map((colour, index) => {
+                      return (
+                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
+                      )
+                    }) : null )}
+                    {(colorsThongsPanties ? pantiesThongsColors.map((colour, index) => {
+                      return (
+                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
+                      )
+                    }) : null )}
+                    {(colorsSlimmingPanties ? pantiesSlimmingColors.map((colour, index) => {
+                      return (
+                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
+                      )
+                    }) : null )}
+                    {(colorsBrazilianPanties ? pantiesBrazilianColors.map((colour, index) => {
+                      return (
+                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
+                      )
+                    }) : null )}
+                    {(colorsPanties ? pantiesColors.map((colour, index) => {
+                      return (
+                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
+                      )
+                    }) : null )}
+                    {(colorsPanties ? pantiesColors.map((colour, index) => {
+                      return (
+                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
+                      )
+                    }) : null )}
+                    {(colorsSleepwearBottoms ? sleepwearBottomsColors.map((colour, index) => {
+                      return (
+                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
+                      )
+                    }) : null )}
+                    {(colorsSleepwearLong ? sleepwearLongColors.map((colour, index) => {
+                      return (
+                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
+                      )
+                    }) : null )}
+                    {(colorsSleepwearShort ? sleepwearShortColors.map((colour, index) => {
+                      return (
+                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
+                      )
+                    }) : null )}
+                    {(colorsSleepwearTops ? sleepwearTopsColors.map((colour, index) => {
+                      return (
+                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
+                      )
+                    }) : null )}
+                    {(colorsSleepwear ? sleepwearColors.map((colour, index) => {
+                      return (
+                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
+                      )
+                    }) : null )}
+                    {(colorsBodysuits ? accsBodysuitsColors.map((colour, index) => {
+                      return (
+                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
+                      )
+                    }) : null )}
+                    {(colorsTights? accsTightsColors.map((colour, index) => {
+                      return (
+                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
+                      )
+                    }) : null )}
+                    {(colorsSlippers ? accsSlippersColors.map((colour, index) => {
+                      return (
+                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
+                      )
+                    }) : null )}
                   </ul>
               </div>
               {/* Search by BRAS size */}
               <div className={"filter size-filter " + (brasSize ? "bra-size-filter-visible" : null)}>
                 <p className="filter-title" onClick={handleSizeFilter}>Size <i className="fas fa-sort-down"></i></p>
                   <ul className = {"filter-list size-list " + (sizeFilter ? "size-container-visible" : null)}>
-                    {brasSizesSet.map((size, index) => {
+                    {braSize.map((size, index) => {
                       return (
                         <li className={"filter-item " + (size === sizes ? "active-item" : null)} key={index} onClick={() => handleFilter("sizes", size)}> {size} </li>
                       )
@@ -82,52 +162,52 @@ export default class ProductFilter extends Component {
               </div>
 
               {/* Search by CUP size */}
-              <div className={"filter size-filter " + (cupSize ? "cup-size-filter-visible" : null)}>
+              {/* <div className={"filter size-filter " + (cupSize ? "cup-size-filter-visible" : null)}>
                 <p className="filter-title" onClick={handleCupFilter}>Cup <i className="fas fa-sort-down"></i></p>
                   <ul className = {"filter-list size-list " + (cupFilter ? "size-container-visible" : null)}>
-                    {allCups.map((cupSize, index) => {
+                    {braCups.map((cupSize, index) => {
                       return (
                         <li className={"filter-item " + (cupSize === cup ? "active-item" : null)} key={index} onClick={() => handleFilter("cup", cupSize)}> {cupSize} </li>
                       )
                     })}
                   </ul>
-              </div>
+              </div> */}
 
               {/* Search by PANTIES and SLEEPWEAR size */}
-              <div className={"filter size-filter " + (uniSize ? "size-filter-visible" : null)}>
+              {/* <div className={"filter size-filter " + (uniSize ? "size-filter-visible" : null)}>
                 <p className="filter-title" onClick={handleSizeFilter}>Size <i className="fas fa-sort-down"></i></p>
                   <ul className = {"filter-list size-list " + (sizeFilter ? "size-container-visible" : null)}>
-                    {uniSizesSet.map((uniSizes, index) => {
+                    {uniSize.map((uniSizes, index) => {
                       return (
                         <li className={"filter-item " + (uniSizes === sizes ? "active-item" : null)} key={index} onClick={() => handleFilter("sizes", uniSizes)}> {uniSizes} </li>
                       )
                     })}
                   </ul>
-              </div>
+              </div> */}
 
               {/* Search by TIGHTS size */}
-              <div className={"filter size-filter " + (tightsSize ? "tights-size-filter-visible" : null)}>
+              {/* <div className={"filter size-filter " + (tightsSize ? "tights-size-filter-visible" : null)}>
                 <p className="filter-title" onClick={handleSizeFilter}>Size <i className="fas fa-sort-down"></i></p>
                   <ul className = {"filter-list tights-list " + (sizeFilter ? "tights-container-visible" : null)}>
-                    {tightsSizeSet.map((tightsSize, index) => {
+                    {tightsSize.map((tightsSize, index) => {
                       return (
                         <li className={"filter-item tights-item " + (tightsSize === sizes ? "active-item" : null)} key={index} onClick={() => handleFilter("sizes", tightsSize)}> {tightsSize} </li>
                       )
                     })}
                   </ul>
-              </div>
+              </div> */}
 
               {/* Search by SHOES size */}
-              <div className={"filter size-filter " + (shoesSize ? "shoes-size-filter-visible" : null)}>
+              {/* <div className={"filter size-filter " + (shoesSize ? "shoes-size-filter-visible" : null)}>
                 <p className="filter-title" onClick={handleSizeFilter}>Size <i className="fas fa-sort-down"></i></p>
                   <ul className = {"filter-list shoes-list " + (sizeFilter ? "shoes-container-visible" : null)}>
-                    {slippersSizeSet.map((shoeSizes, index) => {
+                    {slippersSize.map((shoeSizes, index) => {
                       return (
                         <li className={"filter-item shoes-item " + (shoeSizes === sizes ? "active-item" : null)} key={index} onClick={() => handleFilter("sizes", shoeSizes)}> {shoeSizes} </li>
                       )
                     })}
                   </ul>
-              </div>
+              </div> */}
 
               {/* Search by PRICE */}
               <div className="filter price-filter">

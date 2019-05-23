@@ -383,6 +383,16 @@ sortData = () => {
     })
 }
 
+    displayColors = (colorSet) => {
+        colorSet.map((color, index) => {
+            return (
+              <li className={"filter-item " + (this.state.color === color ? "active-item" : null)} key={index} onClick={() => this.handleFilter("color", color)}> {color} </li>
+            )
+          })
+    }
+
+
+
     render() {
 
         return (
@@ -412,7 +422,8 @@ sortData = () => {
                 handleCupFilter: this.handleCupFilter,
                 handleColorFilter: this.handleColorFilter,                
                 handleSizeFilter: this.handleSizeFilter, 
-                handlePantiesFilter: this.handlePantiesFilter
+                handlePantiesFilter: this.handlePantiesFilter,
+                displayColors: this.displayColors
             }}>
                 {/* Super important stuff */}
                 {this.props.children}

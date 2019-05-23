@@ -1529,7 +1529,7 @@ export const items = [
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
       inCart: false,
-      color: ["all", ""],
+      color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all", "M", "L"],
       image: { fields: { file: { url: "/images/products/panties/panties_classic/13_cotton_and_lace_panties/1.jpg" } } },

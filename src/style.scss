@@ -1386,14 +1386,15 @@ button:focus{
         }
         .filter-list, .price-container{
             @include flexbox;
-            justify-content: space-around;
+            justify-content: center;
             flex-wrap: wrap;
             position: absolute;
             opacity: 0;
             visibility: hidden;
             z-index: 1;
             font-size: 1rem;
-            width: 7rem;
+            width: 9rem;
+            height: 13rem;
             padding: 1rem;
             cursor: default;
             box-shadow: 0px 0px 50px rgba(0, 0, 0, .15);
@@ -1413,7 +1414,7 @@ button:focus{
                 text-transform: capitalize;
                 font-size: 1.1rem;
                 padding: .3rem;
-                margin: .1rem 0;
+                margin: 0 0;
                 cursor: pointer;
                 transition: .2s;
             }

@@ -27,7 +27,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="classic bras" />
                         <LocalNavbar menu="bra"/>
-                        <ProductFilter cupSize brasSize colorsBra />
+                        <ProductFilter cupSize brasSize classicBrasColors />
                         <div className="filters-display">
                           <p className="filters-display-item"> {brasClassic.length} items </p>
                         </div>
@@ -59,7 +59,7 @@ export default class Products extends Component {
                   <div className="products-list">
                         <Title title="push-up bras" />
                         <LocalNavbar menu="bra"/>
-                        <ProductFilter cupSize brasSize />
+                        <ProductFilter cupSize brasSize pushupBrasColors />
                         <div className="filters-display">
                           <p className="filters-display-item"> {brasPushup.length} items </p>
                         </div>
@@ -91,7 +91,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="strapless bras" />
                         <LocalNavbar menu="bra"/>
-                        <ProductFilter cupSize brasSize />
+                        <ProductFilter cupSize brasSize straplessBrasColors/>
                         <div className="filters-display">
                           <p className="filters-display-item"> {brasStrapless.length} items </p>
                         </div>
@@ -123,7 +123,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="wireless bras" />
                         <LocalNavbar menu="bra"/>
-                        <ProductFilter cupSize brasSize />
+                        <ProductFilter cupSize brasSize wirelessBrasColors/>
                         <div className="filters-display">
                           <p className="filters-display-item"> {brasWireless.length} items </p>
                         </div>
@@ -156,7 +156,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="bras. all-in" />
                         <LocalNavbar menu="bra"/>
-                        <ProductFilter cupSize brasSize />
+                        <ProductFilter cupSize brasSize colorsBra />
                         <div className="filters-display">
                           <p className="filters-display-item"> {brasAll.length} items </p>
                         </div>
@@ -188,7 +188,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="classic panties" />
                         <LocalNavbar menu="panties"/>
-                        <ProductFilter uniSize />
+                        <ProductFilter uniSize colorsClassicPanties />
                         <div className="filters-display">
                           <p className="filters-display-item"> {pantiesClassic.length} items </p>
                         </div>
@@ -221,7 +221,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="thongs" />
                         <LocalNavbar menu="panties"/>
-                        <ProductFilter uniSize />
+                        <ProductFilter uniSize colorsThongsPanties/>
                         <div className="filters-display">
                           <p className="filters-display-item"> {pantiesThongs.length} items </p>
                         </div>
@@ -253,7 +253,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="slimming panties" />
                         <LocalNavbar menu="panties"/>
-                        <ProductFilter uniSize />
+                        <ProductFilter uniSize colorsSlimmingPanties/>
                         <div className="filters-display">
                           <p className="filters-display-item"> {pantiesSlimming.length} items </p>
                         </div>
@@ -285,7 +285,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="brazilian panties" />
                         <LocalNavbar menu="panties"/>
-                        <ProductFilter uniSize />
+                        <ProductFilter uniSize colorsBrazilianPanties/>
                         <div className="filters-display">
                           <p className="filters-display-item"> {pantiesBrazilian.length} items </p>
                         </div>
@@ -317,7 +317,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="panties. all-in" />
                         <LocalNavbar menu="panties"/>
-                        <ProductFilter uniSize />
+                        <ProductFilter uniSize colorsPanties/>
                         <div className="filters-display">
                           <p className="filters-display-item"> {pantiesAll.length} items </p>
                         </div>
@@ -349,7 +349,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="sleepwear. bottoms" />
                         <LocalNavbar menu="sleepwear"/>
-                        <ProductFilter uniSize />
+                        <ProductFilter uniSize colorsSleepwearBottoms/>
                         <div className="filters-display">
                           <p className="filters-display-item"> {sleepBottoms.length} items </p>
                         </div>
@@ -381,7 +381,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="sleepwear. long" />
                         <LocalNavbar menu="sleepwear"/>
-                        <ProductFilter uniSize />
+                        <ProductFilter uniSize colorsSleepwearLong/>
                         <div className="filters-display">
                           <p className="filters-display-item"> {sleepLong.length} items </p>
                         </div>
@@ -413,7 +413,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="sleepwear. short" />
                         <LocalNavbar menu="sleepwear"/>
-                        <ProductFilter uniSize />
+                        <ProductFilter uniSize colorsSleepwearShort/>
                         <div className="filters-display">
                           <p className="filters-display-item"> {sleepShort.length} items </p>
                         </div>
@@ -445,7 +445,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="sleepwear. tops" />
                         <LocalNavbar menu="sleepwear"/>
-                        <ProductFilter uniSize />
+                        <ProductFilter uniSize colorsSleepwearTops/>
                         <div className="filters-display">
                           <p className="filters-display-item"> {sleepTops.length} items </p>
                         </div>
@@ -477,7 +477,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="sleepwear. all-in" />
                         <LocalNavbar menu="sleepwear"/>
-                        <ProductFilter uniSize />
+                        <ProductFilter uniSize colorsSleepwear/>
                         <div className="filters-display">
                           <p className="filters-display-item"> {allSleep.length} items </p>
                         </div>
@@ -509,7 +509,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="bodysuits" />
                         <LocalNavbar menu="accs"/>
-                        <ProductFilter uniSize cupSize/>
+                        <ProductFilter uniSize cupSize colorsBodysuits/>
                         <div className="filters-display">
                           <p className="filters-display-item"> {accsBody.length} items </p>
                         </div>
@@ -541,7 +541,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="Accessories, tights" />
                         <LocalNavbar menu="accs"/>
-                        <ProductFilter tightsSize/>
+                        <ProductFilter tightsSize colorsTights/>
                         <div className="filters-display">
                           <p className="filters-display-item"> {accsTights.length} items </p>
                         </div>
@@ -568,7 +568,7 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="Accessories, slippers" />
                         <LocalNavbar menu="accs"/>
-                        <ProductFilter shoesSize/>
+                        <ProductFilter shoesSize colorsSlippers/>
                         <div className="filters-display">
                           <p className="filters-display-item"> {accsSlippers.length} items </p>
                         </div>
