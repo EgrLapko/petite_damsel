@@ -34,7 +34,6 @@ class ProductProvider extends Component {
         color: 'all',
         sizes: 'all',
         cup: 'all', 
-        shipping: false,
         priceFilter: false,
         cupFilter: false,
         colorFilter: false,
@@ -350,7 +349,7 @@ handleFilter = (name, value) => {
 }
 
 sortData = () => {
-    const {storeProducts, price, color, cup, sizes, shipping, search} = this.state;
+    const {storeProducts, price, color, cup, sizes, search} = this.state;
     let tempProducts = [...storeProducts];
     let tempPrice = parseInt(price);
 
@@ -365,16 +364,11 @@ sortData = () => {
     if (cup) {
         tempProducts = tempProducts.filter(item => item.cup.includes(cup))
     }
-
     // ---------- Filter by Size
     if (sizes) {
         tempProducts = tempProducts.filter(item => item.sizes.includes(sizes))
     }
 
-    // ---------- Filter by checkbox
-    if(shipping) {
-        tempProducts = tempProducts.filter(item => item.freeShipping === true)
-    }
     if(search.length > 0) {
         tempProducts = tempProducts.filter(item => {
             let tempSearch = search.toLowerCase();

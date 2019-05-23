@@ -121,20 +121,13 @@ export const linkData = [
     },
     {
         id: 18,
-        text: 'browse all',
-        path: '/products/accessories_all',
-        image: '',
-        type: 'accs'
-    },
-    {
-        id: 19,
         text: 'slippers',
         path: '/products/accessories_slippers',
         image: 'https://i.imgur.com/8IaHFZW.jpg',
         type: 'accs'
     },
     {
-        id: 20,
+        id: 19,
         text: 'other',
         path: '/products/accessories_other',
         image: 'https://i.imgur.com/SMqE1p6.jpg',

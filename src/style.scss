@@ -1117,6 +1117,7 @@ button:focus{
         margin: auto;
         .filters-display-item {
             margin: 0 1rem;
+            font-family: $fontmain;
         }
     }
 }
@@ -1363,10 +1364,8 @@ button:focus{
 
 // ----------------------------- Filters
 
-.filter {
-    @include flexbox;
-    min-width: 7rem;
-    min-height: 3rem;
+.fa-sort-down{
+    color: rgba(105, 105, 105, .6);
 }
 
 .filter-wrapper {
@@ -1377,16 +1376,140 @@ button:focus{
     flex-wrap: wrap;
     min-height: 5rem;
     margin-top: 2rem;
-    .fa-sort-down{
-        color: rgba(105, 105, 105, .6);
+    .filter {
+        @include flexbox;
+        min-width: 7rem;
+        margin: 0;
+        .filter-title {
+            cursor: pointer;
+            font-family: $fontmain;
+        }
+        .filter-list, .price-container{
+            @include flexbox;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1;
+            font-size: 1rem;
+            width: 7rem;
+            padding: 1rem;
+            cursor: default;
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, .15);
+            background-color: rgba(242, 242, 242, .9);
+            transform: translateX(0rem);
+            border-radius: 1rem;
+            margin-top: 11rem;
+            transition: .4s;
+            .price-screen {
+                font-family: $fontmain;
+                margin: 0;
+            }
+            .filter-item {
+                @include flexbox;
+                width: 40%;
+                font-family: $fontmain;
+                text-transform: capitalize;
+                font-size: 1.1rem;
+                padding: .3rem;
+                margin: .1rem 0;
+                cursor: pointer;
+                transition: .2s;
+            }
+            .active-item {
+                color: rgba(241, 106, 123, 1);
+            }
+            .filter-item:hover {
+                color: rgba(241, 106, 123, .9);
+            }
+            .tights-item {
+                width: 100%;
+                margin: 0;
+                margin-top: .3rem;
+            }       
+        }
+        .price-container {
+            flex-direction: column;
+            width: 10rem;
+        }
+        .size-list {
+            flex-direction: column;
+            width: 3rem;
+        }
+        .shoes-list {
+            flex-direction: column;
+            width: 5rem;
+        }
+        .tights-list {
+            @include flexbox;
+            width: 5rem;
+        }
+        .tights-container-visible {
+            opacity: 1;
+            margin-top: 7rem;
+            visibility: visible;
+        }
+        .color-container-visible {
+            opacity: 1;
+            margin-top: 9rem;
+            visibility: visible;
+        }
+        .size-container-visible {
+            opacity: 1;
+            margin-top: 8rem;
+            visibility: visible;
+        }
+        .shoes-container-visible {
+            opacity: 1;
+            margin-top: 8rem;
+            visibility: visible;
+        }
+        .price-window-visible {
+            margin-top: 4rem;
+            opacity: 1;
+            visibility: visible;
+        }  
     }
-    .cup-search {
+    .price-container {
+        input {
+            background-color: $mainwhite;
+        }
+        input[type=range] {
+            height: 2rem;
+            -webkit-appearance: none;
+            background-color: unset;
+            width: 100%;
+        }
+        input[type=range]:focus {
+            outline: none;
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 1px;
+            cursor: pointer;
+            background: rgba(241, 106, 123, .7);
+        }
+        input[type=range]::-webkit-slider-thumb {
+            height: 1.3rem;
+            width: 1.3rem;
+            border-radius: 21px;
+            background: rgba(220, 220, 220, 1);
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -10px;
+        }
+    }
+    
+    .size-filter {
         display: none;
     }
-    .cup-filter-visible, .size-filter-visible, .size-panties-visible  {
+    .bra-size-filter-visible, .size-filter-visible,
+    .cup-size-filter-visible, .tights-size-filter-visible,
+    .shoes-size-filter-visible {
         @include flexbox;
     }
-    .search-bar {
+    .search-filter {
         input[type="text"] {
             border: none;
             border-bottom: 1px solid rgba(241, 106, 123, .5);
@@ -1400,180 +1523,7 @@ button:focus{
             font-size: 1.1rem;
         }    
     }
-    .select {
-        width: 100%;
-        padding: .3rem;
-        height: 2rem;
-        border: none;
-        border: 1px solid rgba(105, 105, 105, .2);
-        border-radius: 4px;
-        background-color: #f1f1f1;
-        font-family: $fontmain;
-        font-size: 1rem;
-    }
-    
 }
-    p {
-        font-size: 1.1rem;
-        font-family: $fontmain;
-        margin: 0;
-    }
-
-    .size-filter {
-        display: none;
-    }
-
-    .price-filter, .cup-filter, .color-filter, .size-filter,
-    .size-panties-filter {
-        margin: 0;
-        .filter-title {
-            cursor: pointer;
-        }
-        .price-container, .cup-container, .color-container, 
-        .size-container, .size-panties-container{
-            @include flexbox;
-            flex-direction: column;
-            position: absolute;
-            opacity: 0;
-            visibility: hidden;
-            z-index: 1;
-            font-family: $fontmain;
-            font-size: 1rem;
-            width: 12rem;
-            padding: 1rem;
-            cursor: default;
-            box-shadow: 0px 0px 50px rgba(0, 0, 0, .15);
-            background-color: rgba(242, 242, 242, .9);
-            transform: translateX(0rem);
-            border-radius: 1rem;
-            margin-top: 8rem;
-            transition: .4s;
-            .colors-item, .cup-iten {
-                width: 6rem;
-                .check-container {
-                    @include flexbox;
-                    justify-content: flex-start;
-                    height: 2.3rem;
-                    user-select: none;
-                    margin: 0;
-                  }
-            }
-            input {
-                background-color: $mainwhite;
-            }
-            input[type=range] {
-                height: 2rem;
-                -webkit-appearance: none;
-                width: 100%;
-              }
-              input[type=range]:focus {
-                outline: none;
-              }
-              input[type=range]::-webkit-slider-runnable-track {
-                width: 100%;
-                height: 1px;
-                cursor: pointer;
-                background: rgba(241, 106, 123, .7);
-              }
-              input[type=range]::-webkit-slider-thumb {
-                height: 1.3rem;
-                width: 1.3rem;
-                border-radius: 21px;
-                background: rgba(220, 220, 220, 1);
-                cursor: pointer;
-                -webkit-appearance: none;
-                margin-top: -10px;
-              }
-              .cup-filter-list, .color-filter-list, .size-filter-list {
-                  @include flexbox;
-                  flex-direction: column;
-                  list-style-type: none;
-                  padding: 0;
-                  margin: 0;
-                  .cup-item, .color-item, .size-item {
-                      @include flexbox;
-                      padding: .2rem;
-                      margin: .1rem 0;
-                      cursor: pointer;
-                      transition: .2s;
-                  }
-                  .cup-item:hover {
-                      color: rgba(241, 106, 123, .9);
-                  }
-              }
-        }
-        .color-container {
-            width: 8rem;
-            min-height: 10rem;
-            margin-top: 12rem;
-            padding: .5rem;
-            .color-filter-list {
-                flex-direction: row;
-                flex-wrap: wrap;
-                align-items: flex-start;
-                justify-content: space-around;
-                .color-item {
-                    width: 40%;
-                    font-size: 1.1rem;
-                    transition: .2s;
-                }
-                .color-item:hover {
-                    color: rgba(241, 106, 123, .9);
-                }
-            }
-        }
-
-        .size-container {
-            width: 3rem;
-            min-height: 5rem;
-            margin-top: 12rem;
-            .size-filter-list {
-                @include flexbox;
-                flex-direction: column;
-                .size-item {
-                    font-size: 1.1rem;
-                    transition: .2s;
-                    text-transform: capitalize;
-                }
-                .size-item:hover {
-                    color: rgba(241, 106, 123, .9);
-                }
-            }
-        }
-
-        .cup-container {
-            width: 5rem;
-            margin-top: 10rem;
-        }
-        .price-window-visible {
-            margin-top: 5rem;
-            opacity: 1;
-            visibility: visible;
-        }   
-        .cup-window-visible {
-            margin-top: 8rem;
-            opacity: 1;
-            visibility: visible;
-        }
-        .color-window-visible {
-            opacity: 1;
-            margin-top: 8.5rem;
-            visibility: visible;
-        }
-        .size-window-visible {
-            opacity: 1;
-            margin-top: 8rem;
-            visibility: visible;
-        }
-        .size-panties-window-visible {
-            opacity: 1;
-            margin-top: 8rem;
-            visibility: visible;
-        }
-        
-    }
-    
- 
 
 // ----------------------------- Local Navbar (in Products)
 

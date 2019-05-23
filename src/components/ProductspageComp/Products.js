@@ -5,7 +5,6 @@ import Title from '../Title/Title';
 import ProductCard from '../ProductCard';
 import ProductFilter from '../ProductspageComp/ProductFilter';
 import LocalNavbar from './LocalNavbar';
-import { items } from '../../context/productsData';
 
 
 export default class Products extends Component {
@@ -22,13 +21,13 @@ export default class Products extends Component {
         <Route path="/products/bras_classic" render={() =>   
           <ProductConsumer>
             {value => {
-                  const {filteredProducts, color, sizes, cup, price} = value;
+                  const {filteredProducts} = value;
                   const brasClassic = filteredProducts.filter(product => product.category === "Bras, classic");                  
                   return (
                       <div className="products-list">
                         <Title title="classic bras" />
                         <LocalNavbar menu="bra"/>
-                        <ProductFilter cupSize brasSize />
+                        <ProductFilter cupSize brasSize colorsBra />
                         <div className="filters-display">
                           <p className="filters-display-item"> {brasClassic.length} items </p>
                         </div>
@@ -61,8 +60,8 @@ export default class Products extends Component {
                         <Title title="push-up bras" />
                         <LocalNavbar menu="bra"/>
                         <ProductFilter cupSize brasSize />
-                        <div className="products-container">
-                          <p> {brasPushup.length} items </p>
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {brasPushup.length} items </p>
                         </div>
                         <div className="products-container">
                           {brasPushup.length === 0 ? (
@@ -93,8 +92,8 @@ export default class Products extends Component {
                         <Title title="strapless bras" />
                         <LocalNavbar menu="bra"/>
                         <ProductFilter cupSize brasSize />
-                        <div className="products-container">
-                          <p> {brasStrapless.length} items </p>
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {brasStrapless.length} items </p>
                         </div>
                         <div className="products-container">
                           {brasStrapless.length === 0 ? (
@@ -125,8 +124,8 @@ export default class Products extends Component {
                         <Title title="wireless bras" />
                         <LocalNavbar menu="bra"/>
                         <ProductFilter cupSize brasSize />
-                        <div className="products-container">
-                          <p> {brasWireless.length} items </p>
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {brasWireless.length} items </p>
                         </div>
                         <div className="products-container">
                           {brasWireless.length === 0 ? (
@@ -158,8 +157,8 @@ export default class Products extends Component {
                         <Title title="bras. all-in" />
                         <LocalNavbar menu="bra"/>
                         <ProductFilter cupSize brasSize />
-                        <div className="products-container">
-                          <p> {brasAll.length} items </p>
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {brasAll.length} items </p>
                         </div>
                         <div className="products-container">
                           {brasAll.length === 0 ? (
@@ -189,9 +188,9 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="classic panties" />
                         <LocalNavbar menu="panties"/>
-                        <ProductFilter pantiesSize />
-                        <div className="products-container">
-                          <p> {pantiesClassic.length} items </p>
+                        <ProductFilter uniSize />
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {pantiesClassic.length} items </p>
                         </div>
                         <div className="products-container">
                           {pantiesClassic.length === 0 ? (
@@ -222,9 +221,9 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="thongs" />
                         <LocalNavbar menu="panties"/>
-                        <ProductFilter pantiesSize />
-                        <div className="products-container">
-                          <p> {pantiesThongs.length} items </p>
+                        <ProductFilter uniSize />
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {pantiesThongs.length} items </p>
                         </div>
                         <div className="products-container">
                           {pantiesThongs.length === 0 ? (
@@ -254,9 +253,9 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="slimming panties" />
                         <LocalNavbar menu="panties"/>
-                        <ProductFilter pantiesSize />
-                        <div className="products-container">
-                          <p> {pantiesSlimming.length} items </p>
+                        <ProductFilter uniSize />
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {pantiesSlimming.length} items </p>
                         </div>
                         <div className="products-container">
                           {pantiesSlimming.length === 0 ? (
@@ -286,9 +285,9 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="brazilian panties" />
                         <LocalNavbar menu="panties"/>
-                        <ProductFilter pantiesSize />
-                        <div className="products-container">
-                          <p> {pantiesBrazilian.length} items </p>
+                        <ProductFilter uniSize />
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {pantiesBrazilian.length} items </p>
                         </div>
                         <div className="products-container">
                           {pantiesBrazilian.length === 0 ? (
@@ -318,9 +317,9 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="panties. all-in" />
                         <LocalNavbar menu="panties"/>
-                        <ProductFilter pantiesSize />
-                        <div className="products-container">
-                          <p> {pantiesAll.length} items </p>
+                        <ProductFilter uniSize />
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {pantiesAll.length} items </p>
                         </div>
                         <div className="products-container">
                           {pantiesAll.length === 0 ? (
@@ -350,9 +349,9 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="sleepwear. bottoms" />
                         <LocalNavbar menu="sleepwear"/>
-                        <ProductFilter />
-                        <div className="products-container">
-                          <p> {sleepBottoms.length} items </p>
+                        <ProductFilter uniSize />
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {sleepBottoms.length} items </p>
                         </div>
                         <div className="products-container">
                           {sleepBottoms.length === 0 ? (
@@ -382,9 +381,9 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="sleepwear. long" />
                         <LocalNavbar menu="sleepwear"/>
-                        <ProductFilter />
-                        <div className="products-container">
-                          <p> {sleepLong.length} items </p>
+                        <ProductFilter uniSize />
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {sleepLong.length} items </p>
                         </div>
                         <div className="products-container">
                           {sleepLong.length === 0 ? (
@@ -414,9 +413,9 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="sleepwear. short" />
                         <LocalNavbar menu="sleepwear"/>
-                        <ProductFilter />
-                        <div className="products-container">
-                          <p> {sleepShort.length} items </p>
+                        <ProductFilter uniSize />
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {sleepShort.length} items </p>
                         </div>
                         <div className="products-container">
                           {sleepShort.length === 0 ? (
@@ -446,9 +445,9 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="sleepwear. tops" />
                         <LocalNavbar menu="sleepwear"/>
-                        <ProductFilter />
-                        <div className="products-container">
-                          <p> {sleepTops.length} items </p>
+                        <ProductFilter uniSize />
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {sleepTops.length} items </p>
                         </div>
                         <div className="products-container">
                           {sleepTops.length === 0 ? (
@@ -457,6 +456,38 @@ export default class Products extends Component {
                             </div>
                           ) : (
                             sleepTops.map(product => (
+                              <ProductCard 
+                                key={product.id}
+                                product = {product}
+                              />
+                          )))}
+                        </div>
+                      </div>
+                  )  
+              }}
+          </ProductConsumer>   
+        }/>
+
+        <Route path="/products/sleepwear_all" render={() =>     
+          <ProductConsumer>
+            {value => {
+                  const {filteredProducts} = value;
+                  const allSleep= filteredProducts.filter(product => product.type === "Sleepwear");
+                  return (
+                      <div className="products-list">
+                        <Title title="sleepwear. all-in" />
+                        <LocalNavbar menu="sleepwear"/>
+                        <ProductFilter uniSize />
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {allSleep.length} items </p>
+                        </div>
+                        <div className="products-container">
+                          {allSleep.length === 0 ? (
+                            <div>
+                              <Title title="No items matched" />
+                            </div>
+                          ) : (
+                            allSleep.map(product => (
                               <ProductCard 
                                 key={product.id}
                                 product = {product}
@@ -478,9 +509,9 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="bodysuits" />
                         <LocalNavbar menu="accs"/>
-                        <ProductFilter />
-                        <div className="products-container">
-                          <p> {accsBody.length} items </p>
+                        <ProductFilter uniSize cupSize/>
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {accsBody.length} items </p>
                         </div>
                         <div className="products-container">
                           {accsBody.length === 0 ? (
@@ -510,8 +541,9 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="Accessories, tights" />
                         <LocalNavbar menu="accs"/>
-                        <div className="products-container">
-                          <p> {accsTights.length} items </p>
+                        <ProductFilter tightsSize/>
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {accsTights.length} items </p>
                         </div>
                         <div className="products-container">
                         {accsTights.map(product => (
@@ -536,8 +568,9 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="Accessories, slippers" />
                         <LocalNavbar menu="accs"/>
-                        <div className="products-container">
-                          <p> {accsSlippers.length} items </p>
+                        <ProductFilter shoesSize/>
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {accsSlippers.length} items </p>
                         </div>
                         <div className="products-container">
                         {accsSlippers.map(product => (
@@ -562,8 +595,8 @@ export default class Products extends Component {
                       <div className="products-list">
                         <Title title="Accessories, other" />
                         <LocalNavbar menu="accs"/>
-                        <div className="products-container">
-                          <p> {accsOther.length} items </p>
+                        <div className="filters-display">
+                          <p className="filters-display-item"> {accsOther.length} items </p>
                         </div>
                         <div className="products-container">
                         {accsOther.map(product => (
