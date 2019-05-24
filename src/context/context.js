@@ -384,12 +384,14 @@ sortData = () => {
 }
 
     displayColors = (colorSet) => {
-        colorSet.map((color, index) => {
-            return (
-              <li className={"filter-item " + (this.state.color === color ? "active-item" : null)} key={index} onClick={() => this.handleFilter("color", color)}> {color} </li>
-            )
-          })
-    }
+        return colorSet.map((color, index) => (
+          <li
+            className={`filter-item ${this.state.color === color ? 'active-item' : null}`}
+            key={index}
+            onClick={() => this.handleFilter('color', color)}
+          > {color} </li>
+        ));
+      }
 
 
 

@@ -1964,6 +1964,7 @@ button:focus {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
+      height: 5rem;
       width: 10rem; }
     .filter-wrapper .filter .size-list {
       -webkit-box-orient: vertical;
@@ -1998,14 +1999,14 @@ button:focus {
       visibility: visible; }
     .filter-wrapper .filter .size-container-visible {
       opacity: 1;
-      margin-top: 8rem;
+      margin-top: 9rem;
       visibility: visible; }
     .filter-wrapper .filter .shoes-container-visible {
       opacity: 1;
       margin-top: 8rem;
       visibility: visible; }
     .filter-wrapper .filter .price-window-visible {
-      margin-top: 4rem;
+      margin-top: 5rem;
       opacity: 1;
       visibility: visible; }
   .filter-wrapper .price-container input {

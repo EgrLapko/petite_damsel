@@ -1432,6 +1432,7 @@ button:focus{
         }
         .price-container {
             flex-direction: column;
+            height: 5rem;
             width: 10rem;
         }
         .size-list {
@@ -1458,7 +1459,7 @@ button:focus{
         }
         .size-container-visible {
             opacity: 1;
-            margin-top: 8rem;
+            margin-top: 9rem;
             visibility: visible;
         }
         .shoes-container-visible {
@@ -1467,7 +1468,7 @@ button:focus{
             visibility: visible;
         }
         .price-window-visible {
-            margin-top: 4rem;
+            margin-top: 5rem;
             opacity: 1;
             visibility: visible;
         }  

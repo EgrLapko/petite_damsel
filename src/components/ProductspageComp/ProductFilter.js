@@ -57,96 +57,23 @@ export default class ProductFilter extends Component {
                 <p className="filter-title" onClick={handleColorFilter}>Color <i className="fas fa-sort-down"></i></p>
                   <ul className = {"filter-list colors-list " + (colorFilter ? "color-container-visible" : null)}>
                     {(classicBrasColors ? displayColors(brasClassicColors, color) : null )}
-                    {(pushupBrasColors ? brasPushupColors.map((colour, index) => {
-                      return (
-                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
-                      )
-                    }) : null )}
-                    {(straplessBrasColors ? brasStraplessColors.map((colour, index) => {
-                      return (
-                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
-                      )
-                    }) : null )}
-                    {(wirelessBrasColors ? brasWirelessColors.map((colour, index) => {
-                      return (
-                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
-                      )
-                    }) : null )}
-                    {(colorsBra ? brasColors.map((colour, index) => {
-                      return (
-                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
-                      )
-                    }) : null )}
-                    {(colorsClassicPanties ? pantiesClassicColors.map((colour, index) => {
-                      return (
-                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
-                      )
-                    }) : null )}
-                    {(colorsThongsPanties ? pantiesThongsColors.map((colour, index) => {
-                      return (
-                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
-                      )
-                    }) : null )}
-                    {(colorsSlimmingPanties ? pantiesSlimmingColors.map((colour, index) => {
-                      return (
-                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
-                      )
-                    }) : null )}
-                    {(colorsBrazilianPanties ? pantiesBrazilianColors.map((colour, index) => {
-                      return (
-                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
-                      )
-                    }) : null )}
-                    {(colorsPanties ? pantiesColors.map((colour, index) => {
-                      return (
-                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
-                      )
-                    }) : null )}
-                    {(colorsPanties ? pantiesColors.map((colour, index) => {
-                      return (
-                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
-                      )
-                    }) : null )}
-                    {(colorsSleepwearBottoms ? sleepwearBottomsColors.map((colour, index) => {
-                      return (
-                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
-                      )
-                    }) : null )}
-                    {(colorsSleepwearLong ? sleepwearLongColors.map((colour, index) => {
-                      return (
-                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
-                      )
-                    }) : null )}
-                    {(colorsSleepwearShort ? sleepwearShortColors.map((colour, index) => {
-                      return (
-                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
-                      )
-                    }) : null )}
-                    {(colorsSleepwearTops ? sleepwearTopsColors.map((colour, index) => {
-                      return (
-                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
-                      )
-                    }) : null )}
-                    {(colorsSleepwear ? sleepwearColors.map((colour, index) => {
-                      return (
-                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
-                      )
-                    }) : null )}
-                    {(colorsBodysuits ? accsBodysuitsColors.map((colour, index) => {
-                      return (
-                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
-                      )
-                    }) : null )}
-                    {(colorsTights? accsTightsColors.map((colour, index) => {
-                      return (
-                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
-                      )
-                    }) : null )}
-                    {(colorsSlippers ? accsSlippersColors.map((colour, index) => {
-                      return (
-                        <li className={"filter-item " + (color === colour ? "active-item" : null)} key={index} onClick={() => handleFilter("color", colour)}> {colour} </li>
-                      )
-                    }) : null )}
+                    {(pushupBrasColors ? displayColors(brasPushupColors, color) : null )}
+                    {(straplessBrasColors ? displayColors(brasStraplessColors, color) : null )}
+                    {(wirelessBrasColors ? displayColors(brasWirelessColors, color) : null )}
+                    {(colorsBra ? displayColors(brasColors, color) : null )}
+                    {(colorsClassicPanties ? displayColors(pantiesClassicColors, color) : null )}
+                    {(colorsThongsPanties ? displayColors(pantiesThongsColors, color) : null )}
+                    {(colorsSlimmingPanties ? displayColors(pantiesSlimmingColors, color) : null )}
+                    {(colorsBrazilianPanties ? displayColors(pantiesBrazilianColors, color) : null )}
+                    {(colorsPanties ? displayColors(brasColors, color) : null )}
+                    {(colorsSleepwearBottoms ? displayColors(brasColors, color) : null )}
+                    {(colorsSleepwearLong ? displayColors(sleepwearLongColors, color) : null )}
+                    {(colorsSleepwearShort ? displayColors(sleepwearShortColors, color) : null )}
+                    {(colorsSleepwearTops ? displayColors(sleepwearTopsColors, color) : null )}
+                    {(colorsSleepwear ? displayColors(sleepwearColors, color) : null )}
+                    {(colorsBodysuits ? displayColors(accsBodysuitsColors, color) : null )}
+                    {(colorsTights ? displayColors(accsTightsColors, color) : null )}
+                    {(colorsSlippers ? displayColors(accsSlippersColors, color) : null )}
                   </ul>
               </div>
               {/* Search by BRAS size */}
