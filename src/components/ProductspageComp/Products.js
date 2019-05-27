@@ -22,7 +22,7 @@ export default class Products extends Component {
           <ProductConsumer>
             {value => {
                   const {filteredProducts} = value;
-                  const brasClassic = filteredProducts.filter(product => product.category === "Bras, classic");                  
+                  const brasClassic = filteredProducts.filter(product => product.category === "Bras, classic");    
                   return (
                       <div className="products-list">
                         <Title title="classic bras" />

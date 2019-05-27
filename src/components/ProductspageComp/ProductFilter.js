@@ -13,7 +13,8 @@ export default class ProductFilter extends Component {
       <ProductConsumer>
         {value => {
           const {search, min, max, price, color, cup, sizes, handleChange, storeProducts, handlePriceFilter, priceFilter,
-          handleCupFilter, cupFilter, handleColorFilter, colorFilter, handleSizeFilter, sizeFilter, handleFilter, displayColors} = value;
+          handleCupFilter, cupFilter, handleColorFilter, colorFilter, handleSizeFilter, sizeFilter, handleFilter, displayColors,
+          dropColorFilter, dropCupFilter, dropSizeFilter, dropPriceFilter} = value;
 
           // ------------------ Fetching colors by category
           let brasColors = [...new Set(storeProducts.filter(item => item.type === "Bras").map(item => item.color).flat())];
@@ -41,9 +42,9 @@ export default class ProductFilter extends Component {
           // ------------------ Fetching sizes by category
           let braCups = [...new Set(storeProducts.filter(item => item.type === "Bras").map(item => item.cup).flat())];
           let braSize = [...new Set(storeProducts.filter(item => item.type === "Bras").map(item => item.sizes).flat())];
-          let uniSize = [...new Set(storeProducts.filter(item => item.type === "Sleepwear").map(item => item.sizes).flat())];
-          let tightsSize = [...new Set(storeProducts.filter(item => item.category === "Accessories, tights").map(item => item.sizes).flat())];
-          let slippersSize = [...new Set(storeProducts.filter(item => item.category === "Accessories, slippers").map(item => item.sizes).flat())];
+          let uniSizeSet = [...new Set(storeProducts.filter(item => item.type === "Sleepwear").map(item => item.sizes).flat())];
+          let tightsSizeSet = [...new Set(storeProducts.filter(item => item.category === "Accessories, tights").map(item => item.sizes).flat())];
+          let slippersSizeSet = [...new Set(storeProducts.filter(item => item.category === "Accessories, slippers").map(item => item.sizes).flat())];
 
 
           return (
@@ -65,8 +66,8 @@ export default class ProductFilter extends Component {
                     {(colorsThongsPanties ? displayColors(pantiesThongsColors, color) : null )}
                     {(colorsSlimmingPanties ? displayColors(pantiesSlimmingColors, color) : null )}
                     {(colorsBrazilianPanties ? displayColors(pantiesBrazilianColors, color) : null )}
-                    {(colorsPanties ? displayColors(brasColors, color) : null )}
-                    {(colorsSleepwearBottoms ? displayColors(brasColors, color) : null )}
+                    {(colorsPanties ? displayColors(pantiesColors, color) : null )}
+                    {(colorsSleepwearBottoms ? displayColors(sleepwearBottomsColors, color) : null )}
                     {(colorsSleepwearLong ? displayColors(sleepwearLongColors, color) : null )}
                     {(colorsSleepwearShort ? displayColors(sleepwearShortColors, color) : null )}
                     {(colorsSleepwearTops ? displayColors(sleepwearTopsColors, color) : null )}
@@ -74,6 +75,10 @@ export default class ProductFilter extends Component {
                     {(colorsBodysuits ? displayColors(accsBodysuitsColors, color) : null )}
                     {(colorsTights ? displayColors(accsTightsColors, color) : null )}
                     {(colorsSlippers ? displayColors(accsSlippersColors, color) : null )}
+                    <div className="filter-btns">
+                      <button className="btn apply-btn" onClick={handleColorFilter}>Apply</button>
+                      <button className="btn remove-btn" onClick={dropColorFilter}>Remove</button>
+                    </div>
                   </ul>
               </div>
               {/* Search by BRAS size */}
@@ -85,11 +90,16 @@ export default class ProductFilter extends Component {
                         <li className={"filter-item " + (size === sizes ? "active-item" : null)} key={index} onClick={() => handleFilter("sizes", size)}> {size} </li>
                       )
                     })}
+                    <div className="filter-btns size-btns">
+                      <button className="btn apply-btn" onClick={handleSizeFilter}>Apply</button>
+                      <button className="btn remove-btn" onClick={dropSizeFilter}>Remove</button>
+                    </div>
                   </ul>
+                  
               </div>
 
               {/* Search by CUP size */}
-              {/* <div className={"filter size-filter " + (cupSize ? "cup-size-filter-visible" : null)}>
+              <div className={"filter size-filter " + (cupSize ? "cup-size-filter-visible" : null)}>
                 <p className="filter-title" onClick={handleCupFilter}>Cup <i className="fas fa-sort-down"></i></p>
                   <ul className = {"filter-list size-list " + (cupFilter ? "size-container-visible" : null)}>
                     {braCups.map((cupSize, index) => {
@@ -97,50 +107,66 @@ export default class ProductFilter extends Component {
                         <li className={"filter-item " + (cupSize === cup ? "active-item" : null)} key={index} onClick={() => handleFilter("cup", cupSize)}> {cupSize} </li>
                       )
                     })}
+                    <div className="filter-btns size-btns">
+                      <button className="btn apply-btn" onClick={handleCupFilter}>Apply</button>
+                      <button className="btn remove-btn" onClick={dropCupFilter}>Remove</button>
+                    </div>
                   </ul>
-              </div> */}
+              </div>
 
               {/* Search by PANTIES and SLEEPWEAR size */}
-              {/* <div className={"filter size-filter " + (uniSize ? "size-filter-visible" : null)}>
+              <div className={"filter size-filter " + (uniSize ? "size-filter-visible" : null)}>
                 <p className="filter-title" onClick={handleSizeFilter}>Size <i className="fas fa-sort-down"></i></p>
                   <ul className = {"filter-list size-list " + (sizeFilter ? "size-container-visible" : null)}>
-                    {uniSize.map((uniSizes, index) => {
+                    {uniSizeSet.map((uniSizes, index) => {
                       return (
                         <li className={"filter-item " + (uniSizes === sizes ? "active-item" : null)} key={index} onClick={() => handleFilter("sizes", uniSizes)}> {uniSizes} </li>
                       )
                     })}
+                    <div className="filter-btns size-btns">
+                      <button className="btn apply-btn" onClick={handleSizeFilter}>Apply</button>
+                      <button className="btn remove-btn" onClick={dropSizeFilter}>Remove</button>
+                    </div>
                   </ul>
-              </div> */}
+              </div>
 
               {/* Search by TIGHTS size */}
-              {/* <div className={"filter size-filter " + (tightsSize ? "tights-size-filter-visible" : null)}>
+              <div className={"filter size-filter " + (tightsSize ? "tights-size-filter-visible" : null)}>
                 <p className="filter-title" onClick={handleSizeFilter}>Size <i className="fas fa-sort-down"></i></p>
                   <ul className = {"filter-list tights-list " + (sizeFilter ? "tights-container-visible" : null)}>
-                    {tightsSize.map((tightsSize, index) => {
+                    {tightsSizeSet.map((tightsSize, index) => {
                       return (
                         <li className={"filter-item tights-item " + (tightsSize === sizes ? "active-item" : null)} key={index} onClick={() => handleFilter("sizes", tightsSize)}> {tightsSize} </li>
                       )
                     })}
+                    <div className="filter-btns size-btns">
+                      <button className="btn apply-btn" onClick={handleSizeFilter}>Apply</button>
+                      <button className="btn remove-btn" onClick={dropSizeFilter}>Remove</button>
+                    </div>
                   </ul>
-              </div> */}
+              </div>
 
               {/* Search by SHOES size */}
-              {/* <div className={"filter size-filter " + (shoesSize ? "shoes-size-filter-visible" : null)}>
+              <div className={"filter size-filter " + (shoesSize ? "shoes-size-filter-visible" : null)}>
                 <p className="filter-title" onClick={handleSizeFilter}>Size <i className="fas fa-sort-down"></i></p>
                   <ul className = {"filter-list shoes-list " + (sizeFilter ? "shoes-container-visible" : null)}>
-                    {slippersSize.map((shoeSizes, index) => {
+                    {slippersSizeSet.map((shoeSizes, index) => {
                       return (
                         <li className={"filter-item shoes-item " + (shoeSizes === sizes ? "active-item" : null)} key={index} onClick={() => handleFilter("sizes", shoeSizes)}> {shoeSizes} </li>
                       )
                     })}
+                    <div className="filter-btns size-btns">
+                      <button className="btn apply-btn" onClick={handleSizeFilter}>Apply</button>
+                      <button className="btn remove-btn" onClick={dropSizeFilter}>Remove</button>
+                    </div>
                   </ul>
-              </div> */}
+              </div>
 
               {/* Search by PRICE */}
               <div className="filter price-filter">
                 <p className="filter-title" onClick={handlePriceFilter}>Price <i className="fas fa-sort-down"></i></p>
                 <div className={"price-container " + (priceFilter ? "price-window-visible" : null)}>
-                  <label htmlFor="price"><p className="price-screen">${price}</p></label>
+                  <label htmlFor="price"><p className="price-screen">under ${price}</p></label>
                   <input 
                       type="range" 
                       name="price" 
@@ -151,6 +177,10 @@ export default class ProductFilter extends Component {
                       className="range-price"
                       onChange = {handleChange}
                   />
+                  <div className="filter-btns">
+                      <button className="btn apply-btn" onClick={handlePriceFilter}>Apply</button>
+                      <button className="btn remove-btn" onClick={dropPriceFilter}>Remove</button>
+                  </div>
                 </div>
               </div>
             </div>

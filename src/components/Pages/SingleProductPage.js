@@ -21,8 +21,6 @@ export default class SingleProductPage extends Component {
             )}
               const {title, category, description, id, price, image, image2, inCart, cup, sizes} = singleProduct;
 
-              console.log(sizes);
-
               let daLink;
 
               if (category === "Bras, classic"){daLink = "/products/bras_classic"} 
@@ -41,6 +39,15 @@ export default class SingleProductPage extends Component {
               else if (category === "Accessories, tights"){daLink = "/products/accessories_tights"}
               else if (category === "Accessories, slippers"){daLink = "/products/accessories_slippers"}
               else if (category === "Accessories, other"){daLink = "/products/accessories_other"};
+
+              let itemsSizes = sizes.map(size => size);
+              const index = itemsSizes.indexOf("all");
+              if (index > -1) {
+              itemsSizes.splice(index, 1)};
+
+              let itemsCups = cup.map(cup => cup);
+              if (index > -1) {
+              itemsCups.splice(index, 1)};
 
               return (
 
@@ -66,7 +73,7 @@ export default class SingleProductPage extends Component {
                                 <div className="size-box">
                                   <p>Select a cup:</p>
                                   <ul className="size-list">
-                                    {cup.map((cup, index) => {
+                                    {itemsCups.map((cup, index) => {
                                       return (
                                         <li key={index} className="filter-item"> {cup}</li>
                                       )
@@ -77,7 +84,7 @@ export default class SingleProductPage extends Component {
                                 <div className="size-box">
                                   <p>Select a size:</p>
                                   <ul className="size-list">
-                                    {sizes.map((size, index) => {
+                                    {itemsSizes.map((size, index) => {
                                       return (
                                         <li key={index} className="filter-item"> {size} </li>
                                       )

@@ -43,7 +43,6 @@ class ProductProvider extends Component {
 
 componentDidMount() {
 // --- from contentful items
-
     this.setProducts(items);
 }
 
@@ -393,7 +392,50 @@ sortData = () => {
         ));
       }
 
+    dropAllFilters = () => {
+        let itemsPrice = this.state.storeProducts.map(item => item.price);
+        let maxPrice = Math.max(...itemsPrice);
+        this.setState({
+            color: 'all',
+            sizes: 'all',
+            cup: 'all',
+            search: '',
+            priceFilter: false,
+            cupFilter: false,
+            colorFilter: false,
+            sizeFilter: false,
+            sizePanties: false,
+            price: maxPrice,
+            max: maxPrice
+        }, this.sortData)
+    }
+    
+    dropColorFilter = () => {
+        this.setState({
+            color: 'all'
+        }, this.sortData)
+    }
 
+    dropSizeFilter = () => {
+        this.setState({
+            sizes: 'all'
+        }, this.sortData)
+    }
+
+    dropCupFilter = () => {
+        this.setState({
+            cup: 'all'
+        }, this.sortData)
+    }
+
+    dropPriceFilter = () => {
+        let itemsPrice = this.state.storeProducts.map(item => item.price);
+        let maxPrice = Math.max(...itemsPrice);
+        this.setState({
+            price: maxPrice,
+            max: maxPrice
+        }, this.sortData)
+    }
 
     render() {
 
@@ -425,7 +467,12 @@ sortData = () => {
                 handleColorFilter: this.handleColorFilter,                
                 handleSizeFilter: this.handleSizeFilter, 
                 handlePantiesFilter: this.handlePantiesFilter,
-                displayColors: this.displayColors
+                displayColors: this.displayColors,
+                dropColorFilter: this.dropColorFilter,
+                dropAllFilters: this.dropAllFilters,
+                dropSizeFilter: this.dropSizeFilter,
+                dropCupFilter: this.dropCupFilter,
+                dropPriceFilter: this.dropPriceFilter
             }}>
                 {/* Super important stuff */}
                 {this.props.children}

@@ -6,11 +6,16 @@ export default class ProductCard extends Component {
   render() {
 
     const {product, cardSize} = this.props;
+    let itemSizes = product.sizes.map(size => size);
+    const index = itemSizes.indexOf("all");
+      if (index > -1) {itemSizes.splice(index, 1)};
+    let itemsCup = product.cup.map(item => item);
+      if (index > -1) {itemsCup.splice(index, 1)};
 
     return (
       <ProductConsumer>
         {value => {
-          const {addToCart, setSingleProduct } = value;
+          const {addToCart, setSingleProduct} = value;
           return (
             <div className={"product-card " + (cardSize === "small" ? "card-small" : "card-normal")}>
               <div className="image-container">
@@ -28,6 +33,23 @@ export default class ProductCard extends Component {
               </div>
               <div className="product-bottom-details">
                 <p className="product-price"> ${product.price} </p>
+                <ul className="card-sizes-list">
+                  {itemSizes.map((size, index) => {
+                    return (
+                      <li className="card-sizes-item" key={index}> {size} </li>
+                    )
+                  })}
+                </ul>
+                <ul className="card-cups-list">
+                  {product.type === "Bras" || product.category === "Accessories, bodysuits" ? 
+                  itemsCup.map((cup, index) => {
+                    return (
+                      <li className="card-cups-item" key={index}> {cup} </li>
+                    )
+                  }) : null}
+
+                </ul>
+                
                 <button 
                   className={"cart-btn " + (product.inCart ? "cart-active" : null)} 
                   onClick={() => addToCart(product.id)}
