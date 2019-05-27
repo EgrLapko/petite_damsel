@@ -9,14 +9,14 @@ export default class Sidebar extends Component {
         {value => {
           const {links, 
             sidebarOpenBra, sidebarOpenPanty, sidebarOpenSleepwear, sidebarOpenAccs, 
-            handleSidebarBra, handleSidebarPanty, handleSidebarSleepwear, handleSidebarAccs} = value;
+            handleSidebarBra, handleSidebarPanty, handleSidebarSleepwear, handleSidebarAccs, dropAllFilters} = value;
           return (
             <React.Fragment>
               <ul className={"slide-bar " + (sidebarOpenBra ? "bar-visible" : null)}>
                   {links.map(link => link.type === "bra" && 
                       <li className="slidebar-item" key={link.id}>
                         <img src={link.image} alt=""/>
-                        <Link to={link.path} className="slidebar-link" onClick={handleSidebarBra} > {link.text} </Link>
+                        <Link to={link.path} className="slidebar-link" onClick={(event) => { handleSidebarBra(); dropAllFilters();}}> {link.text} </Link>
                       </li>             
                     )
                   }
@@ -26,7 +26,7 @@ export default class Sidebar extends Component {
                   {links.map(link => link.type === "panty" && 
                       <li className="slidebar-item" key={link.id}>
                         <img src={link.image} alt=""/>
-                        <Link to={link.path} className="slidebar-link" onClick={handleSidebarPanty} > {link.text} </Link>
+                        <Link to={link.path} className="slidebar-link" onClick={(event) => { handleSidebarPanty(); dropAllFilters();}} > {link.text} </Link>
                       </li>             
                     )
                   }
@@ -36,7 +36,7 @@ export default class Sidebar extends Component {
                   {links.map(link => link.type === "sleepwear" && 
                       <li className="slidebar-item" key={link.id}>
                         <img src={link.image} alt=""/>
-                        <Link to={link.path} className="slidebar-link" onClick={handleSidebarSleepwear} > {link.text} </Link>
+                        <Link to={link.path} className="slidebar-link" onClick={(event) => { handleSidebarSleepwear(); dropAllFilters();}} > {link.text} </Link>
                       </li>             
                     )
                   }
@@ -46,7 +46,7 @@ export default class Sidebar extends Component {
                   {links.map(link => link.type === "accs" && 
                       <li className="slidebar-item" key={link.id}>
                         <img src={link.image} alt=""/>
-                        <Link to={link.path} className="slidebar-link" onClick={handleSidebarAccs} > {link.text} </Link>
+                        <Link to={link.path} className="slidebar-link" onClick={(event) => { handleSidebarAccs(); dropAllFilters();}} > {link.text} </Link>
                       </li>             
                     )
                   }
