@@ -1003,7 +1003,6 @@ button:focus{
 
 .recent-items-container {
     display: none;
-    background-color: rgba(105, 105, 105, .03);
     .recent-items-section {
         @include flexbox;
         flex-direction: column;

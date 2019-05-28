@@ -1349,8 +1349,7 @@ button:focus {
     width: 85%; }
 
 .recent-items-container {
-  display: none;
-  background-color: rgba(105, 105, 105, 0.03); }
+  display: none; }
   .recent-items-container .recent-items-section {
     display: -webkit-box;
     display: -ms-flexbox;
