@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {ProductConsumer} from '../../context/context';
 import {Link} from 'react-router-dom';
-
+import Title from '../Title/Title';
+import Recent from '../ProductspageComp/Recent';
 export default class SingleProductPage extends Component {
 
   componentDidMount() {
@@ -12,14 +13,14 @@ export default class SingleProductPage extends Component {
     return (
       <ProductConsumer>
         {value => {
-          const {singleProduct, addToCart, loading} = value;
+          const {singleProduct, addToCart, loading, recent} = value;
 
           if(loading) {
             console.log('hello from loading');
             return (
               <h1>product loading...</h1>
             )}
-              const {title, category, description, id, price, image, image2, inCart, cup, sizes} = singleProduct;
+              const {title, category, description, id, price, image, image2, inCart, cup, sizes, type} = singleProduct;
 
               let daLink;
 
@@ -68,7 +69,7 @@ export default class SingleProductPage extends Component {
                           <p className="details-description"> {description} </p>
                         </div>
                         <div className="details-filter">
-                          {category === "Bras, classic" || category === "Bras, push-up" || category === "Bras, strapless" || category === "Bras, wireless" ?
+                          {type === "Bras" || category === "Accessories, bodysuits" ?
                               <div className="size-filter-box">
                                 <div className="size-box">
                                   <p>Select a cup:</p>
@@ -94,15 +95,17 @@ export default class SingleProductPage extends Component {
                                 </div> 
                               </div>                  
                           : null}
-                          {category === "Panties, classic" || category === "Panties, thongs" || category === "Panties, slimming" || category === "Panties, brazilian" ?
+                          {type === "Panties" || type === "Sleepwear" || category === "Accessories, tights" || category === "Accessories, slippers" ?
                             <div className="size-filter-box">
                               <div className="size-box">
                                 <p>Select a size</p>
                                 <ul className="size-list">
-                                  <li className="filter-item">XS</li>
-                                  <li className="filter-item">S</li>
-                                  <li className="filter-item">M</li>
-                                  <li className="filter-item">L</li>
+                                  {itemsSizes.map((size, index) => {
+                                      return (
+                                        <li key={index} className="filter-item"> {size} </li>
+                                      )
+                                    }
+                                  )}
                                 </ul>
                               </div>
                             </div> 
@@ -128,6 +131,9 @@ export default class SingleProductPage extends Component {
                       </div>
                     </div>
                   </div>
+                  <div className={"recent-items-container " + (recent.length !== 0 ? "recent-visible" : null)}>
+                    <Recent />
+                  </div>         
                 </div>
             )
           }

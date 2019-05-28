@@ -26,6 +26,7 @@ class ProductProvider extends Component {
         filteredProducts: [],
         featuredProducts: [],
         singleProduct: {},
+        recent: [],
         loading: true,  
         search: '',
         price: 0,
@@ -130,6 +131,21 @@ addTotals = () => {
 syncStorage = () => {
     localStorage.setItem('cart', JSON.stringify(this.state.cart));
 };
+
+// recently viewed Items
+recentItems = (id) => {
+    let tempRecent = [...this.state.recent];
+    let tempProducts = [...this.state.storeProducts];
+    let tempItem = tempRecent.find(item => item.id === id);
+    if(!tempItem) {
+        tempItem = tempProducts.find(item => item.id === id);
+        let recentItem = {...tempItem};
+        tempRecent = [...tempRecent, recentItem]
+    }
+    this.setState(() => {
+        return {recent: tempRecent}
+    }) 
+}
 
 // add to cart
 addToCart = (id) => {
@@ -472,7 +488,8 @@ sortData = () => {
                 dropAllFilters: this.dropAllFilters,
                 dropSizeFilter: this.dropSizeFilter,
                 dropCupFilter: this.dropCupFilter,
-                dropPriceFilter: this.dropPriceFilter
+                dropPriceFilter: this.dropPriceFilter,
+                recentItems: this.recentItems
             }}>
                 {/* Super important stuff */}
                 {this.props.children}

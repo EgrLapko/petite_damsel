@@ -15,11 +15,11 @@ export default class ProductCard extends Component {
     return (
       <ProductConsumer>
         {value => {
-          const {addToCart, setSingleProduct} = value;
+          const {addToCart, setSingleProduct, recentItems} = value;
           return (
             <div className={"product-card " + (cardSize === "small" ? "card-small" : "card-normal")}>
               <div className="image-container">
-                <Link to={`/products/single/${product.id}`} onClick={() => setSingleProduct(product.id)}>
+                <Link to={`/products/single/${product.id}`} onClick={() => {setSingleProduct(product.id); recentItems(product.id);}}>
                   <img src={product.imageSmall} 
                     alt="product"
                     onMouseOver = {e => {e.currentTarget.src = product.imageSmall2}}

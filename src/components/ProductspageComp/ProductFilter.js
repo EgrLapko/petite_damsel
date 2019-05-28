@@ -15,6 +15,7 @@ export default class ProductFilter extends Component {
           const {search, min, max, price, color, cup, sizes, handleChange, storeProducts, handlePriceFilter, priceFilter,
           handleCupFilter, cupFilter, handleColorFilter, colorFilter, handleSizeFilter, sizeFilter, handleFilter, displayColors,
           dropColorFilter, dropCupFilter, dropSizeFilter, dropPriceFilter} = value;
+          
 
           // ------------------ Fetching colors by category
           let brasColors = [...new Set(storeProducts.filter(item => item.type === "Bras").map(item => item.color).flat())];
@@ -55,7 +56,7 @@ export default class ProductFilter extends Component {
               </div>     
               {/* Search by color */}
               <div className="filter color-filter">
-                <p className="filter-title" onClick={handleColorFilter}>Color <i className="fas fa-sort-down"></i></p>
+                <p className="filter-title" onClick={(t) => { handleColorFilter(); ;}}>Color <i className="fas fa-sort-down"></i></p>
                   <ul className = {"filter-list colors-list " + (colorFilter ? "color-container-visible" : null)}>
                     {(classicBrasColors ? displayColors(brasClassicColors, color) : null )}
                     {(pushupBrasColors ? displayColors(brasPushupColors, color) : null )}
