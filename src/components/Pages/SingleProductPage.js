@@ -76,7 +76,7 @@ export default class SingleProductPage extends Component {
                                   <ul className="size-list">
                                     {itemsCups.map((cup, index) => {
                                       return (
-                                        <li key={index} className="filter-item"> {cup}</li>
+                                        <li key={index} className="filter-item" onClick={() => console.log(cup)}> {cup}</li>
                                       )
                                     }
                                     )}

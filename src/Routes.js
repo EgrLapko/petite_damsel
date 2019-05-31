@@ -9,6 +9,7 @@ import ProductsPage from './components/Pages/ProductsPage';
 import DefaultPage from './components/Pages/DefaultPage';
 import SingleProductPage from './components/Pages/SingleProductPage';
 import CartPage from './components/Pages/CartPage';
+import Collections from './components/Pages/Collections';
 
 export default class Routes extends Component {
   render() {
@@ -21,6 +22,7 @@ export default class Routes extends Component {
         <Route path = '/products/:category' exact component={ProductsPage} />
         <Route path = {`/products/single/:id`} component={SingleProductPage} />
         <Route path = '/cart' component={CartPage} />
+        <Route path = '/collections' component={Collections} />
         <Route component={DefaultPage} />
       </Switch>
     )

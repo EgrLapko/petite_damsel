@@ -21,7 +21,7 @@ export default class Navbar extends Component {
                   <li className="menu-element" onClick={handleSidebarPanty}>Panties</li>
                   <li className="menu-element" onClick={handleSidebarSleepwear} >Sleepwear</li>
                   <li className="menu-element" onClick={handleSidebarAccs} >Accessories</li>
-                  <li className="menu-element">Collections</li>
+                  <Link to="/collections"><li className="menu-element">Collections</li></Link>
                   <Link to="/login"><li className="menu-element">Log in</li></Link>
                 </ul>
                 <div className="navbar-cart">
@@ -48,7 +48,7 @@ export default class Navbar extends Component {
                     <li className="menu-element" onClick={handleSidebarPanty}>Panties</li>
                     <li className="menu-element" onClick={handleSidebarSleepwear} >Sleepwear</li>
                     <li className="menu-element" onClick={handleSidebarAccs} >Accessories</li>
-                    <li className="menu-element">Collections</li>
+                    <Link to="/collections"><li className="menu-element">Collections</li></Link>
                     <Link to="/login"><li className="menu-element">Log in</li></Link>
                 </ul>
               </div>

@@ -1488,6 +1488,20 @@ button:focus {
       color: black;
       font-weight: 300;
       cursor: default; }
+    .product-card .product-bottom-details .price-crossed {
+      text-decoration: line-through;
+      font-size: 1.1rem; }
+    .product-card .product-bottom-details .featured-price {
+      display: none;
+      color: rgba(241, 106, 123, 0.9);
+      font-family: "Thasadith", sans-serif;
+      font-size: 1.2rem;
+      border: 1px solid rgba(241, 106, 123, 0.2);
+      padding: .3rem;
+      border-radius: .5rem;
+      cursor: default; }
+    .product-card .product-bottom-details .featured-visible {
+      display: block; }
     .product-card .product-bottom-details .card-sizes-list, .product-card .product-bottom-details .card-cups-list {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1506,7 +1520,7 @@ button:focus {
       -o-transition: .3s;
       transition: .3s; }
       .product-card .product-bottom-details .card-sizes-list .card-sizes-item, .product-card .product-bottom-details .card-sizes-list .card-cups-item, .product-card .product-bottom-details .card-cups-list .card-sizes-item, .product-card .product-bottom-details .card-cups-list .card-cups-item {
-        margin: 0 .3rem;
+        margin: 0 .2rem;
         font-family: "Thasadith", sans-serif;
         font-size: 1.1rem;
         cursor: pointer; }
@@ -1523,7 +1537,7 @@ button:focus {
   background-color: #fafafa; }
 
 .card-small {
-  width: 18rem;
+  width: 16rem;
   height: 30rem;
   padding: .5rem;
   background-color: none;
@@ -1534,6 +1548,8 @@ button:focus {
     width: 100%; }
   .card-small .product-details .product-title {
     font-size: 1.1rem; }
+  .card-small .product-bottom-details .card-sizes-list .card-sizes-item, .card-small .product-bottom-details .card-sizes-list .card-cups-item, .card-small .product-bottom-details .card-cups-list .card-sizes-item, .card-small .product-bottom-details .card-cups-list .card-cups-item {
+    font-size: .8rem; }
 
 .card-small:hover {
   -webkit-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
@@ -2221,3 +2237,92 @@ button:focus {
 
 .link-active {
   color: #f16a7b; }
+
+.collections-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%; }
+  .collections-page .collections-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%; }
+    .collections-page .collections-container .collection-banner {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      background-size: cover;
+      width: 30rem;
+      height: 40rem;
+      border-radius: 1rem;
+      overflow: hidden;
+      margin: 1rem;
+      -webkit-box-shadow: 0px 0px 50px rgba(105, 105, 105, 0.3);
+      box-shadow: 0px 0px 50px rgba(105, 105, 105, 0.3);
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .collections-page .collections-container .collection-banner .collection-text-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        font-family: "Thasadith", sans-serif;
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        background-color: rgba(55, 55, 55, 0.6);
+        opacity: 0;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s; }
+        .collections-page .collections-container .collection-banner .collection-text-wrapper .collection-title {
+          font-size: 4rem;
+          margin: 0;
+          color: #fafafa;
+          cursor: default; }
+        .collections-page .collections-container .collection-banner .collection-text-wrapper .collection-description {
+          font-size: 1.1rem;
+          margin: 0;
+          color: white; }
+    .collections-page .collections-container .collection-banner:hover {
+      -webkit-box-shadow: 0px 0px 70px rgba(105, 105, 105, 0.4);
+      box-shadow: 0px 0px 70px rgba(105, 105, 105, 0.4); }
+      .collections-page .collections-container .collection-banner:hover .collection-text-wrapper {
+        opacity: 1; }

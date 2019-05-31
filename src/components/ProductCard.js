@@ -32,7 +32,8 @@ export default class ProductCard extends Component {
                 <Link to={`/products/single/${product.id}`}><p className="product-title"> {product.title} </p></Link>
               </div>
               <div className="product-bottom-details">
-                <p className="product-price"> ${product.price} </p>
+                <p className={"product-price " + (product.featured ? "price-crossed" : null)}> ${product.price} </p>
+                <p className={"featured-price " + (product.featured ? "featured-visible" : null)}> ${(product.price - (product.price/100)*60).toFixed(2)} </p>
                 <ul className="card-sizes-list">
                   {itemSizes.map((size, index) => {
                     return (

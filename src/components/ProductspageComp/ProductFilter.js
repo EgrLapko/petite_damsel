@@ -88,7 +88,7 @@ export default class ProductFilter extends Component {
                   <ul className = {"filter-list size-list " + (sizeFilter ? "size-container-visible" : null)}>
                     {braSize.map((size, index) => {
                       return (
-                        <li className={"filter-item " + (size === sizes ? "active-item" : null)} key={index} onClick={() => handleFilter("sizes", size)}> {size} </li>
+                        <li className={"filter-item " + (size === sizes ? "active-item" : null)} key={index} onClick={() => {handleFilter("sizes", size)}}> {size} </li>
                       )
                     })}
                     <div className="filter-btns size-btns">
