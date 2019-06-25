@@ -67,7 +67,7 @@ button:focus {
     transition: .4s; }
 
 .cart-btn:hover {
-  color: rgba(95, 174, 87, 0.6); }
+  color: rgba(105, 105, 105, 0.4); }
 
 .cart-active {
   color: rgba(95, 174, 87, 0.6); }

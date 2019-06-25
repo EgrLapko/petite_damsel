@@ -17,7 +17,7 @@ export default class Recent extends Component {
                         key = {product.id}
                         product = {product}
                         cardSize = 'small'
-                        onClick = {window.scrollTo(0, 0)}
+                        // onClick = {window.scrollTo(0, 0)}
                     />))
                 }}
             </ProductConsumer>

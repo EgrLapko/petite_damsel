@@ -170,6 +170,7 @@ addToCart = (id) => {
         this.addTotals();
         this.syncStorage();
         this.openCart();
+        console.log(product.inCart);
     })
 };
 

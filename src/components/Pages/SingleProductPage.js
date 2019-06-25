@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {ProductConsumer} from '../../context/context';
 import {Link} from 'react-router-dom';
-import Title from '../Title/Title';
 import Recent from '../ProductspageComp/Recent';
 export default class SingleProductPage extends Component {
 
@@ -117,7 +116,6 @@ export default class SingleProductPage extends Component {
                           <button 
                             className={"cart-btn " + (inCart ? "cart-active" : null)} 
                             onClick={() => addToCart(id)}
-                            disabled={inCart ? true : false}
                             >
                             {inCart ? (
                                       <p className="in-cart-sign" disabled>
