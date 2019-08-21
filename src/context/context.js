@@ -7,7 +7,6 @@ const ProductContext = React.createContext();
 // Consumer
 
 class ProductProvider extends Component {
-
     state = {
         sidebarOpenBra: false,
         sidebarOpenPanty: false,
@@ -44,6 +43,7 @@ class ProductProvider extends Component {
 
 componentDidMount() {
 // --- from contentful items
+console.log(this.state.cart)
     this.setProducts(items);
 }
 
@@ -171,6 +171,7 @@ addToCart = (id) => {
         this.syncStorage();
         this.openCart();
         console.log(product.inCart);
+        this.setSingleProduct(product.id);
     })
 };
 

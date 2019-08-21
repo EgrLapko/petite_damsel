@@ -6,6 +6,7 @@ export default class ProductCard extends Component {
   render() {
 
     const {product, cardSize} = this.props;
+    
     let itemSizes = product.sizes.map(size => size);
     const index = itemSizes.indexOf("all");
       if (index > -1) {itemSizes.splice(index, 1)};
