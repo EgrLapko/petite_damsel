@@ -16,11 +16,11 @@ button:focus {
 
 .btn {
   font-size: 1.2rem;
-  border: 1px solid rgba(241, 106, 123, 0.5);
+  border: 1px solid rgba(241, 106, 123, 0.7);
   border-radius: .7rem;
   padding: .8rem;
   cursor: pointer;
-  font-family: "Thasadith", sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-transition: .2s;
   -o-transition: .2s;
   transition: .2s;
@@ -28,8 +28,7 @@ button:focus {
 
 .btn:hover {
   color: #fff;
-  background-color: rgba(241, 106, 123, 0.7);
-  border: 1px solid rgba(241, 106, 123, 0); }
+  background-color: rgba(241, 106, 123, 0.7); }
 
 .pink-btn {
   margin-top: 3rem;
@@ -45,6 +44,9 @@ button:focus {
   color: #f6f6f6;
   margin-top: 1rem; }
 
+.white-btn:hover {
+  border: 1px solid rgba(242, 242, 242, 0); }
+
 .cart-btn {
   -webkit-transition: .3s;
   -o-transition: .3s;
@@ -57,7 +59,7 @@ button:focus {
     font-size: .9rem;
     font-weight: 600;
     padding: .5rem;
-    font-family: "Thasadith", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: rgba(242, 242, 242, 0.9);
     background-color: rgba(95, 174, 87, 0.6);
     border-radius: 5px;
@@ -149,10 +151,11 @@ button:focus {
       margin-left: 1.5rem;
       margin-right: 1.5rem;
       font-size: 1.2rem;
+      color: dimgray;
       cursor: pointer;
-      font-family: "Thasadith", sans-serif;
+      font-family: "Roboto", sans-serif;
       font-weight: 200;
-      text-transform: capitalize;
+      text-transform: uppercase;
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s; }
@@ -193,7 +196,7 @@ button:focus {
       top: 1rem;
       right: 1.6rem;
       border-radius: 50%;
-      font-family: "Thasadith", sans-serif; }
+      font-family: "Roboto", sans-serif; }
 
 .navbar-small {
   display: none; }
@@ -262,7 +265,7 @@ button:focus {
       transition: .4s ease-in-out; }
       .navbar-small .navbar-menu-small .menu-element {
         font-size: 1.3rem;
-        font-family: "Thasadith", sans-serif;
+        font-family: "Roboto", sans-serif;
         padding: .5rem;
         cursor: pointer; }
     .navbar-small .visible {
@@ -341,7 +344,7 @@ button:focus {
     margin: 0 2rem; }
     .slide-bar .slidebar-item .slidebar-link {
       font-size: 1.1rem;
-      font-family: "Thasadith", sans-serif;
+      font-family: "Roboto", sans-serif;
       color: rgba(0, 0, 0, 0.9);
       padding: .5rem;
       text-transform: capitalize;
@@ -437,13 +440,13 @@ button:focus {
     margin-top: .5rem;
     border-bottom: 1px solid rgba(105, 105, 105, 0.2); }
     .sidecart .sidecart-top .sidecart-title {
-      font-family: "Thasadith", sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 1.3rem;
       padding: 1rem;
       margin: 0;
       padding: .5rem; }
     .sidecart .sidecart-top .close-sidecart-btn {
-      font-family: "Thasadith", sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 1.5rem;
       padding: 1rem;
       margin: 0;
@@ -520,19 +523,19 @@ button:focus {
           -ms-flex-item-align: start;
           align-self: flex-start;
           font-size: 1rem;
-          font-family: "Thasadith", sans-serif;
+          font-family: "Roboto", sans-serif;
           margin: 0; }
         .sidecart .cart-menu-content .cart-menu-item .cart-item-info .menu-item-count {
           -ms-flex-item-align: start;
           align-self: flex-start;
           font-size: 1rem;
-          font-family: "Thasadith", sans-serif;
+          font-family: "Roboto", sans-serif;
           margin: 0; }
         .sidecart .cart-menu-content .cart-menu-item .cart-item-info .menu-item-price {
           -ms-flex-item-align: start;
           align-self: flex-start;
           font-size: 1.3rem;
-          font-family: "Thasadith", sans-serif;
+          font-family: "Roboto", sans-serif;
           margin-top: .5rem; }
   .sidecart .order-total {
     display: -webkit-box;
@@ -551,7 +554,7 @@ button:focus {
     border-bottom: 1px solid rgba(105, 105, 105, 0.2);
     border-top: 1px solid rgba(105, 105, 105, 0.2); }
     .sidecart .order-total p {
-      font-family: "Thasadith", sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 1.3rem;
       padding: .5rem;
       margin: 0; }
@@ -596,11 +599,11 @@ button:focus {
     padding: 1rem; }
     .footer-container .account-container .maintag {
       font-size: 1.2rem;
-      font-family: "Thasadith", sans-serif;
+      font-family: "Roboto", sans-serif;
       text-transform: uppercase;
       color: dimgray; }
     .footer-container .account-container .account-item {
-      font-family: "Thasadith", sans-serif;
+      font-family: "Roboto", sans-serif;
       margin-top: .8rem;
       line-height: 1.3rem;
       font-size: 1.1rem;
@@ -632,7 +635,7 @@ button:focus {
     flex-wrap: wrap; }
     .footer-container .subscribe-container .sub-text {
       text-transform: uppercase;
-      font-family: "Thasadith", sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 1.2rem;
       color: #6a6969;
       width: 80%;
@@ -662,7 +665,7 @@ button:focus {
           background-color: #fff;
           color: black;
           border: 1px solid #ddd;
-          font-family: "Thasadith", sans-serif;
+          font-family: "Roboto", sans-serif;
           font-size: 1.1rem; }
         .footer-container .subscribe-container .form-container .form-inline .submit {
           padding: .7rem;
@@ -684,11 +687,11 @@ button:focus {
     padding: 1rem; }
     .footer-container .about-container .maintag {
       font-size: 1.2rem;
-      font-family: "Thasadith", sans-serif;
+      font-family: "Roboto", sans-serif;
       text-transform: uppercase;
       color: dimgray; }
     .footer-container .about-container .about-item {
-      font-family: "Thasadith", sans-serif;
+      font-family: "Roboto", sans-serif;
       margin-top: .8rem;
       line-height: 1.3rem;
       font-size: 1.1rem;
@@ -720,7 +723,7 @@ button:focus {
   border-top: 1px solid rgba(241, 106, 123, 0.2);
   background-color: rgba(242, 242, 242, 0.5); }
   .under-part .under-text {
-    font-family: "Thasadith", sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-left: 1rem;
     color: #6a6969;
     font-size: .9rem; }
@@ -789,7 +792,7 @@ button:focus {
       width: 60%;
       margin-bottom: .7rem; }
   .login-page p {
-    font-family: "Thasadith", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.1rem;
     margin: 0;
     padding: 0;
@@ -798,7 +801,7 @@ button:focus {
     text-align: center; }
   .login-page h2 {
     width: 100%;
-    font-family: "Thasadith", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 300;
     margin-top: .7rem;
     text-align: center; }
@@ -828,7 +831,7 @@ button:focus {
     -o-transition: .4s ease-in-out;
     transition: .4s ease-in-out; }
     .login-page .have-account span a {
-      font-family: "Thasadith", sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 0.8rem;
       font-weight: 600;
       margin-top: .3rem;
@@ -877,7 +880,7 @@ button:focus {
       -ms-flex-pack: center;
       justify-content: center; }
       .login-page .register-part .register-part-inner .terms {
-        font-family: "Thasadith", sans-serif; }
+        font-family: "Roboto", sans-serif; }
         .login-page .register-part .register-part-inner .terms span a {
           font-weight: 600;
           text-decoration: none;
@@ -946,6 +949,39 @@ button:focus {
   .login-page .register-part:hover {
     background-color: #fafafa; }
 
+.trends {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif; }
+  .trends .trends-bottom-title {
+    margin: .3rem 0rem;
+    text-transform: lowercase;
+    font-family: 'Roboto', sans-serif;
+    color: dimgray;
+    font-weight: 600;
+    font-size: 3rem; }
+  .trends .trends-bottom-description {
+    margin: 0rem 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: dimgray;
+    text-transform: lowercase;
+    font-size: 1.4rem; }
+  .trends .btn {
+    margin-top: 1rem;
+    text-transform: lowercase; }
+
 .trends-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -957,7 +993,7 @@ button:focus {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  margin: 5rem 0; }
+  padding-top: 3rem; }
   .trends-container .trends-card {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -968,14 +1004,18 @@ button:focus {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 40rem;
-    height: 40rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 39rem;
+    height: 39rem;
     background-size: cover;
     overflow: hidden;
     border-radius: 2%;
-    margin: 0 1.5rem;
-    -webkit-box-shadow: 0px 0px 50px rgba(105, 105, 105, 0.3);
-    box-shadow: 0px 0px 50px rgba(105, 105, 105, 0.3); }
+    margin: 0 2rem;
+    -webkit-box-shadow: 0px 0px 60px rgba(105, 105, 105, 0.2);
+    box-shadow: 0px 0px 60px rgba(105, 105, 105, 0.2); }
     .trends-container .trends-card .trends-text-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -986,6 +1026,7 @@ button:focus {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+      opacity: 0;
       width: 100%;
       height: 100%;
       padding: 1rem;
@@ -998,17 +1039,18 @@ button:focus {
       transition: all .3s ease-in-out; }
       .trends-container .trends-card .trends-text-wrapper .trends-title, .trends-container .trends-card .trends-text-wrapper .trends-description {
         text-align: center;
-        font-family: "Thasadith", sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 5rem;
         font-weight: 200;
         margin: 0;
-        color: rgba(250, 250, 250, 0.9);
+        color: #fafafa;
         cursor: default; }
       .trends-container .trends-card .trends-text-wrapper .trends-description {
         font-size: 2rem;
         cursor: default; }
     .trends-container .trends-card .trends-text-wrapper:hover {
-      background-color: rgba(55, 55, 55, 0.3); }
+      background-color: rgba(55, 55, 55, 0.4);
+      opacity: 1; }
 
 @media (max-width: 1024px) {
   .trends-container .trends-card {
@@ -1056,13 +1098,13 @@ button:focus {
   .parallax-content-section .parallax-title {
     margin: 0;
     font-size: 4rem;
-    font-family: "Thasadith", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #f6f6f6;
     font-weight: 200;
     cursor: default; }
   .parallax-content-section .parallax-description {
     font-size: 1.5rem;
-    font-family: "Thasadith", sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     opacity: 1;
     margin-top: 1rem;
@@ -1122,7 +1164,7 @@ button:focus {
   border-bottom: 1px solid rgba(105, 105, 105, 0.1); }
   .main-title .title-main-text, .main-title .title-main-desc {
     font-size: 3rem;
-    font-family: "Thasadith", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: dimgray;
     font-weight: 200;
     margin: 0;
@@ -1131,13 +1173,14 @@ button:focus {
     font-size: 1.5rem;
     text-transform: lowercase;
     letter-spacing: 2px; }
+  .main-title .title-main-text {
+    font-weight: 600; }
 
 @media (max-width: 800px) {
   .main-title {
     padding: 1rem; } }
 
-.selections-container {
-  margin-bottom: 4rem;
+.selections {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1146,16 +1189,32 @@ button:focus {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
-  .selections-container .sel-card {
-    overflow: hidden;
-    width: 25rem;
-    height: 35rem;
-    border-radius: 3%;
-    margin: 0 1.5rem;
-    -webkit-box-shadow: 0px 0px 50px rgba(105, 105, 105, 0.3);
-    box-shadow: 0px 0px 50px rgba(105, 105, 105, 0.3); }
-    .selections-container .sel-card .sel-image {
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .selections .main-title {
+    margin: 4rem 0;
+    padding-bottom: 2rem;
+    border-top: 1px solid rgba(105, 105, 105, 0.1); }
+    .selections .main-title .title-main-text {
+      text-transform: lowercase;
+      font-size: 3.5rem; }
+    .selections .main-title .title-main-desc {
+      font-size: 1.5rem; }
+  .selections .selections-container {
+    margin-bottom: 6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .selections .selections-container .sel-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1165,61 +1224,112 @@ button:focus {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      height: 100%;
-      background-position: center;
-      background-size: cover;
-      cursor: pointer;
-      -webkit-transition: .3s ease-in-out;
-      -o-transition: .3s ease-in-out;
-      transition: .3s ease-in-out; }
-      .selections-container .sel-card .sel-image .sel-text-wrapper {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        -webkit-transition: .3s ease-in-out;
-        -o-transition: .3s ease-in-out;
-        transition: .3s ease-in-out; }
-        .selections-container .sel-card .sel-image .sel-text-wrapper .sel-description, .selections-container .sel-card .sel-image .sel-text-wrapper .sel-title {
-          font-size: 1.5rem;
-          font-family: "Thasadith", sans-serif;
-          color: #f6f6f6;
-          font-weight: 200;
-          margin: 0;
-          opacity: 0;
-          cursor: default;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .selections .selections-container .sel-wrapper .sel-card {
+        overflow: hidden;
+        width: 25rem;
+        height: 35rem;
+        border-radius: 3%;
+        margin: 0 1.5rem;
+        -webkit-box-shadow: 0px 0px 50px rgba(105, 105, 105, 0.2);
+        box-shadow: 0px 0px 50px rgba(105, 105, 105, 0.2); }
+        .selections .selections-container .sel-wrapper .sel-card .sel-image {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          height: 100%;
+          background-position: center;
+          background-size: cover;
+          cursor: pointer;
           -webkit-transition: .3s ease-in-out;
           -o-transition: .3s ease-in-out;
           transition: .3s ease-in-out; }
-        .selections-container .sel-card .sel-image .sel-text-wrapper .sel-title {
-          font-size: 2.5rem;
-          opacity: 1; }
-        .selections-container .sel-card .sel-image .sel-text-wrapper .btn {
-          opacity: 0;
-          -webkit-transition: .3s;
-          -o-transition: .3s;
-          transition: .3s; }
-  .selections-container .sel-card:hover .sel-image {
-    -webkit-transform: scale(1.08);
-    -ms-transform: scale(1.08);
-    transform: scale(1.08); }
-    .selections-container .sel-card:hover .sel-image .sel-text-wrapper {
-      background-color: rgba(105, 105, 105, 0.5); }
-      .selections-container .sel-card:hover .sel-image .sel-text-wrapper .sel-description {
-        opacity: 1; }
-      .selections-container .sel-card:hover .sel-image .sel-text-wrapper .btn {
-        opacity: 1; }
+          .selections .selections-container .sel-wrapper .sel-card .sel-image .sel-text-wrapper {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            background-color: rgba(105, 105, 105, 0.25);
+            width: 100%;
+            height: 100%;
+            -webkit-transition: .4s ease-in-out;
+            -o-transition: .4s ease-in-out;
+            transition: .4s ease-in-out; }
+            .selections .selections-container .sel-wrapper .sel-card .sel-image .sel-text-wrapper .sel-description, .selections .selections-container .sel-wrapper .sel-card .sel-image .sel-text-wrapper .sel-title {
+              font-size: 1.5rem;
+              font-family: "Roboto", sans-serif;
+              color: #f6f6f6;
+              font-weight: 200;
+              margin: 0;
+              opacity: 0;
+              cursor: default;
+              -webkit-transition: .3s ease-in-out;
+              -o-transition: .3s ease-in-out;
+              transition: .3s ease-in-out; }
+            .selections .selections-container .sel-wrapper .sel-card .sel-image .sel-text-wrapper .sel-title {
+              font-size: 2.5rem;
+              font-weight: 600; }
+            .selections .selections-container .sel-wrapper .sel-card .sel-image .sel-text-wrapper .btn {
+              opacity: 0;
+              -webkit-transition: .3s;
+              -o-transition: .3s;
+              transition: .3s; }
+      .selections .selections-container .sel-wrapper .sel-card:hover .sel-image {
+        -webkit-transform: scale(1.08);
+        -ms-transform: scale(1.08);
+        transform: scale(1.08); }
+        .selections .selections-container .sel-wrapper .sel-card:hover .sel-image .sel-text-wrapper {
+          background-color: rgba(105, 105, 105, 0.5); }
+          .selections .selections-container .sel-wrapper .sel-card:hover .sel-image .sel-text-wrapper .sel-description, .selections .selections-container .sel-wrapper .sel-card:hover .sel-image .sel-text-wrapper .sel-title {
+            opacity: 1; }
+          .selections .selections-container .sel-wrapper .sel-card:hover .sel-image .sel-text-wrapper .btn {
+            opacity: 1; }
+    .selections .selections-container .sel-bottom-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .selections .selections-container .sel-bottom-container .sel-bottom-title {
+        margin: .3rem 0rem;
+        text-transform: lowercase;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+        margin-top: 1rem;
+        color: dimgray; }
+      .selections .selections-container .sel-bottom-container .sel-bottom-desc {
+        margin: 0rem 0;
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        text-transform: lowercase;
+        font-size: 1.4rem; }
 
 @media (max-width: 1050px) {
   .selections-container {
@@ -1316,7 +1426,7 @@ button:focus {
         font-size: 1.2rem;
         opacity: 1;
         color: #f2f2f2;
-        font-family: "Thasadith", sans-serif;
+        font-family: "Roboto", sans-serif;
         border-bottom: 1px solid rgba(242, 242, 242, 0); }
       .insta-container .insta-card .middle .insta-link:hover {
         border-bottom: 1px solid rgba(242, 242, 242, 0.6); }
@@ -1449,7 +1559,7 @@ button:focus {
     -ms-flex-direction: column;
     flex-direction: column; }
     .product-card .product-details .product-category {
-      font-family: "Thasadith", sans-serif;
+      font-family: "Roboto", sans-serif;
       cursor: default;
       font-size: .8rem;
       font-weight: 700;
@@ -1469,7 +1579,7 @@ button:focus {
       -ms-flex-align: center;
       align-items: center;
       font-weight: 200;
-      font-family: "Thasadith", sans-serif;
+      font-family: "Roboto", sans-serif;
       text-transform: none;
       font-size: 1.3rem;
       margin: 0;
@@ -1500,7 +1610,7 @@ button:focus {
     -ms-flex-pack: justify;
     justify-content: space-between; }
     .product-card .product-bottom-details .product-price {
-      font-family: "Thasadith", sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 1.5rem;
       color: black;
       font-weight: 300;
@@ -1511,7 +1621,7 @@ button:focus {
     .product-card .product-bottom-details .featured-price {
       display: none;
       color: rgba(241, 106, 123, 0.9);
-      font-family: "Thasadith", sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 1.2rem;
       border: 1px solid rgba(241, 106, 123, 0.2);
       padding: .3rem;
@@ -1538,7 +1648,7 @@ button:focus {
       transition: .3s; }
       .product-card .product-bottom-details .card-sizes-list .card-sizes-item, .product-card .product-bottom-details .card-sizes-list .card-cups-item, .product-card .product-bottom-details .card-cups-list .card-sizes-item, .product-card .product-bottom-details .card-cups-list .card-cups-item {
         margin: 0 .2rem;
-        font-family: "Thasadith", sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 1.1rem;
         cursor: pointer; }
       .product-card .product-bottom-details .card-sizes-list .card-sizes-item:hover, .product-card .product-bottom-details .card-sizes-list .card-cups-item:hover, .product-card .product-bottom-details .card-cups-list .card-sizes-item:hover, .product-card .product-bottom-details .card-cups-list .card-cups-item:hover {
@@ -1606,7 +1716,7 @@ button:focus {
   margin: auto; }
   .products-list .filters-display .filters-display-item {
     margin: 0 1rem;
-    font-family: "Thasadith", sans-serif; }
+    font-family: "Roboto", sans-serif; }
 
 @media (max-width: 1450px) {
   .products-list .products-container {
@@ -1676,7 +1786,7 @@ button:focus {
       -ms-flex-align: center;
       align-items: center;
       width: 40rem;
-      font-family: "Thasadith", sans-serif;
+      font-family: "Roboto", sans-serif;
       position: -webkit-sticky;
       position: sticky;
       margin-top: 10rem;
@@ -1705,7 +1815,7 @@ button:focus {
         background-color: rgba(105, 105, 105, 0.02);
         border-radius: 5%; }
         .single-product-page .details-content .details-menu-container .details-menu .text-title {
-          font-family: "Thasadith", sans-serif;
+          font-family: "Roboto", sans-serif;
           text-align: center;
           margin: 0; }
         .single-product-page .details-content .details-menu-container .details-menu .details-title {
@@ -1825,7 +1935,7 @@ button:focus {
                   -webkit-transition: .2s;
                   -o-transition: .2s;
                   transition: .2s;
-                  font-family: "Thasadith", sans-serif;
+                  font-family: "Roboto", sans-serif;
                   font-size: 1.2rem; }
                 .single-product-page .details-content .details-menu-container .details-menu .details-filter .size-filter-box .size-box .size-list .filter-item:hover {
                   color: rgba(241, 106, 123, 0.7); }
@@ -1887,7 +1997,7 @@ button:focus {
   -ms-flex-align: center;
   align-items: center;
   width: 5rem;
-  font-family: "Thasadith", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   min-height: 4rem; }
   .cart-item img {
@@ -1946,7 +2056,7 @@ button:focus {
       margin: .5rem 0rem;
       border-bottom: 0.5px solid rgba(106, 105, 105, 0.15);
       font-size: 1.2rem;
-      font-family: "Thasadith", sans-serif; }
+      font-family: "Roboto", sans-serif; }
     .totals-container .totals-inner-container .totals-btns {
       width: 100%;
       display: -webkit-box;
@@ -2030,7 +2140,7 @@ button:focus {
     margin: 0 2rem; }
     .filter-wrapper .filter .filter-title {
       cursor: pointer;
-      font-family: "Thasadith", sans-serif; }
+      font-family: "Roboto", sans-serif; }
     .filter-wrapper .filter .filter-list, .filter-wrapper .filter .price-container {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2094,7 +2204,7 @@ button:focus {
         -ms-flex-direction: column;
         flex-direction: column; }
       .filter-wrapper .filter .filter-list .price-screen, .filter-wrapper .filter .price-container .price-screen {
-        font-family: "Thasadith", sans-serif;
+        font-family: "Roboto", sans-serif;
         margin: 0; }
       .filter-wrapper .filter .filter-list .filter-item, .filter-wrapper .filter .price-container .filter-item {
         display: -webkit-box;
@@ -2107,7 +2217,7 @@ button:focus {
         -ms-flex-align: center;
         align-items: center;
         width: 40%;
-        font-family: "Thasadith", sans-serif;
+        font-family: "Roboto", sans-serif;
         text-transform: capitalize;
         font-size: 1.1rem;
         padding: .3rem;
@@ -2229,7 +2339,7 @@ button:focus {
   margin: auto;
   padding: 0; }
   .local-nav .local-nav-item {
-    font-family: "Thasadith", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.3rem;
     text-transform: capitalize;
     -webkit-transition: .3s;
@@ -2322,7 +2432,7 @@ button:focus {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        font-family: "Thasadith", sans-serif;
+        font-family: "Roboto", sans-serif;
         width: 100%;
         height: 100%;
         border-radius: 1rem;

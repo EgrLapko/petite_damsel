@@ -2,7 +2,8 @@
 
 $mainpink: rgba(241, 106, 123, .9);
 $mainwhite: rgba(246, 246, 246, 1);
-$fontmain: 'Thasadith', sans-serif;
+$fontmain: 'Roboto', sans-serif;
+$font-secondary: 'Thasadith', sans-serif;
 
 @mixin flexbox {
     display: flex;
@@ -33,7 +34,7 @@ button:focus{
 
 .btn {
     font-size: 1.2rem;
-    border: 1px solid rgba(241, 106, 123, .5);
+    border: 1px solid rgba(241, 106, 123, .7);
     border-radius: .7rem;
     padding: .8rem;
     cursor: pointer;
@@ -44,7 +45,7 @@ button:focus{
 .btn:hover {
     color: #fff;
     background-color: rgba(241, 106, 123, .7);
-    border: 1px solid rgba(241, 106, 123, 0); 
+    // border: 1px solid rgba(241, 106, 123, 0); 
 }
 
 .pink-btn {
@@ -61,6 +62,10 @@ button:focus{
     border: 1px solid rgba(242, 242, 242, 1);
     color: rgba(246, 246, 246, 1);
     margin-top: 1rem;
+}
+
+.white-btn:hover {
+    border: 1px solid rgba(242, 242, 242, 0);
 }
 
 .cart-btn {
@@ -144,10 +149,11 @@ button:focus{
             margin-left: 1.5rem;
             margin-right: 1.5rem;
             font-size: 1.2rem;
+            color: rgba(105, 105, 105, 1);
             cursor: pointer;
             font-family: $fontmain;
             font-weight: 200;
-            text-transform: capitalize;
+            text-transform: uppercase;
             transition: .3s;
         }
         .menu-element:hover {
@@ -672,21 +678,49 @@ button:focus{
 
 // ----------------------------- Homepage
 
+.trends {
+    @include flexbox;
+    flex-direction: column;
+    font-family: $fontmain;
+    .trends-bottom-title {
+        margin: .3rem 0rem;
+        text-transform: lowercase;
+        font-family: 'Roboto', sans-serif;
+        color: rgba(105, 105, 105, 1);
+        font-weight: 600;      
+        font-size: 3rem;
+    }
+    .trends-bottom-description {
+        margin: 0rem 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;   
+        color: rgba(105, 105, 105, 1);
+        text-transform: lowercase;
+        font-size: 1.4rem;
+    }
+    .btn {
+        margin-top: 1rem;
+        text-transform: lowercase;
+    }
+}
 .trends-container {
     @include flexbox;
     width: 100%;
-    margin: 5rem 0;
+    // margin: 3rem 0;
+    padding-top: 3rem;
     .trends-card {
         @include flexbox;
-        width: 40rem;
-        height: 40rem;
+        flex-direction: column;
+        width: 39rem;
+        height: 39rem;
         background-size: cover;
         overflow: hidden;
         border-radius: 2%;
-        margin: 0 1.5rem;
-        box-shadow: 0px 0px 50px rgba(105, 105, 105, .3);
+        margin: 0 2rem;
+        box-shadow: 0px 0px 60px rgba(105, 105, 105, .2);
         .trends-text-wrapper {
             @include flexbox;
+            opacity: 0;
             width: 100%;
             height: 100%;
             padding: 1rem;
@@ -698,7 +732,7 @@ button:focus{
                 font-size: 5rem;
                 font-weight: 200;
                 margin: 0;
-                color: rgba(250, 250, 250, .9);
+                color: rgba(250, 250, 250, 1);
                 cursor: default;
             }
             .trends-description {
@@ -707,7 +741,8 @@ button:focus{
             }
         }
         .trends-text-wrapper:hover {
-            background-color: rgba(55, 55, 55, .3);
+            background-color: rgba(55, 55, 55, .4);
+            opacity: 1;
         }
     }
 }
@@ -825,6 +860,9 @@ button:focus{
         text-transform: lowercase;
         letter-spacing: 2px;
     }
+    .title-main-text {
+        font-weight: 600;
+    }
 }
 
 @media (max-width: 800px) {
@@ -834,65 +872,107 @@ button:focus{
 }
 
 // ----------------------------- Selections
-.selections-container {
-    margin-bottom: 4rem;
+.selections {
     @include flexbox;
-    .sel-card {
-        overflow: hidden;
-        width: 25rem;
-        height: 35rem; 
-        border-radius: 3%;
-        margin: 0 1.5rem;
-        box-shadow: 0px 0px 50px rgba(105, 105, 105, .3);
-        .sel-image {
+    flex-direction: column;
+    .main-title {
+        margin: 4rem 0;
+        padding-bottom: 2rem;
+        border-top: 1px solid rgba(105, 105, 105, .1);
+        .title-main-text {
+            text-transform: lowercase;
+            font-size: 3.5rem;
+        }
+        .title-main-desc {
+            font-size: 1.5rem;
+        }
+    }
+    .selections-container {
+        margin-bottom: 6rem;
+        @include flexbox;
+        .sel-wrapper {
             @include flexbox;
-            height: 100%;
-            background-position: center;
-            background-size: cover;
-            cursor: pointer;
-            transition: .3s ease-in-out;
-            .sel-text-wrapper {
-                @include flexbox;
-                flex-direction: column;
-                width: 100%;
-                height: 100%;
-                transition: .3s ease-in-out;
-                .sel-description, .sel-title {
-                    font-size: 1.5rem;
-                    font-family: $fontmain;
-                    color: rgba(246, 246, 246, 1);
-                    font-weight: 200;
-                    margin: 0;
-                    opacity: 0;
-                    cursor: default;
+            flex-direction: column;
+            .sel-card {
+                overflow: hidden;
+                width: 25rem;
+                height: 35rem; 
+                border-radius: 3%;
+                margin: 0 1.5rem;
+                box-shadow: 0px 0px 50px rgba(105, 105, 105, .2);
+                .sel-image {
+                    @include flexbox;
+                    height: 100%;
+                    background-position: center;
+                    background-size: cover;
+                    cursor: pointer;
                     transition: .3s ease-in-out;
+                    .sel-text-wrapper {
+                        @include flexbox;
+                        flex-direction: column;
+                        background-color: rgba(105, 105, 105, .25);
+                        width: 100%;
+                        height: 100%;
+                        transition: .4s ease-in-out;
+                        .sel-description, .sel-title {
+                            font-size: 1.5rem;
+                            font-family: $fontmain;
+                            color: rgba(246, 246, 246, 1);
+                            font-weight: 200;
+                            margin: 0;
+                            opacity: 0;
+                            cursor: default;
+                            transition: .3s ease-in-out;
+                        }
+                        .sel-title {
+                            font-size: 2.5rem;
+                            font-weight: 600;
+                        }
+                        .btn {
+                            opacity: 0;
+                            transition: .3s;
+                        }
+                    }
                 }
-                .sel-title {
-                    font-size: 2.5rem;
-                    opacity: 1;
-                }
-                .btn {
-                    opacity: 0;
-                    transition: .3s;
+            }
+            .sel-card:hover {
+                .sel-image {
+                    transform: scale(1.08);
+                    .sel-text-wrapper {
+                        background-color: rgba(105, 105, 105, .5);
+                        .sel-description, .sel-title {
+                            opacity: 1;
+                        }
+                        .btn {
+                            opacity: 1;
+                        }
+                    }
                 }
             }
         }
-    }
-    .sel-card:hover {
-        .sel-image {
-            transform: scale(1.08);
-            .sel-text-wrapper {
-                background-color: rgba(105, 105, 105, .5);
-                .sel-description {
-                    opacity: 1;
-                }
-                .btn {
-                    opacity: 1;
-                }
+        .sel-bottom-container {
+            @include flexbox;
+            flex-direction: column;
+            .sel-bottom-title {
+                margin: .3rem 0rem;
+                text-transform: lowercase;
+                font-family: $fontmain;
+                font-weight: 600;      
+                font-size: 3rem;
+                margin-top: 1rem;
+                color: rgba(105, 105, 105, 1);
+            }
+            .sel-bottom-desc {
+                margin: 0rem 0;
+                font-family: $fontmain;
+                font-weight: 100;   
+                text-transform: lowercase;
+                font-size: 1.4rem;
             }
         }
     }
 }
+
 
 @media (max-width: 1050px) {
     .selections-container {

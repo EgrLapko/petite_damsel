@@ -22,6 +22,7 @@ export default class MainPage extends Component {
             title = 'segreto'
             description = 'take a look at our new special collection'
             btnName = 'discover'
+            btnName2 = 'Take a look'
             link = 'products/collections/segreto'
           />
 
@@ -30,11 +31,12 @@ export default class MainPage extends Component {
             title = 'summer sale!'
             description = 'up to 60% discount on featured items'
             btnName = 'discover'
+            btnName2 = 'Browse'
             link = 'products/collections/swimwear'
           />
         </div>
 
-        <Parallax
+        {/* <Parallax
           blur={0}
           bgImage={require('../images/parallax/parallax-banner1.jpg')}
           bgImageAlt="parallax-1"
@@ -46,33 +48,36 @@ export default class MainPage extends Component {
             <p className="parallax-description">Check out our brand new swimwear collection</p>
             <Link to="/gallery/images_compart"><button className="btn pink-btn btn-parallax">Browse Gallery</button></Link>
           </div>             
-        </Parallax>
+        </Parallax> */}
 
-        <Title 
-          title = "meet Segreto"
-          description= "Our brand new, highly intimate lingerie collection"
-        />
-
-        <div className = "selections-container">
-          <Selection 
-            url = "./images/selections/sel1.jpg"
-            title = "segreto bridal"
-            description = "for something special"
-            btnName = "browse"
+        
+        <div className="selections">
+          <Title 
+            title = "meet Segreto"
+            description= "(Made to be your special secret. our new lingerie collection)"
           />
-          <Selection 
-            url = "./images/selections/sel2.jpg"
-            title = "segreto lingerie"
-            description = "for something personal"
-            btnName = "browse"
-          />
-          <Selection 
-            url = "./images/selections/sel3.jpg"
-            title = "segreto hosiery"
-            description = "for something tender"
-            btnName = "browse"
-          />
+          <div className = "selections-container">
+            <Selection 
+              url = "./images/selections/sel1.jpg"
+              title = "segreto. bridal"
+              description = "for something special"
+              btnName = "browse"
+            />
+            <Selection 
+              url = "./images/selections/sel2.jpg"
+              title = "segreto. lingerie"
+              description = "for something personal"
+              btnName = "browse"
+            />
+            <Selection 
+              url = "./images/selections/sel3.jpg"
+              title = "segreto. hosiery"
+              description = "for something tender"
+              btnName = "browse"
+            />
+          </div>
         </div>
+        
 
         <Parallax
           blur={0}
