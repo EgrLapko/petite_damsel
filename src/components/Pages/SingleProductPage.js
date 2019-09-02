@@ -4,9 +4,29 @@ import {Link} from 'react-router-dom';
 import Recent from '../ProductspageComp/Recent';
 export default class SingleProductPage extends Component {
 
+  state = {
+    cupSize: '',
+    usualSize: '',
+    uniSize: '',
+    shoeSize: '',
+    tightsSize: ''
+  }
+
   componentDidMount() {
     window.scrollTo(0, 0);
   }
+
+  pickSizeCup = (cup) => {
+    this.setState({
+      cupSize: cup
+      })
+    }
+
+  pickSize = (size) => {
+    this.setState({
+      usualSize: size
+      })
+    }
 
   render() {
     return (
@@ -50,8 +70,6 @@ export default class SingleProductPage extends Component {
               itemsCups.splice(index, 1)};
 
               return (
-
-
                 <div className="single-product-page">
                   <div className="details-content">
                     <div className="details-images-container">
@@ -68,6 +86,7 @@ export default class SingleProductPage extends Component {
                           <p className="details-description"> {description} </p>
                         </div>
                         <div className="details-filter">
+
                           {type === "Bras" || category === "Accessories, bodysuits" ?
                               <div className="size-filter-box">
                                 <div className="size-box">
@@ -75,7 +94,7 @@ export default class SingleProductPage extends Component {
                                   <ul className="size-list">
                                     {itemsCups.map((cup, index) => {
                                       return (
-                                        <li key={index} className="filter-item" onClick={() => console.log(cup)}> {cup}</li>
+                                        <li key={index} className={"filter-item " + (this.state.cupSize === cup ? "filter-active" : null)} onClick={() => {this.pickSizeCup(cup)}}> {cup}</li>
                                       )
                                     }
                                     )}
@@ -86,7 +105,7 @@ export default class SingleProductPage extends Component {
                                   <ul className="size-list">
                                     {itemsSizes.map((size, index) => {
                                       return (
-                                        <li key={index} className="filter-item"> {size} </li>
+                                        <li key={index} className={"filter-item " + (this.state.usualSize === size ? "filter-active" : null)} onClick={() => {this.pickSize(size)}}> {size} </li>
                                       )
                                     }
                                     )}
@@ -94,6 +113,7 @@ export default class SingleProductPage extends Component {
                                 </div> 
                               </div>                  
                           : null}
+
                           {type === "Panties" || type === "Sleepwear" || category === "Accessories, tights" || category === "Accessories, slippers" ?
                             <div className="size-filter-box">
                               <div className="size-box">
