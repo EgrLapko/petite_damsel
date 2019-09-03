@@ -6,8 +6,8 @@ export default function Footer() {
         <div className="footer-container">
           <div className="account-container">
             <div className="maintag">My Account</div>
-            <div className="account-item">Login</div>
-            <div className="account-item">Register</div>
+            <div className="footer-item">Login</div>
+            <div className="footer-item">Register</div>
           </div>
 
           <div className="subscribe-container">
@@ -24,13 +24,13 @@ export default function Footer() {
 
           <div className="about-container">
             <div className="maintag">Our name:</div>
-            <div className="about-item">About Us</div>
-            <div className="about-item">Job Opportunities</div>
-            <div className="about-item">Customer Service</div>
+            <div className="footer-item">About Us</div>
+            <div className="footer-item">Job Opportunities</div>
+            <div className="footer-item">Customer Service</div>
           </div>
         </div>
         <div className="under-part">
-          <p className="under-text">©2019 Petite Damsel Limited. Made by Yehor Lapko</p>
+          <p className="under-text">©2019 Petite Damsel. Made by Yehor Lapko. </p>
         </div>
       </div>
     )

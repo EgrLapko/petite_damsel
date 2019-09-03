@@ -146,14 +146,13 @@ button:focus{
         margin: 0;
         padding: 0;
         .menu-element, .menu-element-small {
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
-            font-size: 1.2rem;
+            margin: 0rem 1.5rem;
+            font-size: 1.5rem;
             color: rgba(105, 105, 105, 1);
             cursor: pointer;
             font-family: $fontmain;
-            font-weight: 200;
-            text-transform: uppercase;
+            // font-weight: 600;
+            text-transform: lowercase;
             transition: .3s;
         }
         .menu-element:hover {
@@ -255,7 +254,7 @@ button:focus{
     margin: 0;
     padding: 0;
     list-style-type: none;
-    background-color: rgba(246, 246, 246, .8);
+    background-color: rgba(246, 246, 246, .9);
     box-shadow: 0px 20px 20px rgba(106, 105, 105, .1);
     position: fixed;
     width: 100%;
@@ -266,18 +265,21 @@ button:focus{
         @include flexbox;
         flex-direction: column;
         margin: 0 2rem;
+        width: 9rem;
         .slidebar-link {
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             font-family: $fontmain;
-            color: rgba(0, 0, 0, .9);
+            // font-weight: 600;
+            color: rgba(105, 105, 105, 1);
             padding: .5rem;
-            text-transform: capitalize;
+            text-transform: lowercase;
             transition: .3s;
         }
         .slidebar-link:hover {
             color: rgba(241, 106, 123, .9);
         }
         img {
+            width: 100%;
             cursor: pointer;
             transition: .3s;
         }
@@ -423,45 +425,56 @@ button:focus{
 
 
 // ----------------------------- Footer
+
+.maintag {
+    font-size: 1.8rem;
+    font-family: $fontmain;
+    font-weight: 600;
+    text-transform: lowercase;
+    padding: .5rem 0rem;
+    color: rgba(105, 105, 105, 1);
+    border-bottom: 1px solid rgba(105, 105, 105, .2);
+}
+
+.footer-item {
+    font-family: $fontmain;
+    text-transform: lowercase;
+    margin-top: .8rem;
+    font-size: 1.3rem;
+    color: rgba(106, 105, 105, 1);
+    cursor: pointer;
+    transition: .4s;
+    font-weight: 400;
+}
+.footer-item:hover {
+    transform: translateX(5px);
+    color: rgba(241, 106, 123, .9);
+}
+
+
 .footer-container {
     @include flexbox;
     justify-content: space-around;
+    align-items: flex-start;
     min-height: 12rem;
     flex-wrap: wrap;
+    padding: 1rem 0;
     background-color: rgba(242, 242, 242, .1);
     box-shadow: 0px 20px 20px rgba(0, 0, 0, .05);
     .account-container {
         @include flexbox;
         flex-direction: column;
         padding: 1rem;
-        .maintag {
-            font-size: 1.2rem;
-            font-family: $fontmain;
-            text-transform: uppercase;
-            color: rgba(105, 105, 105, 1);
-        }
-        .account-item {
-            font-family: $fontmain;
-            margin-top: .8rem;
-            line-height: 1.3rem;
-            font-size: 1.1rem;
-            color: rgba(106, 105, 105, 1);
-            cursor: pointer;
-            transition: .4s;
-            font-weight: 300;
-        }
-        .account-item:hover {
-            transform: translateX(5px);
-        }
     }
     .subscribe-container {
         @include flexbox;
         flex-direction: column;
         flex-wrap: wrap;
         .sub-text {
-            text-transform: uppercase;
+            text-transform: lowercase;
             font-family: $fontmain;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
+            font-weight: 600;
             color: rgba(106, 105, 105, 1);
             width: 80%;
             text-align: center;
@@ -477,10 +490,14 @@ button:focus{
                     border: 1px solid #ddd;
                     font-family: $fontmain;
                     font-size: 1.1rem;
+                    border-radius: 10px;
                 }
                 .submit {
                     padding: .7rem;
+                    margin: 0;
                     margin-left: 1rem;
+                    text-transform: lowercase;
+                    font-size: 1.3rem;
                 }
             }
         }
@@ -489,12 +506,7 @@ button:focus{
             @include flexbox;
             flex-direction: column;
             padding: 1rem;
-            .maintag {
-                font-size: 1.2rem;
-                font-family: $fontmain;
-                text-transform: uppercase;
-                color: rgba(105, 105, 105, 1);
-            }
+            
             .about-item {
                 font-family: $fontmain;
                 margin-top: .8rem;
@@ -515,12 +527,11 @@ button:focus{
     @include flexbox;
     justify-content: flex-start;
     width: 100%;
-    border-top: 1px solid rgba(241, 106, 123, .2);
-    background-color: rgba(242, 242, 242, 0.5);
+    border-top: 1px solid rgba(105, 105, 105, .1);
     .under-text {
         font-family: $fontmain;
+        font-weight: 600;
         margin-left: 1rem;
-        color: rgba(106, 105, 105, 1);
         font-size: .9rem;
       }
 }
@@ -789,16 +800,17 @@ button:focus{
     height: 30rem;
     transition: .4s ease-in-out;
     text-align: center;
+    background-color: rgba(105, 105, 105, .5);
     .parallax-title {
         margin: 0;
-        font-size: 4rem;
+        font-size: 4.3rem;
         font-family: $fontmain;
         color: rgba(246, 246, 246, 1);
-        font-weight: 200;
+        font-weight: 600;
         cursor: default;
     }
     .parallax-description {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: $fontmain;
         margin: 0;
         opacity: 1;
@@ -819,7 +831,7 @@ button:focus{
     }
 }
 .parallax-content-section:hover {
-    background-color: rgba(105, 105, 105, .4);
+    background-color: rgba(105, 105, 105, .7);
 }
 
 @media (max-width: 800px) {
@@ -877,7 +889,6 @@ button:focus{
     flex-direction: column;
     .main-title {
         margin: 4rem 0;
-        padding-bottom: 2rem;
         border-top: 1px solid rgba(105, 105, 105, .1);
         .title-main-text {
             text-transform: lowercase;
@@ -885,11 +896,14 @@ button:focus{
         }
         .title-main-desc {
             font-size: 1.5rem;
+            margin-top: .5rem;
         }
     }
     .selections-container {
-        margin-bottom: 6rem;
         @include flexbox;
+        justify-content: space-around;
+        width: 80%;
+        margin-bottom: 6rem;
         .sel-wrapper {
             @include flexbox;
             flex-direction: column;
@@ -898,7 +912,6 @@ button:focus{
                 width: 25rem;
                 height: 35rem; 
                 border-radius: 3%;
-                margin: 0 1.5rem;
                 box-shadow: 0px 0px 50px rgba(105, 105, 105, .2);
                 .sel-image {
                     @include flexbox;
@@ -910,7 +923,7 @@ button:focus{
                     .sel-text-wrapper {
                         @include flexbox;
                         flex-direction: column;
-                        background-color: rgba(105, 105, 105, .25);
+                        background-color: rgba(105, 105, 105, .15);
                         width: 100%;
                         height: 100%;
                         transition: .4s ease-in-out;
@@ -937,7 +950,7 @@ button:focus{
             }
             .sel-card:hover {
                 .sel-image {
-                    transform: scale(1.08);
+                    transform: scale(1.1);
                     .sel-text-wrapper {
                         background-color: rgba(105, 105, 105, .5);
                         .sel-description, .sel-title {
@@ -968,6 +981,9 @@ button:focus{
                 font-weight: 100;   
                 text-transform: lowercase;
                 font-size: 1.4rem;
+            }
+            .btn {
+                margin-top: 1rem;
             }
         }
     }
@@ -1028,6 +1044,23 @@ button:focus{
 
 // ----------------------------- Instagram section
 
+.insta-section {
+    @include flexbox;
+    flex-direction: column;
+    .main-title {
+        margin: 4rem 0;
+        border-top: 1px solid rgba(105, 105, 105, .1);
+        .title-main-text {
+            text-transform: lowercase;
+            font-size: 3.5rem;
+        }
+        .title-main-desc {
+            font-size: 1.5rem;
+            margin-top: .5rem;
+        }
+    }
+}
+
 .insta-container {
     @include flexbox;
     justify-content: center;
@@ -1035,21 +1068,22 @@ button:focus{
     .insta-card {
         @include flexbox;
         background-size: cover;
-        width: 18rem;
-        height: 18rem;
+        width: 17rem;
+        height: 17rem;
         margin: 1rem 1rem;
         border-radius: 5%;
-        box-shadow: 0px 0px 30px rgba(105, 105, 105, .3);
+        box-shadow: 0px 0px 40px rgba(105, 105, 105, .2);
         cursor: pointer;
         .middle {
             @include flexbox;
             width: 80%;
             height: 80%;
-            background-color: rgba(0, 0, 0, .3);
+            background-color: rgba(105, 105, 105, .7);
+            border-radius: 5%;
             opacity: 0;
             transition: .3s;
             .insta-link {
-                font-size: 1.2rem;
+                font-size: 1.3rem;
                 opacity: 1;
                 color: rgba(242, 242, 242, 1);
                 font-family: $fontmain;
@@ -1083,7 +1117,46 @@ button:focus{
         flex-wrap: wrap;
         width: 85%;
     }
+    .main-title {
+        margin: 4rem 0;
+        border-top: 1px solid rgba(105, 105, 105, .1);
+        .title-main-text {
+            text-transform: lowercase;
+            font-size: 3.5rem;
+        }
+        .title-main-desc {
+            font-size: 1.5rem;
+            margin-top: .5rem;
+        }
+    }
 }
+
+// ----------------------------- SLIDER FEATURED
+.slider-container {
+    width: 70%;
+    padding: 2rem;
+    background-color: rgba(105, 105, 105, .01);
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, .05);
+    border-radius: 15px;
+    margin-bottom: 5rem;
+}
+
+.slick-slide div {
+    @include flexbox;
+}
+
+.slick-slider {
+    padding: 2rem 2rem;
+}
+
+.slick-next:before, .slick-prev:before {
+    color: rgba(105, 105, 105, .5);
+}
+  
+// .slick-slide img {
+//     margin: auto;
+//     width: 11rem;
+// }
 
 // ----------------------------- Featured Section
 
@@ -1224,8 +1297,8 @@ button:focus{
 }
 
 .card-small {
-    width: 16rem;
-    height: 30rem;
+    width: 14rem;
+    height: 27rem;
     padding: .5rem;
     background-color: none;
     box-shadow: none;
@@ -1236,8 +1309,15 @@ button:focus{
         }
     }
     .product-details {
+        .product-category {
+            font-size: .6rem;
+            letter-spacing: .1rem;
+        }
         .product-title {
-            font-size: 1.1rem;
+            font-size: 1rem;
+            text-transform: lowercase;
+            font-weight: 600;
+            color: rgba(105, 105, 105, 1);
         }
         
     }
@@ -1247,12 +1327,22 @@ button:focus{
                 font-size: .8rem;
             }       
         }
+        .price-crossed {
+            text-decoration: line-through;
+            font-size: .9rem;
+            color: rgba(105, 105, 105, 1);
+            font-weight: 600;
+        }
+        .featured-price {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
     }
 }
 
 .card-small:hover {
-    box-shadow: 0px 0px 100px rgba(0, 0, 0, .2);
-    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .05);
+    // transform: scale(1.05);
 }
 
 .card-normal {
@@ -1807,4 +1897,7 @@ button:focus{
         }
     }  
 }
+
+
+
 

@@ -20,19 +20,23 @@ export default class MainPage extends Component {
           <Trends 
             url = './images/homepage_ads/trends1.jpg'
             title = 'segreto'
-            description = 'take a look at our new special collection'
+            description = 'tender, intimate, made special for you'
             btnName = 'discover'
-            btnName2 = 'Take a look'
+            btnName2 = 'browse'
             link = 'products/collections/segreto'
+            titleBottom = 'segreto'
+            descBottom = 'take a look at our new special collection'
           />
 
           <Trends 
             url = './images/homepage_ads/trends2.jpg'
-            title = 'summer sale!'
-            description = 'up to 60% discount on featured items'
-            btnName = 'discover'
-            btnName2 = 'Browse'
+            title = 'hello, summer!'
+            description = 'new day - new discounts, it`s that easy'
+            btnName = 'shop featured'
+            btnName2 = 'shop'
             link = 'products/collections/swimwear'
+            titleBottom = 'summer sale!'
+            descBottom = 'up to 60% discount on featured items'
           />
         </div>
 
@@ -54,26 +58,26 @@ export default class MainPage extends Component {
         <div className="selections">
           <Title 
             title = "meet Segreto"
-            description= "(Made to be your special secret. our new lingerie collection)"
+            description= "(Our new lingerie collection. Made to be your special secret)"
           />
           <div className = "selections-container">
             <Selection 
               url = "./images/selections/sel1.jpg"
               title = "segreto. bridal"
               description = "for something special"
-              btnName = "browse"
+              btnName = "discover"
             />
             <Selection 
               url = "./images/selections/sel2.jpg"
               title = "segreto. lingerie"
               description = "for something personal"
-              btnName = "browse"
+              btnName = "discover"
             />
             <Selection 
               url = "./images/selections/sel3.jpg"
               title = "segreto. hosiery"
               description = "for something tender"
-              btnName = "browse"
+              btnName = "discover"
             />
           </div>
         </div>
@@ -94,14 +98,23 @@ export default class MainPage extends Component {
           </div>             
         </Parallax>
 
-        <Title 
-          title = "show us your #pd look"
-          description= "share your look with us, add #iampd to your image"
-        />
-
-        <InstagramSection />
-
-        <Featured />
+      
+        <div className="insta-section">
+          <Title 
+            title = "show us your pd look"
+            description= "share your look with us, add #iampd to your image and watch yourself on our main page!"
+          />
+          <InstagramSection />
+        </div>
+        
+        <div className="featured-section">
+          <Title 
+            title="todays featured" 
+            description= "Sale sale sale! "
+          />
+          <Featured />
+        </div>
+        
 
       </React.Fragment>
     )

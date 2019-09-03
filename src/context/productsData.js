@@ -467,7 +467,7 @@ export const items = [
       type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
-      featured: false,
+      featured: true,
       inCart: false,
       color: ["all", "blue"],
       cup: ["all", "A", "B"],
@@ -1047,7 +1047,7 @@ export const items = [
       type: "Bras",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
-      featured: false,
+      featured: true,
       inCart: false,
       color: ["all", "pink"],
       cup: ["all", "B", "C", "D"],
@@ -1467,7 +1467,7 @@ export const items = [
       type: "Panties",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
-      featured: false,
+      featured: true,
       inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
@@ -4647,7 +4647,7 @@ export const items = [
       type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
-      featured: false,
+      featured: true,
       inCart: false,
       color: ["all", "black"],
       cup: ["all", "C", "D"],
@@ -4667,7 +4667,7 @@ export const items = [
       type: "Accessories",
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
-      featured: false,
+      featured: true,
       inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "B", "D"],
