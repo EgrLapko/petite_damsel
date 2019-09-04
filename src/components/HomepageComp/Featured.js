@@ -10,8 +10,8 @@ export default class Featured extends Component {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 4
+      slidesToShow: 5,
+      slidesToScroll: 5
     };
     return (
       // <div className="featured-items">

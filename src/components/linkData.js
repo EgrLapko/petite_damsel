@@ -4,14 +4,14 @@ export const linkData = [
         id: 1,
         text: 'classic',
         path: '/products/bras_classic',
-        image: 'https://i.imgur.com/ZdQ9d3e.jpg',
+        image: 'https://i.imgur.com/xmwMojR.jpg',
         type: 'bra'
     },
     {
         id: 2,
         text: 'pushup',
         path: '/products/bras_pushup',
-        image: 'https://i.imgur.com/sOzBKUa.jpg',
+        image: 'https://i.imgur.com/qAHmGb3.jpg',
         type: 'bra'
     },
     {
@@ -107,7 +107,7 @@ export const linkData = [
     },
     {
         id: 16,
-        text: 'body',
+        text: 'bodysuits',
         path: '/products/accessories_bodysuits',
         image: 'https://i.imgur.com/OPJjUfJ.jpg',
         type: 'accs'

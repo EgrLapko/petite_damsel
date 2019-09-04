@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Selections extends Component {
   render() {
 
-    const {url, description, title, btnName} = this.props;
+    const {url, description, title, btnName, titleBottom, descBottom, btnNameBottom} = this.props;
     const divstyle = {backgroundImage: `url(${url})`};
 
     return (
@@ -18,9 +18,9 @@ export default class Selections extends Component {
           </div>                        
         </div>
         <div className="sel-bottom-container">
-          <h2 className="sel-bottom-title">{title}</h2>
-          <h4 className="sel-bottom-desc">{description}</h4>
-          <button className="btn" > {btnName} </button>  
+          <h2 className="sel-bottom-title">{titleBottom}</h2>
+          <h4 className="sel-bottom-desc">{descBottom}</h4>
+          <button className="btn" > {btnNameBottom} </button>  
         </div>
       </div>    
     )

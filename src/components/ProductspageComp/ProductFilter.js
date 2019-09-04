@@ -51,9 +51,9 @@ export default class ProductFilter extends Component {
           return (
             <div className="filter-wrapper">
               {/* ----- Text search */}
-              <div className="filter search-filter">
+              {/* <div className="filter search-filter">
                 <input type="text" name="search" id='search' onChange={handleChange} value={search} placeholder = "Enter a title" className="filter-item"/>
-              </div>     
+              </div>      */}
               {/* Search by color */}
               <div className="filter color-filter">
                 <p className="filter-title" onClick={(t) => { handleColorFilter(); ;}}>Color <i className="fas fa-sort-down"></i></p>
@@ -133,7 +133,7 @@ export default class ProductFilter extends Component {
 
               {/* Search by TIGHTS size */}
               <div className={"filter size-filter " + (tightsSize ? "tights-size-filter-visible" : null)}>
-                <p className="filter-title" onClick={handleSizeFilter}>Size <i className="fas fa-sort-down"></i></p>
+                <p className="filter-title" onClick={() =>handleSizeFilter}>Size <i className="fas fa-sort-down"></i></p>
                   <ul className = {"filter-list tights-list " + (sizeFilter ? "tights-container-visible" : null)}>
                     {tightsSizeSet.map((tightsSize, index) => {
                       return (

@@ -31,23 +31,7 @@ export default class ProductCard extends Component {
               <div className="product-details">
                 <p className="product-category"> {product.category} </p>
                 <Link to={`/products/single/${product.id}`}>
-                  <p className="product-title"> {product.title} 
-                    <span>
-                      <button 
-                      className={"cart-btn " + (product.inCart ? "cart-active" : null)} 
-                      onClick={() => addToCart(product.id)}
-                      disabled={product.inCart ? true : false}
-                      >
-                      {product.inCart ? (
-                                <p className="in-cart-sign" disabled>
-                                  In Cart
-                                </p>
-                              ) : (
-                                null
-                              )}  
-                      </button>
-                    </span>
-                  </p>
+                  <p className="product-title"> {product.title}</p>
                 </Link>
 
               </div>
@@ -70,6 +54,18 @@ export default class ProductCard extends Component {
                   }) : null}
 
                 </ul>
+                <button 
+                  className={"cart-btn " + (product.inCart ? "cart-active" : null)} 
+                  onClick={() => addToCart(product.id)}
+                  >
+                  {product.inCart ? (
+                            <p className="in-cart-sign" disabled>
+                              In Cart
+                            </p>
+                          ) : (
+                            <i className="fas fa-cart-plus"/>
+                          )}  
+                </button>
               </div>
             </div>
           )

@@ -39,11 +39,14 @@ class ProductProvider extends Component {
         colorFilter: false,
         sizeFilter: false,
         sizePanties: false,
+        brasToCart: {
+            chosenCup: '',
+            chosenSize: ''
+        }
     };
 
 componentDidMount() {
 // --- from contentful items
-console.log(this.state.cart)
     this.setProducts(items);
 }
 
@@ -455,6 +458,26 @@ sortData = () => {
         }, this.sortData)
     }
 
+// -------------------------------------------------------------- ADD SIZES BEFORE ADDING TO CART
+
+chooseBraSize = (size) => {
+    this.setState({
+        brasToCart: {
+            ...this.state.brasToCart,
+            chosenSize: size,
+        },
+    }, console.log(`Chosen size - ${size}`));
+}
+
+chooseBraCup = (cup) => {
+    this.setState({
+        brasToCart: {
+            ...this.state.brasToCart,
+            chosenCup: cup,
+        },
+    }, console.log(`Chosen cup - ${cup}`));
+}
+
     render() {
 
         return (
@@ -491,7 +514,9 @@ sortData = () => {
                 dropSizeFilter: this.dropSizeFilter,
                 dropCupFilter: this.dropCupFilter,
                 dropPriceFilter: this.dropPriceFilter,
-                recentItems: this.recentItems
+                recentItems: this.recentItems,
+                chooseBraSize: this.chooseBraSize,
+                chooseBraCup: this.chooseBraCup
             }}>
                 {/* Super important stuff */}
                 {this.props.children}

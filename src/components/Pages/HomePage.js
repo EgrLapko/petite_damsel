@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
 
 import Trends from '../HomepageComp/Trends';
 import { Parallax } from 'react-parallax';
@@ -24,7 +23,7 @@ export default class MainPage extends Component {
             btnName = 'discover'
             btnName2 = 'browse'
             link = 'products/collections/segreto'
-            titleBottom = 'segreto'
+            titleBottom = 'segreto collection'
             descBottom = 'take a look at our new special collection'
           />
 
@@ -65,19 +64,25 @@ export default class MainPage extends Component {
               url = "./images/selections/sel1.jpg"
               title = "segreto. bridal"
               description = "for something special"
-              btnName = "discover"
+              btnName = "open"
+              titleBottom = "segreto. bridal"
+              btnNameBottom = "discover"
             />
             <Selection 
               url = "./images/selections/sel2.jpg"
               title = "segreto. lingerie"
               description = "for something personal"
-              btnName = "discover"
+              btnName = "open"
+              titleBottom = "segreto. lingerie"
+              btnNameBottom = "discover"
             />
             <Selection 
               url = "./images/selections/sel3.jpg"
               title = "segreto. hosiery"
               description = "for something tender"
-              btnName = "discover"
+              btnName = "open"
+              titleBottom = "segreto. hosiery"
+              btnNameBottom = "discover"
             />
           </div>
         </div>
@@ -110,7 +115,7 @@ export default class MainPage extends Component {
         <div className="featured-section">
           <Title 
             title="todays featured" 
-            description= "Sale sale sale! "
+            description= "Our todays discounts! Check the full page for more!"
           />
           <Featured />
         </div>

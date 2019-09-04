@@ -151,7 +151,7 @@ button:focus{
             color: rgba(105, 105, 105, 1);
             cursor: pointer;
             font-family: $fontmain;
-            // font-weight: 600;
+            font-weight: 600;
             text-transform: lowercase;
             transition: .3s;
         }
@@ -254,24 +254,25 @@ button:focus{
     margin: 0;
     padding: 0;
     list-style-type: none;
-    background-color: rgba(246, 246, 246, .9);
+    background-color: rgba(246, 246, 246, .95);
     box-shadow: 0px 20px 20px rgba(106, 105, 105, .1);
     position: fixed;
     width: 100%;
     z-index: 1;
-    transition: all .5s ease-in-out;
+    transition: all .4s ease-in-out;
     transform: translateY(-120%);
+    opacity: .5;
     .slidebar-item {
         @include flexbox;
         flex-direction: column;
         margin: 0 2rem;
         width: 9rem;
         .slidebar-link {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             font-family: $fontmain;
-            // font-weight: 600;
+            font-weight: 600;
             color: rgba(105, 105, 105, 1);
-            padding: .5rem;
+            padding: .8rem;
             text-transform: lowercase;
             transition: .3s;
         }
@@ -292,6 +293,7 @@ button:focus{
 .bar-visible {
     transform: translateY(0%);
     visibility: visible;
+    opacity: 1;
 }
 
 @media (max-width: 750px) {
@@ -859,6 +861,7 @@ button:focus{
     text-align: center;
     padding: 1rem;
     border-bottom: 1px solid rgba(105, 105, 105, .1);
+    border-top: 1px solid rgba(105, 105, 105, .1);
     .title-main-text, .title-main-desc {
         font-size: 3rem;
         font-family: $fontmain;
@@ -1185,7 +1188,7 @@ button:focus{
 .product-card {
     @include flexbox;
     flex-direction: column;
-    width: 22rem;
+    // width: 22rem;
     box-shadow: 0px 0px 50px rgba(105, 105, 105, .1);
     border: 1px solid rgba(105, 105, 105, .1);
     overflow: hidden;
@@ -1209,10 +1212,9 @@ button:focus{
             font-family: $fontmain;
             cursor: default;
             font-size: .8rem;
-            font-weight: 700;
+            font-weight: 600;
             letter-spacing: .2rem;
-            margin: 0;
-            margin-top: .5rem;
+            margin: .5rem 0;
             text-transform: uppercase;
             color: #ccc;
         }
@@ -1220,12 +1222,12 @@ button:focus{
             @include flexbox;
             font-weight: 200;
             font-family: $fontmain;
-            text-transform: none;
+            text-transform: lowercase;
             font-size: 1.3rem;
+            font-weight: 600;
             margin: 0;
-            margin-top: .5rem; 
-            padding: .3rem;
-            color: rgba(55, 55, 55, 1);
+            margin: .7rem 0;
+            color: rgba(105, 105, 105, 1);
             cursor: pointer;
             transition: .3s;
         }
@@ -1366,6 +1368,9 @@ button:focus{
         .filters-display-item {
             margin: 0 1rem;
             font-family: $fontmain;
+            text-transform: lowercase;
+            color: rgba(105, 105, 105, 1);
+            font-size: 1.2rem;
         }
     }
 }
@@ -1514,6 +1519,7 @@ button:focus{
                     @include flexbox;
                     width: 100%;
                     justify-content: space-around;
+                    background-color: yellow;
                     .btn-details-back {
                         margin: 0;
                         font-size: 1.3rem;
@@ -1649,6 +1655,9 @@ button:focus{
         .filter-title {
             cursor: pointer;
             font-family: $fontmain;
+            text-transform: lowercase;
+            font-size: 1.2rem;
+            color: rgba(105, 105, 105, 1);
         }
         .filter-list, .price-container{
             @include flexbox;
@@ -1658,7 +1667,7 @@ button:focus{
             opacity: 0;
             visibility: hidden;
             z-index: 1;
-            font-size: 1rem;
+            font-size: 1.3rem;
             width: 9rem;
             min-height: 13rem;
             padding: 1rem;
@@ -1671,11 +1680,15 @@ button:focus{
             transition: .4s;
             .filter-btns {
                 @include flexbox;
+                width: 100%;
+                justify-content: space-around;
                 .apply-btn, .remove-btn {
-                    font-size: 1rem;
+                    font-size: 1.1rem;
                     padding: .5rem;
-                    margin: 0 .3rem;
                     margin-top: .5rem;
+                    font-size: 600;
+                    text-transform: lowercase;
+                    color: rgba(105, 105, 105, 1);
                 }
                 .apply-btn {
                     border: 1px solid rgba(95, 174, 87, .6);
@@ -1685,6 +1698,9 @@ button:focus{
                     background-color: rgba(95, 174, 87, .6);
                     color: rgba(250, 250, 250, .9);
                     border: 1px solid rgba(95, 174, 87, 0);
+                }
+                .remove-btn:hover {
+                    color: rgba(250, 250, 250, .9);
                 }
             }
             .size-btns {
@@ -1698,8 +1714,8 @@ button:focus{
                 @include flexbox;
                 width: 40%;
                 font-family: $fontmain;
-                text-transform: capitalize;
-                font-size: 1.1rem;
+                text-transform: lowercase;
+                font-size: 1.2rem;
                 padding: .3rem;
                 margin: 0 ;
                 cursor: pointer;
@@ -1707,6 +1723,7 @@ button:focus{
             }
             .active-item {
                 color: rgba(241, 106, 123, 1);
+                font-weight: 600;
             }
             .filter-item:hover {
                 color: rgba(241, 106, 123, .9);
@@ -1824,8 +1841,9 @@ button:focus{
     padding: 0;
     .local-nav-item {
         font-family: $fontmain;
-        font-size: 1.3rem;
-        text-transform: capitalize;
+        font-size: 1.6rem;
+        color: rgba(105, 105, 105, 1);
+        text-transform: lowercase;
         transition: .3s;
         padding: .5rem;
         margin: 0 1.5rem;
@@ -1843,6 +1861,8 @@ button:focus{
 
 .link-active {
     color: rgba(241, 106, 123, 1);
+    border-bottom: 1px solid rgba(241, 106, 123, .3);
+    font-weight: 600;
 }
 
 // ----------------------------- Collections Page
