@@ -16,7 +16,7 @@ export default class ProductCard extends Component {
     return (
       <ProductConsumer>
         {value => {
-          const {addToCart, setSingleProduct, recentItems} = value;
+          const {setSingleProduct, recentItems, cart} = value;
           return (
             <div className={"product-card " + (cardSize === "small" ? "card-small" : "card-normal")}>
               <div className="image-container">
@@ -56,7 +56,7 @@ export default class ProductCard extends Component {
                   }) : null}
 
                 </ul>
-                  {product.inCart 
+                  {cart.find(item => item.id === product.id)  
                       ? 
                       <div className="card-in-cart-sign">
                         <i className="fas fa-shopping-bag"/>

@@ -9,7 +9,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "green"],
       cup: ["all", "A", "B", "C"],
       sizes: ["all","70", "75", "80"],
@@ -29,7 +28,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", "A", "B", "C", "D"],
       sizes: ["all","70", "75", "80"],
@@ -49,7 +47,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", "A", "B", "D"],
       sizes: ["all","70", "75"],
@@ -69,7 +66,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", "C", "D"],
       sizes: ["all","70", "75", "80", "85"],
@@ -89,7 +85,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "green"],
       cup: ["all", "A", "B", "C"],
       sizes: ["all","85"],
@@ -109,7 +104,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "purple"],
       cup: ["all", "A", "B"],
       sizes: ["all","70", "75"],
@@ -148,7 +142,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", "B"],
       sizes: ["all","70", "75", "80", "85"],
@@ -168,7 +161,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", "A", "B", "C", "D"],
       sizes: ["all","70"],
@@ -188,7 +180,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "B", "C", "D"],
       sizes: ["all","70", "85"],
@@ -208,7 +199,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", "A", "B", "C", "D"],
       sizes: ["all","70", "75"],
@@ -228,7 +218,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", "A", "B"],
       sizes: ["all","80", "85"],
@@ -248,7 +237,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "C"],
       sizes: ["all","70", "75", "85"],
@@ -268,7 +256,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", "A", "D"],
       sizes: ["all","70", "75", "80", "85"],
@@ -288,7 +275,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "B"],
       sizes: ["all","70", "75", "80", "85"],
@@ -308,7 +294,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", "A", "B", "C", "D"],
       sizes: ["all","70", "75", "80"],
@@ -328,7 +313,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", "A", "B", "C"],
       sizes: ["all","70", "75", "80"],
@@ -348,7 +332,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "B", "C"],
       sizes: ["all","70", "75", "80"],
@@ -368,7 +351,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", "B", "C", "D"],
       sizes: ["all","70", "75", "80"],
@@ -388,7 +370,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", "A", "B"],
       sizes: ["all","70", "75", "80"],
@@ -408,7 +389,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "B", "C", "D"],
       sizes: ["all","70", "75", "80", "85"],
@@ -428,7 +408,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", "A", "B", "C", "D"],
       sizes: ["all","70", "75", "80", "85"],
@@ -448,7 +427,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "purple"],
       cup: ["all", "A", "C", "D"],
       sizes: ["all","70", "75", "85"],
@@ -468,7 +446,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: true,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", "A", "B"],
       sizes: ["all","70", "75"],
@@ -488,7 +465,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "green"],
       cup: ["all", "A", "B", "D"],
       sizes: ["all","70", "85"],
@@ -508,7 +484,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "D"],
       sizes: ["all","70", "75", "80", "85"],
@@ -528,7 +503,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "green"],
       cup: ["all", "A", "B"],
       sizes: ["all","70", "75", "80", "85"],
@@ -548,7 +522,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "purple"],
       cup: ["all", "A", "B", "D"],
       sizes: ["all","70", "75"],
@@ -568,7 +541,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "purple"],
       cup: ["all", "A", "B"],
       sizes: ["all","70", "75"],
@@ -588,7 +560,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", "A", "B"],
       sizes: ["all","70", "75"],
@@ -608,7 +579,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "gray"],
       cup: ["all", "A", "B"],
       sizes: ["all","70", "75"],
@@ -628,7 +598,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "C"],
       sizes: ["all","70", "75"],
@@ -648,7 +617,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", "A", "B"],
       sizes: ["all","70", "75"],
@@ -668,7 +636,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", "B", "C", "D"],
       sizes: ["all", "80", "85"],
@@ -688,7 +655,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "D"],
       sizes: ["all", "80", "85"],
@@ -708,7 +674,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", "A", "D"],
       sizes: ["all","70", "85"],
@@ -728,7 +693,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "B"],
       sizes: ["all","70"],
@@ -748,7 +712,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", "A", "B", "D"],
       sizes: ["all","70", "75", "85"],
@@ -768,7 +731,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: true,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "B"],
       sizes: ["all","70", "75"],
@@ -788,7 +750,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", "A", "B"],
       sizes: ["all","70", "75"],
@@ -808,7 +769,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "body"],
       cup: ["all", "A", "B", "D"],
       sizes: ["all","70", "75", "85"],
@@ -828,7 +788,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "C", "D"],
       sizes: ["all","70", "75", "85"],
@@ -848,7 +807,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", "A", "B", "D"],
       sizes: ["all","70", "75", "85"],
@@ -868,7 +826,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "B", "C"],
       sizes: ["all","70", "75", "80"],
@@ -888,7 +845,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "B", "C"],
       sizes: ["all","70", "75", "80"],
@@ -908,7 +864,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", "A", "B"],
       sizes: ["all","70"],
@@ -928,7 +883,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "D"],
       sizes: ["all","70", "85"],
@@ -948,7 +902,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", "B", "C", "D"],
       sizes: ["all", "75", "80"],
@@ -968,7 +921,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", "A", "B"],
       sizes: ["all","70", "75"],
@@ -988,7 +940,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", "A", "B", "D"],
       sizes: ["all","70", "80", "85"],
@@ -1008,7 +959,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "purple"],
       cup: ["all", "A", "B"],
       sizes: ["all","70", "75"],
@@ -1028,7 +978,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "purple"],
       cup: ["all", "A", "C", "D"],
       sizes: ["all","70", "75", "80"],
@@ -1048,7 +997,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: true,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", "B", "C", "D"],
       sizes: ["all","70", "75","85"],
@@ -1068,7 +1016,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "purple"],
       cup: ["all", "A", "B", "D"],
       sizes: ["all", "80", "85"],
@@ -1088,7 +1035,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", "A", "D"],
       sizes: ["all","70", "75", "85"],
@@ -1108,7 +1054,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", "A", "B", "D"],
       sizes: ["all", "75", "80", "85"],
@@ -1128,7 +1073,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "C", "D"],
       sizes: ["all","70", "80", "85"],
@@ -1148,7 +1092,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "body"],
       cup: ["all", "A", "C", "D"],
       sizes: ["all","70", "75", "85"],
@@ -1168,7 +1111,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "body"],
       cup: ["all", "A", "B", "D"],
       sizes: ["all","70", "80", "85"],
@@ -1188,7 +1130,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "B"],
       sizes: ["all","70", "75", "85"],
@@ -1208,7 +1149,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "C", "D"],
       sizes: ["all","70", "85"],
@@ -1228,7 +1168,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", "A", "D"],
       sizes: ["all","70", "75", "85"],
@@ -1248,7 +1187,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "green"],
       cup: ["all", "A", "C", "D"],
       sizes: ["all","70", "80", "85"],
@@ -1268,7 +1206,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "purple"],
       cup: ["all", "A", "B"],
       sizes: ["all","70", "75"],
@@ -1288,7 +1225,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","XS", "S"],
@@ -1308,7 +1244,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "green"],
       cup: ["all", ""],
       sizes: ["all", "M", "L"],
@@ -1328,7 +1263,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS", "M", "L"],
@@ -1348,7 +1282,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "purple"],
       cup: ["all", ""],
       sizes: ["all","XS"],
@@ -1368,7 +1301,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all", "M", "L"],
@@ -1388,7 +1320,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","XS", "M", "L"],
@@ -1408,7 +1339,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -1428,7 +1358,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "purple"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -1448,7 +1377,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -1468,7 +1396,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: true,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all", "L"],
@@ -1488,7 +1415,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS", "L"],
@@ -1508,7 +1434,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS"],
@@ -1528,7 +1453,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all", "M", "L"],
@@ -1548,7 +1472,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -1568,7 +1491,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "gray"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -1588,7 +1510,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","XS", "S"],
@@ -1608,7 +1529,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "gray"],
       cup: ["all", ""],
       sizes: ["all","XS","M"],
@@ -1628,7 +1548,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", ""],
       sizes: ["all","XS", "S"],
@@ -1648,7 +1567,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","L"],
@@ -1668,7 +1586,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS", "L"],
@@ -1688,7 +1605,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -1708,7 +1624,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -1728,7 +1643,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -1748,7 +1662,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -1768,7 +1681,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","XS", "S"],
@@ -1788,7 +1700,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS", "S"],
@@ -1808,7 +1719,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all", "S", "M", "L"],
@@ -1828,7 +1738,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all","XS", "L"],
@@ -1848,7 +1757,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "purple"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -1868,7 +1776,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -1888,7 +1795,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -1908,7 +1814,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","XS", "S"],
@@ -1928,7 +1833,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", ""],
       sizes: ["all","XS", "M", "L"],
@@ -1948,7 +1852,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "purple"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "L"],
@@ -1968,7 +1871,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", ""],
       sizes: ["all","XS", "S","L"],
@@ -1988,7 +1890,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", ""],
       sizes: ["all", "S", "M", "L"],
@@ -2008,7 +1909,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all","XS", "L"],
@@ -2028,7 +1928,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all", "L"],
@@ -2048,7 +1947,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -2068,7 +1966,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -2088,7 +1985,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -2108,7 +2004,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "L"],
@@ -2128,7 +2023,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "L"],
@@ -2148,7 +2042,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -2168,7 +2061,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -2188,7 +2080,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "body"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -2208,7 +2099,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "body"],
       cup: ["all", ""],
       sizes: ["all","XS", "M", "L"],
@@ -2228,7 +2118,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -2248,7 +2137,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "body"],
       cup: ["all", ""],
       sizes: ["all","XS", "L"],
@@ -2268,7 +2156,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "body"],
       cup: ["all", ""],
       sizes: ["all", "S", "M", "L"],
@@ -2288,7 +2175,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "L"],
@@ -2308,7 +2194,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "body"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -2328,7 +2213,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "body"],
       cup: ["all", ""],
       sizes: ["all","XS", "M", "L"],
@@ -2348,7 +2232,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "body"],
       cup: ["all", ""],
       sizes: ["all","XS", "M", "L"],
@@ -2368,7 +2251,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "body"],
       cup: ["all", ""],
       sizes: ["all","XS", "S"],
@@ -2388,7 +2270,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "body"],
       cup: ["all", ""],
       sizes: ["all", "M"],
@@ -2408,7 +2289,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "body"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "L"],
@@ -2428,7 +2308,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","XS", "S","L"],
@@ -2448,7 +2327,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -2468,7 +2346,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -2488,7 +2365,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "green"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -2508,7 +2384,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -2528,7 +2403,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS"],
@@ -2548,7 +2422,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS"],
@@ -2568,7 +2441,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","XS", "L"],
@@ -2588,7 +2460,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", ],
@@ -2608,7 +2479,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: true,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -2628,7 +2498,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -2648,7 +2517,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all","XS", "M", "L"],
@@ -2668,7 +2536,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "L"],
@@ -2688,7 +2555,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all","S", "M", "L"],
@@ -2708,7 +2574,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -2728,7 +2593,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -2748,7 +2612,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -2768,7 +2631,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -2788,7 +2650,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all", "M", "L"],
@@ -2808,7 +2669,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -2828,7 +2688,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -2848,7 +2707,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", ""],
       sizes: ["all","XS", "L"],
@@ -2868,7 +2726,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "gray"],
       cup: ["all", ""],
       sizes: ["all","XS", "M", "L"],
@@ -2888,7 +2745,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "gray"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "L"],
@@ -2908,7 +2764,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -2928,7 +2783,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all", "S", "M", "L"],
@@ -2948,7 +2802,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all","XS"],
@@ -2968,7 +2821,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all", "L"],
@@ -2988,7 +2840,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all","XS", "S"],
@@ -3008,7 +2859,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all", "S", "M", "L"],
@@ -3028,7 +2878,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "gray"],
       cup: ["all", ""],
       sizes: ["all","XS", "L"],
@@ -3048,7 +2897,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS", "S"],
@@ -3068,7 +2916,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","XS"],
@@ -3088,7 +2935,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -3108,7 +2954,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -3128,7 +2973,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -3148,7 +2992,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -3168,7 +3011,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS", "M", "L"],
@@ -3188,7 +3030,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -3208,7 +3049,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all","XS", "M", "L"],
@@ -3228,7 +3068,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "L"],
@@ -3248,7 +3087,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all", "S", "M", "L"],
@@ -3268,7 +3106,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all","XS"],
@@ -3288,7 +3125,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -3308,7 +3144,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "gray"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "L"],
@@ -3328,7 +3163,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -3348,7 +3182,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "green"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -3368,7 +3201,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all","XS", "S"],
@@ -3388,7 +3220,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS","L"],
@@ -3408,7 +3239,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "purple"],
       cup: ["all", ""],
       sizes: ["all", "M", "L"],
@@ -3428,7 +3258,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","XS", "S"],
@@ -3448,7 +3277,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "green"],
       cup: ["all", ""],
       sizes: ["all","XS", "M", "L"],
@@ -3468,7 +3296,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "body"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "L"],
@@ -3488,7 +3315,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "purple"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -3508,7 +3334,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -3528,7 +3353,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -3548,7 +3372,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -3568,7 +3391,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "gray"],
       cup: ["all", ""],
       sizes: ["all","XS", "S","L"],
@@ -3588,7 +3410,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", ""],
       sizes: ["all","XS", "M", "L"],
@@ -3608,7 +3429,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all", "S", "M", "L"],
@@ -3628,7 +3448,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M"],
@@ -3648,7 +3467,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "gray"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "L"],
@@ -3668,7 +3486,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all","XS", "S", "M", "L"],
@@ -3688,7 +3505,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "gray"],
       cup: ["all", ""],
       sizes: ["all","XS","M", "L"],
@@ -3708,7 +3524,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "gray"],
       cup: ["all", ""],
       sizes: ["all","XS", "S"],
@@ -3728,7 +3543,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "purple"],
       cup: ["all", ""],
       sizes: ["all","XS", "M", "L"],
@@ -3748,7 +3562,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all", "S", "M", "L"],
@@ -3768,7 +3581,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", "A", "B"],
       sizes: ["all","XS", "S", "L"],
@@ -3788,7 +3600,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "B", "C"],
       sizes: ["all","XS", "S", "L"],
@@ -3808,7 +3619,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: true,
-      inCart: false,
       color: ["all", "green"],
       cup: ["all", "A", "B", "D"],
       sizes: ["all", "S", "M", "L"],
@@ -3828,7 +3638,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "body"],
       cup: ["all", "A", "D"],
       sizes: ["all","XS", "S", "M"],
@@ -3848,7 +3657,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "B","D"],
       sizes: ["all","XS", "M", "L"],
@@ -3868,7 +3676,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", "C", "D"],
       sizes: ["all","XS", "S", "M", "L"],
@@ -3888,7 +3695,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "D"],
       sizes: ["all","XS", "S", "M", "L"],
@@ -3908,7 +3714,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "B"],
       sizes: ["all","XS", "M", "L"],
@@ -3928,7 +3733,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","31-33", "35-37", "38-40"],
@@ -3948,7 +3752,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","31-33", "35-37", "38-40"],
@@ -3968,7 +3771,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","31-33", "35-37", "38-40"],
@@ -3988,7 +3790,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all", "35-37", "38-40"],
@@ -4008,7 +3809,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","31-33", "38-40"],
@@ -4028,7 +3828,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: true,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","31-33", "35-37"],
@@ -4048,7 +3847,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","31-33", "35-37", "38-40"],
@@ -4068,7 +3866,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","31-33", "35-37", "38-40"],
@@ -4088,7 +3885,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","31-33", "35-37", "38-40"],
@@ -4108,7 +3904,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","31-33", "35-37", "38-40"],
@@ -4128,7 +3923,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","31-33", "38-40"],
@@ -4148,7 +3942,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","31-33", "35-37"],
@@ -4168,7 +3961,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","31-33", "35-37"],
@@ -4188,7 +3980,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "body"],
       cup: ["all", ""],
       sizes: ["all","31-33", "35-37"],
@@ -4208,7 +3999,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","31-33", "35-37", "38-40"],
@@ -4228,7 +4018,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all", "35-37", "38-40"],
@@ -4248,7 +4037,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", ""],
       sizes: ["all","31-33", "38-40"],
@@ -4268,7 +4056,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","34", "35", "36", "37"],
@@ -4288,7 +4075,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all","34", "35", "36"],
@@ -4308,7 +4094,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all", "35", "36", "37"],
@@ -4328,7 +4113,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all","34", "35", "37"],
@@ -4348,7 +4132,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "purple"],
       cup: ["all", ""],
       sizes: ["all","34","36", "37"],
@@ -4368,7 +4151,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all","34", "35", "36"],
@@ -4388,7 +4170,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all","34", "35", "36", "37"],
@@ -4408,7 +4189,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", ""],
       sizes: ["all","34", "35", "37"],
@@ -4428,7 +4208,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "pink"],
       cup: ["all", ""],
       sizes: ["all","34", "36", "37"],
@@ -4448,7 +4227,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", ""],
       cup: ["all", ""],
       sizes: ["all",""],
@@ -4468,7 +4246,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "blue"],
       cup: ["all", ""],
       sizes: ["all",""],
@@ -4488,7 +4265,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", ""],
       sizes: ["all",""],
@@ -4508,7 +4284,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "red"],
       cup: ["all", ""],
       sizes: ["all",""],
@@ -4528,7 +4303,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all",""],
@@ -4548,7 +4322,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "gray"],
       cup: ["all", ""],
       sizes: ["all",""],
@@ -4568,7 +4341,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "yellow"],
       cup: ["all", ""],
       sizes: ["all",""],
@@ -4588,7 +4360,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all",""],
@@ -4608,7 +4379,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: false,
-      inCart: false,
       color: ["all", "white"],
       cup: ["all", ""],
       sizes: ["all",""],
@@ -4628,7 +4398,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: true,
-      inCart: false,
       color: ["all", "body"],
       cup: ["all", "A", "B"],
       sizes: ["all","XS", "S"],
@@ -4648,7 +4417,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: true,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "C", "D"],
       sizes: ["all","XS", "S"],
@@ -4668,7 +4436,6 @@ export const items = [
       description:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo",
       featured: true,
-      inCart: false,
       color: ["all", "black"],
       cup: ["all", "A", "B", "D"],
       sizes: ["all","M", "L"],

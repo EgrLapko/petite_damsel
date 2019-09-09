@@ -11,7 +11,7 @@ export default class SingleProductPage extends Component {
     return (
       <ProductConsumer>
         {value => {
-          const {singleProduct, addToCart, recent, brasToCart, chooseBraCup, chooseBraSize, setAlert} = value;
+          const {singleProduct, addToCart, recent, brasToCart, chooseBraCup, chooseBraSize, setAlert, cart} = value;
 
           const {title, category, description, id, price, image, image2, inCart, cup, sizes, type} = singleProduct;
 
@@ -147,22 +147,24 @@ export default class SingleProductPage extends Component {
                         </button></Link> 
 
                         <button className={"cart-btn " + (brasToCart.chosenCup !== '' & brasToCart.chosenSize !== '' && "cart-active")}>
-                          {!inCart 
+                          {!cart.find(item => item.id === id) 
                             ? 
                             <i className="fas fa-cart-plus" onClick={() => brasToCart.chosenCup === '' || brasToCart.chosenSize === '' ? setAlert() : addToCart(id)}/> 
                             :
-                            <p className="in-cart-sign">
-                              In cart
-                            </p> 
+                            <p className="in-cart-sign">In Cart</p>
                           }                                                         
                         </button>
+
                       </div>
+                      {/* <p> {cart.find(item => item.id === id) ? "In Cart" : "Not in cart"} </p> */}
                     </div>
                   </div>
                 </div>
+
                 <div className={"recent-items-container " + (recent.length !== 0 ? "recent-visible" : null)}>
                   <Recent />
-                </div>         
+                </div>    
+
               </div>
             )
           }

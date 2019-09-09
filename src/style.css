@@ -106,8 +106,8 @@ button:focus {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
-  -webkit-box-shadow: 0px 0px 20px rgba(106, 105, 105, 0.1);
-  box-shadow: 0px 0px 20px rgba(106, 105, 105, 0.1); }
+  -webkit-box-shadow: 0px 0px 20px rgba(106, 105, 105, 0.07);
+  box-shadow: 0px 0px 20px rgba(106, 105, 105, 0.07); }
   .navbar-container .navbar-logo img, .navbar-container-small .navbar-logo img {
     width: 9rem;
     cursor: pointer; }
@@ -1745,7 +1745,7 @@ button:focus {
         margin: 0 .2rem;
         font-family: "Roboto", sans-serif;
         font-size: 1.1rem;
-        cursor: pointer; }
+        cursor: default; }
       .product-card .product-bottom-details .card-sizes-list .card-sizes-item:hover, .product-card .product-bottom-details .card-sizes-list .card-cups-item:hover, .product-card .product-bottom-details .card-cups-list .card-sizes-item:hover, .product-card .product-bottom-details .card-cups-list .card-cups-item:hover {
         color: rgba(241, 106, 123, 0.9); }
     .product-card .product-bottom-details .card-in-cart-sign {
