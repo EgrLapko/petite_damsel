@@ -28,7 +28,8 @@ button:focus {
 
 .btn:hover {
   color: #fff;
-  background-color: rgba(241, 106, 123, 0.7); }
+  background-color: rgba(241, 106, 123, 0.7);
+  border: 1px solid rgba(241, 106, 123, 0); }
 
 .pink-btn {
   margin-top: 3rem;
@@ -56,13 +57,14 @@ button:focus {
   font-size: 2rem;
   transition: .3s; }
   .cart-btn .in-cart-sign {
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 600;
-    padding: .5rem;
+    padding: .7rem;
+    text-transform: lowercase;
     font-family: "Roboto", sans-serif;
-    color: rgba(242, 242, 242, 0.9);
+    color: rgba(255, 255, 255, 0.9);
     background-color: rgba(95, 174, 87, 0.6);
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 0;
     -webkit-transition: .4s;
     -o-transition: .4s;
@@ -73,6 +75,9 @@ button:focus {
 
 .cart-active {
   color: rgba(95, 174, 87, 0.6); }
+
+.cart-active:hover {
+  color: rgba(95, 174, 87, 0.8); }
 
 .invisible {
   display: none; }
@@ -984,16 +989,16 @@ button:focus {
     font-family: 'Roboto', sans-serif;
     color: dimgray;
     font-weight: 600;
-    font-size: 3rem; }
+    font-size: 2.5rem; }
   .trends .trends-bottom-description {
     margin: 0rem 0;
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     color: dimgray;
     text-transform: lowercase;
-    font-size: 1.4rem; }
+    font-size: 1.3rem; }
   .trends .btn {
-    margin-top: 1rem;
+    margin-top: .7rem;
     text-transform: lowercase; }
 
 .trends-container {
@@ -1339,7 +1344,7 @@ button:focus {
         text-transform: lowercase;
         font-family: "Roboto", sans-serif;
         font-weight: 600;
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-top: 1rem;
         color: dimgray; }
       .selections .selections-container .sel-bottom-container .sel-bottom-desc {
@@ -1347,9 +1352,9 @@ button:focus {
         font-family: "Roboto", sans-serif;
         font-weight: 100;
         text-transform: lowercase;
-        font-size: 1.4rem; }
+        font-size: 1.3rem; }
       .selections .selections-container .sel-bottom-container .btn {
-        margin-top: 1rem; }
+        margin-top: .5rem; }
 
 @media (max-width: 1050px) {
   .selections-container {
@@ -1674,6 +1679,7 @@ button:focus {
     width: 90%;
     height: 3rem;
     padding: .5rem;
+    position: relative;
     border-top: 1px solid rgba(241, 106, 123, 0.3);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1687,26 +1693,37 @@ button:focus {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    .product-card .product-bottom-details .product-price {
-      font-family: "Roboto", sans-serif;
-      font-size: 1.5rem;
-      color: black;
-      font-weight: 300;
-      cursor: default; }
-    .product-card .product-bottom-details .price-crossed {
-      text-decoration: line-through;
-      font-size: 1.1rem; }
-    .product-card .product-bottom-details .featured-price {
-      display: none;
-      color: rgba(241, 106, 123, 0.9);
-      font-family: "Roboto", sans-serif;
-      font-size: 1.2rem;
-      border: 1px solid rgba(241, 106, 123, 0.2);
-      padding: .3rem;
-      border-radius: .5rem;
-      cursor: default; }
-    .product-card .product-bottom-details .featured-visible {
-      display: block; }
+    .product-card .product-bottom-details .prices-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .product-card .product-bottom-details .prices-wrapper .product-price {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5rem;
+        color: black;
+        font-weight: 300;
+        cursor: default; }
+      .product-card .product-bottom-details .prices-wrapper .price-crossed {
+        text-decoration: line-through;
+        font-size: 1.1rem; }
+      .product-card .product-bottom-details .prices-wrapper .featured-price {
+        display: none;
+        color: rgba(241, 106, 123, 0.9);
+        font-family: "Roboto", sans-serif;
+        font-size: 1.3rem;
+        border: 1px solid rgba(241, 106, 123, 0.2);
+        padding: .3rem;
+        border-radius: .5rem;
+        margin-left: .4rem;
+        cursor: default; }
+      .product-card .product-bottom-details .prices-wrapper .featured-visible {
+        display: block; }
     .product-card .product-bottom-details .card-sizes-list, .product-card .product-bottom-details .card-cups-list {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1731,18 +1748,33 @@ button:focus {
         cursor: pointer; }
       .product-card .product-bottom-details .card-sizes-list .card-sizes-item:hover, .product-card .product-bottom-details .card-sizes-list .card-cups-item:hover, .product-card .product-bottom-details .card-cups-list .card-sizes-item:hover, .product-card .product-bottom-details .card-cups-list .card-cups-item:hover {
         color: rgba(241, 106, 123, 0.9); }
-
-.product-card:hover .card-sizes-list, .product-card:hover .card-cups-list {
-  visibility: visible;
-  opacity: 1; }
+    .product-card .product-bottom-details .card-in-cart-sign {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background-color: rgba(95, 174, 87, 0.8);
+      border-radius: 50%;
+      padding: .8rem; }
+      .product-card .product-bottom-details .card-in-cart-sign .fa-shopping-bag {
+        font-size: 1.3rem;
+        color: #fafafa; }
 
 .product-card:hover {
   -webkit-box-shadow: 0px 0px 50px rgba(105, 105, 105, 0.2);
   box-shadow: 0px 0px 50px rgba(105, 105, 105, 0.2);
   background-color: #fafafa; }
+  .product-card:hover .card-sizes-list, .product-card:hover .card-cups-list {
+    visibility: visible;
+    opacity: 1; }
 
 .card-small {
-  width: 14rem;
+  width: 15rem;
   height: 27rem;
   padding: .5rem;
   background-color: none;
@@ -1761,14 +1793,27 @@ button:focus {
     color: dimgray; }
   .card-small .product-bottom-details .card-sizes-list .card-sizes-item, .card-small .product-bottom-details .card-sizes-list .card-cups-item, .card-small .product-bottom-details .card-cups-list .card-sizes-item, .card-small .product-bottom-details .card-cups-list .card-cups-item {
     font-size: .8rem; }
-  .card-small .product-bottom-details .price-crossed {
-    text-decoration: line-through;
-    font-size: .9rem;
-    color: dimgray;
-    font-weight: 600; }
-  .card-small .product-bottom-details .featured-price {
-    font-size: 1.1rem;
-    font-weight: 600; }
+  .card-small .product-bottom-details .prices-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .card-small .product-bottom-details .prices-wrapper .price-crossed {
+      text-decoration: line-through;
+      font-size: .8rem;
+      color: dimgray;
+      font-weight: 600; }
+    .card-small .product-bottom-details .prices-wrapper .featured-price {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-left: .4rem; }
+  .card-small .product-bottom-details .cart-btn {
+    display: none; }
 
 .card-small:hover {
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
@@ -2045,8 +2090,7 @@ button:focus {
         align-items: center;
         width: 100%;
         -ms-flex-pack: distribute;
-        justify-content: space-around;
-        background-color: yellow; }
+        justify-content: space-around; }
         .single-product-page .details-content .details-menu-container .details-btn .btn-details-back {
           margin: 0;
           font-size: 1.3rem;
@@ -2562,3 +2606,41 @@ button:focus {
       box-shadow: 0px 0px 70px rgba(105, 105, 105, 0.4); }
       .collections-page .collections-container .collection-banner:hover .collection-text-wrapper {
         opacity: 1; }
+
+.alert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 15rem;
+  position: fixed;
+  z-index: 1;
+  top: 6rem;
+  left: 45%;
+  background-color: rgba(95, 174, 87, 0.9);
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-weight: 600;
+  text-transform: lowercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  opacity: 0;
+  -webkit-transform: translateY(-10rem);
+  -ms-transform: translateY(-10rem);
+  transform: translateY(-10rem);
+  -webkit-transition: ease-in-out .4s;
+  -o-transition: ease-in-out .4s;
+  transition: ease-in-out .4s; }
+
+.alert-active {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0); }

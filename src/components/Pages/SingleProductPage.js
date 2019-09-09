@@ -11,7 +11,7 @@ export default class SingleProductPage extends Component {
     return (
       <ProductConsumer>
         {value => {
-          const {singleProduct, addToCart, recent, brasToCart, chooseBraCup, chooseBraSize} = value;
+          const {singleProduct, addToCart, recent, brasToCart, chooseBraCup, chooseBraSize, setAlert} = value;
 
           const {title, category, description, id, price, image, image2, inCart, cup, sizes, type} = singleProduct;
 
@@ -142,40 +142,20 @@ export default class SingleProductPage extends Component {
                       </div>
                       <div className="details-btn">
                         <Link to={daLink}>          
-                        <button className="btn btn-details-back">to <span>{category}</span></button></Link> 
-                        {brasToCart.chosenCup === '' || brasToCart.chosenSize === '' 
-                                  ? 
-                                  <button className="cart-btn" disabled>
-                                    <i className="fas fa-cart-plus"/>
-                                  </button>
-                                  :
-                                  <button 
-                                    className={"cart-btn " + (inCart ? "cart-active" : null)} 
-                                    onClick={() => addToCart(id)}
-                                    >
-                                    {inCart ? (
-                                              <p className="in-cart-sign" disabled>
-                                                In Cart
-                                              </p>
-                                            ) : (
-                                              <i className="fas fa-cart-plus"/>
-                                            )}  
-                                  </button>
-                        }
+                        <button className="btn btn-details-back">
+                          to <span>{category}</span>
+                        </button></Link> 
 
-                        <button className="cart-btn"></button>
-                        {/* <button 
-                          className={"cart-btn " + (inCart ? "cart-active" : null)} 
-                          onClick={() => addToCart(id)}
-                          >
-                          {inCart ? (
-                                    <p className="in-cart-sign" disabled>
-                                      In Cart
-                                    </p>
-                                  ) : (
-                                    <i className="fas fa-cart-plus"/>
-                                  )}  
-                        </button> */}
+                        <button className={"cart-btn " + (brasToCart.chosenCup !== '' & brasToCart.chosenSize !== '' && "cart-active")}>
+                          {!inCart 
+                            ? 
+                            <i className="fas fa-cart-plus" onClick={() => brasToCart.chosenCup === '' || brasToCart.chosenSize === '' ? setAlert() : addToCart(id)}/> 
+                            :
+                            <p className="in-cart-sign">
+                              In cart
+                            </p> 
+                          }                                                         
+                        </button>
                       </div>
                     </div>
                   </div>

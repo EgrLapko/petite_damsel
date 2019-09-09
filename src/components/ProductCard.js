@@ -36,8 +36,10 @@ export default class ProductCard extends Component {
 
               </div>
               <div className="product-bottom-details">
-                <p className={"product-price " + (product.featured ? "price-crossed" : null)}> ${product.price} </p>
-                <p className={"featured-price " + (product.featured ? "featured-visible" : null)}> ${(product.price - (product.price/100)*60).toFixed(2)} </p>
+                <div className="prices-wrapper">
+                  <p className={"product-price " + (product.featured ? "price-crossed" : null)}> ${product.price} </p>
+                  <p className={"featured-price " + (product.featured ? "featured-visible" : null)}> ${(product.price - (product.price/100)*60).toFixed(2)} </p>
+                </div>
                 <ul className="card-sizes-list">
                   {itemSizes.map((size, index) => {
                     return (
@@ -54,18 +56,14 @@ export default class ProductCard extends Component {
                   }) : null}
 
                 </ul>
-                <button 
-                  className={"cart-btn " + (product.inCart ? "cart-active" : null)} 
-                  onClick={() => addToCart(product.id)}
-                  >
-                  {product.inCart ? (
-                            <p className="in-cart-sign" disabled>
-                              In Cart
-                            </p>
-                          ) : (
-                            <i className="fas fa-cart-plus"/>
-                          )}  
-                </button>
+                  {product.inCart 
+                      ? 
+                      <div className="card-in-cart-sign">
+                        <i className="fas fa-shopping-bag"/>
+                      </div> 
+                      :
+                      null
+                  }
               </div>
             </div>
           )

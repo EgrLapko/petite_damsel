@@ -42,12 +42,20 @@ class ProductProvider extends Component {
         brasToCart: {
             chosenCup: '',
             chosenSize: ''
-        }
+        },
+        alert: false
     };
 
 componentDidMount() {
 // --- from contentful items
     this.setProducts(items);
+}
+
+setAlert = () => {
+    this.setState({
+        alert: true
+    });
+    setTimeout(() => this.setState({alert: false}), 2000)
 }
 
 // ---------- set products
@@ -173,7 +181,6 @@ addToCart = (id) => {
         this.addTotals();
         this.syncStorage();
         this.openCart();
-        console.log(product.inCart);
         this.setSingleProduct(product.id);
     })
 };
@@ -185,7 +192,11 @@ setSingleProduct = (id) => {
     localStorage.setItem('singleProduct', JSON.stringify(product));
     this.setState({
         singleProduct: {...product},
-        loading: false
+        loading: false,
+        brasToCart: {
+            chosenCup: '',
+            chosenSize: ''
+        }
     });
 };
 
@@ -340,8 +351,10 @@ removeItem = (id) =>{
 };
 
 clearCart = () => {
+    // let tempProducts = [...this.state.storeProducts];
    this.setState({
-       cart: []
+       cart: [],
+    //    storeProducts: tempProducts.inCart = false
    }, () => {
     this.addTotals();
     this.syncStorage();
@@ -466,7 +479,15 @@ chooseBraSize = (size) => {
             ...this.state.brasToCart,
             chosenSize: size,
         },
-    }, console.log(`Chosen size - ${size}`));
+    });
+    if (this.state.brasToCart.chosenSize !== '') {
+        this.setState({
+            brasToCart: {
+                ...this.state.brasToCart,
+                chosenSize: '',
+            }
+        });
+    }
 }
 
 chooseBraCup = (cup) => {
@@ -475,7 +496,15 @@ chooseBraCup = (cup) => {
             ...this.state.brasToCart,
             chosenCup: cup,
         },
-    }, console.log(`Chosen cup - ${cup}`));
+    });
+    if (this.state.brasToCart.chosenCup !== '') {
+        this.setState({
+            brasToCart: {
+                ...this.state.brasToCart,
+                chosenCup: '',
+            }
+        });
+    }
 }
 
     render() {
@@ -515,6 +544,7 @@ chooseBraCup = (cup) => {
                 dropCupFilter: this.dropCupFilter,
                 dropPriceFilter: this.dropPriceFilter,
                 recentItems: this.recentItems,
+                setAlert: this.setAlert,
                 chooseBraSize: this.chooseBraSize,
                 chooseBraCup: this.chooseBraCup
             }}>
