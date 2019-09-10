@@ -15,7 +15,7 @@ export default class Sidebar extends Component {
               <ul className={"slide-bar " + (sidebarOpenBra ? "bar-visible" : null)}>
                   {links.map(link => link.type === "bra" && 
                       <li className="slidebar-item" key={link.id}>
-                        <img src={link.image} alt=""/>
+                        <Link to={link.path} onClick={(event) => { handleSidebarBra(); dropAllFilters();}}> <img src={link.image} alt=""/> </Link>
                         <Link to={link.path} className="slidebar-link" onClick={(event) => { handleSidebarBra(); dropAllFilters();}}> {link.text} </Link>
                       </li>             
                     )
@@ -25,7 +25,7 @@ export default class Sidebar extends Component {
               <ul className={"slide-bar " + (sidebarOpenPanty ? "bar-visible" : null)}>
                   {links.map(link => link.type === "panty" && 
                       <li className="slidebar-item" key={link.id}>
-                        <img src={link.image} alt=""/>
+                        <Link to={link.path} onClick={(event) => { handleSidebarPanty(); dropAllFilters();}} > <img src={link.image} alt=""/> </Link>
                         <Link to={link.path} className="slidebar-link" onClick={(event) => { handleSidebarPanty(); dropAllFilters();}} > {link.text} </Link>
                       </li>             
                     )
@@ -35,7 +35,7 @@ export default class Sidebar extends Component {
               <ul className={"slide-bar " + (sidebarOpenSleepwear ? "bar-visible" : null)}>
                   {links.map(link => link.type === "sleepwear" && 
                       <li className="slidebar-item" key={link.id}>
-                        <img src={link.image} alt=""/>
+                        <Link to={link.path}  onClick={(event) => { handleSidebarSleepwear(); dropAllFilters();}} > <img src={link.image} alt=""/> </Link>
                         <Link to={link.path} className="slidebar-link" onClick={(event) => { handleSidebarSleepwear(); dropAllFilters();}} > {link.text} </Link>
                       </li>             
                     )
@@ -45,7 +45,7 @@ export default class Sidebar extends Component {
               <ul className={"slide-bar " + (sidebarOpenAccs ? "bar-visible" : null)}>
                   {links.map(link => link.type === "accs" && 
                       <li className="slidebar-item" key={link.id}>
-                        <img src={link.image} alt=""/>
+                        <Link to={link.path}  onClick={(event) => { handleSidebarAccs(); dropAllFilters();}} > <img src={link.image} alt=""/> </Link>
                         <Link to={link.path} className="slidebar-link" onClick={(event) => { handleSidebarAccs(); dropAllFilters();}} > {link.text} </Link>
                       </li>             
                     )
