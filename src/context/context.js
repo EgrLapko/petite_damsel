@@ -43,6 +43,7 @@ class ProductProvider extends Component {
             chosenCup: '',
             chosenSize: ''
         },
+        uniSizeToCart: '',
         alert: false
     };
 
@@ -164,7 +165,6 @@ addToCart = (id) => {
     let tempProducts = [...this.state.storeProducts];
     let tempItem = tempCart.find(item => item.id === id);
     let product = tempProducts[id];
-    // product.inCart = true;
     if(!tempItem) {
         tempItem = tempProducts.find(item => item.id === id);
         let total = tempItem.price;
@@ -182,6 +182,7 @@ addToCart = (id) => {
         this.syncStorage();
         this.openCart();
         this.setSingleProduct(product.id);
+        this.clearAllSizes();
     })
 };
 
@@ -473,6 +474,16 @@ sortData = () => {
 
 // -------------------------------------------------------------- ADD SIZES BEFORE ADDING TO CART
 
+clearAllSizes = () => {
+    this.setState({
+        uniSizeToCart: '',
+        brasToCart: {
+            chosenCup: '',
+            chosenSize: ''
+        }
+    });
+};
+
 chooseBraSize = (size) => {
     this.setState({
         brasToCart: {
@@ -480,15 +491,7 @@ chooseBraSize = (size) => {
             chosenSize: size,
         },
     });
-    if (this.state.brasToCart.chosenSize !== '') {
-        this.setState({
-            brasToCart: {
-                ...this.state.brasToCart,
-                chosenSize: '',
-            }
-        });
-    }
-}
+};
 
 chooseBraCup = (cup) => {
     this.setState({
@@ -497,15 +500,14 @@ chooseBraCup = (cup) => {
             chosenCup: cup,
         },
     });
-    if (this.state.brasToCart.chosenCup !== '') {
-        this.setState({
-            brasToCart: {
-                ...this.state.brasToCart,
-                chosenCup: '',
-            }
-        });
-    }
-}
+};
+
+chooseUniSize = (size) => {
+    this.setState({
+        uniSizeToCart: size
+    });
+};
+
 
     render() {
 
@@ -546,7 +548,8 @@ chooseBraCup = (cup) => {
                 recentItems: this.recentItems,
                 setAlert: this.setAlert,
                 chooseBraSize: this.chooseBraSize,
-                chooseBraCup: this.chooseBraCup
+                chooseBraCup: this.chooseBraCup,
+                chooseUniSize: this.chooseUniSize
             }}>
                 {/* Super important stuff */}
                 {this.props.children}

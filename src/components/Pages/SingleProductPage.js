@@ -11,9 +11,9 @@ export default class SingleProductPage extends Component {
     return (
       <ProductConsumer>
         {value => {
-          const {singleProduct, addToCart, recent, brasToCart, chooseBraCup, chooseBraSize, setAlert, cart} = value;
+          const {singleProduct, addToCart, recent, brasToCart, chooseBraCup, chooseBraSize, chooseUniSize, uniSizeToCart, setAlert, cart} = value;
 
-          const {title, category, description, id, price, image, image2, inCart, cup, sizes, type} = singleProduct;
+          const {title, category, description, id, price, image, image2, cup, sizes, type, featured} = singleProduct;
 
           let daLink;
 
@@ -90,7 +90,11 @@ export default class SingleProductPage extends Component {
                     <div className="details-menu">
                       <p className="text-title details-title"> {title} </p>
                       <p className="text-title details-category"> {category} </p>
-                      <p className="details-price"> ${price} </p>
+                      {/* <p className="details-price"> ${price} </p> */}
+                      <div className="prices-wrapper">
+                        <p className={"product-price " + (featured ? "price-crossed" : null)}> ${price} </p>
+                        <p className={"featured-price " + (featured ? "featured-visible" : null)}> ${(price - (price/100)*60).toFixed(2)} </p>
+                      </div>
                       <div className="details-item-info">
                         <p className="details-note">Item description:</p>
                         <p className="details-description"> {description} </p>
@@ -98,6 +102,7 @@ export default class SingleProductPage extends Component {
                       <div className="details-filter">
 
                         {type === "Bras" || category === "Accessories, bodysuits" ?
+                          <section className="single-personal-container">
                             <div className="size-filter-box">
                               <div className="size-box">
                                 <p>Select a cup:</p>
@@ -121,42 +126,62 @@ export default class SingleProductPage extends Component {
                                   )}
                                 </ul>
                               </div> 
-                            </div>                  
+                            </div>
+                            <div className="details-btn">
+                              <Link to={daLink}>          
+                              <button className="btn btn-details-back">
+                                to <span>{category}</span>
+                              </button></Link> 
+                              <button className={"cart-btn " + (brasToCart.chosenCup !== '' & brasToCart.chosenSize !== '' && "cart-active")}>
+                                {!cart.find(item => item.id === id) 
+                                  ? 
+                                  <i className="fas fa-cart-plus" onClick={() => brasToCart.chosenCup === '' || brasToCart.chosenSize === '' ? setAlert() : addToCart(id)}/> 
+                                  :
+                                  <p className="in-cart-sign">In Cart</p>
+                                }                                                         
+                              </button>
+                            </div>
+                          </section>                  
                         : null}
 
                         {type === "Panties" || type === "Sleepwear" || category === "Accessories, tights" || category === "Accessories, slippers" ?
-                          <div className="size-filter-box">
-                            <div className="size-box">
-                              <p>Select a size</p>
-                              <ul className="size-list">
-                                {itemsSizes.map((size, index) => {
-                                    return (
-                                      <li key={index} className="filter-item"> {size} </li>
-                                    )
-                                  }
-                                )}
-                              </ul>
+                          <section className="single-personal-container">
+                            <div className="size-filter-box">
+                              <div className="size-box">
+                                <p>Select a size</p>
+                                <ul className="size-list">
+                                  {itemsSizes.map((size, index) => {
+                                      return (
+                                        <li key={index} 
+                                          className={"filter-item " + (uniSizeToCart === size ? "filter-active" : null)}
+                                          onClick={() => {chooseUniSize(size)}}
+                                        > 
+                                          {size} 
+                                        </li>
+                                      )
+                                    }
+                                  )}
+                                </ul>
+                              </div>
                             </div>
-                          </div> 
+                            <div className="details-btn">
+                              <Link to={daLink}>          
+                              <button className="btn btn-details-back">
+                                to <span>{category}</span>
+                              </button></Link> 
+                              <button className={"cart-btn " + (uniSizeToCart !== '' && "cart-active")}>
+                                {!cart.find(item => item.id === id) 
+                                  ? 
+                                  <i className="fas fa-cart-plus" onClick={() => uniSizeToCart === '' ? setAlert() : addToCart(id)}/> 
+                                  :
+                                  <p className="in-cart-sign">In Cart</p>
+                                }                                                         
+                              </button>
+                            </div> 
+                          </section>
                         : null}
-                      </div>
-                      <div className="details-btn">
-                        <Link to={daLink}>          
-                        <button className="btn btn-details-back">
-                          to <span>{category}</span>
-                        </button></Link> 
-
-                        <button className={"cart-btn " + (brasToCart.chosenCup !== '' & brasToCart.chosenSize !== '' && "cart-active")}>
-                          {!cart.find(item => item.id === id) 
-                            ? 
-                            <i className="fas fa-cart-plus" onClick={() => brasToCart.chosenCup === '' || brasToCart.chosenSize === '' ? setAlert() : addToCart(id)}/> 
-                            :
-                            <p className="in-cart-sign">In Cart</p>
-                          }                                                         
-                        </button>
 
                       </div>
-                      {/* <p> {cart.find(item => item.id === id) ? "In Cart" : "Not in cart"} </p> */}
                     </div>
                   </div>
                 </div>

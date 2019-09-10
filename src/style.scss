@@ -1190,6 +1190,36 @@ button:focus{
 
 
 // ----------------------------- Product Card
+.prices-wrapper {
+    @include flexbox;
+    .product-price {
+        font-family: $fontmain;
+        font-size: 1.5rem;
+        color: rgba(105, 105, 105, 1);
+        font-weight: 600;
+        cursor: default;
+    }
+    .price-crossed {
+        text-decoration: line-through;
+        font-size: 1.1rem;
+    }
+    .featured-price {
+        display: none;
+        color: rgba(241, 106, 123, .9);
+        font-family: $fontmain;
+        font-size: 1.3rem;
+        font-weight: 600;
+        border: 1px solid rgba(241, 106, 123, .2);
+        padding: .3rem;
+        border-radius: .5rem;
+        margin-left: .4rem;
+        cursor: default;
+    }
+    .featured-visible {
+        display: block;
+    }
+}      
+
 .product-card {
     @include flexbox;
     flex-direction: column;
@@ -1248,34 +1278,6 @@ button:focus{
         border-top: 1px  solid rgba(241, 106, 123, .3);
         @include flexbox;
         justify-content: space-between;
-        .prices-wrapper {
-            @include flexbox;
-            .product-price {
-                font-family: $fontmain;
-                font-size: 1.5rem;
-                color: black;
-                font-weight: 300;
-                cursor: default;
-            }
-            .price-crossed {
-                text-decoration: line-through;
-                font-size: 1.1rem;
-            }
-            .featured-price {
-                display: none;
-                color: rgba(241, 106, 123, .9);
-                font-family: $fontmain;
-                font-size: 1.3rem;
-                border: 1px solid rgba(241, 106, 123, .2);
-                padding: .3rem;
-                border-radius: .5rem;
-                margin-left: .4rem;
-                cursor: default;
-            }
-            .featured-visible {
-                display: block;
-            }
-        }      
         .card-sizes-list, .card-cups-list  {
             @include flexbox;
             visibility: hidden;
@@ -1409,6 +1411,12 @@ button:focus{
 
 
 // ----------------------------- Single Product Page
+
+.single-personal-container {
+    @include flexbox;
+    flex-direction: column;
+}
+
 .single-product-page {
     width: 100%;
     @include flexbox;
@@ -1436,7 +1444,7 @@ button:focus{
             width: 40rem;
             font-family: $fontmain;
             position: sticky;
-            margin-top: 10rem;
+            margin-top: 6rem;
             top: 10%;
             margin-right: 5rem;
             .details-menu {
@@ -1541,7 +1549,7 @@ button:focus{
                 }
                 .details-btn {
                     @include flexbox;
-                    width: 100%;
+                    width: 30rem;
                     justify-content: space-around;
                     .btn-details-back {
                         margin: 0;
