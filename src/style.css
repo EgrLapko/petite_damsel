@@ -1923,8 +1923,8 @@ button:focus {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      width: 40%;
-      margin-left: 5rem; }
+      width: 45%;
+      margin-left: 2rem; }
       .single-product-page .details-content .details-images-container img {
         width: 100%;
         margin-top: 2rem;
@@ -1945,7 +1945,7 @@ button:focus {
       position: sticky;
       margin-top: 6rem;
       top: 10%;
-      margin-right: 5rem; }
+      margin-right: 2rem; }
       .single-product-page .details-content .details-menu-container .details-menu {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1962,32 +1962,37 @@ button:focus {
         flex-direction: column;
         width: 80%;
         height: 35rem;
-        padding: 2rem;
-        -webkit-transition: .3s;
-        -o-transition: .3s;
-        transition: .3s;
-        background-color: rgba(105, 105, 105, 0.02);
+        padding: 3rem;
         border-radius: 5%; }
+        .single-product-page .details-content .details-menu-container .details-menu .prices-wrapper {
+          padding: .5rem; }
+          .single-product-page .details-content .details-menu-container .details-menu .prices-wrapper .product-price {
+            width: 5rem;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            font-size: 1.8rem;
+            text-align: center;
+            margin: 0; }
+          .single-product-page .details-content .details-menu-container .details-menu .prices-wrapper .featured-price {
+            margin: 0;
+            font-size: 2rem; }
+          .single-product-page .details-content .details-menu-container .details-menu .prices-wrapper .price-crossed {
+            margin: 0;
+            font-size: 1.2rem; }
         .single-product-page .details-content .details-menu-container .details-menu .text-title {
           font-family: "Roboto", sans-serif;
           text-align: center;
           margin: 0; }
         .single-product-page .details-content .details-menu-container .details-menu .details-title {
-          font-size: 2rem;
-          text-transform: uppercase;
-          letter-spacing: .3rem; }
+          font-size: 2.5rem;
+          text-transform: lowercase;
+          margin: 1rem 0;
+          letter-spacing: .2rem; }
         .single-product-page .details-content .details-menu-container .details-menu .details-category {
-          font-size: 1.2rem;
+          font-size: 1.1rem;
           text-transform: uppercase;
           color: rgba(105, 105, 105, 0.6);
-          padding: .3rem; }
-        .single-product-page .details-content .details-menu-container .details-menu .details-price {
-          width: 70%;
-          text-align: center;
-          font-size: 1.8rem;
-          margin: 0;
-          padding: .2rem;
-          border-bottom: 1px solid rgba(105, 105, 105, 0.2); }
+          padding: .4rem; }
         .single-product-page .details-content .details-menu-container .details-menu .details-item-info {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -2005,19 +2010,22 @@ button:focus {
           -webkit-box-direction: normal;
           -ms-flex-direction: column;
           flex-direction: column;
-          width: 70%;
-          margin: 0;
-          padding: 1rem; }
+          width: 80%;
+          margin: 1rem 0;
+          padding: 2rem;
+          border-top: 1px solid rgba(105, 105, 105, 0.1);
+          border-bottom: 1px solid rgba(105, 105, 105, 0.1);
+          font-family: "Roboto", sans-serif; }
           .single-product-page .details-content .details-menu-container .details-menu .details-item-info .details-note {
             -ms-flex-item-align: start;
             align-self: flex-start;
-            font-size: 1.3rem;
+            text-transform: lowercase;
+            font-size: 1.5rem;
             margin: 0;
             margin-bottom: 1rem;
-            font-weight: 400;
             letter-spacing: .1rem; }
           .single-product-page .details-content .details-menu-container .details-menu .details-item-info .details-description {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             letter-spacing: .1rem;
             margin: 0; }
         .single-product-page .details-content .details-menu-container .details-menu .details-filter {
@@ -2110,14 +2118,17 @@ button:focus {
         justify-content: space-around; }
         .single-product-page .details-content .details-menu-container .details-btn .btn-details-back {
           margin: 0;
-          font-size: 1.3rem;
+          font-size: 1.4rem;
+          font-family: "Roboto", sans-serif;
+          text-transform: lowercase;
           padding: .6rem;
           border: none; }
           .single-product-page .details-content .details-menu-container .details-btn .btn-details-back span {
             color: #f16a7b;
             -webkit-transition: .3s;
             -o-transition: .3s;
-            transition: .3s; }
+            transition: .3s;
+            font-weight: 600; }
         .single-product-page .details-content .details-menu-container .details-btn .btn-details-back:hover span {
           color: #fbfbfb; }
 
