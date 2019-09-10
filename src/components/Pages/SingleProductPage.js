@@ -90,7 +90,6 @@ export default class SingleProductPage extends Component {
                     <div className="details-menu">
                       <p className="text-title details-title"> {title} </p>
                       <p className="text-title details-category"> {category} </p>
-                      {/* <p className="details-price"> ${price} </p> */}
                       <div className="prices-wrapper">
                         <p className={"product-price " + (featured ? "price-crossed" : null)}> ${price} </p>
                         <p className={"featured-price " + (featured ? "featured-visible" : null)}> ${(price - (price/100)*60).toFixed(2)} </p>
@@ -105,7 +104,7 @@ export default class SingleProductPage extends Component {
                           <section className="single-personal-container">
                             <div className="size-filter-box">
                               <div className="size-box">
-                                <p>Select a cup:</p>
+                                <p>cup: <span className="chosen-size">{brasToCart.chosenCup}</span> </p>
                                 <ul className="size-list">
                                   {itemsCups.map((cup, index) => {
                                     return (
@@ -116,7 +115,7 @@ export default class SingleProductPage extends Component {
                                 </ul>
                               </div>
                               <div className="size-box">
-                                <p>Select a size:</p>
+                                <p>size: <span className="chosen-size">{brasToCart.chosenSize}</span></p>
                                 <ul className="size-list">
                                   {itemsSizes.map((size, index) => {
                                     return (
@@ -148,7 +147,7 @@ export default class SingleProductPage extends Component {
                           <section className="single-personal-container">
                             <div className="size-filter-box">
                               <div className="size-box">
-                                <p>Select a size</p>
+                                <p>size: <span className="chosen-size">{uniSizeToCart}</span></p>
                                 <ul className="size-list">
                                   {itemsSizes.map((size, index) => {
                                       return (

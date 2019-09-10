@@ -8,7 +8,7 @@ export default class CartItem extends Component {
         {value => {
           const {increment, decrement, removeItem} = value;
           const {cartItem} = this.props;
-          const {id, title, price, count, total, imageSmall} = cartItem;
+          const {id, title, price, count, total, imageSmall, featured} = cartItem;
           return (
             <div className="cart-items-list">
                 <div className="cart-item">
@@ -18,7 +18,7 @@ export default class CartItem extends Component {
                   <p id="cart-item-title"> {title} </p>
                 </div>
                 <div className="cart-item">
-                  <p id="cart-item-price"> ${price} </p>
+                  <p id="cart-item-price"> ${featured ? (price - (price/100)*60).toFixed(2) : price} </p>
                 </div>
                 <div className="cart-item">
                   <div className="cart-item btns">

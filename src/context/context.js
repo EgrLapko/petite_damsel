@@ -116,11 +116,14 @@ getTotals = () => {
         subTotal += item.total;
         cartItems += item.count;
     }) 
-    subTotal = parseFloat(subTotal.toFixed(2));
+    // subTotal = parseFloat(subTotal.toFixed(2));
+    subTotal = parseFloat(subTotal).toFixed(2);
     let tax = subTotal * 0.1;
-    tax = parseFloat(tax.toFixed(2));
+    // tax = parseFloat(tax.toFixed([2]));
+    tax = parseFloat(tax).toFixed(2);
     let total = subTotal + tax;
-    total = parseFloat(total.toFixed(2));
+    // total = parseFloat(total.toFixed([2]));
+    total = parseFloat(total).toFixed(2);
     return {
         cartItems,
         subTotal,
@@ -167,13 +170,13 @@ addToCart = (id) => {
     let product = tempProducts[id];
     if(!tempItem) {
         tempItem = tempProducts.find(item => item.id === id);
-        let total = tempItem.price;
+        let total = parseFloat(tempItem.featured ? (tempItem.price - (tempItem.price/100)*60).toFixed([2]) : tempItem.price); 
         let cartItem = {...tempItem, count:1, total};
         tempCart = [...tempCart, cartItem]
     } else {
         tempItem.count++;
-        tempItem.total = tempItem.price * tempItem.count;
-        tempItem.total = parseFloat(tempItem.total.toFixed(2));
+        tempItem.total = (tempItem.featured ? (tempItem.price - (parseFloat(tempItem.price/100))*60).toFixed([2]) : tempItem.price) * tempItem.count;
+        tempItem.total = (tempItem.total.toFixed([2]));
     }
     this.setState(() => {
         return {cart: tempCart}
@@ -204,111 +207,111 @@ setSingleProduct = (id) => {
 
 
 // ---------- Open Sidebar menu
-    handleSidebarBra = () => {
-        this.setState({
-            sidebarOpenBra: ! this.state.sidebarOpenBra,
-            sidebarOpenPanty: false,
-            sidebarOpenSleepwear: false,
-            sidebarOpenAccs: false
+handleSidebarBra = () => {
+    this.setState({
+        sidebarOpenBra: ! this.state.sidebarOpenBra,
+        sidebarOpenPanty: false,
+        sidebarOpenSleepwear: false,
+        sidebarOpenAccs: false
+    })
+
+}
+
+handleSidebarPanty = () => {
+    this.setState({
+        sidebarOpenPanty: ! this.state.sidebarOpenPanty,
+        sidebarOpenBra: false,
+        sidebarOpenSleepwear: false,
+        sidebarOpenAccs: false,
         })
+}
 
-    }
+closeMenu = () => {
+    this.setState({
+        sidebarOpenBra: false,
+        sidebarOpenPanty: false,
+        sidebarOpenSleepwear: false,
+        sidebarOpenAccs: false,
+        sidebarOpenCol: false
+    })
+}
 
-    handleSidebarPanty = () => {
-        this.setState({
-            sidebarOpenPanty: ! this.state.sidebarOpenPanty,
-            sidebarOpenBra: false,
-            sidebarOpenSleepwear: false,
-            sidebarOpenAccs: false,
-         })
-    }
-
-    closeMenu = () => {
-        this.setState({
-            sidebarOpenBra: false,
-            sidebarOpenPanty: false,
-            sidebarOpenSleepwear: false,
-            sidebarOpenAccs: false,
-            sidebarOpenCol: false
+handleSidebarSleepwear = () => {
+    this.setState({
+        sidebarOpenSleepwear: ! this.state.sidebarOpenSleepwear,
+        sidebarOpenPanty: false,
+        sidebarOpenBra: false, 
+        sidebarOpenAccs: false,
         })
-    }
+}
 
-    handleSidebarSleepwear = () => {
-        this.setState({
-            sidebarOpenSleepwear: ! this.state.sidebarOpenSleepwear,
-            sidebarOpenPanty: false,
-            sidebarOpenBra: false, 
-            sidebarOpenAccs: false,
-         })
-    }
-
-    handleSidebarAccs = () => {
-        this.setState({
-            sidebarOpenAccs: ! this.state.sidebarOpenAccs,
-            sidebarOpenPanty: false,
-            asidebarOpenBra: false, 
-            sidebarOpenSleepwear: false
-         })
-    }
+handleSidebarAccs = () => {
+    this.setState({
+        sidebarOpenAccs: ! this.state.sidebarOpenAccs,
+        sidebarOpenPanty: false,
+        asidebarOpenBra: false, 
+        sidebarOpenSleepwear: false
+        })
+}
 
 // ---------- Open hamburger menu
-    handleHamburger = () => {
-        this.setState({hamburgerOpen: ! this.state.hamburgerOpen })
-    }
+handleHamburger = () => {
+    this.setState({hamburgerOpen: ! this.state.hamburgerOpen })
+}
 
 // ---------- Open sidecart menu
-    handleCart = () => {
-        this.setState({cartOpen: ! this.state.cartOpen })
-    }
+handleCart = () => {
+    this.setState({cartOpen: ! this.state.cartOpen })
+}
 
 // ---------- Open sidecart menu
-    handleRegister = () => {
-        this.setState({registerOpen: ! this.state.registerOpen})
-    }
+handleRegister = () => {
+    this.setState({registerOpen: ! this.state.registerOpen})
+}
 
 
 // ---------- Closing Cart
-    closeCart = () => {
-        this.setState({cartOpen: false })
-    }
+closeCart = () => {
+    this.setState({cartOpen: false })
+}
 
 // ---------- Opening Cart
-    openCart = () => {
-        this.setState({cartOpen: true })
-    }
+openCart = () => {
+    this.setState({cartOpen: true })
+}
 
 // ---------- Open price filter
-    handlePriceFilter = () => {
-        this.setState({priceFilter: ! this.state.priceFilter})
-    }
+handlePriceFilter = () => {
+    this.setState({priceFilter: ! this.state.priceFilter})
+}
 
 // ---------- Open size filter
-    handleCupFilter = () => {
-        this.setState({cupFilter: ! this.state.cupFilter})
-    }
+handleCupFilter = () => {
+    this.setState({cupFilter: ! this.state.cupFilter})
+}
 
 // ---------- Open color filter
-    handleColorFilter = () => {
-        this.setState({colorFilter: ! this.state.colorFilter})
-    }
+handleColorFilter = () => {
+    this.setState({colorFilter: ! this.state.colorFilter})
+}
 
 // ---------- Open size filter
-    handleSizeFilter = () => {
-        this.setState({sizeFilter: ! this.state.sizeFilter})
-    }
+handleSizeFilter = () => {
+    this.setState({sizeFilter: ! this.state.sizeFilter})
+}
 
 // ---------- Open size filter
-    handlePantiesFilter = () => {
-        this.setState({sizePanties: ! this.state.sizePanties})
-    }
+handlePantiesFilter = () => {
+    this.setState({sizePanties: ! this.state.sizePanties})
+}
 
 // ---------- Cart functionality
 increment = (id) =>{
     let tempCart = [...this.state.cart];
     const cartItem = tempCart.find(item => item.id === id);
     cartItem.count++;
-    cartItem.total = cartItem.count * cartItem.price;
-    cartItem.total = parseFloat(cartItem.total.toFixed(2));
+    cartItem.total = cartItem.count * (cartItem.featured ? (cartItem.price - (cartItem.price/100)*60).toFixed([2]) : cartItem.price);
+    cartItem.total = parseFloat(cartItem.total.toFixed([2]));
     this.setState(() => {
         return {
             cart: [...tempCart]
@@ -327,8 +330,8 @@ decrement = id => {
     if (cartItem.count === 0) {
         this.removeItem(id);
     } else {
-        cartItem.total = cartItem.count * cartItem.price;
-        cartItem.total = parseFloat(cartItem.total.toFixed(2));
+        cartItem.total = cartItem.count * (cartItem.featured ? (cartItem.price - (cartItem.price/100)*60).toFixed([2]) : cartItem.price);
+        cartItem.total = parseFloat(cartItem.total.toFixed([2]));
         this.setState(() => {
             return {
                 cart: [...tempCart]

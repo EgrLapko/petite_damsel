@@ -22,7 +22,7 @@ export default class SideCart extends Component {
                       <div className="cart-item-info">
                         <p className="menu-item-title"> {item.title} </p>
                         <p className="menu-item-count">x{item.count}</p>
-                        <p className="menu-item-price"> ${item.price} </p>
+                        <p className="menu-item-price"> ${item.featured ? (item.price - (item.price/100)*60).toFixed(2) : item.price} </p>
                       </div>
                     </li>
                   )
