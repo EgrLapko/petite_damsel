@@ -44,10 +44,10 @@ export default class Navbar extends Component {
                   </div>
                 </div>
                 <ul className={"navbar-menu-small " + (hamburgerOpen ? "visible" : null)} >
-                    <li className="menu-element" onClick={handleSidebarBra}>Bras</li>
-                    <li className="menu-element" onClick={handleSidebarPanty}>Panties</li>
-                    <li className="menu-element" onClick={handleSidebarSleepwear} >Sleepwear</li>
-                    <li className="menu-element" onClick={handleSidebarAccs} >Accessories</li>
+                    <Link to="/products/bras"><li className="menu-element">Bras</li></Link>
+                    <Link to="/products/panties_all"><li className="menu-element">Panties</li></Link>
+                    <Link to="/products/sleepwear_all"><li className="menu-element">Sleepwear</li></Link>
+                    <Link to="/products/accessories_bodysuits"><li className="menu-element">Accessories</li></Link>
                     <Link to="/collections"><li className="menu-element">Collections</li></Link>
                     <Link to="/login"><li className="menu-element">Log in</li></Link>
                 </ul>

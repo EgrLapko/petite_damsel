@@ -25,7 +25,7 @@ function App() {
             backgroundColor: "rgba(241, 106, 123, .8)",
             border: "none",
             borderRadius: "10px",
-            fontFamily: "'Roboto', sans-serif"
+            fontFamily: "'Roboto', sans-serif",
           }}
       />
       <Footer />

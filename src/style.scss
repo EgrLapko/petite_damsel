@@ -209,12 +209,14 @@ button:focus{
     display: none;
 }
 
-@media (max-width: 800px) {
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .navbar-container {
         display: none;
     }
     .navbar-small {
         @include flexbox;
+        width: 100%;
         flex-direction: column;
         position: sticky;
         z-index: 4;
@@ -224,11 +226,11 @@ button:focus{
             justify-content: space-around;
             box-shadow: none;
         }
-
         .navbar-menu-small {
             @include flexbox;
-            width: 100%;
-            display: none;
+            width: 93%;
+            position: fixed;
+            top: 0;
             list-style-type: none;
             flex-direction: column;
             text-align: center;
@@ -236,37 +238,21 @@ button:focus{
             padding: 0;
             background-color: $mainwhite;
             transform: translateY(-100%);
-            transition: .4s ease-in-out;
+            transition: .4s;
+            border-radius: 15px;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, .1);
             .menu-element {
-                font-size: 1.3rem;
+                font-size: 1.4rem;
                 font-family: $fontmain;
-                padding: .5rem;
+                padding: .6rem 0;
                 cursor: pointer;
             }
         }
         .visible {
-            @include flexbox;
-            transform: translateY(0%);
-            transition: .4s ease-in-out;
+            transform: translateY(10%);
         }
     }
-    
-} 
-
-@media (max-width: 500px) {
-    .navbar-container {
-        flex-direction: column;
-        li {
-            line-height: 2.5rem;
-        }
-        .navbar-menu {
-            flex-direction: column;
-            .menu-element {
-                font-size: 1.5rem;
-            }
-        }
-    }}
-
+}
 
 // ----------------------------- Slidebar menu
 .slide-bar {
@@ -559,6 +545,25 @@ button:focus{
       }
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .footer-container {
+        .maintag {
+            font-size: 1.4rem;
+        }
+        .footer-item {
+            font-size: 1.1rem;
+        }
+        .account-container {
+            padding: 0;
+        }
+        .subscribe-container {
+            .sub-text {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
 // ----------------------------- Login
 .login-page {
     @include flexbox;
@@ -781,37 +786,37 @@ button:focus{
     }
 }
 
-@media (max-width: 1024px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .trends-container {
-        .trends-card {
-            width: 30rem;
-            height: 30rem;
-            background-position: right;
-        }
-    }  
-}
-
-
-@media (max-width: 900px) {
-    .trends-container {
-        .trends-card {
-            width: 30rem;
-            height: 30rem;
-            background-position: right;
-        }
-    }  
-}
-
-@media (max-width: 800px) {
-    .trends-container {
-        margin: 0;
         flex-direction: column;
-        .trends-card {
-            width: 100%;
-            height: 30rem;
-            border-radius: 0%;
+        padding: 0;
+        .trends {
+            margin: .5rem 0;
+            .trends-card {
+                width: 100%;
+                height: 30vh;
+                border-radius: 0%;
+                .trends-text-wrapper {
+                    .trends-title {
+                        font-size: 2rem;
+                    }
+                    .trends-description {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            .trends-bottom-title {
+                font-size: 1.7rem;
+            }
+            .trends-bottom-description {
+                font-size: 1.2rem;
+            }
+            .btn {
+                font-size: 1rem;
+                padding: .5rem;
+            }
         }
-    }  
+    }
 }
 
 
@@ -1013,59 +1018,71 @@ button:focus{
     }
 }
 
-
-@media (max-width: 1050px) {
-    .selections-container {
-        flex-direction: row;
-        .sel-card {
-            overflow: hidden;
-            width: 20rem;
-            height: 30rem; 
-            border-radius: 0%;
-            margin: 0;
-        }       
-    }
-}
-
-@media (max-width: 800px) {
-    .selections-container {
-        flex-direction: column;
-        .sel-card {
-            overflow: hidden;
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .selections {
+        .main-title {
+            width: 95%;
+            padding: 1rem 0;
+            margin: 3rem 0;
+            .title-main-text {
+                font-size: 3rem;
+            }
+            .title-main-desc {
+                font-size: 1.3rem;
+            }
+        }
+        .selections-container {
+            flex-direction: column;
+            justify-content: center;
             width: 100%;
-            height: 25rem; 
-            border-radius: 0%;
-            margin: 0;
-            .sel-image {
-                .sel-text-wrapper {
-                    background-color: rgba(105, 105, 105, .3);
-                    .sel-description, .sel-title {
-                        opacity: 1;
-                        cursor: default;
+            .sel-wrapper {
+                width: 100%;
+                .sel-card {
+                    width: 100%;
+                    height: 30vh;
+                    border-radius: 0;
+                    transition: all .4s ease-in-out;
+                    .sel-image {
+                        background-position: top;
+                        .sel-text-wrapper {
+                            background-color: rgba(105, 105, 105, .5);
+                            .sel-description {
+                                font-size: 1.2rem;
+                                opacity: 1;
+                            }
+                            .sel-title {
+                                font-size: 1.6rem;
+                                opacity: 1;
+                            }
+                            .btn {
+                                font-size: 1rem;
+                                padding: .5rem;
+                                opacity: 1;
+                            }
+                        }
                     }
-                    .btn {
-                        opacity: 1;
-                    }
+                }
+                .sel-card:hover {
+                    height: 60vh;
+                }
+            }
+            .sel-bottom-container {
+                display: none;
+                .sel-bottom-title {
+                    font-size: 1.8rem;
+                }
+                .sel-bottom-desc {
+                    font-size: 1.1rem;
+                }
+                .btn {
+                    margin: .5rem 0;
+                    padding: .7rem;
+                    font-size: 1.1rem;
                 }
             }
         }
-        .sel-card:hover {
-            .sel-image {
-                transform: scale(1);
-                .sel-text-wrapper {
-                    background-color: rgba(105, 105, 105, .3);
-                    .sel-description {
-                        opacity: 1;
-                    }
-                    .btn {
-                        opacity: 1;
-                    }
-                }
-            }
-        } 
-}  }
-
-
+    }
+}
 // ----------------------------- Instagram section
 
 .insta-section {
@@ -1125,9 +1142,32 @@ button:focus{
     }
 }
 
-@media (max-width: 800px) {
-    .insta-card {
-        margin-top: 1rem;
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .insta-section {
+        .main-title {
+            width: 95%;
+            padding: 1rem 0;
+            margin: 3rem 0;
+            .title-main-text {
+                font-size: 3rem;
+            }
+            .title-main-desc {
+                font-size: 1.3rem;
+            }
+        }
+        .insta-container {
+            .insta-card {
+                width: 100%;
+                height: 15rem;
+                margin: 0;
+                padding: 0;
+                border-radius: unset;
+                transition: .4s all ease-in-out;
+            }
+            .insta-card:hover {
+                height: 25rem;
+            }
+        }
     }
 }
 
@@ -1176,11 +1216,7 @@ button:focus{
 .slick-next:before, .slick-prev:before {
     color: rgba(105, 105, 105, .5);
 }
-  
-// .slick-slide img {
-//     margin: auto;
-//     width: 11rem;
-// }
+
 
 // ----------------------------- Featured Section
 
@@ -1201,6 +1237,32 @@ button:focus{
 .recent-visible {
     @include flexbox;
     margin-top: 2rem;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .featured-section {
+        .slider-container {
+            display: none;
+        }
+        .slider-container-small {
+            width: 80%;
+            background-color: rgba(105, 105, 105, .01);
+        }
+        .slick-slider {
+            padding: 0;
+        }
+        .main-title {
+            width: 95%;
+            padding: 1rem 0;
+            margin: 3rem 0;
+            .title-main-text {
+                font-size: 3rem;
+            }
+            .title-main-desc {
+                font-size: 1.3rem;
+            }
+        }
+    }
 }
 
 
