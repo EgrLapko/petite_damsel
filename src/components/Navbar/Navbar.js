@@ -22,7 +22,7 @@ export default class Navbar extends Component {
                   <li className="menu-element" onClick={handleSidebarSleepwear} >Sleepwear</li>
                   <li className="menu-element" onClick={handleSidebarAccs} >Accessories</li>
                   <Link to="/collections"><li className="menu-element">Collections</li></Link>
-                  <Link to="/login"><li className="menu-element">Log in</li></Link>
+                  <Link to="/login"><li className="menu-element">Login/register</li></Link>
                 </ul>
                 <div className="navbar-cart">
                   <p className="cart-logo" onClick={handleCart} > <FaShoppingBag/> </p>
@@ -52,7 +52,6 @@ export default class Navbar extends Component {
                     <Link to="/login"><li className="menu-element">Log in</li></Link>
                 </ul>
               </div>
-              
             </React.Fragment>
             
             )          

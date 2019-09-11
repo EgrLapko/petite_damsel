@@ -82,6 +82,30 @@ button:focus {
 .invisible {
   display: none; }
 
+.top-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  min-height: 2rem;
+  width: 100%;
+  background-color: yellowgreen; }
+  .top-panel .top-element {
+    font-family: "Roboto", sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    color: dimgray;
+    text-transform: capitalize;
+    margin: .7rem 1.5rem; }
+
 .navbar-container, .navbar-container-small {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,25 +122,22 @@ button:focus {
   justify-content: space-between;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 0rem;
   z-index: 4;
   width: 100%;
-  min-height: 4rem;
   background-color: #f6f6f6;
   -webkit-transition: .3s;
   -o-transition: .3s;
-  transition: .3s;
-  -webkit-box-shadow: 0px 0px 20px rgba(106, 105, 105, 0.07);
-  box-shadow: 0px 0px 20px rgba(106, 105, 105, 0.07); }
+  transition: .3s; }
   .navbar-container .navbar-logo img, .navbar-container-small .navbar-logo img {
     width: 9rem;
     cursor: pointer; }
   .navbar-container .pd-logo, .navbar-container-small .pd-logo {
     font-family: 'Poiret One', cursive;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #6a6969;
     margin: 0;
-    padding: 1rem; }
+    padding: .5rem; }
     .navbar-container .pd-logo span, .navbar-container-small .pd-logo span {
       color: #f16a7b; }
   .navbar-container .hamburger-container, .navbar-container-small .hamburger-container {
@@ -154,7 +175,7 @@ button:focus {
     padding: 0; }
     .navbar-container .navbar-menu .menu-element, .navbar-container .navbar-menu .menu-element-small, .navbar-container .navbar-menu-small .menu-element, .navbar-container .navbar-menu-small .menu-element-small, .navbar-container-small .navbar-menu .menu-element, .navbar-container-small .navbar-menu .menu-element-small, .navbar-container-small .navbar-menu-small .menu-element, .navbar-container-small .navbar-menu-small .menu-element-small {
       margin: 0rem 1.5rem;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: dimgray;
       cursor: pointer;
       font-family: "Roboto", sans-serif;
@@ -423,7 +444,7 @@ button:focus {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background-color: #fbfbfb;
+  background-color: rgba(246, 246, 246, 0.95);
   -webkit-box-shadow: 0px 0px 30px rgba(106, 105, 105, 0.1);
   box-shadow: 0px 0px 30px rgba(106, 105, 105, 0.1);
   -webkit-transition: all .5s ease-in-out;
@@ -2673,3 +2694,13 @@ button:focus {
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0); }
+
+.scroll-to-top {
+  font-size: 1rem;
+  color: white;
+  opacity: .6;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1); }
+
+.scroll-to-top:hover {
+  opacity: 1; }

@@ -103,19 +103,34 @@ button:focus{
     display: none;
 }
 
+// ----------------------------- Top Panel
+.top-panel {
+    @include flexbox;
+    justify-content: flex-end;
+    min-height: 2rem;
+    width: 100%;
+    background-color: yellowgreen;
+    .top-element{
+        font-family: $fontmain;
+        font-size: .8rem;
+        font-weight: 600;
+        color: rgba(105, 105, 105, 1);
+        text-transform: capitalize;
+        margin: .7rem 1.5rem;
+    }
+}
+
 // ----------------------------- Navbar
 .navbar-container, .navbar-container-small {
     @include flexbox;
     opacity: 1;
     justify-content: space-between;
     position: sticky;
-    top: 0;
+    top: 0rem;
     z-index: 4;
     width: 100%;
-    min-height: 4rem;
     background-color: $mainwhite;
     transition: .3s;
-    box-shadow: 0px 0px 20px rgba(106, 105, 105, .07);
     .navbar-logo{
         img {
             width: 9rem;
@@ -124,10 +139,11 @@ button:focus{
     }
     .pd-logo {
         font-family: 'Poiret One', cursive;
-        font-size: 2rem;
+        // font-family: $fontmain;
+        font-size: 1.7rem;
         color: rgba(106, 105, 105, 1);
         margin: 0;
-        padding: 1rem;
+        padding: .5rem;
         span {
             color: rgba(241, 106, 123, 1);
         }
@@ -152,7 +168,7 @@ button:focus{
         padding: 0;
         .menu-element, .menu-element-small {
             margin: 0rem 1.5rem;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: rgba(105, 105, 105, 1);
             cursor: pointer;
             font-family: $fontmain;
@@ -332,7 +348,7 @@ button:focus{
     height: 95%;
     width: 27rem;
     transform: translateX(100%);
-    background-color: rgba(251, 251, 251, 1);
+    background-color: rgba(246, 246, 246, .95);
     box-shadow: 0px 0px 30px rgba(106, 105, 105, .1);
     transition: all .5s ease-in-out;
     .btn-sidecart {
@@ -1992,5 +2008,15 @@ button:focus{
     transform: translateY(0);
 }
 
+// ----------------------------- T TOP BUTTON
+.scroll-to-top {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 1);
+    opacity: .6;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .1);
+}
 
+.scroll-to-top:hover {
+    opacity: 1;
+}
 

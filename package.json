@@ -11,6 +11,7 @@
     "react-parallax": "^2.2.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0",
+    "react-scrolltop-button": "^0.1.6",
     "react-slick": "^0.25.2"
   },
   "scripts": {
