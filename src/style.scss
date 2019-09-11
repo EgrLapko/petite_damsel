@@ -717,74 +717,79 @@ button:focus{
 
 // ----------------------------- Homepage
 
-.trends {
-    @include flexbox;
-    flex-direction: column;
-    font-family: $fontmain;
-    .trends-bottom-title {
-        margin: .3rem 0rem;
-        text-transform: lowercase;
-        font-family: 'Roboto', sans-serif;
-        color: rgba(105, 105, 105, 1);
-        font-weight: 600;      
-        font-size: 2.5rem;
-    }
-    .trends-bottom-description {
-        margin: 0rem 0;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;   
-        color: rgba(105, 105, 105, 1);
-        text-transform: lowercase;
-        font-size: 1.3rem;
-    }
-    .btn {
-        margin-top: .7rem;
-        text-transform: lowercase;
-    }
-}
+
 .trends-container {
     @include flexbox;
     width: 100%;
-    // margin: 3rem 0;
     padding-top: 3rem;
-    .trends-card {
+    align-items: flex-start;
+    .trends {
         @include flexbox;
         flex-direction: column;
-        width: 39rem;
-        height: 39rem;
-        background-size: cover;
-        overflow: hidden;
-        border-radius: 2%;
-        margin: 0 2rem;
-        box-shadow: 0px 0px 60px rgba(105, 105, 105, .2);
-        .trends-text-wrapper {
-            @include flexbox;
-            opacity: 0;
-            width: 100%;
-            height: 100%;
-            padding: 1rem;
-            flex-direction: column;
-            transition: all .3s ease-in-out;
-            .trends-title, .trends-description {
-                text-align: center;
-                font-family: $fontmain;
-                font-size: 5rem;
-                font-weight: 200;
-                margin: 0;
-                color: rgba(250, 250, 250, 1);
-                cursor: default;
-            }
-            .trends-description {
-                font-size: 2rem;
-                cursor: default;
-            }
+        font-family: $fontmain;
+        min-width: 33%;
+        margin: 0 1rem;
+        .trends-bottom-title {
+            margin: .3rem 0rem;
+            text-transform: lowercase;
+            font-family: 'Roboto', sans-serif;
+            color: rgba(105, 105, 105, 1);
+            font-weight: 600;      
+            font-size: 2.5rem;
+            text-align: center;
         }
-        .trends-text-wrapper:hover {
-            background-color: rgba(55, 55, 55, .4);
-            opacity: 1;
+        .trends-bottom-description {
+            margin: 0rem 0;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;   
+            color: rgba(105, 105, 105, 1);
+            text-transform: lowercase;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+        .btn {
+            margin-top: .7rem;
+            text-transform: lowercase;
+        }
+        .trends-card {
+            @include flexbox;
+            flex-direction: column;
+            width: 100%;
+            height: 68vh;
+            background-size: cover;
+            overflow: hidden;
+            border-radius: 2%;
+            box-shadow: 0px 0px 60px rgba(105, 105, 105, .2);
+            .trends-text-wrapper {
+                @include flexbox;
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                padding: 1rem;
+                flex-direction: column;
+                transition: all .3s ease-in-out;
+                .trends-title, .trends-description {
+                    text-align: center;
+                    font-family: $fontmain;
+                    font-size: 5rem;
+                    font-weight: 200;
+                    margin: 0;
+                    color: rgba(250, 250, 250, 1);
+                    cursor: default;
+                }
+                .trends-description {
+                    font-size: 2rem;
+                    cursor: default;
+                }
+            }
+            .trends-text-wrapper:hover {
+                background-color: rgba(55, 55, 55, .4);
+                opacity: 1;
+            }
         }
     }
 }
+
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .trends-container {
@@ -930,15 +935,18 @@ button:focus{
     }
     .selections-container {
         @include flexbox;
-        justify-content: space-around;
-        width: 80%;
+        justify-content: center;
+        align-items: flex-start;
+        width: 90%;
         margin-bottom: 6rem;
         .sel-wrapper {
             @include flexbox;
             flex-direction: column;
+            margin: 0rem 1rem;
+            width: 25rem;
             .sel-card {
                 overflow: hidden;
-                width: 25rem;
+                width: 100%;
                 height: 35rem; 
                 border-radius: 3%;
                 box-shadow: 0px 0px 50px rgba(105, 105, 105, .2);
@@ -952,6 +960,8 @@ button:focus{
                     .sel-text-wrapper {
                         @include flexbox;
                         flex-direction: column;
+                        text-align: center;
+                        padding: 1rem;
                         background-color: rgba(105, 105, 105, .15);
                         width: 100%;
                         height: 100%;
@@ -996,6 +1006,7 @@ button:focus{
             @include flexbox;
             flex-direction: column;
             .sel-bottom-title {
+                text-align: center;
                 margin: .3rem 0rem;
                 text-transform: lowercase;
                 font-family: $fontmain;
